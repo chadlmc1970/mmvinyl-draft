@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow">
+<title>M&amp;M Vinyl Hero Concepts</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<style>
+/* Layout: black proof sheet. Three concept panels, each a desktop and phone capture side by side, mint used only for actions and the pick. */
+:root {
+  --bg: #0b0b0b;
+  --panel: #151515;
+  --line: #2a2a2a;
+  --fg: #f4f4f2;
+  --muted: #a3a8a5;
+  --mint: #92d1a9;
+  --mint-ink: #04140a;
+  --font: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.55;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 40px 72px;
+}
+.wrap { max-width: 1120px; margin: 0 auto; display: grid; gap: 40px; }
+header { display: grid; gap: 12px; max-width: 720px; }
+.kicker { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--mint); }
+h1 { font-size: clamp(32px, 6vw, 56px); line-height: 1.02; letter-spacing: -.03em; font-weight: 800; margin: 0; text-wrap: balance; }
+.lede { color: var(--muted); font-size: 18px; margin: 0; max-width: 60ch; }
+.pick {
+  display: grid; gap: 6px; padding: 18px 20px; border: 1px solid var(--mint); border-radius: 14px;
+  background: rgba(146, 209, 169, .07);
+}
+.pick strong { font-size: 15px; letter-spacing: .02em; }
+.pick span { color: var(--muted); }
+.concept { background: var(--panel); border: 1px solid var(--line); border-radius: 20px; padding: clamp(16px, 3vw, 28px); display: grid; gap: 22px; }
+.concept.recommended { border-color: var(--mint); }
+.head { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: baseline; justify-content: space-between; }
+.head h2 { margin: 0; font-size: clamp(22px, 3.4vw, 30px); letter-spacing: -.02em; font-weight: 700; }
+.tag { font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+.tag.rec { background: var(--mint); color: var(--mint-ink); border-color: var(--mint); }
+.shots { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 1fr); gap: 16px; align-items: start; }
+.shots figure { margin: 0; display: grid; gap: 8px; min-width: 0; }
+.shots img { width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--line); display: block; background: #000; }
+.shots figcaption { font-size: 12px; color: var(--muted); letter-spacing: .06em; text-transform: uppercase; }
+.notes { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px 28px; }
+.notes p { margin: 0; color: var(--muted); }
+.notes b { color: var(--fg); font-weight: 600; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.btn {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px; border-radius: 999px;
+  background: var(--mint); color: var(--mint-ink); font-weight: 700; font-size: 14px; letter-spacing: .08em;
+  text-transform: uppercase; text-decoration: none; box-shadow: 0 4px 0 #3f6b52;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.btn:hover { transform: translateY(2px); box-shadow: 0 2px 0 #3f6b52; }
+.btn:active { transform: translateY(4px); box-shadow: 0 0 0 #3f6b52; }
+.btn:focus-visible { outline: 3px solid var(--fg); outline-offset: 3px; }
+.btn.ghost { background: transparent; color: var(--fg); box-shadow: none; border: 1px solid var(--line); }
+.status { display: grid; gap: 14px; border-top: 1px solid var(--line); padding-top: 28px; }
+.status h2 { margin: 0; font-size: 20px; letter-spacing: -.01em; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { font-size: 13px; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+.chip.done { color: var(--mint); border-color: rgba(146,209,169,.5); }
+.fine { color: var(--muted); font-size: 13px; margin: 0; max-width: 70ch; }
+@media (max-width: 620px) { .shots { grid-template-columns: minmax(0, 1fr) minmax(0, 0.55fr); } }
+@media (prefers-reduced-motion: reduce) { .btn { transition: none; } }
+.strip{position:sticky;top:0;z-index:5;margin:-40px max(-16px,-3vw) 28px;padding:10px 16px;background:var(--mint);color:var(--mint-ink);font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;text-align:center}
+</style>
+
+<div class="strip">Draft preview for Desiree. First draft from Silicon Bayou Designs. Not the live site.</div>
+<div class="wrap">
+  <header>
+    <div class="kicker">M&amp;M Vinyl · Website draft · Hero concepts</div>
+    <h1>Three ways the homepage can open</h1>
+    <p class="lede">Each one says DTF printing, same-day, Baton Rouge, with the Build a Gang Sheet button and a live cutoff clock above the fold. All use her badge, her product photos, and her black and mint. Open any concept to see the motion.</p>
+  </header>
+
+  <div class="pick">
+    <strong>My pick: A for the hero, C's tiles underneath, B's big type for the Mardi Gras and Resellers pages</strong>
+    <span>A is the only one that shows the product itself. B is the lightest and safest on speed.</span>
+  </div>
+
+  <section class="concept recommended" id="a">
+    <div class="head"><h2>A · Fresh off the printer</h2><span class="tag rec">Recommended hero</span></div>
+    <div class="shots">
+      <figure><img src="shots/concept-a-1440.webp" alt="Concept A on desktop: black page with a gang sheet printing itself beside a ticket-style cutoff clock" width="1440" height="900"><figcaption>Desktop</figcaption></figure>
+      <figure><img src="shots/concept-a-390.webp" alt="Concept A on a phone" width="390" height="844"><figcaption>Phone</figcaption></figure>
+    </div>
+    <div class="notes">
+      <p><b>What happens.</b> A gang sheet prints itself from the top down with a print head sweep and a peeling corner. The cutoff clock sits beside it like a ticket stub.</p>
+      <p><b>Why it works.</b> It shows what she sells in the first five seconds. Heaviest on images, so we trim it before it goes live.</p>
+    </div>
+    <div class="actions"><a class="btn" href="concepts/concept-a.html" target="_blank" rel="noopener">Open concept A</a></div>
+  </section>
+
+  <section class="concept" id="b">
+    <div class="head"><h2>B · Big type on mint</h2><span class="tag">Fastest</span></div>
+    <div class="shots">
+      <figure><img src="shots/concept-b-1440.webp" alt="Concept B on desktop: mint page with an oversized headline holding a photo, a clock and the badge" width="1440" height="900"><figcaption>Desktop</figcaption></figure>
+      <figure><img src="shots/concept-b-390.webp" alt="Concept B on a phone" width="390" height="844"><figcaption>Phone</figcaption></figure>
+    </div>
+    <div class="notes">
+      <p><b>What happens.</b> An oversized headline with a photo of her DTF rolls, a rolling-digit clock and the badge set inside the words, then a product ticker.</p>
+      <p><b>Why it works.</b> Bold, light, and strongest on a phone. A good fit for a seasonal Mardi Gras page.</p>
+    </div>
+    <div class="actions"><a class="btn ghost" href="concepts/concept-b.html" target="_blank" rel="noopener">Open concept B</a></div>
+  </section>
+
+  <section class="concept" id="c">
+    <div class="head"><h2>C · The counter, in tiles</h2><span class="tag">Most information</span></div>
+    <div class="shots">
+      <figure><img src="shots/concept-c-1440.webp" alt="Concept C on desktop: light page of tiles with a cutoff clock, counters and an open-now pickup tile" width="1440" height="900"><figcaption>Desktop</figcaption></figure>
+      <figure><img src="shots/concept-c-390.webp" alt="Concept C on a phone" width="390" height="844"><figcaption>Phone</figcaption></figure>
+    </div>
+    <div class="notes">
+      <p><b>What happens.</b> A grid of tiles with a cursor spotlight: clock with a day timeline, counters, a swipe rail, and an open-now pickup tile.</p>
+      <p><b>Why it works.</b> Carries the most at a glance and gives us a reusable system for the three doors and the rest of the site.</p>
+    </div>
+    <div class="actions"><a class="btn ghost" href="concepts/concept-c.html" target="_blank" rel="noopener">Open concept C</a></div>
+  </section>
+
+  <section class="status">
+    <h2>Where the build stands</h2>
+    <div class="chips">
+      <span class="chip done">Design system matches her live site</span>
+      <span class="chip done">106 products and 194 photos loaded</span>
+      <span class="chip done">Cutoff clock tested</span>
+      <span class="chip">Home, Shop, DTF, Resellers: building</span>
+      <span class="chip">About, Visit, Contact, Behind the Scenes: building</span>
+      <span class="chip">Owner dashboard: building</span>
+      <span class="chip">Brand folder: building</span>
+    </div>
+    <p class="fine">The ruler and size tags on the sheet in concept A are illustrative until Desiree confirms her roll width. No ratings or review counts are shown because none are on her site yet.</p>
+  </section>
+</div>
