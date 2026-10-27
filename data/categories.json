@@ -1,0 +1,850 @@
+{
+ "generated": "2026-10-26",
+ "note": "Counts include products that appear in more than one category. Parent counts are unique products across the parent and its children.",
+ "categories": [
+  {
+   "slug": "dtf",
+   "name": "DTF Gang Sheets",
+   "parent": null,
+   "count": 1,
+   "direct_count": 1,
+   "representative_image": {
+    "product_id": 60967,
+    "product_slug": "build-a-gang-sheet-rolling-canvas",
+    "image_n": 2,
+    "src": "assets/img/products/build-a-gang-sheet-rolling-canvas-2-800.jpg",
+    "webp": {
+     "400": "assets/img/products/build-a-gang-sheet-rolling-canvas-2-400.webp",
+     "800": "assets/img/products/build-a-gang-sheet-rolling-canvas-2-800.webp",
+     "1200": "assets/img/products/build-a-gang-sheet-rolling-canvas-2-1200.webp"
+    },
+    "srcset_webp": "assets/img/products/build-a-gang-sheet-rolling-canvas-2-400.webp 400w, assets/img/products/build-a-gang-sheet-rolling-canvas-2-800.webp 800w, assets/img/products/build-a-gang-sheet-rolling-canvas-2-1200.webp 1200w",
+    "alt": "Rolls of printed transfers with colorful designs standing upright",
+    "width": 800,
+    "height": 806,
+    "hero_ok": true,
+    "quality_note": null
+   },
+   "needs_photo": false,
+   "product_ids": [
+    60967
+   ],
+   "children": []
+  },
+  {
+   "slug": "htv-vinyl",
+   "name": "HTV Vinyl",
+   "parent": null,
+   "count": 13,
+   "direct_count": 13,
+   "representative_image": {
+    "product_id": 59686,
+    "product_slug": "pattern-htv",
+    "image_n": 1,
+    "src": "assets/img/products/pattern-htv-1-800.jpg",
+    "webp": {
+     "400": "assets/img/products/pattern-htv-1-400.webp",
+     "800": "assets/img/products/pattern-htv-1-800.webp",
+     "1200": "assets/img/products/pattern-htv-1-1200.webp"
+    },
+    "srcset_webp": "assets/img/products/pattern-htv-1-400.webp 400w, assets/img/products/pattern-htv-1-800.webp 800w, assets/img/products/pattern-htv-1-1200.webp 1200w",
+    "alt": "Rolls of camouflage and leopard print pattern vinyl on a shelf",
+    "width": 800,
+    "height": 1067,
+    "hero_ok": true,
+    "quality_note": null
+   },
+   "needs_photo": false,
+   "product_ids": [
+    62058,
+    59686,
+    59481,
+    59052,
+    53333,
+    14113,
+    12061,
+    11217,
+    10626,
+    9358,
+    8334,
+    8270,
+    8258
+   ],
+   "children": [
+    {
+     "slug": "htv-solids",
+     "name": "Solid Colors",
+     "parent": "htv-vinyl",
+     "count": 4,
+     "direct_count": 4,
+     "representative_image": {
+      "product_id": 62058,
+      "product_slug": "siser-easyweed-htv",
+      "image_n": 1,
+      "src": "assets/img/products/siser-easyweed-htv-1-800.jpg",
+      "webp": {
+       "400": "assets/img/products/siser-easyweed-htv-1-400.webp",
+       "800": "assets/img/products/siser-easyweed-htv-1-800.webp",
+       "1200": "assets/img/products/siser-easyweed-htv-1-1200.webp"
+      },
+      "srcset_webp": "assets/img/products/siser-easyweed-htv-1-400.webp 400w, assets/img/products/siser-easyweed-htv-1-800.webp 800w, assets/img/products/siser-easyweed-htv-1-1200.webp 1200w",
+      "alt": "Hand holding sheets of peach, mint and yellow heat transfer vinyl in front of vinyl shelves",
+      "width": 800,
+      "height": 800,
+      "hero_ok": true,
+      "quality_note": null
+     },
+     "needs_photo": false,
+     "product_ids": [
+      62058,
+      59052,
+      14113,
+      10626
+     ]
+    },
+    {
+     "slug": "htv-specialty",
+     "name": "Specialty HTV",
+     "parent": "htv-vinyl",
+     "count": 8,
+     "direct_count": 8,
+     "representative_image": {
+      "product_id": 59686,
+      "product_slug": "pattern-htv",
+      "image_n": 1,
+      "src": "assets/img/products/pattern-htv-1-800.jpg",
+      "webp": {
+       "400": "assets/img/products/pattern-htv-1-400.webp",
+       "800": "assets/img/products/pattern-htv-1-800.webp",
+       "1200": "assets/img/products/pattern-htv-1-1200.webp"
+      },
+      "srcset_webp": "assets/img/products/pattern-htv-1-400.webp 400w, assets/img/products/pattern-htv-1-800.webp 800w, assets/img/products/pattern-htv-1-1200.webp 1200w",
+      "alt": "Rolls of camouflage and leopard print pattern vinyl on a shelf",
+      "width": 800,
+      "height": 1067,
+      "hero_ok": true,
+      "quality_note": null
+     },
+     "needs_photo": false,
+     "product_ids": [
+      59686,
+      59481,
+      53333,
+      12061,
+      11217,
+      9358,
+      8334,
+      8270
+     ]
+    },
+    {
+     "slug": "htv-adhesive",
+     "name": "Adhesive Vinyl",
+     "parent": "htv-vinyl",
+     "count": 1,
+     "direct_count": 1,
+     "representative_image": null,
+     "needs_photo": true,
+     "product_ids": [
+      8258
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "blanks-apparel",
+   "name": "Blanks and Apparel",
+   "parent": null,
+   "count": 43,
+   "direct_count": 43,
+   "representative_image": {
+    "product_id": 59311,
+    "product_slug": "rabbit-skins-toddler-sweatshirt",
+    "image_n": 1,
+    "src": "assets/img/products/rabbit-skins-toddler-sweatshirt-1-800.jpg",
+    "webp": {
+     "400": "assets/img/products/rabbit-skins-toddler-sweatshirt-1-400.webp",
+     "800": "assets/img/products/rabbit-skins-toddler-sweatshirt-1-800.webp",
+     "1200": "assets/img/products/rabbit-skins-toddler-sweatshirt-1-1200.webp"
+    },
+    "srcset_webp": "assets/img/products/rabbit-skins-toddler-sweatshirt-1-400.webp 400w, assets/img/products/rabbit-skins-toddler-sweatshirt-1-800.webp 800w, assets/img/products/rabbit-skins-toddler-sweatshirt-1-1200.webp 1200w",
+    "alt": "Toddler sweatshirts in blue, navy, pink, purple and black hanging on a shop wall",
+    "width": 800,
+    "height": 637,
+    "hero_ok": true,
+    "quality_note": null
+   },
+   "needs_photo": false,
+   "product_ids": [
+    67605,
+    67283,
+    67047,
+    65397,
+    65365,
+    65106,
+    63011,
+    62743,
+    62374,
+    61939,
+    61572,
+    59639,
+    59570,
+    59542,
+    59348,
+    59311,
+    59251,
+    59215,
+    56423,
+    55375,
+    53023,
+    53011,
+    51938,
+    51832,
+    50579,
+    49677,
+    48230,
+    48224,
+    48223,
+    48222,
+    48217,
+    48215,
+    24830,
+    19045,
+    11443,
+    11434,
+    11422,
+    10947,
+    10188,
+    10181,
+    9074,
+    8439,
+    8353
+   ],
+   "children": [
+    {
+     "slug": "apparel-adults",
+     "name": "Adults",
+     "parent": "blanks-apparel",
+     "count": 21,
+     "direct_count": 21,
+     "representative_image": {
+      "product_id": 62743,
+      "product_slug": "comfort-color-heavyweight-tank",
+      "image_n": 1,
+      "src": "assets/img/products/comfort-color-heavyweight-tank-1-800.jpg",
+      "webp": {
+       "400": "assets/img/products/comfort-color-heavyweight-tank-1-400.webp",
+       "800": "assets/img/products/comfort-color-heavyweight-tank-1-800.webp",
+       "1200": "assets/img/products/comfort-color-heavyweight-tank-1-1200.webp"
+      },
+      "srcset_webp": "assets/img/products/comfort-color-heavyweight-tank-1-400.webp 400w, assets/img/products/comfort-color-heavyweight-tank-1-800.webp 800w, assets/img/products/comfort-color-heavyweight-tank-1-1200.webp 1200w",
+      "alt": "Rack of Comfort Colors tank tops in mint, pink, yellow, black and white hanging in the shop",
+      "width": 800,
+      "height": 1422,
+      "hero_ok": true,
+      "quality_note": null
+     },
+     "needs_photo": false,
+     "product_ids": [
+      67605,
+      67283,
+      67047,
+      65397,
+      65365,
+      65106,
+      62743,
+      62374,
+      59639,
+      59570,
+      59542,
+      59348,
+      56423,
+      53023,
+      53011,
+      51938,
+      51832,
+      50579,
+      24830,
+      9074,
+      8439
+     ]
+    },
+    {
+     "slug": "apparel-youth",
+     "name": "Youth",
+     "parent": "blanks-apparel",
+     "count": 11,
+     "direct_count": 11,
+     "representative_image": {
+      "product_id": 61939,
+      "product_slug": "youth-gildan-softstyle",
+      "image_n": 1,
+      "src": "assets/img/products/youth-gildan-softstyle-1-800.jpg",
+      "webp": {
+       "400": "assets/img/products/youth-gildan-softstyle-1-400.webp",
+       "800": "assets/img/products/youth-gildan-softstyle-1-800.webp"
+      },
+      "srcset_webp": "assets/img/products/youth-gildan-softstyle-1-400.webp 400w, assets/img/products/youth-gildan-softstyle-1-800.webp 800w",
+      "alt": "Child wearing a royal blue youth short sleeve tee",
+      "width": 800,
+      "height": 1000,
+      "hero_ok": true,
+      "quality_note": null
+     },
+     "needs_photo": false,
+     "product_ids": [
+      61939,
+      61572,
+      59348,
+      59251,
+      59215,
+      51938,
+      49677,
+      24830,
+      11422,
+      8439,
+      8353
+     ]
+    },
+    {
+     "slug": "apparel-toddler-infants",
+     "name": "Toddler and Infants",
+     "parent": "blanks-apparel",
+     "count": 13,
+     "direct_count": 13,
+     "representative_image": {
+      "product_id": 59311,
+      "product_slug": "rabbit-skins-toddler-sweatshirt",
+      "image_n": 1,
+      "src": "assets/img/products/rabbit-skins-toddler-sweatshirt-1-800.jpg",
+      "webp": {
+       "400": "assets/img/products/rabbit-skins-toddler-sweatshirt-1-400.webp",
+       "800": "assets/img/products/rabbit-skins-toddler-sweatshirt-1-800.webp",
+       "1200": "assets/img/products/rabbit-skins-toddler-sweatshirt-1-1200.webp"
+      },
+      "srcset_webp": "assets/img/products/rabbit-skins-toddler-sweatshirt-1-400.webp 400w, assets/img/products/rabbit-skins-toddler-sweatshirt-1-800.webp 800w, assets/img/products/rabbit-skins-toddler-sweatshirt-1-1200.webp 1200w",
+      "alt": "Toddler sweatshirts in blue, navy, pink, purple and black hanging on a shop wall",
+      "width": 800,
+      "height": 637,
+      "hero_ok": true,
+      "quality_note": null
+     },
+     "needs_photo": false,
+     "product_ids": [
+      63011,
+      59311,
+      55375,
+      48230,
+      48224,
+      48223,
+      48222,
+      48217,
+      48215,
+      11434,
+      10947,
+      10188,
+      10181
+     ]
+    },
+    {
+     "slug": "apparel-ladies",
+     "name": "Ladies",
+     "parent": "blanks-apparel",
+     "count": 6,
+     "direct_count": 6,
+     "representative_image": {
+      "product_id": 59570,
+      "product_slug": "bella-flowy-crop-tee",
+      "image_n": 1,
+      "src": "assets/img/products/bella-flowy-crop-tee-1-800.jpg",
+      "webp": {
+       "400": "assets/img/products/bella-flowy-crop-tee-1-400.webp",
+       "800": "assets/img/products/bella-flowy-crop-tee-1-800.webp"
+      },
+      "srcset_webp": "assets/img/products/bella-flowy-crop-tee-1-400.webp 400w, assets/img/products/bella-flowy-crop-tee-1-800.webp 800w",
+      "alt": "Black cropped tee on a white background",
+      "width": 800,
+      "height": 716,
+      "hero_ok": true,
+      "quality_note": null
+     },
+     "needs_photo": false,
+     "product_ids": [
+      65365,
+      59639,
+      59570,
+      56423,
+      19045,
+      11443
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "patches",
+   "name": "Patches",
+   "parent": null,
+   "count": 20,
+   "direct_count": 20,
+   "representative_image": {
+    "product_id": 66239,
+    "product_slug": "sequin-game-day-patch",
+    "image_n": 1,
+    "src": "assets/img/products/sequin-game-day-patch-1-800.jpg",
+    "webp": {
+     "400": "assets/img/products/sequin-game-day-patch-1-400.webp",
+     "800": "assets/img/products/sequin-game-day-patch-1-800.webp",
+     "1200": "assets/img/products/sequin-game-day-patch-1-1200.webp"
+    },
+    "srcset_webp": "assets/img/products/sequin-game-day-patch-1-400.webp 400w, assets/img/products/sequin-game-day-patch-1-800.webp 800w, assets/img/products/sequin-game-day-patch-1-1200.webp 1200w",
+    "alt": "Blue sequin \"Game Day\" patch with a football held in a hand",
+    "width": 800,
+    "height": 800,
+    "hero_ok": true,
+    "quality_note": null
+   },
+   "needs_photo": false,
+   "product_ids": [
+    67661,
+    65886,
+    66239,
+    62428,
+    59291,
+    61271,
+    61202,
+    67272,
+    67270,
+    67057,
+    66734,
+    66544,
+    65989,
+    65987,
+    65882,
+    62120,
+    61636,
+    61635,
+    61634,
+    59844
+   ],
+   "children": [
+    {
+     "slug": "patches-sequin",
+     "name": "Sequin Patches",
+     "parent": "patches",
+     "count": 10,
+     "direct_count": 10,
+     "representative_image": {
+      "product_id": 67661,
+      "product_slug": "saints-sequin-patches",
+      "image_n": 3,
+      "src": "assets/img/products/saints-sequin-patches-3-800.jpg",
+      "webp": {
+       "400": "assets/img/products/saints-sequin-patches-3-400.webp",
+       "800": "assets/img/products/saints-sequin-patches-3-800.webp",
+       "1200": "assets/img/products/saints-sequin-patches-3-1200.webp"
+      },
+      "srcset_webp": "assets/img/products/saints-sequin-patches-3-400.webp 400w, assets/img/products/saints-sequin-patches-3-800.webp 800w, assets/img/products/saints-sequin-patches-3-1200.webp 1200w",
+      "alt": "Black and gold sequin \"Let's go Saints\" patch held up in the shop",
+      "width": 800,
+      "height": 800,
+      "hero_ok": true,
+      "quality_note": null
+     },
+     "needs_photo": false,
+     "product_ids": [
+      67661,
+      66239,
+      61202,
+      67057,
+      66734,
+      66544,
+      65989,
+      65987,
+      62120,
+      59844
+     ]
+    },
+    {
+     "slug": "patches-puff",
+     "name": "Puff Embroidered Patches",
+     "parent": "patches",
+     "count": 4,
+     "direct_count": 4,
+     "representative_image": {
+      "product_id": 65886,
+      "product_slug": "puff-embroidery-mascot-patch",
+      "image_n": 2,
+      "src": "assets/img/products/puff-embroidery-mascot-patch-2-800.jpg",
+      "webp": {
+       "400": "assets/img/products/puff-embroidery-mascot-patch-2-400.webp",
+       "800": "assets/img/products/puff-embroidery-mascot-patch-2-800.webp",
+       "1200": "assets/img/products/puff-embroidery-mascot-patch-2-1200.webp"
+      },
+      "srcset_webp": "assets/img/products/puff-embroidery-mascot-patch-2-400.webp 400w, assets/img/products/puff-embroidery-mascot-patch-2-800.webp 800w, assets/img/products/puff-embroidery-mascot-patch-2-1200.webp 1200w",
+      "alt": "Four puff embroidered mascot patches reading Lions, Tigers, Spartans and Warriors held in hands",
+      "width": 800,
+      "height": 800,
+      "hero_ok": true,
+      "quality_note": null
+     },
+     "needs_photo": false,
+     "product_ids": [
+      65886,
+      67272,
+      67270,
+      65882
+     ]
+    },
+    {
+     "slug": "patches-chenille",
+     "name": "Chenille Patches",
+     "parent": "patches",
+     "count": 2,
+     "direct_count": 2,
+     "representative_image": {
+      "product_id": 62428,
+      "product_slug": "god-is-good-chenille-patch",
+      "image_n": 2,
+      "src": "assets/img/products/god-is-good-chenille-patch-2-800.jpg",
+      "webp": {
+       "400": "assets/img/products/god-is-good-chenille-patch-2-400.webp",
+       "800": "assets/img/products/god-is-good-chenille-patch-2-800.webp",
+       "1200": "assets/img/products/god-is-good-chenille-patch-2-1200.webp"
+      },
+      "srcset_webp": "assets/img/products/god-is-good-chenille-patch-2-400.webp 400w, assets/img/products/god-is-good-chenille-patch-2-800.webp 800w, assets/img/products/god-is-good-chenille-patch-2-1200.webp 1200w",
+      "alt": "Light blue \"God is Good all the time\" chenille patch held in a hand in front of shelves of vinyl",
+      "width": 800,
+      "height": 800,
+      "hero_ok": true,
+      "quality_note": null
+     },
+     "needs_photo": false,
+     "product_ids": [
+      62428,
+      59291
+     ]
+    },
+    {
+     "slug": "patches-rhinestone",
+     "name": "Rhinestone Patches",
+     "parent": "patches",
+     "count": 3,
+     "direct_count": 3,
+     "representative_image": {
+      "product_id": 61634,
+      "product_slug": "jaguars-embroidered-rhinestone-patch",
+      "image_n": 1,
+      "src": "assets/img/products/jaguars-embroidered-rhinestone-patch-1-800.jpg",
+      "webp": {
+       "400": "assets/img/products/jaguars-embroidered-rhinestone-patch-1-400.webp",
+       "800": "assets/img/products/jaguars-embroidered-rhinestone-patch-1-800.webp",
+       "1200": "assets/img/products/jaguars-embroidered-rhinestone-patch-1-1200.webp"
+      },
+      "srcset_webp": "assets/img/products/jaguars-embroidered-rhinestone-patch-1-400.webp 400w, assets/img/products/jaguars-embroidered-rhinestone-patch-1-800.webp 800w, assets/img/products/jaguars-embroidered-rhinestone-patch-1-1200.webp 1200w",
+      "alt": "Blue and gold \"Jaguars\" embroidered rhinestone patch on a whitewashed wood background",
+      "width": 800,
+      "height": 800,
+      "hero_ok": true,
+      "quality_note": null
+     },
+     "needs_photo": false,
+     "product_ids": [
+      61636,
+      61635,
+      61634
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "sublimation",
+   "name": "Sublimation",
+   "parent": null,
+   "count": 28,
+   "direct_count": 28,
+   "representative_image": {
+    "product_id": 53470,
+    "product_slug": "sublimation-handkerchief",
+    "image_n": 1,
+    "src": "assets/img/products/sublimation-handkerchief-1-800.jpg",
+    "webp": {
+     "400": "assets/img/products/sublimation-handkerchief-1-400.webp",
+     "800": "assets/img/products/sublimation-handkerchief-1-800.webp",
+     "1200": "assets/img/products/sublimation-handkerchief-1-1200.webp"
+    },
+    "srcset_webp": "assets/img/products/sublimation-handkerchief-1-400.webp 400w, assets/img/products/sublimation-handkerchief-1-800.webp 800w, assets/img/products/sublimation-handkerchief-1-1200.webp 1200w",
+    "alt": "Stack of white sublimation handkerchiefs on whitewashed wood",
+    "width": 800,
+    "height": 800,
+    "hero_ok": true,
+    "quality_note": null
+   },
+   "needs_photo": false,
+   "product_ids": [
+    62876,
+    62873,
+    62869,
+    62867,
+    59609,
+    59338,
+    53470,
+    53023,
+    53011,
+    48230,
+    48224,
+    48223,
+    48222,
+    48217,
+    48215,
+    47181,
+    29073,
+    27644,
+    19045,
+    18848,
+    18842,
+    13489,
+    11443,
+    11434,
+    11422,
+    11016,
+    10240,
+    10204
+   ],
+   "children": [
+    {
+     "slug": "sublimation-apparel",
+     "name": "Sublimation Apparel",
+     "parent": "sublimation",
+     "count": 8,
+     "direct_count": 8,
+     "representative_image": {
+      "product_id": 53023,
+      "product_slug": "a4-drifit-sublimation-tee-100-poly",
+      "image_n": 1,
+      "src": "assets/img/products/a4-drifit-sublimation-tee-100-poly-1-800.jpg",
+      "webp": {
+       "400": "assets/img/products/a4-drifit-sublimation-tee-100-poly-1-400.webp",
+       "800": "assets/img/products/a4-drifit-sublimation-tee-100-poly-1-800.webp",
+       "1200": "assets/img/products/a4-drifit-sublimation-tee-100-poly-1-1200.webp"
+      },
+      "srcset_webp": "assets/img/products/a4-drifit-sublimation-tee-100-poly-1-400.webp 400w, assets/img/products/a4-drifit-sublimation-tee-100-poly-1-800.webp 800w, assets/img/products/a4-drifit-sublimation-tee-100-poly-1-1200.webp 1200w",
+      "alt": "Man wearing a gray performance tee",
+      "width": 800,
+      "height": 680,
+      "hero_ok": true,
+      "quality_note": null
+     },
+     "needs_photo": false,
+     "product_ids": [
+      53023,
+      53011,
+      48230,
+      48224,
+      19045,
+      11443,
+      11434,
+      11422
+     ]
+    },
+    {
+     "slug": "sublimation-drinkware",
+     "name": "Drinkware",
+     "parent": "sublimation",
+     "count": 2,
+     "direct_count": 2,
+     "representative_image": {
+      "product_id": 10204,
+      "product_slug": "ceramic-mug",
+      "image_n": 1,
+      "src": "assets/img/products/ceramic-mug-1-800.jpg",
+      "webp": {
+       "400": "assets/img/products/ceramic-mug-1-400.webp",
+       "800": "assets/img/products/ceramic-mug-1-800.webp",
+       "1200": "assets/img/products/ceramic-mug-1-1200.webp"
+      },
+      "srcset_webp": "assets/img/products/ceramic-mug-1-400.webp 400w, assets/img/products/ceramic-mug-1-800.webp 800w, assets/img/products/ceramic-mug-1-1200.webp 1200w",
+      "alt": "White 11 ounce ceramic mug",
+      "width": 800,
+      "height": 800,
+      "hero_ok": false,
+      "quality_note": "Best available photo is below hero quality"
+     },
+     "needs_photo": true,
+     "product_ids": [
+      27644,
+      10204
+     ]
+    },
+    {
+     "slug": "sublimation-blanks",
+     "name": "Other Sublimation Blanks",
+     "parent": "sublimation",
+     "count": 15,
+     "direct_count": 15,
+     "representative_image": {
+      "product_id": 53470,
+      "product_slug": "sublimation-handkerchief",
+      "image_n": 1,
+      "src": "assets/img/products/sublimation-handkerchief-1-800.jpg",
+      "webp": {
+       "400": "assets/img/products/sublimation-handkerchief-1-400.webp",
+       "800": "assets/img/products/sublimation-handkerchief-1-800.webp",
+       "1200": "assets/img/products/sublimation-handkerchief-1-1200.webp"
+      },
+      "srcset_webp": "assets/img/products/sublimation-handkerchief-1-400.webp 400w, assets/img/products/sublimation-handkerchief-1-800.webp 800w, assets/img/products/sublimation-handkerchief-1-1200.webp 1200w",
+      "alt": "Stack of white sublimation handkerchiefs on whitewashed wood",
+      "width": 800,
+      "height": 800,
+      "hero_ok": true,
+      "quality_note": null
+     },
+     "needs_photo": false,
+     "product_ids": [
+      62876,
+      62873,
+      62869,
+      62867,
+      59609,
+      59338,
+      53470,
+      48223,
+      48222,
+      48217,
+      48215,
+      47181,
+      29073,
+      13489,
+      10240
+     ]
+    },
+    {
+     "slug": "sublimation-supplies",
+     "name": "Sublimation Supplies",
+     "parent": "sublimation",
+     "count": 3,
+     "direct_count": 3,
+     "representative_image": {
+      "product_id": 18848,
+      "product_slug": "sublimation-shrink-wrap-film",
+      "image_n": 1,
+      "src": "assets/img/products/sublimation-shrink-wrap-film-1-400.jpg",
+      "webp": {
+       "400": "assets/img/products/sublimation-shrink-wrap-film-1-400.webp"
+      },
+      "srcset_webp": "assets/img/products/sublimation-shrink-wrap-film-1-400.webp 400w",
+      "alt": "Sheets of sublimation shrink wrap film with a shrink-wrapped cup",
+      "width": 400,
+      "height": 400,
+      "hero_ok": false,
+      "quality_note": "Best available photo is below hero quality: modest_resolution"
+     },
+     "needs_photo": true,
+     "product_ids": [
+      18848,
+      18842,
+      11016
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "accessories",
+   "name": "Accessories",
+   "parent": null,
+   "count": 11,
+   "direct_count": 11,
+   "representative_image": {
+    "product_id": 56227,
+    "product_slug": "weeding-pen",
+    "image_n": 1,
+    "src": "assets/img/products/weeding-pen-1-800.jpg",
+    "webp": {
+     "400": "assets/img/products/weeding-pen-1-400.webp",
+     "800": "assets/img/products/weeding-pen-1-800.webp",
+     "1200": "assets/img/products/weeding-pen-1-1200.webp"
+    },
+    "srcset_webp": "assets/img/products/weeding-pen-1-400.webp 400w, assets/img/products/weeding-pen-1-800.webp 800w, assets/img/products/weeding-pen-1-1200.webp 1200w",
+    "alt": "Row of weeding pens with pastel mermaid-scale patterns and rose gold tips",
+    "width": 800,
+    "height": 800,
+    "hero_ok": true,
+    "quality_note": null
+   },
+   "needs_photo": false,
+   "product_ids": [
+    64626,
+    62288,
+    56713,
+    56232,
+    56227,
+    53906,
+    53897,
+    53889,
+    18842,
+    11470,
+    11016
+   ],
+   "children": []
+  },
+  {
+   "slug": "mardi-gras",
+   "name": "Mardi Gras",
+   "parent": null,
+   "count": 5,
+   "direct_count": 5,
+   "representative_image": {
+    "product_id": 61271,
+    "product_slug": "balloon-dog-sequin-patch-3",
+    "image_n": 1,
+    "src": "assets/img/products/balloon-dog-sequin-patch-3-1-800.jpg",
+    "webp": {
+     "400": "assets/img/products/balloon-dog-sequin-patch-3-1-400.webp",
+     "800": "assets/img/products/balloon-dog-sequin-patch-3-1-800.webp",
+     "1200": "assets/img/products/balloon-dog-sequin-patch-3-1-1200.webp"
+    },
+    "srcset_webp": "assets/img/products/balloon-dog-sequin-patch-3-1-400.webp 400w, assets/img/products/balloon-dog-sequin-patch-3-1-800.webp 800w, assets/img/products/balloon-dog-sequin-patch-3-1-1200.webp 1200w",
+    "alt": "Large green, gold and purple sequin Mardi Gras bow held in a hand",
+    "width": 800,
+    "height": 1067,
+    "hero_ok": true,
+    "quality_note": null
+   },
+   "needs_photo": false,
+   "product_ids": [
+    61271,
+    61202,
+    61236,
+    61235,
+    61231
+   ],
+   "children": []
+  },
+  {
+   "slug": "gift-cards",
+   "name": "Gift Cards",
+   "parent": null,
+   "count": 1,
+   "direct_count": 1,
+   "representative_image": {
+    "product_id": 10473,
+    "product_slug": "gift-card-physical",
+    "image_n": 1,
+    "src": "assets/img/products/gift-card-physical-1-249.jpg",
+    "webp": {
+     "249": "assets/img/products/gift-card-physical-1-249.webp"
+    },
+    "srcset_webp": "assets/img/products/gift-card-physical-1-249.webp 249w",
+    "alt": "Red physical gift card design with an older M&M Vinyl and More logo and the shop phone number",
+    "width": 249,
+    "height": 157,
+    "hero_ok": false,
+    "quality_note": "Best available photo is below hero quality: old_logo_and_more, low_resolution"
+   },
+   "needs_photo": true,
+   "product_ids": [
+    10473
+   ],
+   "children": []
+  }
+ ]
+}

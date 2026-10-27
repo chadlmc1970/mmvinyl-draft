@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "schema_version": "1.1",
+    "sample": true,
+    "sample_note": "Sample data. Figures are illustrative except where a field is marked real.",
+    "generated_at": "2026-10-26T12:00:00-05:00",
+    "as_of": "2026-10-26T11:42:00-05:00",
+    "timezone": "America/Chicago",
+    "currency": "USD",
+    "money_unit": "cents",
+    "source": "Google Business Profile API (needs access). The two quotes are real, copied from her live site.",
+    "real_fields": [
+      "featured"
+    ]
+  },
+  "profile": {
+    "rating": null,
+    "review_count": null,
+    "primary_category": null,
+    "note": "Rating, count and category come from the Business Profile API once connected."
+  },
+  "featured": [
+    {
+      "id": "live-review-1",
+      "quote": "Awesome love the atmosphere. Wonderful customer services. Way cheaper then other places even if u pay for shipping. One of my package gotten lost. In the mail, the owners husband to delivery personally to my house with my second order that I placed a few after that order",
+      "reviewer": "Manwah Z.",
+      "platform": "Shown on live site (platform to confirm)",
+      "replied": null
+    },
+    {
+      "id": "live-review-2",
+      "quote": "I can’t stress how much I LOVE this place! Everyone is so helpful and nice! Whether you buy one item or 20 items, you get the same attention and great customer service!",
+      "reviewer": "Sharonda B.",
+      "platform": "Shown on live site (platform to confirm)",
+      "replied": null
+    }
+  ],
+  "checklist": [
+    {
+      "item": "Primary category set to the closest DTF type",
+      "state": "to_do",
+      "note": "Confirm the category names inside her profile"
+    },
+    {
+      "item": "DTF services and products listed",
+      "state": "to_do",
+      "note": null
+    },
+    {
+      "item": "Hours with holiday overrides",
+      "state": "to_do",
+      "note": "Live banner still shows a Labor Day closure"
+    },
+    {
+      "item": "Weekly photo",
+      "state": "to_do",
+      "note": null
+    },
+    {
+      "item": "Post the cutoff and new drops",
+      "state": "to_do",
+      "note": null
+    },
+    {
+      "item": "Reply to every review",
+      "state": "to_do",
+      "note": null
+    }
+  ]
+}

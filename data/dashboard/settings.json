@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "schema_version": "1.1",
+    "sample": true,
+    "sample_note": "Sample data. Figures are illustrative except where a field is marked real.",
+    "generated_at": "2026-10-26T12:00:00-05:00",
+    "as_of": "2026-10-26T11:42:00-05:00",
+    "timezone": "America/Chicago",
+    "currency": "USD",
+    "money_unit": "cents",
+    "source": "Her live site settings (real) and editable preferences",
+    "real_fields": [
+      "cutoffs",
+      "hours",
+      "printers"
+    ]
+  },
+  "cutoffs": {
+    "weekday": "14:00",
+    "saturday": "10:00",
+    "timezone": "America/Chicago",
+    "real": true
+  },
+  "hours": [
+    {
+      "days": "Mon to Fri",
+      "open": "08:30",
+      "close": "17:00"
+    },
+    {
+      "days": "Sat",
+      "open": "09:00",
+      "close": "13:00"
+    },
+    {
+      "days": "Sun",
+      "open": null,
+      "close": null
+    }
+  ],
+  "holiday_overrides": [],
+  "banner": {
+    "text": "DTF: Order by 2 PM M-F & 10 AM SAT FOR SAME-DAY PRINTS",
+    "enabled": true,
+    "source": "Live site announcement bar"
+  },
+  "banner_presets": [
+    "DTF: Order by 2 PM M-F & 10 AM SAT FOR SAME-DAY PRINTS",
+    "Closed Thursday, Nov 26 for Thanksgiving. Back Friday at 8:30.",
+    "Mardi Gras is coming: patches and sequin in stock now"
+  ],
+  "texts": {
+    "quiet_hours": {
+      "start": "20:00",
+      "end": "08:00"
+    },
+    "send_pickup_ready_automatically": false,
+    "reminder_after_hours": 24
+  },
+  "printers": {
+    "count": 2,
+    "real": true
+  }
+}

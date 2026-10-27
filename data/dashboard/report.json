@@ -1,0 +1,184 @@
+{
+  "summary": {
+    "went_up": [
+      "October is already at 912 gang sheets, past all of September (886).",
+      "Blanks and Apparel is up 19% and DTF Gang Sheets is up 14% compared with the 28 days before.",
+      "Orders rose to 149 from 148."
+    ],
+    "needs_attention": [
+      "Sales were $9,389, down 1.7% on the week before.",
+      "4 reseller accounts are slipping (Reseller D, Reseller H, Reseller M and more) and Reseller T has gone quiet.",
+      "4 payments failed, mostly Venmo and PayPal."
+    ],
+    "next_week": [
+      "Text Reseller D and Reseller H first. They are your biggest slipping accounts.",
+      "Approve or decline the 3 waiting reseller applications.",
+      "Approve the pickup-ready text wording so those texts can go out on their own."
+    ]
+  },
+  "meta": {
+    "schema_version": "1.1",
+    "sample": true,
+    "sample_note": "Sample data. Figures are illustrative except where a field is marked real.",
+    "generated_at": "2026-10-26T12:00:00-05:00",
+    "as_of": "2026-10-26T11:42:00-05:00",
+    "timezone": "America/Chicago",
+    "currency": "USD",
+    "money_unit": "cents",
+    "source": "Weekly one-page report built from sales, gangsheets and customers (sample)"
+  },
+  "week_label": "2026-10-19 to 2026-10-24",
+  "week_start": "2026-10-19",
+  "week_end": "2026-10-24",
+  "headline": {
+    "total_cents": 938900,
+    "prior_total_cents": 954968,
+    "web_cents": 560900,
+    "store_cents": 378000,
+    "orders": 149
+  },
+  "gang_sheets": {
+    "this_week": 262,
+    "prior_week": 259,
+    "month_to_date": 912,
+    "september_baseline": 886,
+    "month_to_date_real": true,
+    "weekly_split_sample": true
+  },
+  "by_category": [
+    {
+      "category": "DTF Gang Sheets",
+      "revenue_cents": 1593682,
+      "prev_period_cents": 1400340,
+      "share_pct": 46
+    },
+    {
+      "category": "HTV Vinyl",
+      "revenue_cents": 482194,
+      "prev_period_cents": 465714,
+      "share_pct": 14
+    },
+    {
+      "category": "Blanks and Apparel",
+      "revenue_cents": 661371,
+      "prev_period_cents": 557875,
+      "share_pct": 19
+    },
+    {
+      "category": "Patches",
+      "revenue_cents": 310215,
+      "prev_period_cents": 334712,
+      "share_pct": 9
+    },
+    {
+      "category": "Sublimation",
+      "revenue_cents": 211336,
+      "prev_period_cents": 213205,
+      "share_pct": 6
+    },
+    {
+      "category": "Accessories",
+      "revenue_cents": 140578,
+      "prev_period_cents": 139456,
+      "share_pct": 4
+    },
+    {
+      "category": "Mardi Gras",
+      "revenue_cents": 71512,
+      "prev_period_cents": 69758,
+      "share_pct": 2
+    }
+  ],
+  "top_accounts": [
+    {
+      "label": "Reseller C",
+      "tier": "volume",
+      "spend_90d_cents": 1332000,
+      "last_order_at": "2026-10-24",
+      "cadence_status": "on_track"
+    },
+    {
+      "label": "Reseller D",
+      "tier": "volume",
+      "spend_90d_cents": 1053400,
+      "last_order_at": "2026-10-15",
+      "cadence_status": "slipping"
+    },
+    {
+      "label": "Reseller A",
+      "tier": "volume",
+      "spend_90d_cents": 1008000,
+      "last_order_at": "2026-10-25",
+      "cadence_status": "on_track"
+    },
+    {
+      "label": "Reseller E",
+      "tier": "volume",
+      "spend_90d_cents": 865800,
+      "last_order_at": "2026-10-25",
+      "cadence_status": "on_track"
+    },
+    {
+      "label": "Reseller B",
+      "tier": "volume",
+      "spend_90d_cents": 575000,
+      "last_order_at": "2026-10-26",
+      "cadence_status": "on_track"
+    }
+  ],
+  "reorders_due": [
+    {
+      "label": "Reseller D",
+      "days_since_last_order": 11,
+      "typical_gap_days": 4,
+      "cadence_status": "slipping"
+    },
+    {
+      "label": "Reseller H",
+      "days_since_last_order": 15,
+      "typical_gap_days": 6,
+      "cadence_status": "slipping"
+    },
+    {
+      "label": "Reseller K",
+      "days_since_last_order": 8,
+      "typical_gap_days": 7,
+      "cadence_status": "due"
+    },
+    {
+      "label": "Reseller M",
+      "days_since_last_order": 19,
+      "typical_gap_days": 9,
+      "cadence_status": "slipping"
+    },
+    {
+      "label": "Reseller O",
+      "days_since_last_order": 9,
+      "typical_gap_days": 8,
+      "cadence_status": "due"
+    },
+    {
+      "label": "Reseller Q",
+      "days_since_last_order": 24,
+      "typical_gap_days": 10,
+      "cadence_status": "slipping"
+    },
+    {
+      "label": "Reseller R",
+      "days_since_last_order": 10,
+      "typical_gap_days": 10,
+      "cadence_status": "due"
+    }
+  ],
+  "review_requests": {
+    "sent": 41,
+    "sample": true
+  },
+  "reprints": {
+    "this_week": 5,
+    "sample": true
+  },
+  "notes": [
+    "Gang sheet month totals (886 and 912) are real. Every other figure on this page is sample."
+  ]
+}

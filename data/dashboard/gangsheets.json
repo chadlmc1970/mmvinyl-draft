@@ -1,0 +1,427 @@
+{
+  "meta": {
+    "schema_version": "1.1",
+    "sample": true,
+    "sample_note": "Sample data. Figures are illustrative except where a field is marked real.",
+    "generated_at": "2026-10-26T12:00:00-05:00",
+    "as_of": "2026-10-26T11:42:00-05:00",
+    "timezone": "America/Chicago",
+    "currency": "USD",
+    "money_unit": "cents",
+    "source": "Kixxl order data (to confirm access)",
+    "real_fields": [
+      "month_totals.2026-09",
+      "month_totals.2026-10_to_date"
+    ],
+    "note": "The two monthly totals are Desiree's real counts from the Oct 26 call. The daily split, printer split and reprints are sample."
+  },
+  "month_totals": {
+    "2026-09": {
+      "total": 886,
+      "real": true,
+      "source": "Call 2026-10-26"
+    },
+    "2026-10_to_date": {
+      "total": 912,
+      "real": true,
+      "source": "Call 2026-10-26",
+      "through": "2026-10-26"
+    }
+  },
+  "printers": [
+    {
+      "id": 1,
+      "name": "Printer 1",
+      "installed": "2025-11",
+      "real": true
+    },
+    {
+      "id": 2,
+      "name": "Printer 2",
+      "installed": "2026-10-01",
+      "real": true
+    }
+  ],
+  "capacity_per_day": {
+    "printer_1": 40,
+    "printer_2": 40,
+    "placeholder": true,
+    "note": "Placeholder. Capacity per day was not given on the call. Desiree sets this."
+  },
+  "october_by_printer": {
+    "printer_1": 484,
+    "printer_2": 428
+  },
+  "today": {
+    "date": "2026-10-26",
+    "total_so_far": 40,
+    "printer_1": 18,
+    "printer_2": 22,
+    "queued_open": 25
+  },
+  "daily": [
+    {
+      "date": "2026-09-01",
+      "total": 42,
+      "printer_1": 42,
+      "printer_2": 0
+    },
+    {
+      "date": "2026-09-02",
+      "total": 30,
+      "printer_1": 30,
+      "printer_2": 0
+    },
+    {
+      "date": "2026-09-03",
+      "total": 39,
+      "printer_1": 39,
+      "printer_2": 0
+    },
+    {
+      "date": "2026-09-04",
+      "total": 28,
+      "printer_1": 28,
+      "printer_2": 0
+    },
+    {
+      "date": "2026-09-05",
+      "total": 17,
+      "printer_1": 17,
+      "printer_2": 0
+    },
+    {
+      "date": "2026-09-06",
+      "total": 0,
+      "printer_1": 0,
+      "printer_2": 0
+    },
+    {
+      "date": "2026-09-07",
+      "total": 46,
+      "printer_1": 46,
+      "printer_2": 0
+    },
+    {
+      "date": "2026-09-08",
+      "total": 40,
+      "printer_1": 40,
+      "printer_2": 0
+    },
+    {
+      "date": "2026-09-09",
+      "total": 37,
+      "printer_1": 37,
+      "printer_2": 0
+    },
+    {
+      "date": "2026-09-10",
+      "total": 30,
+      "printer_1": 30,
+      "printer_2": 0
+    },
+    {
+      "date": "2026-09-11",
+      "total": 35,
+      "printer_1": 35,
+      "printer_2": 0
+    },
+    {
+      "date": "2026-09-12",
+      "total": 19,
+      "printer_1": 19,
+      "printer_2": 0
+    },
+    {
+      "date": "2026-09-13",
+      "total": 0,
+      "printer_1": 0,
+      "printer_2": 0
+    },
+    {
+      "date": "2026-09-14",
+      "total": 48,
+      "printer_1": 48,
+      "printer_2": 0
+    },
+    {
+      "date": "2026-09-15",
+      "total": 42,
+      "printer_1": 42,
+      "printer_2": 0
+    },
+    {
+      "date": "2026-09-16",
+      "total": 38,
+      "printer_1": 38,
+      "printer_2": 0
+    },
+    {
+      "date": "2026-09-17",
+      "total": 32,
+      "printer_1": 32,
+      "printer_2": 0
+    },
+    {
+      "date": "2026-09-18",
+      "total": 31,
+      "printer_1": 31,
+      "printer_2": 0
+    },
+    {
+      "date": "2026-09-19",
+      "total": 18,
+      "printer_1": 18,
+      "printer_2": 0
+    },
+    {
+      "date": "2026-09-20",
+      "total": 0,
+      "printer_1": 0,
+      "printer_2": 0
+    },
+    {
+      "date": "2026-09-21",
+      "total": 39,
+      "printer_1": 39,
+      "printer_2": 0
+    },
+    {
+      "date": "2026-09-22",
+      "total": 33,
+      "printer_1": 33,
+      "printer_2": 0
+    },
+    {
+      "date": "2026-09-23",
+      "total": 31,
+      "printer_1": 31,
+      "printer_2": 0
+    },
+    {
+      "date": "2026-09-24",
+      "total": 37,
+      "printer_1": 37,
+      "printer_2": 0
+    },
+    {
+      "date": "2026-09-25",
+      "total": 33,
+      "printer_1": 33,
+      "printer_2": 0
+    },
+    {
+      "date": "2026-09-26",
+      "total": 15,
+      "printer_1": 15,
+      "printer_2": 0
+    },
+    {
+      "date": "2026-09-27",
+      "total": 0,
+      "printer_1": 0,
+      "printer_2": 0
+    },
+    {
+      "date": "2026-09-28",
+      "total": 46,
+      "printer_1": 46,
+      "printer_2": 0
+    },
+    {
+      "date": "2026-09-29",
+      "total": 40,
+      "printer_1": 40,
+      "printer_2": 0
+    },
+    {
+      "date": "2026-09-30",
+      "total": 40,
+      "printer_1": 40,
+      "printer_2": 0
+    },
+    {
+      "date": "2026-10-01",
+      "total": 40,
+      "printer_1": 22,
+      "printer_2": 18
+    },
+    {
+      "date": "2026-10-02",
+      "total": 36,
+      "printer_1": 18,
+      "printer_2": 18
+    },
+    {
+      "date": "2026-10-03",
+      "total": 20,
+      "printer_1": 10,
+      "printer_2": 10
+    },
+    {
+      "date": "2026-10-04",
+      "total": 0,
+      "printer_1": 0,
+      "printer_2": 0
+    },
+    {
+      "date": "2026-10-05",
+      "total": 58,
+      "printer_1": 30,
+      "printer_2": 28
+    },
+    {
+      "date": "2026-10-06",
+      "total": 48,
+      "printer_1": 27,
+      "printer_2": 21
+    },
+    {
+      "date": "2026-10-07",
+      "total": 44,
+      "printer_1": 24,
+      "printer_2": 20
+    },
+    {
+      "date": "2026-10-08",
+      "total": 51,
+      "printer_1": 29,
+      "printer_2": 22
+    },
+    {
+      "date": "2026-10-09",
+      "total": 36,
+      "printer_1": 21,
+      "printer_2": 15
+    },
+    {
+      "date": "2026-10-10",
+      "total": 18,
+      "printer_1": 10,
+      "printer_2": 8
+    },
+    {
+      "date": "2026-10-11",
+      "total": 0,
+      "printer_1": 0,
+      "printer_2": 0
+    },
+    {
+      "date": "2026-10-12",
+      "total": 56,
+      "printer_1": 31,
+      "printer_2": 25
+    },
+    {
+      "date": "2026-10-13",
+      "total": 54,
+      "printer_1": 29,
+      "printer_2": 25
+    },
+    {
+      "date": "2026-10-14",
+      "total": 37,
+      "printer_1": 19,
+      "printer_2": 18
+    },
+    {
+      "date": "2026-10-15",
+      "total": 48,
+      "printer_1": 25,
+      "printer_2": 23
+    },
+    {
+      "date": "2026-10-16",
+      "total": 43,
+      "printer_1": 23,
+      "printer_2": 20
+    },
+    {
+      "date": "2026-10-17",
+      "total": 21,
+      "printer_1": 12,
+      "printer_2": 9
+    },
+    {
+      "date": "2026-10-18",
+      "total": 0,
+      "printer_1": 0,
+      "printer_2": 0
+    },
+    {
+      "date": "2026-10-19",
+      "total": 46,
+      "printer_1": 24,
+      "printer_2": 22
+    },
+    {
+      "date": "2026-10-20",
+      "total": 53,
+      "printer_1": 27,
+      "printer_2": 26
+    },
+    {
+      "date": "2026-10-21",
+      "total": 45,
+      "printer_1": 25,
+      "printer_2": 20
+    },
+    {
+      "date": "2026-10-22",
+      "total": 51,
+      "printer_1": 26,
+      "printer_2": 25
+    },
+    {
+      "date": "2026-10-23",
+      "total": 46,
+      "printer_1": 23,
+      "printer_2": 23
+    },
+    {
+      "date": "2026-10-24",
+      "total": 21,
+      "printer_1": 11,
+      "printer_2": 10
+    },
+    {
+      "date": "2026-10-25",
+      "total": 0,
+      "printer_1": 0,
+      "printer_2": 0
+    },
+    {
+      "date": "2026-10-26",
+      "total": 40,
+      "printer_1": 18,
+      "printer_2": 22
+    }
+  ],
+  "reprints": {
+    "2026-09": 24,
+    "2026-10_to_date": 21,
+    "reasons": [
+      {
+        "reason": "Background not transparent",
+        "count": 7
+      },
+      {
+        "reason": "Low resolution artwork",
+        "count": 5
+      },
+      {
+        "reason": "Banding or head clog",
+        "count": 4
+      },
+      {
+        "reason": "Color complaint",
+        "count": 3
+      },
+      {
+        "reason": "Wrong size ordered",
+        "count": 2
+      }
+    ],
+    "sample": true
+  }
+}

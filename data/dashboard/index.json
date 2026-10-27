@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "schema_version": "1.1",
+    "sample": true,
+    "sample_note": "Sample data. Figures are illustrative except where a field is marked real.",
+    "generated_at": "2026-10-26T12:00:00-05:00",
+    "as_of": "2026-10-26T11:42:00-05:00",
+    "timezone": "America/Chicago",
+    "currency": "USD",
+    "money_unit": "cents",
+    "source": "Manifest"
+  },
+  "files": [
+    "kpis.json",
+    "queue.json",
+    "orders.json",
+    "customers.json",
+    "gangsheets.json",
+    "sales.json",
+    "payments.json",
+    "shipments.json",
+    "messages.json",
+    "reviews.json",
+    "inventory.json",
+    "integrations.json",
+    "settings.json",
+    "report.json"
+  ]
+}

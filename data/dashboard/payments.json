@@ -1,0 +1,168 @@
+{
+  "meta": {
+    "schema_version": "1.1",
+    "sample": true,
+    "sample_note": "Sample data. Figures are illustrative except where a field is marked real.",
+    "generated_at": "2026-10-26T12:00:00-05:00",
+    "as_of": "2026-10-26T11:42:00-05:00",
+    "timezone": "America/Chicago",
+    "currency": "USD",
+    "money_unit": "cents",
+    "source": "WooCommerce payment gateways, PayPal reporting, Shopkeep (sample). Processor not confirmed."
+  },
+  "window": "last 28 days",
+  "methods": [
+    {
+      "key": "card",
+      "label": "Cards",
+      "share_pct": 36,
+      "amount_cents": 1263462,
+      "count": 171,
+      "failed_count": 2,
+      "fail_rate_pct": 1.2,
+      "live_status": "live"
+    },
+    {
+      "key": "apple_pay",
+      "label": "Apple Pay",
+      "share_pct": 14,
+      "amount_cents": 491347,
+      "count": 66,
+      "failed_count": 0,
+      "fail_rate_pct": 0.6,
+      "live_status": "planned"
+    },
+    {
+      "key": "google_pay",
+      "label": "Google Pay",
+      "share_pct": 7,
+      "amount_cents": 245673,
+      "count": 33,
+      "failed_count": 0,
+      "fail_rate_pct": 0.8,
+      "live_status": "planned"
+    },
+    {
+      "key": "paypal",
+      "label": "PayPal",
+      "share_pct": 22,
+      "amount_cents": 772116,
+      "count": 104,
+      "failed_count": 4,
+      "fail_rate_pct": 3.4,
+      "live_status": "live_intermittent"
+    },
+    {
+      "key": "venmo",
+      "label": "Venmo",
+      "share_pct": 13,
+      "amount_cents": 456250,
+      "count": 62,
+      "failed_count": 3,
+      "fail_rate_pct": 5.1,
+      "live_status": "live_intermittent"
+    },
+    {
+      "key": "cash",
+      "label": "Cash (store)",
+      "share_pct": 8,
+      "amount_cents": 280769,
+      "count": 38,
+      "failed_count": 0,
+      "fail_rate_pct": 0,
+      "live_status": "live"
+    }
+  ],
+  "failures": [
+    {
+      "id": "fail_1",
+      "date": "2026-10-26",
+      "method": "venmo",
+      "reason": "Venmo funding step did not complete (sample)",
+      "order_number": "S-1049",
+      "recovered": false
+    },
+    {
+      "id": "fail_2",
+      "date": "2026-10-25",
+      "method": "paypal",
+      "reason": "PayPal window closed before approval (sample)",
+      "order_number": "S-1033",
+      "recovered": true
+    },
+    {
+      "id": "fail_3",
+      "date": "2026-10-24",
+      "method": "venmo",
+      "reason": "Venmo returned to checkout with an error (sample)",
+      "order_number": "S-1021",
+      "recovered": false
+    },
+    {
+      "id": "fail_4",
+      "date": "2026-10-23",
+      "method": "venmo",
+      "reason": "Venmo funding step did not complete (sample)",
+      "order_number": "S-1016",
+      "recovered": false
+    },
+    {
+      "id": "fail_5",
+      "date": "2026-10-22",
+      "method": "paypal",
+      "reason": "PayPal declined: funding source (sample)",
+      "order_number": "S-1008",
+      "recovered": true
+    },
+    {
+      "id": "fail_6",
+      "date": "2026-10-20",
+      "method": "card",
+      "reason": "Card declined by issuer (sample)",
+      "order_number": "S-0997",
+      "recovered": false
+    }
+  ],
+  "payouts": [
+    {
+      "id": "po_1",
+      "date": "2026-10-26",
+      "source": "Card processor (to confirm)",
+      "state": "in_transit",
+      "amount_cents": 482600
+    },
+    {
+      "id": "po_2",
+      "date": "2026-10-23",
+      "source": "Card processor (to confirm)",
+      "state": "paid",
+      "amount_cents": 1184200
+    },
+    {
+      "id": "po_3",
+      "date": "2026-10-22",
+      "source": "PayPal (to confirm)",
+      "state": "paid",
+      "amount_cents": 436900
+    },
+    {
+      "id": "po_4",
+      "date": "2026-10-21",
+      "source": "Card processor (to confirm)",
+      "state": "paid",
+      "amount_cents": 958400
+    },
+    {
+      "id": "po_5",
+      "date": "2026-10-16",
+      "source": "PayPal (to confirm)",
+      "state": "paid",
+      "amount_cents": 402500
+    }
+  ],
+  "web_vs_store": {
+    "web_cents": 2052420,
+    "store_cents": 1457198
+  },
+  "note": "Venmo and PayPal fail intermittently today (per the call). Apple Pay and Google Pay are planned, not live."
+}

@@ -1,0 +1,3407 @@
+{
+  "meta": {
+    "schema_version": "1.1",
+    "sample": true,
+    "sample_note": "Sample data. Figures are illustrative except where a field is marked real.",
+    "generated_at": "2026-10-26T12:00:00-05:00",
+    "as_of": "2026-10-26T11:42:00-05:00",
+    "timezone": "America/Chicago",
+    "currency": "USD",
+    "money_unit": "cents",
+    "source": "WooCommerce orders and Shopkeep sales (sample)",
+    "statuses": [
+      "new",
+      "art_check",
+      "printing",
+      "on_hold",
+      "payment_failed",
+      "ready",
+      "picked_up",
+      "shipped"
+    ]
+  },
+  "orders": [
+    {
+      "id": "ord_s_1070",
+      "number": "S-1070",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_t",
+      "customer_label": "Reseller T",
+      "created_at": "2026-10-26T11:34:00-05:00",
+      "promised_at": "2026-10-26T14:30:00-05:00",
+      "status": "printing",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF)",
+          "category": "DTF Gang Sheets",
+          "qty": 6,
+          "unit_price_cents": 1850,
+          "price_source": "sample_price_set_by_size_in_kixxl"
+        }
+      ],
+      "gang_sheets": 6,
+      "printer": 2,
+      "subtotal_cents": 11100,
+      "total_cents": 11100,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1069",
+      "number": "S-1069",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_j",
+      "customer_label": "Reseller J",
+      "created_at": "2026-10-26T11:27:00-05:00",
+      "promised_at": "2026-10-26T14:00:00-05:00",
+      "status": "printing",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF)",
+          "category": "DTF Gang Sheets",
+          "qty": 2,
+          "unit_price_cents": 1850,
+          "price_source": "sample_price_set_by_size_in_kixxl"
+        }
+      ],
+      "gang_sheets": 2,
+      "printer": 2,
+      "subtotal_cents": 3700,
+      "total_cents": 3700,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1068",
+      "number": "S-1068",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_f",
+      "customer_label": "Reseller F",
+      "created_at": "2026-10-26T11:18:00-05:00",
+      "promised_at": "2026-10-26T12:45:00-05:00",
+      "status": "new",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF)",
+          "category": "DTF Gang Sheets",
+          "qty": 2,
+          "unit_price_cents": 1850,
+          "price_source": "sample_price_set_by_size_in_kixxl"
+        }
+      ],
+      "gang_sheets": 2,
+      "printer": 2,
+      "subtotal_cents": 3700,
+      "total_cents": 3700,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1067",
+      "number": "S-1067",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_r",
+      "customer_label": "Reseller R",
+      "created_at": "2026-10-26T11:09:00-05:00",
+      "promised_at": "2026-10-26T14:00:00-05:00",
+      "status": "art_check",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 62428,
+          "name": "God is Good Chenille Patch",
+          "category": "Patches",
+          "qty": 15,
+          "unit_price_cents": 800,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 9074,
+          "name": "Bella+Canvas 3001 Unisex Jersey Tee",
+          "category": "Blanks and Apparel",
+          "qty": 10,
+          "unit_price_cents": 675,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 18750,
+      "total_cents": 18750,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1066",
+      "number": "S-1066",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_b",
+      "customer_label": "Reseller B",
+      "created_at": "2026-10-26T11:00:00-05:00",
+      "promised_at": "2026-10-26T12:30:00-05:00",
+      "status": "new",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 66239,
+          "name": "Sequin Game Day Patch",
+          "category": "Patches",
+          "qty": 15,
+          "unit_price_cents": 800,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 67057,
+          "name": "Sequin Jaguars Patch",
+          "category": "Patches",
+          "qty": 23,
+          "unit_price_cents": 800,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 30400,
+      "total_cents": 30400,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1065",
+      "number": "S-1065",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_j",
+      "customer_label": "Reseller J",
+      "created_at": "2026-10-26T10:54:00-05:00",
+      "promised_at": "2026-10-26T13:30:00-05:00",
+      "status": "art_check",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 11217,
+          "name": "HTV Holographic",
+          "category": "HTV Vinyl",
+          "qty": 5,
+          "unit_price_cents": 349,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 14113,
+          "name": "HTV UltraWeed™",
+          "category": "HTV Vinyl",
+          "qty": 6,
+          "unit_price_cents": 350,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 3845,
+      "total_cents": 3845,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1064",
+      "number": "S-1064",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_a",
+      "customer_label": "Reseller A",
+      "created_at": "2026-10-26T10:50:00-05:00",
+      "promised_at": "2026-10-26T12:30:00-05:00",
+      "status": "art_check",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF)",
+          "category": "DTF Gang Sheets",
+          "qty": 8,
+          "unit_price_cents": 1850,
+          "price_source": "sample_price_set_by_size_in_kixxl"
+        },
+        {
+          "product_id": 53333,
+          "name": "3D Puff Heat Transfer Vinyl",
+          "category": "HTV Vinyl",
+          "qty": 1,
+          "unit_price_cents": 399,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 8,
+      "printer": 1,
+      "subtotal_cents": 15199,
+      "total_cents": 15199,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "apple_pay",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1063",
+      "number": "S-1063",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_t",
+      "customer_label": "Reseller T",
+      "created_at": "2026-10-26T10:41:00-05:00",
+      "promised_at": "2026-10-26T12:45:00-05:00",
+      "status": "ready",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 67057,
+          "name": "Sequin Jaguars Patch",
+          "category": "Patches",
+          "qty": 18,
+          "unit_price_cents": 800,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 49677,
+          "name": "YOUTH Bella+Canvas Jersey Tee",
+          "category": "Blanks and Apparel",
+          "qty": 6,
+          "unit_price_cents": 675,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 59348,
+          "name": "Adult Comfort Colors Tee",
+          "category": "Blanks and Apparel",
+          "qty": 36,
+          "unit_price_cents": 899,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 50814,
+      "total_cents": 50814,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": {
+        "state": "not_sent"
+      },
+      "notes": null
+    },
+    {
+      "id": "ord_s_1062",
+      "number": "S-1062",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_q",
+      "customer_label": "Reseller Q",
+      "created_at": "2026-10-26T10:33:00-05:00",
+      "promised_at": "2026-10-26T13:45:00-05:00",
+      "status": "new",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 59686,
+          "name": "Pattern HTV",
+          "category": "HTV Vinyl",
+          "qty": 5,
+          "unit_price_cents": 699,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 53897,
+          "name": "12×24 Mat",
+          "category": "Accessories",
+          "qty": 3,
+          "unit_price_cents": 799,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 65989,
+          "name": "Tigers Sequin Patch",
+          "category": "Patches",
+          "qty": 8,
+          "unit_price_cents": 800,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 12292,
+      "total_cents": 12292,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "cash",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1061",
+      "number": "S-1061",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_h",
+      "customer_label": "Reseller H",
+      "created_at": "2026-10-26T10:27:00-05:00",
+      "promised_at": "2026-10-26T12:45:00-05:00",
+      "status": "payment_failed",
+      "risk": "blocked",
+      "risk_reason": "Payment failed. Customer not charged.",
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF)",
+          "category": "DTF Gang Sheets",
+          "qty": 3,
+          "unit_price_cents": 1850,
+          "price_source": "sample_price_set_by_size_in_kixxl"
+        }
+      ],
+      "gang_sheets": 3,
+      "printer": 2,
+      "subtotal_cents": 5550,
+      "total_cents": 5550,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "venmo",
+        "state": "failed",
+        "failure_reason": "Venmo funding step did not complete (sample)"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1060",
+      "number": "S-1060",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_k",
+      "customer_label": "Reseller K",
+      "created_at": "2026-10-26T10:21:00-05:00",
+      "promised_at": "2026-10-26T12:00:00-05:00",
+      "status": "printing",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF)",
+          "category": "DTF Gang Sheets",
+          "qty": 2,
+          "unit_price_cents": 1850,
+          "price_source": "sample_price_set_by_size_in_kixxl"
+        }
+      ],
+      "gang_sheets": 2,
+      "printer": 1,
+      "subtotal_cents": 3700,
+      "total_cents": 3700,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1059",
+      "number": "S-1059",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_walkin",
+      "customer_label": "Walk-in (store)",
+      "created_at": "2026-10-26T10:18:00-05:00",
+      "promised_at": "2026-10-26T12:45:00-05:00",
+      "status": "new",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 51832,
+          "name": "Gildan Unisex Heavy Blend™ Hooded Sweatshirt",
+          "category": "Blanks and Apparel",
+          "qty": 34,
+          "unit_price_cents": 1500,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 11217,
+          "name": "HTV Holographic",
+          "category": "HTV Vinyl",
+          "qty": 1,
+          "unit_price_cents": 349,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 24830,
+          "name": "Jerzees Long Sleeve 50/50 Poly/Cotton T-Shirt",
+          "category": "Blanks and Apparel",
+          "qty": 11,
+          "unit_price_cents": 850,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 60699,
+      "total_cents": 60699,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1058",
+      "number": "S-1058",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_d",
+      "customer_label": "Reseller D",
+      "created_at": "2026-10-26T10:14:00-05:00",
+      "promised_at": "2026-10-26T11:45:00-05:00",
+      "status": "ready",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 53906,
+          "name": "Replacement Blades (5PK)",
+          "category": "Accessories",
+          "qty": 3,
+          "unit_price_cents": 599,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 8270,
+          "name": "HTV Glitter",
+          "category": "HTV Vinyl",
+          "qty": 5,
+          "unit_price_cents": 600,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 4797,
+      "total_cents": 4797,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": {
+        "state": "not_sent"
+      },
+      "notes": null
+    },
+    {
+      "id": "ord_s_1057",
+      "number": "S-1057",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_walkin",
+      "customer_label": "Walk-in (store)",
+      "created_at": "2026-10-26T10:09:00-05:00",
+      "promised_at": "2026-10-26T11:30:00-05:00",
+      "status": "ready",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 65987,
+          "name": "GEAUX Tigers Patch",
+          "category": "Patches",
+          "qty": 4,
+          "unit_price_cents": 800,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 11217,
+          "name": "HTV Holographic",
+          "category": "HTV Vinyl",
+          "qty": 3,
+          "unit_price_cents": 349,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 4247,
+      "total_cents": 4247,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": {
+        "state": "not_sent"
+      },
+      "notes": null
+    },
+    {
+      "id": "ord_s_1056",
+      "number": "S-1056",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_t1",
+      "customer_label": "Team A (sample)",
+      "created_at": "2026-10-26T10:05:00-05:00",
+      "promised_at": "2026-10-26T12:45:00-05:00",
+      "status": "printing",
+      "risk": "due_soon",
+      "risk_reason": "Promised within 80 minutes",
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF)",
+          "category": "DTF Gang Sheets",
+          "qty": 3,
+          "unit_price_cents": 1850,
+          "price_source": "sample_price_set_by_size_in_kixxl"
+        }
+      ],
+      "gang_sheets": 3,
+      "printer": 2,
+      "subtotal_cents": 5550,
+      "total_cents": 5550,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1055",
+      "number": "S-1055",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_i",
+      "customer_label": "Reseller I",
+      "created_at": "2026-10-26T10:00:00-05:00",
+      "promised_at": "2026-10-26T13:00:00-05:00",
+      "status": "new",
+      "risk": "due_soon",
+      "risk_reason": "Not started, promised within 80 minutes",
+      "lines": [
+        {
+          "product_id": 59348,
+          "name": "Adult Comfort Colors Tee",
+          "category": "Blanks and Apparel",
+          "qty": 13,
+          "unit_price_cents": 899,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 11687,
+      "total_cents": 11687,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1054",
+      "number": "S-1054",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_d",
+      "customer_label": "Reseller D",
+      "created_at": "2026-10-26T09:53:00-05:00",
+      "promised_at": "2026-10-26T11:30:00-05:00",
+      "status": "on_hold",
+      "risk": "late",
+      "risk_reason": "Art on hold: background is not transparent. Waiting on customer.",
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF)",
+          "category": "DTF Gang Sheets",
+          "qty": 2,
+          "unit_price_cents": 1850,
+          "price_source": "sample_price_set_by_size_in_kixxl"
+        },
+        {
+          "product_id": 66239,
+          "name": "Sequin Game Day Patch",
+          "category": "Patches",
+          "qty": 24,
+          "unit_price_cents": 800,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 59686,
+          "name": "Pattern HTV",
+          "category": "HTV Vinyl",
+          "qty": 4,
+          "unit_price_cents": 699,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 2,
+      "printer": 1,
+      "subtotal_cents": 25696,
+      "total_cents": 25696,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "needs_review",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1053",
+      "number": "S-1053",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_t1",
+      "customer_label": "Team A (sample)",
+      "created_at": "2026-10-26T09:48:00-05:00",
+      "promised_at": "2026-10-26T11:45:00-05:00",
+      "status": "ready",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF)",
+          "category": "DTF Gang Sheets",
+          "qty": 1,
+          "unit_price_cents": 1850,
+          "price_source": "sample_price_set_by_size_in_kixxl"
+        },
+        {
+          "product_id": 14113,
+          "name": "HTV UltraWeed™",
+          "category": "HTV Vinyl",
+          "qty": 2,
+          "unit_price_cents": 350,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 62058,
+          "name": "Siser EasyWeed HTV",
+          "category": "HTV Vinyl",
+          "qty": 1,
+          "unit_price_cents": 350,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 1,
+      "printer": 1,
+      "subtotal_cents": 2900,
+      "total_cents": 2900,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "paypal",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": {
+        "state": "not_sent"
+      },
+      "notes": null
+    },
+    {
+      "id": "ord_s_1052",
+      "number": "S-1052",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_t1",
+      "customer_label": "Team A (sample)",
+      "created_at": "2026-10-26T09:44:00-05:00",
+      "promised_at": "2026-10-26T11:15:00-05:00",
+      "status": "ready",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 59348,
+          "name": "Adult Comfort Colors Tee",
+          "category": "Blanks and Apparel",
+          "qty": 8,
+          "unit_price_cents": 899,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 9074,
+          "name": "Bella+Canvas 3001 Unisex Jersey Tee",
+          "category": "Blanks and Apparel",
+          "qty": 28,
+          "unit_price_cents": 675,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 26092,
+      "total_cents": 26092,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "cash",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": {
+        "state": "sent",
+        "sent_at": "2026-10-26T10:55:00-05:00"
+      },
+      "notes": null
+    },
+    {
+      "id": "ord_s_1051",
+      "number": "S-1051",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_c1",
+      "customer_label": "Creator C (sample)",
+      "created_at": "2026-10-26T09:35:00-05:00",
+      "promised_at": "2026-10-26T12:00:00-05:00",
+      "status": "ready",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 59291,
+          "name": "Cheer Chenille Iron-On Patch",
+          "category": "Patches",
+          "qty": 11,
+          "unit_price_cents": 1000,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 59686,
+          "name": "Pattern HTV",
+          "category": "HTV Vinyl",
+          "qty": 1,
+          "unit_price_cents": 699,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 11699,
+      "total_cents": 11699,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": {
+        "state": "not_sent"
+      },
+      "notes": null
+    },
+    {
+      "id": "ord_s_1050",
+      "number": "S-1050",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_walkin",
+      "customer_label": "Walk-in (store)",
+      "created_at": "2026-10-26T09:29:00-05:00",
+      "promised_at": "2026-10-26T12:30:00-05:00",
+      "status": "new",
+      "risk": "due_soon",
+      "risk_reason": "Not started, promised within 80 minutes",
+      "lines": [
+        {
+          "product_id": 65987,
+          "name": "GEAUX Tigers Patch",
+          "category": "Patches",
+          "qty": 19,
+          "unit_price_cents": 800,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 15200,
+      "total_cents": 15200,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "cash",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1049",
+      "number": "S-1049",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_o",
+      "customer_label": "Reseller O",
+      "created_at": "2026-10-26T09:26:00-05:00",
+      "promised_at": "2026-10-26T10:45:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 49677,
+          "name": "YOUTH Bella+Canvas Jersey Tee",
+          "category": "Blanks and Apparel",
+          "qty": 30,
+          "unit_price_cents": 675,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 53333,
+          "name": "3D Puff Heat Transfer Vinyl",
+          "category": "HTV Vinyl",
+          "qty": 1,
+          "unit_price_cents": 399,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 20649,
+      "total_cents": 20649,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": {
+        "state": "sent",
+        "sent_at": "2026-10-26T10:25:00-05:00"
+      },
+      "notes": null
+    },
+    {
+      "id": "ord_s_1048",
+      "number": "S-1048",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_g",
+      "customer_label": "Reseller G",
+      "created_at": "2026-10-26T09:17:00-05:00",
+      "promised_at": "2026-10-26T10:45:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF)",
+          "category": "DTF Gang Sheets",
+          "qty": 1,
+          "unit_price_cents": 1850,
+          "price_source": "sample_price_set_by_size_in_kixxl"
+        }
+      ],
+      "gang_sheets": 1,
+      "printer": 1,
+      "subtotal_cents": 1850,
+      "total_cents": 1850,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": {
+        "state": "sent",
+        "sent_at": "2026-10-26T10:25:00-05:00"
+      },
+      "notes": null
+    },
+    {
+      "id": "ord_s_1047",
+      "number": "S-1047",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_walkin",
+      "customer_label": "Walk-in (store)",
+      "created_at": "2026-10-26T09:08:00-05:00",
+      "promised_at": "2026-10-26T11:00:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 53333,
+          "name": "3D Puff Heat Transfer Vinyl",
+          "category": "HTV Vinyl",
+          "qty": 6,
+          "unit_price_cents": 399,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 9074,
+          "name": "Bella+Canvas 3001 Unisex Jersey Tee",
+          "category": "Blanks and Apparel",
+          "qty": 32,
+          "unit_price_cents": 675,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 59291,
+          "name": "Cheer Chenille Iron-On Patch",
+          "category": "Patches",
+          "qty": 8,
+          "unit_price_cents": 1000,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 31994,
+      "total_cents": 31994,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": {
+        "state": "sent",
+        "sent_at": "2026-10-26T10:40:00-05:00"
+      },
+      "notes": null
+    },
+    {
+      "id": "ord_s_1046",
+      "number": "S-1046",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_h",
+      "customer_label": "Reseller H",
+      "created_at": "2026-10-26T09:00:00-05:00",
+      "promised_at": "2026-10-26T10:15:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF)",
+          "category": "DTF Gang Sheets",
+          "qty": 2,
+          "unit_price_cents": 1850,
+          "price_source": "sample_price_set_by_size_in_kixxl"
+        },
+        {
+          "product_id": 67661,
+          "name": "Saints Sequin Patches",
+          "category": "Patches",
+          "qty": 20,
+          "unit_price_cents": 800,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 2,
+      "printer": 1,
+      "subtotal_cents": 19700,
+      "total_cents": 19700,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "venmo",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": {
+        "state": "sent",
+        "sent_at": "2026-10-26T09:55:00-05:00"
+      },
+      "notes": null
+    },
+    {
+      "id": "ord_s_1045",
+      "number": "S-1045",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_o",
+      "customer_label": "Reseller O",
+      "created_at": "2026-10-26T08:53:00-05:00",
+      "promised_at": "2026-10-26T10:15:00-05:00",
+      "status": "ready",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF)",
+          "category": "DTF Gang Sheets",
+          "qty": 6,
+          "unit_price_cents": 1850,
+          "price_source": "sample_price_set_by_size_in_kixxl"
+        },
+        {
+          "product_id": 62058,
+          "name": "Siser EasyWeed HTV",
+          "category": "HTV Vinyl",
+          "qty": 6,
+          "unit_price_cents": 350,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 6,
+      "printer": 2,
+      "subtotal_cents": 13200,
+      "total_cents": 13200,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "apple_pay",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": {
+        "state": "sent",
+        "sent_at": "2026-10-26T09:55:00-05:00"
+      },
+      "notes": null
+    },
+    {
+      "id": "ord_s_1044",
+      "number": "S-1044",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_c1",
+      "customer_label": "Creator C (sample)",
+      "created_at": "2026-10-26T08:49:00-05:00",
+      "promised_at": "2026-10-26T10:45:00-05:00",
+      "status": "ready",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 62058,
+          "name": "Siser EasyWeed HTV",
+          "category": "HTV Vinyl",
+          "qty": 2,
+          "unit_price_cents": 350,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 700,
+      "total_cents": 700,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "cash",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": {
+        "state": "not_sent"
+      },
+      "notes": null
+    },
+    {
+      "id": "ord_s_1043",
+      "number": "S-1043",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_walkin",
+      "customer_label": "Walk-in (store)",
+      "created_at": "2026-10-26T08:44:00-05:00",
+      "promised_at": "2026-10-26T11:30:00-05:00",
+      "status": "ready",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 62374,
+          "name": "Comfort Colors Boxy Tee",
+          "category": "Blanks and Apparel",
+          "qty": 43,
+          "unit_price_cents": 1000,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 43000,
+      "total_cents": 43000,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "cash",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": {
+        "state": "sent",
+        "sent_at": "2026-10-26T11:10:00-05:00"
+      },
+      "notes": null
+    },
+    {
+      "id": "ord_s_1042",
+      "number": "S-1042",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_q",
+      "customer_label": "Reseller Q",
+      "created_at": "2026-10-26T08:38:00-05:00",
+      "promised_at": "2026-10-26T11:00:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF)",
+          "category": "DTF Gang Sheets",
+          "qty": 2,
+          "unit_price_cents": 1850,
+          "price_source": "sample_price_set_by_size_in_kixxl"
+        }
+      ],
+      "gang_sheets": 2,
+      "printer": 1,
+      "subtotal_cents": 3700,
+      "total_cents": 3700,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": {
+        "state": "sent",
+        "sent_at": "2026-10-26T10:40:00-05:00"
+      },
+      "notes": null
+    },
+    {
+      "id": "ord_s_1041",
+      "number": "S-1041",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_walkin",
+      "customer_label": "Walk-in (store)",
+      "created_at": "2026-10-26T08:34:00-05:00",
+      "promised_at": "2026-10-26T10:15:00-05:00",
+      "status": "ready",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 59052,
+          "name": "UltraWeed Bundle",
+          "category": "HTV Vinyl",
+          "qty": 6,
+          "unit_price_cents": 1699,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 24830,
+          "name": "Jerzees Long Sleeve 50/50 Poly/Cotton T-Shirt",
+          "category": "Blanks and Apparel",
+          "qty": 12,
+          "unit_price_cents": 850,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 20394,
+      "total_cents": 20394,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": {
+        "state": "sent",
+        "sent_at": "2026-10-26T09:55:00-05:00"
+      },
+      "notes": null
+    },
+    {
+      "id": "ord_s_1075",
+      "number": "S-1075",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_b",
+      "customer_label": "Reseller B",
+      "created_at": "2026-10-24T12:05:00-05:00",
+      "promised_at": "2026-10-24T17:00:00-05:00",
+      "status": "ready",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF)",
+          "category": "DTF Gang Sheets",
+          "qty": 3,
+          "unit_price_cents": 1850,
+          "price_source": "sample_price_set_by_size_in_kixxl"
+        }
+      ],
+      "gang_sheets": 3,
+      "printer": 2,
+      "subtotal_cents": 5550,
+      "total_cents": 5550,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "apple_pay",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "fixed_by_customer",
+      "pickup_text": {
+        "state": "sent",
+        "sent_at": "2026-10-24T14:35:00-05:00",
+        "reminder_due": true
+      },
+      "notes": null
+    },
+    {
+      "id": "ord_s_1074",
+      "number": "S-1074",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_m",
+      "customer_label": "Reseller M",
+      "created_at": "2026-10-24T11:39:00-05:00",
+      "promised_at": "2026-10-24T17:00:00-05:00",
+      "status": "ready",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 56713,
+          "name": "Adhesive Transfer Tape",
+          "category": "Accessories",
+          "qty": 2,
+          "unit_price_cents": 150,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 59686,
+          "name": "Pattern HTV",
+          "category": "HTV Vinyl",
+          "qty": 5,
+          "unit_price_cents": 699,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 51832,
+          "name": "Gildan Unisex Heavy Blend™ Hooded Sweatshirt",
+          "category": "Blanks and Apparel",
+          "qty": 25,
+          "unit_price_cents": 1500,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 41295,
+      "total_cents": 41295,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "apple_pay",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": {
+        "state": "sent",
+        "sent_at": "2026-10-24T14:09:00-05:00",
+        "reminder_due": true
+      },
+      "notes": null
+    },
+    {
+      "id": "ord_s_1073",
+      "number": "S-1073",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_r",
+      "customer_label": "Reseller R",
+      "created_at": "2026-10-24T10:30:00-05:00",
+      "promised_at": "2026-10-24T17:00:00-05:00",
+      "status": "ready",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF)",
+          "category": "DTF Gang Sheets",
+          "qty": 4,
+          "unit_price_cents": 1850,
+          "price_source": "sample_price_set_by_size_in_kixxl"
+        }
+      ],
+      "gang_sheets": 4,
+      "printer": 2,
+      "subtotal_cents": 7400,
+      "total_cents": 7400,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "paypal",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "needs_review",
+      "pickup_text": {
+        "state": "sent",
+        "sent_at": "2026-10-24T13:00:00-05:00",
+        "reminder_due": true
+      },
+      "notes": null
+    },
+    {
+      "id": "ord_s_1072",
+      "number": "S-1072",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_l",
+      "customer_label": "Reseller L",
+      "created_at": "2026-10-24T09:23:00-05:00",
+      "promised_at": "2026-10-24T11:15:00-05:00",
+      "status": "shipped",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF)",
+          "category": "DTF Gang Sheets",
+          "qty": 3,
+          "unit_price_cents": 1850,
+          "price_source": "sample_price_set_by_size_in_kixxl"
+        }
+      ],
+      "gang_sheets": 3,
+      "printer": 2,
+      "subtotal_cents": 5550,
+      "total_cents": 5550,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "ship",
+        "carrier": "FedEx",
+        "tracking_sample": "SAMPLE-1451"
+      },
+      "art_check": "passed",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1071",
+      "number": "S-1071",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_r",
+      "customer_label": "Reseller R",
+      "created_at": "2026-10-24T08:55:00-05:00",
+      "promised_at": "2026-10-24T10:45:00-05:00",
+      "status": "ready",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF)",
+          "category": "DTF Gang Sheets",
+          "qty": 2,
+          "unit_price_cents": 1850,
+          "price_source": "sample_price_set_by_size_in_kixxl"
+        }
+      ],
+      "gang_sheets": 2,
+      "printer": 1,
+      "subtotal_cents": 3700,
+      "total_cents": 3700,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": {
+        "state": "sent",
+        "sent_at": "2026-10-24T11:25:00-05:00",
+        "reminder_due": true
+      },
+      "notes": null
+    },
+    {
+      "id": "ord_s_1084",
+      "number": "S-1084",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_walkin",
+      "customer_label": "Walk-in (store)",
+      "created_at": "2026-10-23T14:36:00-05:00",
+      "promised_at": "2026-10-23T17:00:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 62374,
+          "name": "Comfort Colors Boxy Tee",
+          "category": "Blanks and Apparel",
+          "qty": 11,
+          "unit_price_cents": 1000,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 11000,
+      "total_cents": 11000,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1083",
+      "number": "S-1083",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_c1",
+      "customer_label": "Creator C (sample)",
+      "created_at": "2026-10-23T14:35:00-05:00",
+      "promised_at": "2026-10-23T17:00:00-05:00",
+      "status": "shipped",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF)",
+          "category": "DTF Gang Sheets",
+          "qty": 3,
+          "unit_price_cents": 1850,
+          "price_source": "sample_price_set_by_size_in_kixxl"
+        },
+        {
+          "product_id": 56713,
+          "name": "Adhesive Transfer Tape",
+          "category": "Accessories",
+          "qty": 4,
+          "unit_price_cents": 150,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 3,
+      "printer": 2,
+      "subtotal_cents": 6150,
+      "total_cents": 6150,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "apple_pay",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "ship",
+        "carrier": "FedEx",
+        "tracking_sample": "SAMPLE-7072"
+      },
+      "art_check": "fixed_by_customer",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1082",
+      "number": "S-1082",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_walkin",
+      "customer_label": "Walk-in (store)",
+      "created_at": "2026-10-23T13:25:00-05:00",
+      "promised_at": "2026-10-23T15:45:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 49677,
+          "name": "YOUTH Bella+Canvas Jersey Tee",
+          "category": "Blanks and Apparel",
+          "qty": 13,
+          "unit_price_cents": 675,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 8775,
+      "total_cents": 8775,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1081",
+      "number": "S-1081",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_k",
+      "customer_label": "Reseller K",
+      "created_at": "2026-10-23T12:45:00-05:00",
+      "promised_at": "2026-10-23T16:00:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 8334,
+          "name": "HTV Electric Colors",
+          "category": "HTV Vinyl",
+          "qty": 6,
+          "unit_price_cents": 349,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 2094,
+      "total_cents": 2094,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "cash",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1080",
+      "number": "S-1080",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_walkin",
+      "customer_label": "Walk-in (store)",
+      "created_at": "2026-10-23T12:01:00-05:00",
+      "promised_at": "2026-10-23T14:45:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 49677,
+          "name": "YOUTH Bella+Canvas Jersey Tee",
+          "category": "Blanks and Apparel",
+          "qty": 42,
+          "unit_price_cents": 675,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 28350,
+      "total_cents": 28350,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "cash",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1079",
+      "number": "S-1079",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_e",
+      "customer_label": "Reseller E",
+      "created_at": "2026-10-23T11:34:00-05:00",
+      "promised_at": "2026-10-23T14:45:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 12061,
+          "name": "HTV Metallic",
+          "category": "HTV Vinyl",
+          "qty": 6,
+          "unit_price_cents": 499,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 8439,
+          "name": "JERZEES DRI-POWER® 50/50 T-Shirt",
+          "category": "Blanks and Apparel",
+          "qty": 7,
+          "unit_price_cents": 450,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 53333,
+          "name": "3D Puff Heat Transfer Vinyl",
+          "category": "HTV Vinyl",
+          "qty": 3,
+          "unit_price_cents": 399,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 7341,
+      "total_cents": 7341,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "cash",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1078",
+      "number": "S-1078",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_walkin",
+      "customer_label": "Walk-in (store)",
+      "created_at": "2026-10-23T10:52:00-05:00",
+      "promised_at": "2026-10-23T13:15:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 65987,
+          "name": "GEAUX Tigers Patch",
+          "category": "Patches",
+          "qty": 22,
+          "unit_price_cents": 800,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 59686,
+          "name": "Pattern HTV",
+          "category": "HTV Vinyl",
+          "qty": 1,
+          "unit_price_cents": 699,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 18299,
+      "total_cents": 18299,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1077",
+      "number": "S-1077",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_walkin",
+      "customer_label": "Walk-in (store)",
+      "created_at": "2026-10-23T10:40:00-05:00",
+      "promised_at": "2026-10-23T13:30:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 11217,
+          "name": "HTV Holographic",
+          "category": "HTV Vinyl",
+          "qty": 1,
+          "unit_price_cents": 349,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 67661,
+          "name": "Saints Sequin Patches",
+          "category": "Patches",
+          "qty": 12,
+          "unit_price_cents": 800,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 9949,
+      "total_cents": 9949,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1076",
+      "number": "S-1076",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_e",
+      "customer_label": "Reseller E",
+      "created_at": "2026-10-23T09:34:00-05:00",
+      "promised_at": "2026-10-23T12:15:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF)",
+          "category": "DTF Gang Sheets",
+          "qty": 1,
+          "unit_price_cents": 1850,
+          "price_source": "sample_price_set_by_size_in_kixxl"
+        }
+      ],
+      "gang_sheets": 1,
+      "printer": 2,
+      "subtotal_cents": 1850,
+      "total_cents": 1850,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "apple_pay",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1095",
+      "number": "S-1095",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_c",
+      "customer_label": "Reseller C",
+      "created_at": "2026-10-22T16:29:00-05:00",
+      "promised_at": "2026-10-22T17:00:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 8334,
+          "name": "HTV Electric Colors",
+          "category": "HTV Vinyl",
+          "qty": 3,
+          "unit_price_cents": 349,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 1047,
+      "total_cents": 1047,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1094",
+      "number": "S-1094",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_walkin",
+      "customer_label": "Walk-in (store)",
+      "created_at": "2026-10-22T16:27:00-05:00",
+      "promised_at": "2026-10-22T17:00:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 53897,
+          "name": "12×24 Mat",
+          "category": "Accessories",
+          "qty": 1,
+          "unit_price_cents": 799,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 62058,
+          "name": "Siser EasyWeed HTV",
+          "category": "HTV Vinyl",
+          "qty": 5,
+          "unit_price_cents": 350,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 8439,
+          "name": "JERZEES DRI-POWER® 50/50 T-Shirt",
+          "category": "Blanks and Apparel",
+          "qty": 23,
+          "unit_price_cents": 450,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 12899,
+      "total_cents": 12899,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1093",
+      "number": "S-1093",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_walkin",
+      "customer_label": "Walk-in (store)",
+      "created_at": "2026-10-22T15:50:00-05:00",
+      "promised_at": "2026-10-22T17:00:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 24830,
+          "name": "Jerzees Long Sleeve 50/50 Poly/Cotton T-Shirt",
+          "category": "Blanks and Apparel",
+          "qty": 14,
+          "unit_price_cents": 850,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 11217,
+          "name": "HTV Holographic",
+          "category": "HTV Vinyl",
+          "qty": 4,
+          "unit_price_cents": 349,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 13296,
+      "total_cents": 13296,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "apple_pay",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1092",
+      "number": "S-1092",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_walkin",
+      "customer_label": "Walk-in (store)",
+      "created_at": "2026-10-22T13:30:00-05:00",
+      "promised_at": "2026-10-22T15:30:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 65987,
+          "name": "GEAUX Tigers Patch",
+          "category": "Patches",
+          "qty": 24,
+          "unit_price_cents": 800,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 62058,
+          "name": "Siser EasyWeed HTV",
+          "category": "HTV Vinyl",
+          "qty": 6,
+          "unit_price_cents": 350,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 59052,
+          "name": "UltraWeed Bundle",
+          "category": "HTV Vinyl",
+          "qty": 4,
+          "unit_price_cents": 1699,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 28096,
+      "total_cents": 28096,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1091",
+      "number": "S-1091",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_n",
+      "customer_label": "Reseller N",
+      "created_at": "2026-10-22T13:12:00-05:00",
+      "promised_at": "2026-10-22T15:30:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 65886,
+          "name": "Puff Embroidery Mascot Patch",
+          "category": "Patches",
+          "qty": 8,
+          "unit_price_cents": 1000,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 8000,
+      "total_cents": 8000,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "apple_pay",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1090",
+      "number": "S-1090",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_q",
+      "customer_label": "Reseller Q",
+      "created_at": "2026-10-22T13:07:00-05:00",
+      "promised_at": "2026-10-22T16:00:00-05:00",
+      "status": "shipped",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF)",
+          "category": "DTF Gang Sheets",
+          "qty": 1,
+          "unit_price_cents": 1850,
+          "price_source": "sample_price_set_by_size_in_kixxl"
+        },
+        {
+          "product_id": 62288,
+          "name": "Transfer Tape (10 YRDS)",
+          "category": "Accessories",
+          "qty": 1,
+          "unit_price_cents": 3150,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 1,
+      "printer": 1,
+      "subtotal_cents": 5000,
+      "total_cents": 5000,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "google_pay",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "ship",
+        "carrier": "FedEx",
+        "tracking_sample": "SAMPLE-1331"
+      },
+      "art_check": "passed",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1089",
+      "number": "S-1089",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_c1",
+      "customer_label": "Creator C (sample)",
+      "created_at": "2026-10-22T12:37:00-05:00",
+      "promised_at": "2026-10-22T14:30:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF)",
+          "category": "DTF Gang Sheets",
+          "qty": 1,
+          "unit_price_cents": 1850,
+          "price_source": "sample_price_set_by_size_in_kixxl"
+        }
+      ],
+      "gang_sheets": 1,
+      "printer": 2,
+      "subtotal_cents": 1850,
+      "total_cents": 1850,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1088",
+      "number": "S-1088",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_t1",
+      "customer_label": "Team A (sample)",
+      "created_at": "2026-10-22T12:22:00-05:00",
+      "promised_at": "2026-10-22T14:30:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 11217,
+          "name": "HTV Holographic",
+          "category": "HTV Vinyl",
+          "qty": 4,
+          "unit_price_cents": 349,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 67661,
+          "name": "Saints Sequin Patches",
+          "category": "Patches",
+          "qty": 21,
+          "unit_price_cents": 800,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 65989,
+          "name": "Tigers Sequin Patch",
+          "category": "Patches",
+          "qty": 15,
+          "unit_price_cents": 800,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 30196,
+      "total_cents": 30196,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1087",
+      "number": "S-1087",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_i",
+      "customer_label": "Reseller I",
+      "created_at": "2026-10-22T10:26:00-05:00",
+      "promised_at": "2026-10-22T12:30:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF)",
+          "category": "DTF Gang Sheets",
+          "qty": 2,
+          "unit_price_cents": 1850,
+          "price_source": "sample_price_set_by_size_in_kixxl"
+        }
+      ],
+      "gang_sheets": 2,
+      "printer": 2,
+      "subtotal_cents": 3700,
+      "total_cents": 3700,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1086",
+      "number": "S-1086",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_d",
+      "customer_label": "Reseller D",
+      "created_at": "2026-10-22T09:15:00-05:00",
+      "promised_at": "2026-10-22T12:30:00-05:00",
+      "status": "shipped",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF)",
+          "category": "DTF Gang Sheets",
+          "qty": 4,
+          "unit_price_cents": 1850,
+          "price_source": "sample_price_set_by_size_in_kixxl"
+        }
+      ],
+      "gang_sheets": 4,
+      "printer": 1,
+      "subtotal_cents": 7400,
+      "total_cents": 7400,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "paypal",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "ship",
+        "carrier": "UPS",
+        "tracking_sample": "SAMPLE-2407"
+      },
+      "art_check": "passed",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1085",
+      "number": "S-1085",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_t",
+      "customer_label": "Reseller T",
+      "created_at": "2026-10-22T08:46:00-05:00",
+      "promised_at": "2026-10-22T12:00:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF)",
+          "category": "DTF Gang Sheets",
+          "qty": 8,
+          "unit_price_cents": 1850,
+          "price_source": "sample_price_set_by_size_in_kixxl"
+        }
+      ],
+      "gang_sheets": 8,
+      "printer": 1,
+      "subtotal_cents": 14800,
+      "total_cents": 14800,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1104",
+      "number": "S-1104",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_walkin",
+      "customer_label": "Walk-in (store)",
+      "created_at": "2026-10-21T16:26:00-05:00",
+      "promised_at": "2026-10-21T17:00:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 65886,
+          "name": "Puff Embroidery Mascot Patch",
+          "category": "Patches",
+          "qty": 19,
+          "unit_price_cents": 1000,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 65106,
+          "name": "Gildan Softstyle Sweatshirt",
+          "category": "Blanks and Apparel",
+          "qty": 19,
+          "unit_price_cents": 1400,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 51832,
+          "name": "Gildan Unisex Heavy Blend™ Hooded Sweatshirt",
+          "category": "Blanks and Apparel",
+          "qty": 37,
+          "unit_price_cents": 1500,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 101100,
+      "total_cents": 101100,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1103",
+      "number": "S-1103",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_h",
+      "customer_label": "Reseller H",
+      "created_at": "2026-10-21T15:35:00-05:00",
+      "promised_at": "2026-10-21T17:00:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 59686,
+          "name": "Pattern HTV",
+          "category": "HTV Vinyl",
+          "qty": 5,
+          "unit_price_cents": 699,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 53333,
+          "name": "3D Puff Heat Transfer Vinyl",
+          "category": "HTV Vinyl",
+          "qty": 2,
+          "unit_price_cents": 399,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 62428,
+          "name": "God is Good Chenille Patch",
+          "category": "Patches",
+          "qty": 7,
+          "unit_price_cents": 800,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 9893,
+      "total_cents": 9893,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "cash",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1102",
+      "number": "S-1102",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_walkin",
+      "customer_label": "Walk-in (store)",
+      "created_at": "2026-10-21T13:04:00-05:00",
+      "promised_at": "2026-10-21T15:15:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 53897,
+          "name": "12×24 Mat",
+          "category": "Accessories",
+          "qty": 4,
+          "unit_price_cents": 799,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 12061,
+          "name": "HTV Metallic",
+          "category": "HTV Vinyl",
+          "qty": 1,
+          "unit_price_cents": 499,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 3695,
+      "total_cents": 3695,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1101",
+      "number": "S-1101",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_t2",
+      "customer_label": "Business B (sample)",
+      "created_at": "2026-10-21T11:39:00-05:00",
+      "promised_at": "2026-10-21T14:00:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 62288,
+          "name": "Transfer Tape (10 YRDS)",
+          "category": "Accessories",
+          "qty": 1,
+          "unit_price_cents": 3150,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 67057,
+          "name": "Sequin Jaguars Patch",
+          "category": "Patches",
+          "qty": 10,
+          "unit_price_cents": 800,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 11150,
+      "total_cents": 11150,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "cash",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1100",
+      "number": "S-1100",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_p",
+      "customer_label": "Reseller P",
+      "created_at": "2026-10-21T11:11:00-05:00",
+      "promised_at": "2026-10-21T14:00:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 62428,
+          "name": "God is Good Chenille Patch",
+          "category": "Patches",
+          "qty": 15,
+          "unit_price_cents": 800,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 27644,
+          "name": "Sublimation Skinny Tumbler - 20 Oz",
+          "category": "Sublimation",
+          "qty": 3,
+          "unit_price_cents": 875,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 62058,
+          "name": "Siser EasyWeed HTV",
+          "category": "HTV Vinyl",
+          "qty": 1,
+          "unit_price_cents": 350,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 14975,
+      "total_cents": 14975,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "cash",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1099",
+      "number": "S-1099",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_n",
+      "customer_label": "Reseller N",
+      "created_at": "2026-10-21T11:01:00-05:00",
+      "promised_at": "2026-10-21T14:15:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF)",
+          "category": "DTF Gang Sheets",
+          "qty": 3,
+          "unit_price_cents": 1850,
+          "price_source": "sample_price_set_by_size_in_kixxl"
+        },
+        {
+          "product_id": 56227,
+          "name": "Weeding Pen",
+          "category": "Accessories",
+          "qty": 3,
+          "unit_price_cents": 699,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 3,
+      "printer": 2,
+      "subtotal_cents": 7647,
+      "total_cents": 7647,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "apple_pay",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1098",
+      "number": "S-1098",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_e",
+      "customer_label": "Reseller E",
+      "created_at": "2026-10-21T10:36:00-05:00",
+      "promised_at": "2026-10-21T13:45:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF)",
+          "category": "DTF Gang Sheets",
+          "qty": 4,
+          "unit_price_cents": 1850,
+          "price_source": "sample_price_set_by_size_in_kixxl"
+        },
+        {
+          "product_id": 65106,
+          "name": "Gildan Softstyle Sweatshirt",
+          "category": "Blanks and Apparel",
+          "qty": 23,
+          "unit_price_cents": 1400,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 4,
+      "printer": 2,
+      "subtotal_cents": 39600,
+      "total_cents": 39600,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "paypal",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1097",
+      "number": "S-1097",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_walkin",
+      "customer_label": "Walk-in (store)",
+      "created_at": "2026-10-21T09:01:00-05:00",
+      "promised_at": "2026-10-21T11:45:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 59291,
+          "name": "Cheer Chenille Iron-On Patch",
+          "category": "Patches",
+          "qty": 19,
+          "unit_price_cents": 1000,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 19000,
+      "total_cents": 19000,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "cash",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1096",
+      "number": "S-1096",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_t2",
+      "customer_label": "Business B (sample)",
+      "created_at": "2026-10-21T08:55:00-05:00",
+      "promised_at": "2026-10-21T10:45:00-05:00",
+      "status": "shipped",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 51832,
+          "name": "Gildan Unisex Heavy Blend™ Hooded Sweatshirt",
+          "category": "Blanks and Apparel",
+          "qty": 8,
+          "unit_price_cents": 1500,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 12000,
+      "total_cents": 12000,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "paypal",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "ship",
+        "carrier": "FedEx",
+        "tracking_sample": "SAMPLE-5218"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1115",
+      "number": "S-1115",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_walkin",
+      "customer_label": "Walk-in (store)",
+      "created_at": "2026-10-20T15:32:00-05:00",
+      "promised_at": "2026-10-20T17:00:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 65987,
+          "name": "GEAUX Tigers Patch",
+          "category": "Patches",
+          "qty": 17,
+          "unit_price_cents": 800,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 65106,
+          "name": "Gildan Softstyle Sweatshirt",
+          "category": "Blanks and Apparel",
+          "qty": 28,
+          "unit_price_cents": 1400,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 52800,
+      "total_cents": 52800,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1114",
+      "number": "S-1114",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_d",
+      "customer_label": "Reseller D",
+      "created_at": "2026-10-20T15:31:00-05:00",
+      "promised_at": "2026-10-20T17:00:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 53333,
+          "name": "3D Puff Heat Transfer Vinyl",
+          "category": "HTV Vinyl",
+          "qty": 3,
+          "unit_price_cents": 399,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 1197,
+      "total_cents": 1197,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "cash",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1113",
+      "number": "S-1113",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_t",
+      "customer_label": "Reseller T",
+      "created_at": "2026-10-20T14:12:00-05:00",
+      "promised_at": "2026-10-20T17:00:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 62058,
+          "name": "Siser EasyWeed HTV",
+          "category": "HTV Vinyl",
+          "qty": 6,
+          "unit_price_cents": 350,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 67057,
+          "name": "Sequin Jaguars Patch",
+          "category": "Patches",
+          "qty": 15,
+          "unit_price_cents": 800,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 14100,
+      "total_cents": 14100,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "cash",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1112",
+      "number": "S-1112",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_b",
+      "customer_label": "Reseller B",
+      "created_at": "2026-10-20T13:23:00-05:00",
+      "promised_at": "2026-10-20T16:00:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF)",
+          "category": "DTF Gang Sheets",
+          "qty": 3,
+          "unit_price_cents": 1850,
+          "price_source": "sample_price_set_by_size_in_kixxl"
+        }
+      ],
+      "gang_sheets": 3,
+      "printer": 1,
+      "subtotal_cents": 5550,
+      "total_cents": 5550,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "paypal",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "fixed_by_customer",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1111",
+      "number": "S-1111",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_c1",
+      "customer_label": "Creator C (sample)",
+      "created_at": "2026-10-20T12:14:00-05:00",
+      "promised_at": "2026-10-20T15:00:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 8439,
+          "name": "JERZEES DRI-POWER® 50/50 T-Shirt",
+          "category": "Blanks and Apparel",
+          "qty": 44,
+          "unit_price_cents": 450,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 19800,
+      "total_cents": 19800,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1110",
+      "number": "S-1110",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_g",
+      "customer_label": "Reseller G",
+      "created_at": "2026-10-20T12:02:00-05:00",
+      "promised_at": "2026-10-20T14:45:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 59686,
+          "name": "Pattern HTV",
+          "category": "HTV Vinyl",
+          "qty": 2,
+          "unit_price_cents": 699,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 10204,
+          "name": "Ceramic Mug",
+          "category": "Sublimation",
+          "qty": 3,
+          "unit_price_cents": 275,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 2223,
+      "total_cents": 2223,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1109",
+      "number": "S-1109",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_n",
+      "customer_label": "Reseller N",
+      "created_at": "2026-10-20T11:37:00-05:00",
+      "promised_at": "2026-10-20T13:30:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 24830,
+          "name": "Jerzees Long Sleeve 50/50 Poly/Cotton T-Shirt",
+          "category": "Blanks and Apparel",
+          "qty": 25,
+          "unit_price_cents": 850,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 59686,
+          "name": "Pattern HTV",
+          "category": "HTV Vinyl",
+          "qty": 5,
+          "unit_price_cents": 699,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 9074,
+          "name": "Bella+Canvas 3001 Unisex Jersey Tee",
+          "category": "Blanks and Apparel",
+          "qty": 41,
+          "unit_price_cents": 675,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 52420,
+      "total_cents": 52420,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1108",
+      "number": "S-1108",
+      "channel": "store",
+      "source_system": "Shopkeep",
+      "customer_id": "cust_c1",
+      "customer_label": "Creator C (sample)",
+      "created_at": "2026-10-20T10:14:00-05:00",
+      "promised_at": "2026-10-20T13:30:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 62374,
+          "name": "Comfort Colors Boxy Tee",
+          "category": "Blanks and Apparel",
+          "qty": 25,
+          "unit_price_cents": 1000,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 62428,
+          "name": "God is Good Chenille Patch",
+          "category": "Patches",
+          "qty": 10,
+          "unit_price_cents": 800,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 33000,
+      "total_cents": 33000,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1107",
+      "number": "S-1107",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_n",
+      "customer_label": "Reseller N",
+      "created_at": "2026-10-20T10:04:00-05:00",
+      "promised_at": "2026-10-20T12:00:00-05:00",
+      "status": "shipped",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 59348,
+          "name": "Adult Comfort Colors Tee",
+          "category": "Blanks and Apparel",
+          "qty": 30,
+          "unit_price_cents": 899,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 62058,
+          "name": "Siser EasyWeed HTV",
+          "category": "HTV Vinyl",
+          "qty": 4,
+          "unit_price_cents": 350,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 28370,
+      "total_cents": 28370,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "ship",
+        "carrier": "FedEx",
+        "tracking_sample": "SAMPLE-9703"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1106",
+      "number": "S-1106",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_l",
+      "customer_label": "Reseller L",
+      "created_at": "2026-10-20T09:54:00-05:00",
+      "promised_at": "2026-10-20T12:15:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 62288,
+          "name": "Transfer Tape (10 YRDS)",
+          "category": "Accessories",
+          "qty": 1,
+          "unit_price_cents": 3150,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 53333,
+          "name": "3D Puff Heat Transfer Vinyl",
+          "category": "HTV Vinyl",
+          "qty": 6,
+          "unit_price_cents": 399,
+          "price_source": "catalog_from_price"
+        },
+        {
+          "product_id": 8439,
+          "name": "JERZEES DRI-POWER® 50/50 T-Shirt",
+          "category": "Blanks and Apparel",
+          "qty": 29,
+          "unit_price_cents": 450,
+          "price_source": "catalog_from_price"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 18594,
+      "total_cents": 18594,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "paypal",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_s_1105",
+      "number": "S-1105",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_o",
+      "customer_label": "Reseller O",
+      "created_at": "2026-10-20T09:16:00-05:00",
+      "promised_at": "2026-10-20T12:30:00-05:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF)",
+          "category": "DTF Gang Sheets",
+          "qty": 2,
+          "unit_price_cents": 1850,
+          "price_source": "sample_price_set_by_size_in_kixxl"
+        }
+      ],
+      "gang_sheets": 2,
+      "printer": 1,
+      "subtotal_cents": 3700,
+      "total_cents": 3700,
+      "total_note": "Sample totals exclude tax",
+      "payment": {
+        "method": "card",
+        "state": "paid"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": null,
+      "notes": null
+    }
+  ]
+}

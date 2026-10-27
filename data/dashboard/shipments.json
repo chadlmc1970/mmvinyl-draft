@@ -1,0 +1,217 @@
+{
+  "meta": {
+    "schema_version": "1.1",
+    "sample": true,
+    "sample_note": "Sample data. Figures are illustrative except where a field is marked real.",
+    "generated_at": "2026-10-26T12:00:00-05:00",
+    "as_of": "2026-10-26T11:42:00-05:00",
+    "timezone": "America/Chicago",
+    "currency": "USD",
+    "money_unit": "cents",
+    "source": "FedEx and UPS label APIs, WooCommerce (sample)",
+    "shipping_volume": "unconfirmed",
+    "note": "How much Desiree ships today is not clear from the call. These rows are sample."
+  },
+  "shipments": [
+    {
+      "id": "shp_1",
+      "order_id": "ord_s_1072",
+      "order_number": "S-1072",
+      "customer_label": "Reseller L",
+      "carrier": "FedEx",
+      "service": "FedEx Ground (sample)",
+      "state": "label_created",
+      "tracking": "SAMPLE-1451",
+      "created_at": "2026-10-24T09:23:00-05:00",
+      "weight_oz": 23
+    },
+    {
+      "id": "shp_2",
+      "order_id": "ord_s_1083",
+      "order_number": "S-1083",
+      "customer_label": "Creator C (sample)",
+      "carrier": "FedEx",
+      "service": "FedEx Ground (sample)",
+      "state": "in_transit",
+      "tracking": "SAMPLE-7072",
+      "created_at": "2026-10-23T14:35:00-05:00",
+      "weight_oz": 40
+    },
+    {
+      "id": "shp_3",
+      "order_id": "ord_s_1090",
+      "order_number": "S-1090",
+      "customer_label": "Reseller Q",
+      "carrier": "FedEx",
+      "service": "FedEx Ground (sample)",
+      "state": "in_transit",
+      "tracking": "SAMPLE-1331",
+      "created_at": "2026-10-22T13:07:00-05:00",
+      "weight_oz": 18
+    },
+    {
+      "id": "shp_4",
+      "order_id": "ord_s_1086",
+      "order_number": "S-1086",
+      "customer_label": "Reseller D",
+      "carrier": "UPS",
+      "service": "UPS Ground (sample)",
+      "state": "delivered",
+      "tracking": "SAMPLE-2407",
+      "created_at": "2026-10-22T09:15:00-05:00",
+      "weight_oz": 21
+    },
+    {
+      "id": "shp_5",
+      "order_id": "ord_s_1096",
+      "order_number": "S-1096",
+      "customer_label": "Business B (sample)",
+      "carrier": "FedEx",
+      "service": "FedEx Ground (sample)",
+      "state": "delivered",
+      "tracking": "SAMPLE-5218",
+      "created_at": "2026-10-21T08:55:00-05:00",
+      "weight_oz": 26
+    },
+    {
+      "id": "shp_6",
+      "order_id": "ord_s_1107",
+      "order_number": "S-1107",
+      "customer_label": "Reseller N",
+      "carrier": "FedEx",
+      "service": "FedEx Ground (sample)",
+      "state": "delivered",
+      "tracking": "SAMPLE-9703",
+      "created_at": "2026-10-20T10:04:00-05:00",
+      "weight_oz": 39
+    }
+  ],
+  "pickup_ready": [
+    {
+      "order_id": "ord_s_1063",
+      "number": "S-1063",
+      "customer_label": "Reseller T",
+      "ready_since": "2026-10-26T12:45:00-05:00",
+      "text_state": "not_sent",
+      "reminder_due": false,
+      "age_days": 0
+    },
+    {
+      "order_id": "ord_s_1058",
+      "number": "S-1058",
+      "customer_label": "Reseller D",
+      "ready_since": "2026-10-26T11:45:00-05:00",
+      "text_state": "not_sent",
+      "reminder_due": false,
+      "age_days": 0
+    },
+    {
+      "order_id": "ord_s_1057",
+      "number": "S-1057",
+      "customer_label": "Walk-in (store)",
+      "ready_since": "2026-10-26T11:30:00-05:00",
+      "text_state": "not_sent",
+      "reminder_due": false,
+      "age_days": 0
+    },
+    {
+      "order_id": "ord_s_1053",
+      "number": "S-1053",
+      "customer_label": "Team A (sample)",
+      "ready_since": "2026-10-26T11:45:00-05:00",
+      "text_state": "not_sent",
+      "reminder_due": false,
+      "age_days": 0
+    },
+    {
+      "order_id": "ord_s_1052",
+      "number": "S-1052",
+      "customer_label": "Team A (sample)",
+      "ready_since": "2026-10-26T10:55:00-05:00",
+      "text_state": "sent",
+      "reminder_due": false,
+      "age_days": 0
+    },
+    {
+      "order_id": "ord_s_1051",
+      "number": "S-1051",
+      "customer_label": "Creator C (sample)",
+      "ready_since": "2026-10-26T12:00:00-05:00",
+      "text_state": "not_sent",
+      "reminder_due": false,
+      "age_days": 0
+    },
+    {
+      "order_id": "ord_s_1045",
+      "number": "S-1045",
+      "customer_label": "Reseller O",
+      "ready_since": "2026-10-26T09:55:00-05:00",
+      "text_state": "sent",
+      "reminder_due": false,
+      "age_days": 0
+    },
+    {
+      "order_id": "ord_s_1044",
+      "number": "S-1044",
+      "customer_label": "Creator C (sample)",
+      "ready_since": "2026-10-26T10:45:00-05:00",
+      "text_state": "not_sent",
+      "reminder_due": false,
+      "age_days": 0
+    },
+    {
+      "order_id": "ord_s_1043",
+      "number": "S-1043",
+      "customer_label": "Walk-in (store)",
+      "ready_since": "2026-10-26T11:10:00-05:00",
+      "text_state": "sent",
+      "reminder_due": false,
+      "age_days": 0
+    },
+    {
+      "order_id": "ord_s_1041",
+      "number": "S-1041",
+      "customer_label": "Walk-in (store)",
+      "ready_since": "2026-10-26T09:55:00-05:00",
+      "text_state": "sent",
+      "reminder_due": false,
+      "age_days": 0
+    },
+    {
+      "order_id": "ord_s_1075",
+      "number": "S-1075",
+      "customer_label": "Reseller B",
+      "ready_since": "2026-10-24T14:35:00-05:00",
+      "text_state": "sent",
+      "reminder_due": true,
+      "age_days": 2
+    },
+    {
+      "order_id": "ord_s_1074",
+      "number": "S-1074",
+      "customer_label": "Reseller M",
+      "ready_since": "2026-10-24T14:09:00-05:00",
+      "text_state": "sent",
+      "reminder_due": true,
+      "age_days": 2
+    },
+    {
+      "order_id": "ord_s_1073",
+      "number": "S-1073",
+      "customer_label": "Reseller R",
+      "ready_since": "2026-10-24T13:00:00-05:00",
+      "text_state": "sent",
+      "reminder_due": true,
+      "age_days": 2
+    },
+    {
+      "order_id": "ord_s_1071",
+      "number": "S-1071",
+      "customer_label": "Reseller R",
+      "ready_since": "2026-10-24T11:25:00-05:00",
+      "text_state": "sent",
+      "reminder_due": true,
+      "age_days": 2
+    }
+  ]
+}

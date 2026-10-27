@@ -1,0 +1,667 @@
+{
+  "meta": {
+    "schema_version": "1.1",
+    "sample": true,
+    "sample_note": "Sample data. Figures are illustrative except where a field is marked real.",
+    "generated_at": "2026-10-26T12:00:00-05:00",
+    "as_of": "2026-10-26T11:42:00-05:00",
+    "timezone": "America/Chicago",
+    "currency": "USD",
+    "money_unit": "cents",
+    "source": "WooCommerce orders joined with Shopkeep export (sample). Shopkeep export or API not confirmed."
+  },
+  "daily": [
+    {
+      "date": "2026-09-01",
+      "web_cents": 89300,
+      "store_cents": 65500,
+      "orders_web": 15,
+      "orders_store": 10
+    },
+    {
+      "date": "2026-09-02",
+      "web_cents": 69300,
+      "store_cents": 71100,
+      "orders_web": 10,
+      "orders_store": 10
+    },
+    {
+      "date": "2026-09-03",
+      "web_cents": 81750,
+      "store_cents": 70400,
+      "orders_web": 13,
+      "orders_store": 10
+    },
+    {
+      "date": "2026-09-04",
+      "web_cents": 68200,
+      "store_cents": 59200,
+      "orders_web": 10,
+      "orders_store": 9
+    },
+    {
+      "date": "2026-09-05",
+      "web_cents": 36400,
+      "store_cents": 41600,
+      "orders_web": 7,
+      "orders_store": 6
+    },
+    {
+      "date": "2026-09-06",
+      "web_cents": 0,
+      "store_cents": 0,
+      "orders_web": 0,
+      "orders_store": 0
+    },
+    {
+      "date": "2026-09-07",
+      "web_cents": 102900,
+      "store_cents": 54200,
+      "orders_web": 15,
+      "orders_store": 8
+    },
+    {
+      "date": "2026-09-08",
+      "web_cents": 80900,
+      "store_cents": 49500,
+      "orders_web": 13,
+      "orders_store": 7
+    },
+    {
+      "date": "2026-09-09",
+      "web_cents": 76250,
+      "store_cents": 37900,
+      "orders_web": 13,
+      "orders_store": 6
+    },
+    {
+      "date": "2026-09-10",
+      "web_cents": 72600,
+      "store_cents": 48100,
+      "orders_web": 11,
+      "orders_store": 7
+    },
+    {
+      "date": "2026-09-11",
+      "web_cents": 80250,
+      "store_cents": 71900,
+      "orders_web": 12,
+      "orders_store": 11
+    },
+    {
+      "date": "2026-09-12",
+      "web_cents": 40900,
+      "store_cents": 51500,
+      "orders_web": 8,
+      "orders_store": 8
+    },
+    {
+      "date": "2026-09-13",
+      "web_cents": 0,
+      "store_cents": 0,
+      "orders_web": 0,
+      "orders_store": 0
+    },
+    {
+      "date": "2026-09-14",
+      "web_cents": 102200,
+      "store_cents": 49200,
+      "orders_web": 17,
+      "orders_store": 7
+    },
+    {
+      "date": "2026-09-15",
+      "web_cents": 87000,
+      "store_cents": 88200,
+      "orders_web": 15,
+      "orders_store": 13
+    },
+    {
+      "date": "2026-09-16",
+      "web_cents": 80900,
+      "store_cents": 51000,
+      "orders_web": 14,
+      "orders_store": 8
+    },
+    {
+      "date": "2026-09-17",
+      "web_cents": 72400,
+      "store_cents": 37800,
+      "orders_web": 12,
+      "orders_store": 6
+    },
+    {
+      "date": "2026-09-18",
+      "web_cents": 74250,
+      "store_cents": 47300,
+      "orders_web": 12,
+      "orders_store": 7
+    },
+    {
+      "date": "2026-09-19",
+      "web_cents": 39350,
+      "store_cents": 29300,
+      "orders_web": 7,
+      "orders_store": 4
+    },
+    {
+      "date": "2026-09-20",
+      "web_cents": 0,
+      "store_cents": 0,
+      "orders_web": 0,
+      "orders_store": 0
+    },
+    {
+      "date": "2026-09-21",
+      "web_cents": 79550,
+      "store_cents": 77000,
+      "orders_web": 14,
+      "orders_store": 11
+    },
+    {
+      "date": "2026-09-22",
+      "web_cents": 75250,
+      "store_cents": 66600,
+      "orders_web": 12,
+      "orders_store": 10
+    },
+    {
+      "date": "2026-09-23",
+      "web_cents": 67150,
+      "store_cents": 37800,
+      "orders_web": 10,
+      "orders_store": 6
+    },
+    {
+      "date": "2026-09-24",
+      "web_cents": 75150,
+      "store_cents": 74200,
+      "orders_web": 13,
+      "orders_store": 11
+    },
+    {
+      "date": "2026-09-25",
+      "web_cents": 73250,
+      "store_cents": 37300,
+      "orders_web": 12,
+      "orders_store": 5
+    },
+    {
+      "date": "2026-09-26",
+      "web_cents": 35200,
+      "store_cents": 43400,
+      "orders_web": 6,
+      "orders_store": 6
+    },
+    {
+      "date": "2026-09-27",
+      "web_cents": 0,
+      "store_cents": 0,
+      "orders_web": 0,
+      "orders_store": 0
+    },
+    {
+      "date": "2026-09-28",
+      "web_cents": 92800,
+      "store_cents": 66000,
+      "orders_web": 17,
+      "orders_store": 10
+    },
+    {
+      "date": "2026-09-29",
+      "web_cents": 88600,
+      "store_cents": 72600,
+      "orders_web": 13,
+      "orders_store": 11
+    },
+    {
+      "date": "2026-09-30",
+      "web_cents": 85700,
+      "store_cents": 82800,
+      "orders_web": 13,
+      "orders_store": 12
+    },
+    {
+      "date": "2026-10-01",
+      "web_cents": 84300,
+      "store_cents": 81088,
+      "orders_web": 14,
+      "orders_store": 12
+    },
+    {
+      "date": "2026-10-02",
+      "web_cents": 80600,
+      "store_cents": 49616,
+      "orders_web": 13,
+      "orders_store": 7
+    },
+    {
+      "date": "2026-10-03",
+      "web_cents": 40500,
+      "store_cents": 38864,
+      "orders_web": 8,
+      "orders_store": 6
+    },
+    {
+      "date": "2026-10-04",
+      "web_cents": 0,
+      "store_cents": 0,
+      "orders_web": 0,
+      "orders_store": 0
+    },
+    {
+      "date": "2026-10-05",
+      "web_cents": 119600,
+      "store_cents": 40544,
+      "orders_web": 20,
+      "orders_store": 6
+    },
+    {
+      "date": "2026-10-06",
+      "web_cents": 95200,
+      "store_cents": 74144,
+      "orders_web": 17,
+      "orders_store": 11
+    },
+    {
+      "date": "2026-10-07",
+      "web_cents": 89700,
+      "store_cents": 48160,
+      "orders_web": 16,
+      "orders_store": 7
+    },
+    {
+      "date": "2026-10-08",
+      "web_cents": 107850,
+      "store_cents": 45920,
+      "orders_web": 17,
+      "orders_store": 7
+    },
+    {
+      "date": "2026-10-09",
+      "web_cents": 77300,
+      "store_cents": 71680,
+      "orders_web": 12,
+      "orders_store": 11
+    },
+    {
+      "date": "2026-10-10",
+      "web_cents": 38250,
+      "store_cents": 49616,
+      "orders_web": 6,
+      "orders_store": 7
+    },
+    {
+      "date": "2026-10-11",
+      "web_cents": 0,
+      "store_cents": 0,
+      "orders_web": 0,
+      "orders_store": 0
+    },
+    {
+      "date": "2026-10-12",
+      "web_cents": 121600,
+      "store_cents": 75600,
+      "orders_web": 19,
+      "orders_store": 11
+    },
+    {
+      "date": "2026-10-13",
+      "web_cents": 107500,
+      "store_cents": 81648,
+      "orders_web": 19,
+      "orders_store": 12
+    },
+    {
+      "date": "2026-10-14",
+      "web_cents": 84550,
+      "store_cents": 83664,
+      "orders_web": 12,
+      "orders_store": 12
+    },
+    {
+      "date": "2026-10-15",
+      "web_cents": 102400,
+      "store_cents": 90160,
+      "orders_web": 16,
+      "orders_store": 13
+    },
+    {
+      "date": "2026-10-16",
+      "web_cents": 88650,
+      "store_cents": 46704,
+      "orders_web": 15,
+      "orders_store": 7
+    },
+    {
+      "date": "2026-10-17",
+      "web_cents": 45500,
+      "store_cents": 26992,
+      "orders_web": 8,
+      "orders_store": 4
+    },
+    {
+      "date": "2026-10-18",
+      "web_cents": 0,
+      "store_cents": 0,
+      "orders_web": 0,
+      "orders_store": 0
+    },
+    {
+      "date": "2026-10-19",
+      "web_cents": 101300,
+      "store_cents": 51744,
+      "orders_web": 16,
+      "orders_store": 8
+    },
+    {
+      "date": "2026-10-20",
+      "web_cents": 109850,
+      "store_cents": 48272,
+      "orders_web": 18,
+      "orders_store": 7
+    },
+    {
+      "date": "2026-10-21",
+      "web_cents": 97550,
+      "store_cents": 86800,
+      "orders_web": 15,
+      "orders_store": 13
+    },
+    {
+      "date": "2026-10-22",
+      "web_cents": 104450,
+      "store_cents": 45360,
+      "orders_web": 18,
+      "orders_store": 7
+    },
+    {
+      "date": "2026-10-23",
+      "web_cents": 102200,
+      "store_cents": 94752,
+      "orders_web": 16,
+      "orders_store": 14
+    },
+    {
+      "date": "2026-10-24",
+      "web_cents": 45550,
+      "store_cents": 51072,
+      "orders_web": 9,
+      "orders_store": 8
+    },
+    {
+      "date": "2026-10-25",
+      "web_cents": 0,
+      "store_cents": 0,
+      "orders_web": 0,
+      "orders_store": 0
+    },
+    {
+      "date": "2026-10-26",
+      "web_cents": 33720,
+      "store_cents": 19398,
+      "orders_web": 13,
+      "orders_store": 3
+    }
+  ],
+  "weekly": [
+    {
+      "week_start": "2026-09-07",
+      "web_cents": 453800,
+      "store_cents": 313100,
+      "orders": 119,
+      "total_cents": 766900,
+      "partial": false
+    },
+    {
+      "week_start": "2026-09-14",
+      "web_cents": 456100,
+      "store_cents": 302800,
+      "orders": 122,
+      "total_cents": 758900,
+      "partial": false
+    },
+    {
+      "week_start": "2026-09-21",
+      "web_cents": 405550,
+      "store_cents": 336300,
+      "orders": 116,
+      "total_cents": 741850,
+      "partial": false
+    },
+    {
+      "week_start": "2026-09-28",
+      "web_cents": 472500,
+      "store_cents": 390968,
+      "orders": 136,
+      "total_cents": 863468,
+      "partial": false
+    },
+    {
+      "week_start": "2026-10-05",
+      "web_cents": 527900,
+      "store_cents": 330064,
+      "orders": 137,
+      "total_cents": 857964,
+      "partial": false
+    },
+    {
+      "week_start": "2026-10-12",
+      "web_cents": 550200,
+      "store_cents": 404768,
+      "orders": 148,
+      "total_cents": 954968,
+      "partial": false
+    },
+    {
+      "week_start": "2026-10-19",
+      "web_cents": 560900,
+      "store_cents": 378000,
+      "orders": 149,
+      "total_cents": 938900,
+      "partial": false
+    },
+    {
+      "week_start": "2026-10-26",
+      "web_cents": 33720,
+      "store_cents": 19398,
+      "orders": 16,
+      "total_cents": 53118,
+      "partial": true
+    }
+  ],
+  "week_over_week": {
+    "this_week": {
+      "week_start": "2026-10-19",
+      "total_cents": 938900,
+      "web_cents": 560900,
+      "store_cents": 378000,
+      "orders": 149
+    },
+    "prior_week": {
+      "week_start": "2026-10-12",
+      "total_cents": 954968,
+      "web_cents": 550200,
+      "store_cents": 404768,
+      "orders": 148
+    },
+    "note": "Last full week (Mon to Sat) compared with the week before."
+  },
+  "current_week_to_date": {
+    "week_start": "2026-10-26",
+    "total_cents": 53118
+  },
+  "by_category_28d": [
+    {
+      "category": "DTF Gang Sheets",
+      "revenue_cents": 1593682,
+      "prev_period_cents": 1400340,
+      "share_pct": 46
+    },
+    {
+      "category": "HTV Vinyl",
+      "revenue_cents": 482194,
+      "prev_period_cents": 465714,
+      "share_pct": 14
+    },
+    {
+      "category": "Blanks and Apparel",
+      "revenue_cents": 661371,
+      "prev_period_cents": 557875,
+      "share_pct": 19
+    },
+    {
+      "category": "Patches",
+      "revenue_cents": 310215,
+      "prev_period_cents": 334712,
+      "share_pct": 9
+    },
+    {
+      "category": "Sublimation",
+      "revenue_cents": 211336,
+      "prev_period_cents": 213205,
+      "share_pct": 6
+    },
+    {
+      "category": "Accessories",
+      "revenue_cents": 140578,
+      "prev_period_cents": 139456,
+      "share_pct": 4
+    },
+    {
+      "category": "Mardi Gras",
+      "revenue_cents": 71512,
+      "prev_period_cents": 69758,
+      "share_pct": 2
+    }
+  ],
+  "top_products_30d": [
+    {
+      "product_id": 60967,
+      "name": "Build a Gang Sheet (DTF)",
+      "category": "DTF Gang Sheets",
+      "unit_price_cents": 1850,
+      "price_note": "Sample price. Real price is set by sheet size in Kixxl.",
+      "units_30d": 912,
+      "revenue_30d_cents": 1687200,
+      "real_units": true
+    },
+    {
+      "product_id": 9074,
+      "name": "Bella+Canvas 3001 Unisex Jersey Tee",
+      "category": "Blanks and Apparel",
+      "unit_price_cents": 675,
+      "price_note": "From $6.75",
+      "units_30d": 410,
+      "revenue_30d_cents": 276750,
+      "real_units": false
+    },
+    {
+      "product_id": 50579,
+      "name": "Gildan Softstyle Unisex 64000",
+      "category": "Blanks and Apparel",
+      "unit_price_cents": 475,
+      "price_note": "From $4.75",
+      "units_30d": 540,
+      "revenue_30d_cents": 256500,
+      "real_units": false
+    },
+    {
+      "product_id": 67661,
+      "name": "Saints Sequin Patches",
+      "category": "Patches",
+      "unit_price_cents": 800,
+      "price_note": "$8.00",
+      "units_30d": 260,
+      "revenue_30d_cents": 208000,
+      "real_units": false
+    },
+    {
+      "product_id": 59348,
+      "name": "Adult Comfort Colors Tee",
+      "category": "Blanks and Apparel",
+      "unit_price_cents": 899,
+      "price_note": "From $8.99",
+      "units_30d": 188,
+      "revenue_30d_cents": 169012,
+      "real_units": false
+    },
+    {
+      "product_id": 8439,
+      "name": "JERZEES DRI-POWER® 50/50 T-Shirt",
+      "category": "Blanks and Apparel",
+      "unit_price_cents": 450,
+      "price_note": "From $4.50",
+      "units_30d": 330,
+      "revenue_30d_cents": 148500,
+      "real_units": false
+    },
+    {
+      "product_id": 62288,
+      "name": "Transfer Tape (10 YRDS)",
+      "category": "Accessories",
+      "unit_price_cents": 3150,
+      "price_note": "$31.50",
+      "units_30d": 44,
+      "revenue_30d_cents": 138600,
+      "real_units": false
+    },
+    {
+      "product_id": 51832,
+      "name": "Gildan Unisex Heavy Blend™ Hooded Sweatshirt",
+      "category": "Blanks and Apparel",
+      "unit_price_cents": 1500,
+      "price_note": "From $15.00",
+      "units_30d": 92,
+      "revenue_30d_cents": 138000,
+      "real_units": false
+    },
+    {
+      "product_id": 59686,
+      "name": "Pattern HTV",
+      "category": "HTV Vinyl",
+      "unit_price_cents": 699,
+      "price_note": "From $6.99",
+      "units_30d": 120,
+      "revenue_30d_cents": 83880,
+      "real_units": false
+    },
+    {
+      "product_id": 62058,
+      "name": "Siser EasyWeed HTV",
+      "category": "HTV Vinyl",
+      "unit_price_cents": 350,
+      "price_note": "From $3.50",
+      "units_30d": 168,
+      "revenue_30d_cents": 58800,
+      "real_units": false
+    },
+    {
+      "product_id": 14113,
+      "name": "HTV UltraWeed™",
+      "category": "HTV Vinyl",
+      "unit_price_cents": 350,
+      "price_note": "From $3.50",
+      "units_30d": 96,
+      "revenue_30d_cents": 33600,
+      "real_units": false
+    },
+    {
+      "product_id": 56713,
+      "name": "Adhesive Transfer Tape",
+      "category": "Accessories",
+      "unit_price_cents": 150,
+      "price_note": "From $1.50",
+      "units_30d": 215,
+      "revenue_30d_cents": 32250,
+      "real_units": false
+    }
+  ],
+  "averages": {
+    "avg_order_web_cents": 5925,
+    "avg_order_store_cents": 6745,
+    "orders_per_open_day": 23,
+    "reseller_share_of_revenue_pct": 84,
+    "repeat_order_rate_pct": 71
+  }
+}
