@@ -1,0 +1,311 @@
+{
+  "meta": {
+    "sample": false,
+    "generated_at": "2026-11-03T22:50:53.736Z",
+    "as_of": "2026-11-03T22:50:53.736Z",
+    "currency": "USD",
+    "money_unit": "cents",
+    "source": "WooCommerce orders and Kixxl sheet files. Paid orders only. Sales are sheet prices before tax and shipping."
+  },
+  "reorders": {
+    "paid_sheets": 5864,
+    "sheet_sales_cents": 14464968,
+    "customers": 1032,
+    "repeat_customers": 580,
+    "sheets_without_design_data": 206,
+    "same_sheet": {
+      "sheets": 69,
+      "reorders": 88,
+      "customers": 48,
+      "value_cents": 301827,
+      "share_of_sales_pct": 2.1,
+      "typical_days_between": 2.9
+    },
+    "reused_design": {
+      "sheets": 613,
+      "customers": 103,
+      "value_cents": 1981681,
+      "share_of_sales_pct": 13.7
+    },
+    "top10": [
+      {
+        "customer": "Shonderlyn M.",
+        "times_ordered": 3,
+        "first_date": "2026-10-12",
+        "last_date": "2026-10-16",
+        "designs": 15,
+        "length_in": 50.8,
+        "reorder_value_cents": 39143,
+        "total_value_cents": 42193,
+        "preview_url": "https://d3uxk88roi69oj.cloudfront.net/shops/mandmvinyl.com/customer-uploads/4408087858772/2026/10/Sheet_1_f601a779-6203-42c6-901a-ad6da94eed97.png"
+      },
+      {
+        "customer": "Nakia S.",
+        "times_ordered": 4,
+        "first_date": "2026-04-14",
+        "last_date": "2026-04-17",
+        "designs": 7,
+        "length_in": 95.32,
+        "reorder_value_cents": 33162,
+        "total_value_cents": 35119,
+        "preview_url": "https://d3uxk88roi69oj.cloudfront.net/shops/mandmvinyl.com/customer-uploads/4408087813837/2026/04/Sheet_1_4d40573d-038c-4c6c-a36a-32f32019fc93.png"
+      },
+      {
+        "customer": "Bonnie B.",
+        "times_ordered": 3,
+        "first_date": "2026-08-04",
+        "last_date": "2026-08-21",
+        "designs": 50,
+        "length_in": 18.13,
+        "reorder_value_cents": 23884,
+        "total_value_cents": 26924,
+        "preview_url": "https://d3uxk88roi69oj.cloudfront.net/shops/mandmvinyl.com/customer-uploads/4408087812637/2026/08/Sheet_1_38a2fd0d-4971-4021-b3d7-2d74c4461d47.png"
+      },
+      {
+        "customer": "Mykah M.",
+        "times_ordered": 3,
+        "first_date": "2026-05-06",
+        "last_date": "2026-05-17",
+        "designs": 4,
+        "length_in": 164.89,
+        "reorder_value_cents": 19226,
+        "total_value_cents": 21968,
+        "preview_url": "https://d3uxk88roi69oj.cloudfront.net/shops/mandmvinyl.com/customer-uploads/4408087824054/2026/05/Sheet_1_5e59a406-3286-4cdf-8e7a-5d3ffee48dc3.png"
+      },
+      {
+        "customer": "chelsi c.",
+        "times_ordered": 2,
+        "first_date": "2026-05-26",
+        "last_date": "2026-05-27",
+        "designs": 35,
+        "length_in": 20.2,
+        "reorder_value_cents": 18668,
+        "total_value_cents": 25658,
+        "preview_url": "https://d3uxk88roi69oj.cloudfront.net/shops/mandmvinyl.com/customer-uploads/4408087812286/2026/05/Sheet_2_518f326f-5e29-4cbb-bb87-6c611153d7e3.png"
+      },
+      {
+        "customer": "It's Sew & Seaux",
+        "times_ordered": 2,
+        "first_date": "2026-09-10",
+        "last_date": "2026-09-23",
+        "designs": 42,
+        "length_in": 230.97,
+        "reorder_value_cents": 13466,
+        "total_value_cents": 21089,
+        "preview_url": "https://d3uxk88roi69oj.cloudfront.net/shops/mandmvinyl.com/customer-uploads/4408087825609/2026/09/Sheet_1_acff331c-0bf4-44bf-b433-d78e4244a90f.png"
+      },
+      {
+        "customer": "Crystal C.",
+        "times_ordered": 3,
+        "first_date": "2026-03-11",
+        "last_date": "2026-03-12",
+        "designs": 53,
+        "length_in": 167.38,
+        "reorder_value_cents": 12988,
+        "total_value_cents": 29808,
+        "preview_url": "https://d3uxk88roi69oj.cloudfront.net/shops/mandmvinyl.com/customer-uploads/4408087814940/2026/03/Sheet_1_b2946046-0cd0-4f46-961f-30e60af2f219.png"
+      },
+      {
+        "customer": "Shameka S.",
+        "times_ordered": 2,
+        "first_date": "2026-06-11",
+        "last_date": "2026-06-15",
+        "designs": 20,
+        "length_in": 188.14,
+        "reorder_value_cents": 10969,
+        "total_value_cents": 16508,
+        "preview_url": "https://d3uxk88roi69oj.cloudfront.net/shops/mandmvinyl.com/customer-uploads/44080878112/2026/06/Sheet_1_e98263a8-3b97-49e4-9106-823c979d30ec.png"
+      },
+      {
+        "customer": "Genesis B.",
+        "times_ordered": 2,
+        "first_date": "2026-05-29",
+        "last_date": "2026-06-02",
+        "designs": 5,
+        "length_in": 178.34,
+        "reorder_value_cents": 10397,
+        "total_value_cents": 13714,
+        "preview_url": "https://d3uxk88roi69oj.cloudfront.net/shops/mandmvinyl.com/customer-uploads/44080878924/2026/06/Sheet_1_77c27c7d-4d5a-4dcc-9e45-cb1bbf35ea40.png"
+      },
+      {
+        "customer": "Yolonda T.",
+        "times_ordered": 3,
+        "first_date": "2026-09-02",
+        "last_date": "2026-10-18",
+        "designs": 6,
+        "length_in": 12,
+        "reorder_value_cents": 8780,
+        "total_value_cents": 10564,
+        "preview_url": "https://d3uxk88roi69oj.cloudfront.net/shops/mandmvinyl.com/customer-uploads/4408087818586/2026/10/Sheet_1_894e24e9-430d-4c95-8036-38843ce513e7.png"
+      }
+    ]
+  },
+  "trends": {
+    "first_month": "2026-01",
+    "monthly": [
+      {
+        "month": "2026-01",
+        "label": "Jan",
+        "partial": false,
+        "sheets": 164,
+        "sales_cents": 314717,
+        "avg_sheet_cents": 1919,
+        "avg_sqft": 6.18,
+        "customers": 86,
+        "new_customers": 86
+      },
+      {
+        "month": "2026-02",
+        "label": "Feb",
+        "partial": false,
+        "sheets": 305,
+        "sales_cents": 587412,
+        "avg_sheet_cents": 1926,
+        "avg_sqft": 5.9,
+        "customers": 136,
+        "new_customers": 98
+      },
+      {
+        "month": "2026-03",
+        "label": "Mar",
+        "partial": false,
+        "sheets": 460,
+        "sales_cents": 1096578,
+        "avg_sheet_cents": 2384,
+        "avg_sqft": 6.76,
+        "customers": 173,
+        "new_customers": 110
+      },
+      {
+        "month": "2026-04",
+        "label": "Apr",
+        "partial": false,
+        "sheets": 483,
+        "sales_cents": 1106479,
+        "avg_sheet_cents": 2291,
+        "avg_sqft": 6.42,
+        "customers": 201,
+        "new_customers": 97
+      },
+      {
+        "month": "2026-05",
+        "label": "May",
+        "partial": false,
+        "sheets": 682,
+        "sales_cents": 1800515,
+        "avg_sheet_cents": 2640,
+        "avg_sqft": 7.31,
+        "customers": 242,
+        "new_customers": 114
+      },
+      {
+        "month": "2026-06",
+        "label": "Jun",
+        "partial": false,
+        "sheets": 530,
+        "sales_cents": 1408322,
+        "avg_sheet_cents": 2657,
+        "avg_sqft": 7.21,
+        "customers": 209,
+        "new_customers": 80
+      },
+      {
+        "month": "2026-07",
+        "label": "Jul",
+        "partial": false,
+        "sheets": 576,
+        "sales_cents": 1516805,
+        "avg_sheet_cents": 2633,
+        "avg_sqft": 7.41,
+        "customers": 240,
+        "new_customers": 96
+      },
+      {
+        "month": "2026-08",
+        "label": "Aug",
+        "partial": false,
+        "sheets": 528,
+        "sales_cents": 1374319,
+        "avg_sheet_cents": 2603,
+        "avg_sqft": 6.99,
+        "customers": 196,
+        "new_customers": 54
+      },
+      {
+        "month": "2026-09",
+        "label": "Sep",
+        "partial": false,
+        "sheets": 900,
+        "sales_cents": 2341544,
+        "avg_sheet_cents": 2602,
+        "avg_sqft": 7.51,
+        "customers": 305,
+        "new_customers": 115
+      },
+      {
+        "month": "2026-10",
+        "label": "Oct",
+        "partial": false,
+        "sheets": 1176,
+        "sales_cents": 2780635,
+        "avg_sheet_cents": 2364,
+        "avg_sqft": 6.77,
+        "customers": 401,
+        "new_customers": 174
+      },
+      {
+        "month": "2026-11",
+        "label": "Nov",
+        "partial": true,
+        "sheets": 58,
+        "sales_cents": 135442,
+        "avg_sheet_cents": 2335,
+        "avg_sqft": 7.04,
+        "customers": 49,
+        "new_customers": 7
+      }
+    ],
+    "season": {
+      "label": "September and October",
+      "prior_label": "July and August",
+      "now": {
+        "sheets": 2076,
+        "sales_cents": 5122179,
+        "avg_sheet_cents": 2467,
+        "avg_sqft": 7.1,
+        "customers": 542,
+        "new_customers": 289
+      },
+      "prior": {
+        "sheets": 1104,
+        "sales_cents": 2891124,
+        "avg_sheet_cents": 2619,
+        "avg_sqft": 7.21,
+        "customers": 344,
+        "new_customers": 150
+      },
+      "sizes": [
+        {
+          "label": "Under 2 feet",
+          "share_pct": 47.7,
+          "prior_share_pct": 47.4
+        },
+        {
+          "label": "2 to 5 feet",
+          "share_pct": 31.2,
+          "prior_share_pct": 30.5
+        },
+        {
+          "label": "5 to 10 feet",
+          "share_pct": 13,
+          "prior_share_pct": 13.5
+        },
+        {
+          "label": "Over 10 feet",
+          "share_pct": 8.1,
+          "prior_share_pct": 8.5
+        }
+      ]
+    }
+  }
+}

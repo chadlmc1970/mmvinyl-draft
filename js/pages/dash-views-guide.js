@@ -6,7 +6,7 @@
   var GUIDE = [
     {
       key: 'start', label: 'Start here', go: null,
-      what: 'The dashboard is the one place you run M&M Vinyl. Five screens in the left menu: Today, Orders, Customers, Money, and Settings. Web and in-store orders show together.',
+      what: 'The dashboard is the one place you run M&M Vinyl. Six screens in the left menu: Today, Orders, Gang Sheets, Customers, Money, and Settings. Web and in-store orders show together.',
       why: 'Nothing slips by without you seeing it: a late order, a failed payment, a reseller who stopped ordering. You stop checking five different systems.',
       when: [
         ['Morning', 'Open Today. Clear What needs you now.'],

@@ -3,8 +3,8 @@
     "schema_version": "1.1",
     "sample": false,
     "sample_note": null,
-    "generated_at": "2026-11-03T12:24:55-06:00",
-    "as_of": "2026-11-03T12:24:55-06:00",
+    "generated_at": "2026-11-03T16:48:54-06:00",
+    "as_of": "2026-11-03T16:48:54-06:00",
     "timezone": "America/Chicago",
     "currency": "USD",
     "money_unit": "cents",
@@ -645,9 +645,9 @@
     },
     {
       "date": "2026-11-03",
-      "web_cents": 44760,
+      "web_cents": 59156,
       "store_cents": null,
-      "orders_web": 10,
+      "orders_web": 17,
       "orders_store": null
     }
   ],
@@ -758,10 +758,10 @@
     },
     {
       "week_start": "2026-11-02",
-      "web_cents": 122666,
+      "web_cents": 137062,
       "store_cents": null,
-      "orders": 36,
-      "total_cents": 122666,
+      "orders": 43,
+      "total_cents": 137062,
       "partial": true
     }
   ],
@@ -786,18 +786,18 @@
   },
   "current_week_to_date": {
     "week_start": "2026-11-02",
-    "total_cents": 122666
+    "total_cents": 137062
   },
   "by_category_28d": [
     {
       "category": "DTF [Direct to Film]",
-      "revenue_cents": 2372798,
+      "revenue_cents": 2385169,
       "prev_period_cents": 2370136,
       "share_pct": 76
     },
     {
       "category": "Adults",
-      "revenue_cents": 498492,
+      "revenue_cents": 500517,
       "prev_period_cents": 590067,
       "share_pct": 16
     },
@@ -897,10 +897,10 @@
       "product_id": 60967,
       "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P &amp; 10A SAT FOR SAME DAY",
       "category": "DTF [Direct to Film]",
-      "unit_price_cents": 2923,
+      "unit_price_cents": 3938,
       "price_note": null,
-      "units_30d": 1097,
-      "revenue_30d_cents": 2591815,
+      "units_30d": 1106,
+      "revenue_30d_cents": 2604186,
       "real_units": true
     },
     {
@@ -919,8 +919,8 @@
       "category": "Adults",
       "unit_price_cents": 475,
       "price_note": null,
-      "units_30d": 349,
-      "revenue_30d_cents": 181481,
+      "units_30d": 352,
+      "revenue_30d_cents": 183506,
       "real_units": true
     },
     {
@@ -995,9 +995,9 @@
     }
   ],
   "averages": {
-    "avg_order_web_cents": 2981,
+    "avg_order_web_cents": 2976,
     "avg_order_store_cents": null,
-    "orders_per_open_day": 38,
+    "orders_per_open_day": 38.3,
     "reseller_share_of_revenue_pct": null,
     "repeat_order_rate_pct": null
   }

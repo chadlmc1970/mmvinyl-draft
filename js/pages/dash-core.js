@@ -84,6 +84,7 @@
 
   var ICONS = {
     today: '<path d="M4 11 12 4l8 7v8.5a.5.5 0 0 1-.5.5H15v-6H9v6H4.5a.5.5 0 0 1-.5-.5z"/>',
+    sheet: '<path d="M6 3.5h12v17H6z"/><path d="M6 9h12M6 14.5h12M12 3.5v17"/>',
     orders: '<rect x="5" y="3.5" width="14" height="17" rx="2"/><path d="M8.5 8.5h7M8.5 12.5h7M8.5 16.5h4"/>',
     users: '<circle cx="9" cy="8.5" r="3.3"/><path d="M3 20c.5-3.4 3-5.2 6-5.2s5.5 1.8 6 5.2M16 5.6a3.3 3.3 0 0 1 0 6.1M18 15.2c1.6.7 2.7 2.2 3 4.8"/>',
     sheet: '<rect x="3.5" y="3.5" width="17" height="17" rx="2"/><rect x="7" y="7" width="4" height="4" rx="1"/><rect x="13" y="7" width="4" height="7" rx="1"/><rect x="7" y="13" width="4" height="4" rx="1"/>',
@@ -250,7 +251,7 @@
     }, o.ms || 3200);
   };
 
-  var FILES = ['kpis', 'queue', 'orders', 'customers', 'gangsheets', 'sales', 'payments', 'shipments', 'messages', 'reviews', 'inventory', 'integrations', 'social', 'settings', 'report'];
+  var FILES = ['kpis', 'queue', 'orders', 'customers', 'gangsheets', 'sales', 'payments', 'shipments', 'messages', 'reviews', 'inventory', 'integrations', 'social', 'settings', 'report', 'gang-insights'];
   OD.data = {};
   OD.isLive = function () { var s = OD.data.sales; return !!(s && s.meta && s.meta.sample === false); };
   var LIVE_NOTE = '<b>Live store data.</b> Orders, sales, payments, customers, gang sheets, stock, and the weekly report come straight from the WooCommerce store. Not connected yet and left blank: texts and messages, review ratings, store (Shopkeep) sales, shipping labels, printer split, and reprints.';

@@ -3,8 +3,8 @@
     "schema_version": "1.1",
     "sample": false,
     "sample_note": null,
-    "generated_at": "2026-11-03T12:24:55-06:00",
-    "as_of": "2026-11-03T12:24:55-06:00",
+    "generated_at": "2026-11-03T16:48:54-06:00",
+    "as_of": "2026-11-03T16:48:54-06:00",
     "timezone": "America/Chicago",
     "currency": "USD",
     "money_unit": "cents",
@@ -17,8 +17,8 @@
     {
       "key": "card",
       "label": "Cards",
-      "amount_cents": 2448408,
-      "count": 855,
+      "amount_cents": 2457792,
+      "count": 860,
       "failed_count": 16,
       "fail_rate_pct": 1.8,
       "live_status": "live",
@@ -27,8 +27,8 @@
     {
       "key": "paypal",
       "label": "PayPal",
-      "amount_cents": 577738,
-      "count": 185,
+      "amount_cents": 582750,
+      "count": 187,
       "failed_count": 0,
       "fail_rate_pct": 0,
       "live_status": "live",
@@ -187,7 +187,7 @@
   ],
   "payouts": [],
   "web_vs_store": {
-    "web_cents": 3093605,
+    "web_cents": 3108001,
     "store_cents": null
   },
   "note": "Payouts and store payments are not connected yet."

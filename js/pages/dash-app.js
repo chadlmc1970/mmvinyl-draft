@@ -7,6 +7,7 @@
   var NAV = [
     { key: 'today', label: 'Today', icon: 'today' },
     { key: 'orders', label: 'Orders', icon: 'orders' },
+    { key: 'gangs', label: 'Gang Sheets', icon: 'sheet' },
     { key: 'customers', label: 'Customers', icon: 'users' },
     { key: 'money', label: 'Money', icon: 'money' },
     { key: 'settings', label: 'Settings', icon: 'gear' },
