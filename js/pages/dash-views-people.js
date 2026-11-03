@@ -26,7 +26,7 @@
   }
 
   function accounts() {
-    return OD.data.customers.customers.filter(function (c) { return c.type === 'reseller'; });
+    return OD.data.customers.customers.filter(function (c) { return OD.isAccount(c); });
   }
 
   function rows() {

@@ -59,13 +59,16 @@
     return parseInt(isoStr.slice(11, 13), 10) * 60 + parseInt(isoStr.slice(14, 16), 10);
   };
   OD.dateShort = function (date) {
+    if (!date) return '';
     var d = date.slice(0, 10).split('-');
     return MONTHS[+d[1] - 1] + ' ' + +d[2];
   };
   OD.dateDow = function (date) {
+    if (!date) return '';
     return DAYS[OD.dowOf(date)] + ' ' + OD.dateShort(date);
   };
   OD.relDay = function (isoStr, asOf) {
+    if (!isoStr) return '';
     var a = isoStr.slice(0, 10);
     var b = asOf.slice(0, 10);
     var diff = Math.round((new Date(b + 'T12:00:00Z') - new Date(a + 'T12:00:00Z')) / 864e5);
@@ -111,7 +114,8 @@
     download: '<path d="M12 4v11m-4.500-4.500L12 15l4.500-4.500M5 19.500h14"/>',
     bolt: '<path d="m13 3-7.500 10H11l-1 8 7.500-10H12z"/>',
     chev: '<path d="m9 6 6 6-6 6"/>',
-    down: '<path d="m6 9 6 6 6-6"/>'
+    down: '<path d="m6 9 6 6 6-6"/>',
+    help: '<circle cx="12" cy="12" r="8.5"/><path d="M9.600 9.500a2.500 2.500 0 1 1 3.600 2.200c-.800.400-1.200 1-1.200 1.800M12 16.800v.2"/>'
   };
   OD.icon = function (name, cls) {
     return '<svg class="od-icon' + (cls ? ' ' + cls : '') + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + (ICONS[name] || '') + '</svg>';
@@ -140,6 +144,21 @@
   OD.PAY = { card: 'Card', apple_pay: 'Apple Pay', google_pay: 'Google Pay', paypal: 'PayPal', venmo: 'Venmo', cash: 'Cash' };
 
   OD.sampleTag = function () { return ''; };
+
+  OD.isAccount = function (c) {
+    var m = OD.data.customers.meta;
+    return m && m.sample === false ? c.orders_90d >= 3 : c.type === 'reseller';
+  };
+
+  var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  OD.months = function () {
+    var M = OD.data.gangsheets.month_totals;
+    var keys = Object.keys(M).sort();
+    var curKey = keys.filter(function (k) { return /_to_date$/.test(k); })[0];
+    var priorKey = keys.filter(function (k) { return k !== curKey; })[0];
+    var name = function (k) { return MONTHS[parseInt(k.slice(5, 7), 10) - 1]; };
+    return { curKey: curKey, priorKey: priorKey, cur: M[curKey].total, prior: M[priorKey].total, curLabel: name(curKey), priorLabel: name(priorKey), curStart: curKey.slice(0, 7) + '-01', curYm: curKey.slice(0, 7) };
+  };
   OD.realTag = function (text) {
     return '<span class="od-real"><i></i>' + esc(text && text !== 'Real count' ? text : 'Real') + '</span>';
   };

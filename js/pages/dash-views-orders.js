@@ -53,7 +53,7 @@
     return {
       order_id: o.id, number: o.number, promised_at: o.promised_at, customer_label: o.customer_label, gang_sheets: o.gang_sheets,
       summary: o.lines.map(function (l) { return l.qty + ' x ' + l.name; }).slice(0, 2).join(', ') + (o.lines.length > 2 ? ' +' + (o.lines.length - 2) + ' more' : ''),
-      risk: o.risk, status: o.status, pickup_text: o.pickup_text, dayLabel: o.promised_at.startsWith(asOf) ? '' : OD.dateDow(o.promised_at).split(' ')[0]
+      risk: o.risk, status: o.status, pickup_text: o.pickup_text, dayLabel: !o.promised_at || o.promised_at.startsWith(asOf) ? '' : OD.dateDow(o.promised_at).split(' ')[0]
     };
   }
 
@@ -113,7 +113,7 @@
     var oos = OD.data.inventory.items.filter(function (i) { return i.state === 'out_of_stock'; });
     var low = OD.data.inventory.items.filter(function (i) { return i.state === 'low'; });
     return '<div class="od-drawer__top"><h2>Reprints and stock</h2></div>' +
-      '<h3 class="od-h3">Reprints this month: ' + g.reprints['2026-10_to_date'] + '</h3><ul class="od-plain">' + g.reprints.reasons.map(function (r) { return '<li><span>' + esc(r.reason) + '</span><b>' + r.count + '</b></li>'; }).join('') + '</ul>' +
+      '<h3 class="od-h3">Reprints this month: ' + (g.reprints[OD.months().curKey] == null ? 'not connected' : g.reprints[OD.months().curKey]) + '</h3><ul class="od-plain">' + g.reprints.reasons.map(function (r) { return '<li><span>' + esc(r.reason) + '</span><b>' + r.count + '</b></li>'; }).join('') + '</ul>' +
       '<h3 class="od-h3">Out of stock: ' + oos.length + ' ' + OD.realTag() + '</h3><ul class="od-plain">' + oos.map(function (i) { return '<li><span>' + esc(i.name) + '</span></li>'; }).join('') + '</ul>' +
       '<h3 class="od-h3">Running low: ' + low.length + '</h3><ul class="od-plain">' + low.map(function (i) { return '<li><span>' + esc(i.name) + '</span><b>' + i.qty + ' left</b></li>'; }).join('') + '</ul>' +
       '<p class="od-note">Low-stock counts are sample. Out-of-stock flags are read from the live catalog.</p>';
@@ -132,9 +132,10 @@
       var d = Math.max(0, done);
       return '<div class="od-load"><div class="od-load__top"><b>' + name + '</b><span>' + (d + queued) + ' of ' + capacity + ' sheets today</span></div><div class="od-load__track"><span class="od-load__done" style="--w:' + Math.min(100, d / capacity * 100).toFixed(1) + '%"></span><span class="od-load__queued" style="--w:' + Math.min(100, queued / capacity * 100).toFixed(1) + '%;--o:' + Math.min(100, d / capacity * 100).toFixed(1) + '%"></span></div></div>';
     }
+    if (t.printer_1 == null) return OD.card('Sheets today', '<p class="od-note"><b>' + t.total_so_far + '</b> gang sheets ordered so far today. The split between printers is not recorded.</p><button class="od-link" type="button" data-more-printers>Reprints and stock ' + OD.icon('chev') + '</button>', { id: 'od-printers' });
     return OD.card('Printers today',
       meter('Printer 1', t.printer_1 - open[1], open[1], cap.printer_1) + meter('Printer 2', t.printer_2 - open[2], open[2], cap.printer_2) +
-      '<p class="od-note">' + g.month_totals['2026-10_to_date'].total + ' gang sheets this month ' + OD.realTag() + '. Capacity of ' + cap.printer_1 + ' is a placeholder until you set it in Settings.</p><button class="od-link" type="button" data-more-printers>Reprints and stock ' + OD.icon('chev') + '</button>',
+      '<p class="od-note">' + OD.months().cur + ' gang sheets this month ' + OD.realTag() + '. Capacity of ' + cap.printer_1 + ' is a placeholder until you set it in Settings.</p><button class="od-link" type="button" data-more-printers>Reprints and stock ' + OD.icon('chev') + '</button>',
       { id: 'od-printers' });
   }
 

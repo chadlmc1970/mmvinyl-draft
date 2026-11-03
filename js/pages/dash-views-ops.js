@@ -8,14 +8,15 @@
   OD.views.sheets = function () {
     var G = OD.data.gangsheets;
     var daily = G.daily;
-    var sept = G.month_totals['2026-09'].total;
-    var oct = G.month_totals['2026-10_to_date'].total;
-    var octDays = daily.filter(function (d) { return d.date >= '2026-10-01'; });
+    var MO = OD.months();
+    var sept = MO.prior;
+    var oct = MO.cur;
+    var octDays = daily.filter(function (d) { return d.date >= MO.curStart; });
     var openOct = octDays.filter(function (d) { return OD.dowOf(d.date) !== 0; }).length;
     var perDay = oct / (openOct - 0.6);
     var remainingDates = [];
     for (var i = 27; i <= 31; i++) {
-      var dt = '2026-10-' + i;
+      var dt = MO.curYm + '-' + i;
       if (OD.dowOf(dt) !== 0) remainingDates.push(dt);
     }
     var projected = Math.round(oct + perDay * remainingDates.length);
@@ -23,21 +24,21 @@
     var pct = Math.min(100, (oct / projected) * 100);
     var hero =
       '<section class="od-card od-card--dark od-sheethero">' +
-      '<div class="od-sheethero__main"><p class="od-eyebrow">Gang sheets, October so far ' + OD.realTag('Real count') + '</p>' +
+      '<div class="od-sheethero__main"><p class="od-eyebrow">Gang sheets, ' + MO.curLabel + ' so far ' + OD.realTag('Real count') + '</p>' +
       '<div class="od-sheethero__num" data-od-count="' + oct + '">0</div>' +
-      '<p class="od-sheethero__p">That is <b>' + (oct - sept) + ' more</b> than all of September (<b>' + sept + '</b>) with ' + remainingDates.length + ' open days left in the month. <span class="od-up">' + OD.pct(delta) + '</span></p></div>' +
-      '<div class="od-sheethero__bar"><div class="od-track"><span class="od-track__fill" style="--w:' + (oct / projected * 100).toFixed(1) + '%"></span><span class="od-track__mark" style="--w:' + (sept / projected * 100).toFixed(1) + '%"><i>Sept ' + sept + '</i></span></div>' +
-      '<div class="od-track__legend"><span>0</span><span>Pace to finish near <b>' + OD.num(projected) + '</b> <em>(estimate at the October daily average)</em></span></div></div>' +
+      '<p class="od-sheethero__p">That is <b>' + (oct - sept) + ' more</b> than all of ' + MO.priorLabel + ' (<b>' + sept + '</b>) with ' + remainingDates.length + ' open days left in the month. <span class="od-up">' + OD.pct(delta) + '</span></p></div>' +
+      '<div class="od-sheethero__bar"><div class="od-track"><span class="od-track__fill" style="--w:' + (oct / projected * 100).toFixed(1) + '%"></span><span class="od-track__mark" style="--w:' + (sept / projected * 100).toFixed(1) + '%"><i>' + MO.priorLabel.slice(0, 4) + ' ' + sept + '</i></span></div>' +
+      '<div class="od-track__legend"><span>0</span><span>Pace to finish near <b>' + OD.num(projected) + '</b> <em>(estimate at the ' + MO.curLabel + ' daily average)</em></span></div></div>' +
       '</section>';
     var stats = '<div class="od-stats">' +
-      OD.stat({ label: 'September total', count: sept, note: 'the baseline', real: true }) +
-      OD.stat({ label: 'Per open day, October', count: Math.round(perDay), note: 'worked out from the real total', real: true, realText: 'Estimate' }) +
-      OD.stat({ label: 'Reprint rate, October', html: (G.reprints['2026-10_to_date'] / oct * 100).toFixed(1) + '%', note: 'Sept ' + (G.reprints['2026-09'] / sept * 100).toFixed(1) + '%', source: 'Kixxl + shop log' }) +
+      OD.stat({ label: MO.priorLabel + ' total', count: sept, note: 'the baseline', real: true }) +
+      OD.stat({ label: 'Per open day, ' + MO.curLabel, count: Math.round(perDay), note: 'worked out from the real total', real: true, realText: 'Estimate' }) +
+      OD.stat({ label: 'Reprint rate, ' + MO.curLabel, html: G.reprints[MO.curKey] == null ? 'Not connected' : (G.reprints[MO.curKey] / oct * 100).toFixed(1) + '%', note: G.reprints[MO.priorKey] == null ? 'no reprint log yet' : MO.priorLabel.slice(0, 4) + ' ' + (G.reprints[MO.priorKey] / sept * 100).toFixed(1) + '%', source: 'Kixxl + shop log' }) +
       OD.stat({ label: 'Sheets today so far', count: G.today.total_so_far, note: G.today.queued_open + ' still queued', source: 'WooCommerce' }) +
       '</div>';
-    var chartCard = OD.card('Sheets per day, September and October',
-      '<div data-sheet-chart></div><p class="od-fine">The two monthly totals are real. How they split across days and between printers is sample, because daily counts need the Kixxl or WooCommerce feed.</p>',
-      { source: 'Kixxl via WooCommerce', sub: 'Printer 2 arrived Oct 1, so October bars split in two.' });
+    var chartCard = OD.card('Sheets per day, ' + MO.priorLabel + ' and ' + MO.curLabel,
+      '<div data-sheet-chart></div><p class="od-fine">' + (G.meta && G.meta.sample === false ? 'Counted from WooCommerce orders. The split between printers is not recorded.' : 'The two monthly totals are real. How they split across days and between printers is sample, because daily counts need the Kixxl or WooCommerce feed.') + '</p>',
+      { source: 'Kixxl via WooCommerce', sub: G.meta && G.meta.sample === false ? '' : 'Printer 2 arrived Oct 1, so October bars split in two.' });
     var wd = [0, 0, 0, 0, 0, 0, 0], wdn = [0, 0, 0, 0, 0, 0, 0];
     daily.forEach(function (d) {
       var k = OD.dowOf(d.date);
@@ -48,22 +49,22 @@
     var avgs = [1, 2, 3, 4, 5, 6].map(function (k) { return wdn[k] ? Math.round(wd[k] / wdn[k]) : 0; });
     var weekdayCard = OD.card('Which days are busiest', '<div data-wd-chart></div>', { source: 'Kixxl via WooCommerce', sub: 'Average sheets by weekday, to plan who is in.' });
     var p1 = G.october_by_printer.printer_1, p2 = G.october_by_printer.printer_2;
-    var splitCard = OD.card('October by printer', OD.charts.donut({ labels: ['Printer 1', 'Printer 2'], values: [p1, p2], center: OD.num(p1 + p2), centerSub: 'sheets', size: 150, stroke: 22, label: 'October sheets by printer' }), { source: 'Kixxl', sub: 'Printer 2 installed Oct 1.' });
+    var splitCard = OD.card(MO.curLabel + ' by printer', p1 == null ? '<p class="od-note">Not connected. WooCommerce does not record which printer ran a sheet.</p>' : OD.charts.donut({ labels: ['Printer 1', 'Printer 2'], values: [p1, p2], center: OD.num(p1 + p2), centerSub: 'sheets', size: 150, stroke: 22, label: MO.curLabel + ' sheets by printer' }), { source: 'Kixxl', sub: 'Printer 2 installed Oct 1.' });
     var reasons = G.reprints.reasons.map(function (r) { return { label: r.reason, value: r.count, display: String(r.count) }; });
     var reprintCard = OD.card('Reprints and why', OD.charts.rank(reasons) + '<p class="od-fine">Each reprint costs a sheet plus a person\'s time. The art check aims at the top two reasons: transparent backgrounds and low resolution.</p>', { source: 'Shop log (to build)', sub: G.reprints['2026-10_to_date'] + ' reprints in October so far, ' + G.reprints['2026-09'] + ' in September.' });
     var html = hero + stats + '<div class="od-grid od-grid--main-side"><div class="od-col">' + chartCard + weekdayCard + '</div><div class="od-col">' + OD.printersCard() + splitCard + reprintCard + '</div></div>';
     return {
       title: 'Gang Sheets',
-      sub: 'Volume against the September baseline, printer load, and reprints.',
+      sub: 'Volume against the ' + MO.priorLabel + ' baseline, printer load, and reprints.',
       html: html,
       mount: function (root) {
         var labels = daily.map(function (d) { return OD.dateShort(d.date); });
         OD.charts.bars(root.querySelector('[data-sheet-chart]'), {
           labels: labels,
           tipLabels: daily.map(function (d) { return OD.dateDow(d.date); }),
-          series: [{ name: 'Printer 1', values: daily.map(function (d) { return d.printer_1; }) }, { name: 'Printer 2', values: daily.map(function (d) { return d.printer_2; }) }],
-          stacked: true, height: 260, maxBar: 14, labelEvery: 7, label: 'Gang sheets per day by printer',
-          ref: [{ value: Math.round(sept / 26), label: 'Sept average' }]
+          series: daily.length && daily[0].printer_1 == null ? [{ name: 'Sheets', values: daily.map(function (d) { return d.total; }) }] : [{ name: 'Printer 1', values: daily.map(function (d) { return d.printer_1; }) }, { name: 'Printer 2', values: daily.map(function (d) { return d.printer_2; }) }],
+          stacked: true, height: 260, maxBar: 14, labelEvery: 7, label: 'Gang sheets per day',
+          ref: [{ value: Math.round(sept / 26), label: MO.priorLabel.slice(0, 4) + ' average' }]
         });
         OD.charts.bars(root.querySelector('[data-wd-chart]'), {
           labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
@@ -174,6 +175,9 @@
 
   OD.views.messages = function () {
     var M = OD.data.messages;
+    if (M.meta && M.meta.connected === false) {
+      return { title: 'Messages', sub: 'Texts sent, who opted in, and the quote inbox.', html: '<section class="od-card"><div class="od-card__body"><h2>Not connected</h2><p>The texting service and the quote inbox are not linked yet, so nothing is shown here.</p></div></section>', mount: function () {} };
+    }
     var t = M.texts_30d;
     var stats = '<div class="od-stats">' +
       OD.stat({ label: 'Texts sent, 30 days', count: t.sent, note: 'automatic plus yours', source: 'Texting service' }) +

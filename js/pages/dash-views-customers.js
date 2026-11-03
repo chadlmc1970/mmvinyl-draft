@@ -21,7 +21,7 @@
   }
 
   function resellers() {
-    return OD.data.customers.customers.filter(function (c) { return c.type === 'reseller'; }).sort(function (a, b) {
+    return OD.data.customers.customers.filter(function (c) { return OD.isAccount(c); }).sort(function (a, b) {
       return CAD[a.cadence_status].rank - CAD[b.cadence_status].rank || b.spend_90d_cents - a.spend_90d_cents;
     });
   }

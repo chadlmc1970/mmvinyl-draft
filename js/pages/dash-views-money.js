@@ -39,8 +39,8 @@
     var fails = P.failures.filter(function (f) { return !(f.recovered || S.recovered[f.id]); }).length;
     var cells = '<section class="od-card od-card--strip"><div class="od-cells">' +
       '<div class="od-cell"><span class="od-cell__label">Sales, last 6 open days</span><b class="od-cell__value" data-od-count="' + cur + '" data-money="1">' + OD.money(cur, { cents: false }) + '</b><span class="od-cell__note"><span class="od-delta od-delta--' + (d >= 0 ? 'good' : 'bad') + '">' + (d >= 0 ? 'Up ' : 'Down ') + Math.abs(d).toFixed(1) + '%</span> on the 6 days before</span></div>' +
-      '<div class="od-cell"><span class="od-cell__label">Average web order</span><b class="od-cell__value" data-od-count="' + SA.averages.avg_order_web_cents + '" data-money="1">' + OD.money(SA.averages.avg_order_web_cents, { cents: false }) + '</b><span class="od-cell__note">Store: ' + OD.money(SA.averages.avg_order_store_cents, { cents: false }) + '</span></div>' +
-      '<div class="od-cell"><span class="od-cell__label">Next payout</span><b class="od-cell__value">' + OD.money(P.payouts[0].amount_cents, { cents: false }) + '</b><span class="od-cell__note">on its way, ' + OD.dateShort(P.payouts[0].date) + '</span></div></div></section>';
+      '<div class="od-cell"><span class="od-cell__label">Average web order</span><b class="od-cell__value" data-od-count="' + SA.averages.avg_order_web_cents + '" data-money="1">' + OD.money(SA.averages.avg_order_web_cents, { cents: false }) + '</b><span class="od-cell__note">' + (SA.averages.avg_order_store_cents == null ? 'Store: not connected' : 'Store: ' + OD.money(SA.averages.avg_order_store_cents, { cents: false })) + '</span></div>' +
+      '<div class="od-cell"><span class="od-cell__label">Next payout</span><b class="od-cell__value">' + (P.payouts.length ? OD.money(P.payouts[0].amount_cents, { cents: false }) : 'Not connected') + '</b><span class="od-cell__note">' + (P.payouts.length ? 'on its way, ' + OD.dateShort(P.payouts[0].date) : 'payouts are not linked yet') + '</span></div></div></section>';
     var chart = OD.card('Daily sales', '<div data-money-chart></div><div class="od-chips" role="group" aria-label="More detail"><button class="od-chip" type="button" data-md="categories">By category</button><button class="od-chip" type="button" data-md="products">Top products</button><button class="od-chip" type="button" data-md="methods">How people pay</button><button class="od-chip" type="button" data-md="failed">Failed payments' + (fails ? ' <em>' + fails + '</em>' : '') + '</button><button class="od-chip" type="button" data-md="payouts">Payouts</button></div>',
       { sub: 'Web and store, the last four weeks. Hover or use the arrow keys for each day.', actions: '<a class="od-btn" href="/owner-dashboard/report/">Weekly report</a>' });
     return {
@@ -51,8 +51,8 @@
         OD.charts.bars(root.querySelector('[data-money-chart]'), {
           labels: rows.map(function (r) { return OD.dateShort(r.date); }),
           tipLabels: rows.map(function (r) { return OD.dateDow(r.date); }),
-          series: [{ name: 'Web', values: rows.map(function (r) { return r.web_cents; }) }, { name: 'Store', values: rows.map(function (r) { return r.store_cents; }) }],
-          stacked: true, height: Math.max(190, Math.min(360, window.innerHeight - 560)), maxBar: 22, fmt: moneyAxis, tipFmt: moneyExact, axisFmt: moneyAxis, labelEvery: 7, leftPad: 58, keyboard: true, label: 'Daily sales, web and store'
+          series: [{ name: 'Web', values: rows.map(function (r) { return r.web_cents; }) }].concat(SA.meta.store_connected === false ? [] : [{ name: 'Store', values: rows.map(function (r) { return r.store_cents; }) }]),
+          stacked: true, height: Math.max(190, Math.min(360, window.innerHeight - 560)), maxBar: 22, fmt: moneyAxis, tipFmt: moneyExact, axisFmt: moneyAxis, labelEvery: 7, leftPad: 58, keyboard: true, label: SA.meta.store_connected === false ? 'Daily web sales' : 'Daily sales, web and store'
         });
         root.addEventListener('click', function (e) {
           var b = e.target.closest('[data-md]');
