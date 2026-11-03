@@ -36,7 +36,7 @@
     if (items.length > 1) {
       links.hidden = false;
       links.innerHTML =
-        '<p><strong>Add each item on mandmvinyl.com</strong></p><ul>' +
+        '<p><strong>Add each item on our secure store</strong></p><ul>' +
         h.links
           .map(function (l) {
             return '<li><a href="' + MM.esc(l.url) + '" rel="noopener">' + MM.esc(l.name) + ' (' + l.qty + ')</a></li>';

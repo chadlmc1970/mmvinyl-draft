@@ -252,59 +252,174 @@
 
   var FILES = ['kpis', 'queue', 'orders', 'customers', 'gangsheets', 'sales', 'payments', 'shipments', 'messages', 'reviews', 'inventory', 'integrations', 'social', 'settings', 'report'];
   OD.data = {};
-  var LIVE_NOTE = '<b>Live store data.</b> Orders, sales, payments, customers, gang sheets, stock, shipments, and the weekly report come straight from the WooCommerce store. Not connected yet and left blank: texts and messages, review ratings, store (Shopkeep) sales, printer split, and reprints.';
+  OD.isLive = function () { var s = OD.data.sales; return !!(s && s.meta && s.meta.sample === false); };
+  var LIVE_NOTE = '<b>Live store data.</b> Orders, sales, payments, customers, gang sheets, stock, and the weekly report come straight from the WooCommerce store. Not connected yet and left blank: texts and messages, review ratings, store (Shopkeep) sales, shipping labels, printer split, and reprints.';
+  var CORE_FILES = ['kpis', 'queue', 'orders', 'customers', 'gangsheets', 'sales', 'payments', 'shipments', 'inventory', 'report'];
+  var MAX_TRIES = 5;
+  var LOCK_SECONDS = 10;
   var bundlePromise = null;
 
   function b64(s) { var bin = atob(s), out = new Uint8Array(bin.length); for (var i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i); return out; }
 
+  function fail(kind) { var e = new Error(kind); e.kind = kind; return e; }
+
+  function validBundle(enc) {
+    return !!enc && typeof enc === 'object' && typeof enc.salt === 'string' && typeof enc.iv === 'string' && typeof enc.ct === 'string' &&
+      typeof enc.iter === 'number' && enc.iter >= 1 && enc.iter <= 5000000 && enc.iter % 1 === 0;
+  }
+
   function decryptBundle(enc, phrase) {
+    var salt, iv, ct;
+    try { salt = b64(enc.salt); iv = b64(enc.iv); ct = b64(enc.ct); } catch (e) { return Promise.reject(fail('corrupt')); }
+    if (!window.crypto || !crypto.subtle) return Promise.reject(fail('unsupported'));
     var te = new TextEncoder();
-    return crypto.subtle.importKey('raw', te.encode(phrase), 'PBKDF2', false, ['deriveKey'])
+    return crypto.subtle.importKey('raw', te.encode(phrase.trim()), 'PBKDF2', false, ['deriveKey'])
       .then(function (base) {
-        return crypto.subtle.deriveKey({ name: 'PBKDF2', salt: b64(enc.salt), iterations: enc.iter, hash: 'SHA-256' }, base, { name: 'AES-GCM', length: 256 }, false, ['decrypt']);
+        return crypto.subtle.deriveKey({ name: 'PBKDF2', salt: salt, iterations: enc.iter, hash: 'SHA-256' }, base, { name: 'AES-GCM', length: 256 }, false, ['decrypt']);
       })
-      .then(function (key) { return crypto.subtle.decrypt({ name: 'AES-GCM', iv: b64(enc.iv) }, key, b64(enc.ct)); })
-      .then(function (buf) { return JSON.parse(new TextDecoder().decode(buf)); });
+      .then(function (key) {
+        return crypto.subtle.decrypt({ name: 'AES-GCM', iv: iv }, key, ct).catch(function () { throw fail('pass'); });
+      })
+      .then(function (buf) {
+        var data;
+        try { data = JSON.parse(new TextDecoder().decode(buf)); } catch (e) { throw fail('corrupt'); }
+        if (!data || typeof data !== 'object' || Array.isArray(data)) throw fail('corrupt');
+        return data;
+      });
   }
 
   function askPassphrase(enc) {
     return new Promise(function (resolve) {
-      var saved = null;
-      try { saved = sessionStorage.getItem('mm.od.pass'); } catch (e) { saved = null; }
-      function attempt(phrase, onFail) {
+      var wrap = document.createElement('div');
+      wrap.className = 'od-lock';
+      var broken = !validBundle(enc);
+      wrap.innerHTML = '<form class="od-lock__card" role="dialog" aria-modal="true" aria-labelledby="od-lock-title" aria-describedby="od-lock-desc" novalidate>' +
+        '<h2 id="od-lock-title">Owner Dashboard</h2>' +
+        '<p id="od-lock-desc">Enter the dashboard passphrase to see the live store data.</p>' +
+        '<input class="od-lock__in" type="password" autocomplete="current-password" aria-label="Passphrase" aria-describedby="od-lock-err">' +
+        '<button class="od-btn" type="submit" data-lock-go>Unlock</button>' +
+        '<p class="od-lock__err" id="od-lock-err" role="alert"></p>' +
+        '<button class="od-btn od-btn--ghost od-lock__alt" type="button" data-lock-sample>Use sample data instead</button>' +
+        '</form>';
+      document.body.appendChild(wrap);
+      var form = wrap.querySelector('form');
+      var input = wrap.querySelector('input');
+      var go = wrap.querySelector('[data-lock-go]');
+      var sampleBtn = wrap.querySelector('[data-lock-sample]');
+      var err = wrap.querySelector('.od-lock__err');
+      var fails = 0, busy = false, timer = null;
+
+      function finish(data) {
+        if (timer) clearInterval(timer);
+        wrap.remove();
+        resolve(data);
+      }
+      function say(msg) { err.textContent = msg; }
+      function lockOut() {
+        var left = LOCK_SECONDS;
+        go.disabled = true;
+        input.disabled = true;
+        say('Too many wrong tries. Wait ' + LOCK_SECONDS + ' seconds.');
+        go.textContent = 'Try again in ' + left + 's';
+        timer = setInterval(function () {
+          left--;
+          if (left > 0) { go.textContent = 'Try again in ' + left + 's'; return; }
+          clearInterval(timer);
+          timer = null;
+          fails = 0;
+          go.disabled = false;
+          input.disabled = false;
+          go.textContent = 'Unlock';
+          say('');
+          input.focus();
+        }, 1000);
+      }
+
+      if (broken) {
+        say('The data file is damaged, so it cannot be unlocked. Use the sample data instead.');
+        input.disabled = true;
+        go.disabled = true;
+      }
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        if (busy || timer || broken) return;
+        var phrase = input.value.trim();
+        if (!phrase) { say('Type the passphrase first.'); input.focus(); return; }
+        busy = true;
+        go.disabled = true;
+        go.textContent = 'Unlocking...';
+        say('');
         decryptBundle(enc, phrase).then(function (data) {
-          try { sessionStorage.setItem('mm.od.pass', phrase); } catch (e) { /* private window */ }
-          resolve(data);
-        }).catch(onFail);
-      }
-      function show(msg) {
-        var wrap = document.createElement('div');
-        wrap.className = 'od-lock';
-        wrap.innerHTML = '<form class="od-lock__card"><h2>Owner Dashboard</h2><p>Enter the dashboard passphrase to see the live store data.</p><input class="od-lock__in" type="password" autocomplete="current-password" aria-label="Passphrase" required><button class="od-btn" type="submit">Unlock</button><p class="od-lock__err" role="alert">' + (msg || '') + '</p></form>';
-        document.body.appendChild(wrap);
-        var input = wrap.querySelector('input');
-        input.focus();
-        wrap.querySelector('form').addEventListener('submit', function (e) {
-          e.preventDefault();
-          attempt(input.value, function () { wrap.querySelector('.od-lock__err').textContent = 'That passphrase did not work.'; });
+          busy = false;
+          finish(data);
+        }).catch(function (e2) {
+          busy = false;
+          input.value = '';
+          go.disabled = false;
+          go.textContent = 'Unlock';
+          var kind = e2 && e2.kind;
+          if (kind === 'pass') {
+            fails++;
+            if (fails >= MAX_TRIES) { lockOut(); return; }
+            say('That passphrase did not work.');
+          } else if (kind === 'corrupt') {
+            say('The data file is damaged, so it cannot be unlocked. Use the sample data instead.');
+            broken = true;
+            input.disabled = true;
+            go.disabled = true;
+            sampleBtn.focus();
+            return;
+          } else if (kind === 'unsupported') {
+            say('This browser cannot unlock the data here. Open the dashboard over HTTPS, or use the sample data.');
+          } else {
+            say('Something went wrong while unlocking. Try again, or use the sample data.');
+          }
+          input.focus();
         });
-        var done = resolve;
-        resolve = function (d) { wrap.remove(); done(d); };
-      }
-      if (saved) attempt(saved, function () { show(''); }); else show('');
+      });
+
+      sampleBtn.addEventListener('click', function () { finish(null); });
+
+      wrap.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') { e.preventDefault(); e.stopPropagation(); return; }
+        if (e.key !== 'Tab') return;
+        var items = [input, go, sampleBtn].filter(function (el) { return !el.disabled; });
+        if (!items.length) return;
+        var first = items[0], last = items[items.length - 1], cur = document.activeElement;
+        if (e.shiftKey && (cur === first || items.indexOf(cur) < 0)) { e.preventDefault(); last.focus(); }
+        else if (!e.shiftKey && (cur === last || items.indexOf(cur) < 0)) { e.preventDefault(); first.focus(); }
+      });
+
+      if (broken) sampleBtn.focus(); else input.focus();
     });
+  }
+
+  function sampleNote(manifest) {
+    var sample = manifest && typeof manifest === 'object' && Array.isArray(manifest.sample) ? manifest.sample.filter(function (n) { return typeof n === 'string' && n; }) : null;
+    if (!manifest || typeof manifest !== 'object' || !sample) {
+      return { live: false, html: '<b>Partly sample data.</b> This data file does not say which parts are live, so some of it may still be sample.' };
+    }
+    var coreSample = sample.some(function (n) { return CORE_FILES.indexOf(n) >= 0; });
+    if (!coreSample) return { live: true, html: LIVE_NOTE };
+    return { live: false, html: '<b>Partly sample data:</b> ' + sample.map(esc).join(', ') + (sample.length === 1 ? ' is sample.' : ' are sample.') };
   }
 
   function loadBundle() {
     if (!bundlePromise) {
-      bundlePromise = fetch(MM.url('data/dashboard.enc.json')).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; })
+      try { sessionStorage.removeItem('mm.od.pass'); } catch (e) { /* storage blocked */ }
+      bundlePromise = fetch(MM.url('data/dashboard.enc.json'), { cache: 'no-cache' }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; })
         .then(function (enc) { return enc ? askPassphrase(enc) : null; })
         .then(function (data) {
           if (!data) return null;
+          var info = sampleNote(data._manifest);
+          var pulled = data.kpis && data.kpis.meta && data.kpis.meta.as_of;
+          var when = pulled ? new Date(pulled).toLocaleString('en-US', { timeZone: 'America/Chicago', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) : '';
+          if (info.live) { OD.clockMode = 'live'; MM.store.remove('mm.od.clock'); }
           var note = document.querySelector('.od-top__note');
-          if (note) note.innerHTML = LIVE_NOTE;
+          if (note) note.innerHTML = info.html + (when ? ' <span>Data pulled ' + when + ' Central.</span>' : '');
           var clock = document.querySelector('[data-clock-toggle]');
-          if (clock) clock.hidden = true;
+          if (clock && info.live) clock.hidden = true;
           return data;
         });
     }

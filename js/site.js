@@ -18,6 +18,10 @@
     }
   })();
 
+  MM.mailto = function (subject, lines) {
+    return 'mailto:' + (MM.config.email || '') + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(lines.join('\r\n'));
+  };
+
   MM.$ = function (sel, ctx) {
     return (ctx || document).querySelector(sel);
   };
@@ -496,6 +500,17 @@
     return Array.isArray(data.items) ? data.items : [];
   }
 
+  MM.shopUrl = function (u) {
+    var host = (MM.config.liveUrl || '').replace(/\/$/, '');
+    if (!u || !host) return u || '';
+    try {
+      var p = new URL(u);
+      return host + p.pathname + p.search + p.hash;
+    } catch (e) {
+      return u;
+    }
+  };
+
   function lineKey(item) {
     return String(item.id) + '|' + (item.variant || '');
   }
@@ -567,7 +582,7 @@
         var url =
           i.type === 'simple' && i.liveId
             ? live + '/cart/?add-to-cart=' + encodeURIComponent(i.liveId) + '&quantity=' + i.qty
-            : i.liveUrl || live + '/products/';
+            : (i.liveUrl && MM.shopUrl(i.liveUrl)) || live + '/';
         return { name: i.name, qty: i.qty, url: url, direct: i.type === 'simple' };
       });
       var primary = items.length === 1 ? links[0].url : cartUrl;
@@ -637,7 +652,7 @@
     var linksEl = MM.$('[data-cart-live-links]', drawer);
     linksEl.innerHTML =
       items.length > 1
-        ? '<li><strong>Add each item on mandmvinyl.com:</strong></li>' +
+        ? '<li><strong>Add each item on our secure store:</strong></li>' +
           h.links
             .map(function (l) {
               return '<li><a href="' + MM.esc(l.url) + '" rel="noopener">' + MM.esc(l.name) + ' (' + l.qty + ')</a></li>';

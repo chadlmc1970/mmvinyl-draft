@@ -178,7 +178,7 @@
         addBtn.dataset.priceCents = String(chosen.p);
         addBtn.dataset.variant = label();
         addBtn.dataset.liveId = String(chosen.id);
-        addBtn.dataset.liveUrl = chosen.u || data.liveUrl;
+        addBtn.dataset.liveUrl = MM.shopUrl(chosen.u || data.liveUrl);
         var thumb = data.imgs && data.imgs[chosen.i];
         if (thumb) addBtn.dataset.image = thumb;
         setAdd(chosen.s ? 'Add to cart' : 'Out of stock', !chosen.s);
@@ -242,7 +242,7 @@
       var v = variants[0];
       addBtn.dataset.priceCents = String(v.p);
       addBtn.dataset.liveId = String(v.id);
-      addBtn.dataset.liveUrl = v.u || data.liveUrl;
+      addBtn.dataset.liveUrl = MM.shopUrl(v.u || data.liveUrl);
     }
     update();
   }

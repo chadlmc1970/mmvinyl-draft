@@ -27,7 +27,7 @@
       return '<li class="' + (i < idx ? 'is-done' : i === idx ? 'is-now' : '') + '"><i>' + (i < idx ? OD.icon('check') : i + 1) + '</i><span>' + s.label + '</span></li>';
     }).join('') + '</ol>';
     var lines = o.lines.map(function (l) {
-      return '<tr><td>' + esc(l.name) + (l.price_source !== 'catalog_from_price' ? '<small>Sample price. The real price is set by sheet size in Kixxl.</small>' : '') + '</td><td class="num">' + l.qty + '</td><td class="num">' + OD.money(l.qty * l.unit_price_cents) + '</td></tr>';
+      return '<tr><td>' + esc(l.name) + (!OD.isLive() && l.price_source !== 'catalog_from_price' ? '<small>Sample price. The real price is set by sheet size in Kixxl.</small>' : '') + '</td><td class="num">' + l.qty + '</td><td class="num">' + OD.money(l.qty * l.unit_price_cents) + '</td></tr>';
     }).join('');
     var pay = o.payment;
     var payNote = pay.state === 'paid' ? 'Paid' : pay.state === 'failed' ? 'Failed' : pay.state;
@@ -40,8 +40,8 @@
       '<p class="od-drawer__who">' + esc(o.customer_label) + ' &middot; ' + (o.channel === 'web' ? 'website order' : 'in-store') + ' &middot; promised ' + esc(OD.relDay(o.promised_at, OD.data.queue.meta.as_of)) + ' ' + esc(OD.timeOf(o.promised_at)) + '</p>' +
       (o.risk_reason ? '<p class="od-callout">' + esc(o.risk_reason) + '</p>' : '') +
       steps +
-      '<table class="od-mini-table"><thead><tr><th>Item</th><th class="num">Qty</th><th class="num">Total</th></tr></thead><tbody>' + lines + '</tbody><tfoot><tr><td colspan="2">Total (sample, no tax)</td><td class="num">' + OD.money(o.total_cents) + '</td></tr></tfoot></table>' +
-      '<p class="od-drawer__facts"><span>' + esc(OD.PAY[pay.method] || pay.method) + ', ' + payNote + '</span><span>' + ful + '</span>' + (o.gang_sheets ? '<span>' + o.gang_sheets + ' gang sheet' + (o.gang_sheets > 1 ? 's' : '') + ', Printer ' + o.printer + '</span>' : '') + '</p>' +
+      '<table class="od-mini-table"><thead><tr><th>Item</th><th class="num">Qty</th><th class="num">Total</th></tr></thead><tbody>' + lines + '</tbody><tfoot><tr><td colspan="2">' + (OD.isLive() ? 'Total (no tax)' : 'Total (sample, no tax)') + '</td><td class="num">' + OD.money(o.total_cents) + '</td></tr></tfoot></table>' +
+      '<p class="od-drawer__facts"><span>' + esc(OD.PAY[pay.method] || pay.method) + ', ' + payNote + '</span><span>' + ful + '</span>' + (o.gang_sheets ? '<span>' + o.gang_sheets + ' gang sheet' + (o.gang_sheets > 1 ? 's' : '') + (o.printer ? ', Printer ' + o.printer : '') + '</span>' : '') + '</p>' +
       textBlock + '<div class="od-drawer__actions">' + actions + '</div>'
     );
   };
@@ -79,7 +79,7 @@
     return c;
   }
 
-  var SHIP = { label_created: ['Label made', 'gray'], in_transit: ['In transit', 'live'], delivered: ['Delivered', 'ok'], exception: ['Needs attention', 'bad'] };
+  var SHIP = { shipped: ['Shipped', 'ok'], to_ship: ['To ship', 'warn'], label_created: ['Label made', 'gray'], in_transit: ['In transit', 'live'], delivered: ['Delivered', 'ok'], exception: ['Needs attention', 'bad'] };
 
   function listHtml() {
     var rows, total;
@@ -87,8 +87,8 @@
       var SH = OD.data.shipments.shipments;
       total = SH.length;
       rows = SH.slice(ST.page * ST.per, (ST.page + 1) * ST.per).map(function (s) {
-        var st = SHIP[s.state];
-        return '<li class="od-row od-row--plain"><div class="od-row__main"><p class="od-row__title">' + esc(s.order_number) + ' <span>' + esc(s.customer_label) + '</span></p><p class="od-row__sub">' + esc(s.carrier) + ', ' + esc(s.service) + ', ' + esc(s.tracking) + '</p></div><div class="od-row__status">' + OD.tonePill(st[0], st[1]) + '</div></li>';
+        var st = SHIP[s.state] || [s.state || 'Unknown', 'gray'];
+        return '<li class="od-row od-row--plain"><div class="od-row__main"><p class="od-row__title">' + esc(s.order_number) + ' <span>' + esc(s.customer_label) + '</span></p><p class="od-row__sub">' + esc([s.carrier, s.service, s.tracking].filter(Boolean).join(', ') || 'Carrier and tracking not connected') + '</p></div><div class="od-row__status">' + OD.tonePill(st[0], st[1]) + '</div></li>';
       }).join('');
     } else {
       var orders = OD.data.orders.orders.filter(function (o) { return groupOf(OD.eff(o).status) === ST.seg && matches(o); });
@@ -116,7 +116,7 @@
       '<h3 class="od-h3">Reprints this month: ' + (g.reprints[OD.months().curKey] == null ? 'not connected' : g.reprints[OD.months().curKey]) + '</h3><ul class="od-plain">' + g.reprints.reasons.map(function (r) { return '<li><span>' + esc(r.reason) + '</span><b>' + r.count + '</b></li>'; }).join('') + '</ul>' +
       '<h3 class="od-h3">Out of stock: ' + oos.length + ' ' + OD.realTag() + '</h3><ul class="od-plain">' + oos.map(function (i) { return '<li><span>' + esc(i.name) + '</span></li>'; }).join('') + '</ul>' +
       '<h3 class="od-h3">Running low: ' + low.length + '</h3><ul class="od-plain">' + low.map(function (i) { return '<li><span>' + esc(i.name) + '</span><b>' + i.qty + ' left</b></li>'; }).join('') + '</ul>' +
-      '<p class="od-note">Low-stock counts are sample. Out-of-stock flags are read from the live catalog.</p>';
+      '<p class="od-note">' + (OD.isLive() ? 'Stock counts are read from the live catalog.' : 'Low-stock counts are sample. Out-of-stock flags are read from the live catalog.') + '</p>';
   }
 
   function printersPanel() {

@@ -128,7 +128,7 @@
     function find(k) { return GUIDE.filter(function (g) { return g.key === k; })[0] || GUIDE[0]; }
     return {
       title: 'Guide',
-      html: OD.card('', tabs + '<div data-gbody class="od-swap-in">' + panel(find(sel)) + '</div><p class="od-note od-gd__foot">This preview uses sample data. Counts marked Real are real.</p>', {}),
+      html: OD.card('', tabs + '<div data-gbody class="od-swap-in">' + panel(find(sel)) + '</div><p class="od-note od-gd__foot">' + (OD.isLive() ? 'This dashboard shows live store data.' : 'This preview uses sample data. Counts marked Real are real.') + '</p>', {}),
       mount: function (root) {
         var host = root.querySelector('[data-gbody]');
         root.addEventListener('click', function (e) {

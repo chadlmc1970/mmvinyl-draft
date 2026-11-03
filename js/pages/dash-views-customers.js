@@ -16,7 +16,7 @@
   function ago(d) { return d === 0 ? 'today' : d === 1 ? 'yesterday' : d + ' days ago'; }
 
   function cadTrack(c) {
-    var pos = Math.min(100, (c.days_since_last_order / (c.typical_gap_days * 3)) * 100);
+    var pos = c.typical_gap_days ? Math.min(100, (c.days_since_last_order / (c.typical_gap_days * 3)) * 100) : 0;
     return '<span class="od-cad" aria-hidden="true"><span class="od-cad__dot" style="--p:' + pos.toFixed(1) + '%"></span></span>';
   }
 
@@ -34,7 +34,7 @@
       var cs = CAD[c.cadence_status];
       var needs = c.cadence_status !== 'on_track';
       var act = !needs ? '' : S.done['nudge:' + c.id] ? '<span class="od-sent">' + OD.icon('check') + '<span>Nudged</span></span>' : '<button class="od-btn" type="button" data-nudge="' + c.id + '"><span class="od-btn__label">Text a nudge</span><span class="od-btn__spin" aria-hidden="true"></span></button>';
-      return '<li class="od-row od-row--acct" style="--i:' + i + '"><button class="od-row__hit" type="button" data-open-acct="' + c.id + '" aria-label="Open ' + esc(c.label) + '"></button><div class="od-row__main"><p class="od-row__title">' + esc(c.label) + ' <span>' + TIER[c.tier] + '</span></p><p class="od-row__sub">Last order ' + esc(ago(c.days_since_last_order)) + ', usually every ' + c.typical_gap_days + ' days</p></div>' + cadTrack(c) + '<div class="od-row__status">' + OD.tonePill(cs.label, cs.tone) + '</div><div class="od-row__action">' + act + '</div></li>';
+      return '<li class="od-row od-row--acct" style="--i:' + i + '"><button class="od-row__hit" type="button" data-open-acct="' + c.id + '" aria-label="Open ' + esc(c.label) + '"></button><div class="od-row__main"><p class="od-row__title">' + esc(c.label) + ' <span>' + TIER[c.tier] + '</span></p><p class="od-row__sub">Last order ' + esc(ago(c.days_since_last_order)) + ', ' + (c.typical_gap_days ? 'usually every ' + c.typical_gap_days + ' days' : 'not enough orders to see a pattern') + '</p></div>' + cadTrack(c) + '<div class="od-row__status">' + OD.tonePill(cs.label, cs.tone) + '</div><div class="od-row__action">' + act + '</div></li>';
     }).join('');
     return '<ul class="od-list">' + html + '</ul>' + OD.pager('cust', ST.page, ST.per, list.length);
   }
@@ -92,8 +92,8 @@
     var draft = c.cadence_status === 'on_track'
       ? 'Hi, it is M&M Vinyl. Want to rebuild your last gang sheet order? Order by 2 PM and it is ready today.'
       : 'Hi, it is M&M Vinyl. We have not seen your order in a bit. Want us to hold a spot for same-day pickup? Order by 2 PM Mon-Fri.';
-    return '<div class="od-drawer__top"><h2>' + esc(c.label) + '</h2>' + OD.tonePill(cs.label, cs.tone) + '</div><p class="od-drawer__who">' + TIER[c.tier] + ' tier &middot; ' + (c.tax_exempt_on_file ? 'tax-exempt on file' : 'no tax-exempt form') + '</p>' +
-      '<p class="od-drawer__facts"><span>Last order ' + esc(ago(c.days_since_last_order)) + '</span><span>Usually every ' + c.typical_gap_days + ' days</span><span>' + OD.money(c.spend_90d_cents, { cents: false }) + ' in 90 days</span></p>' +
+    return '<div class="od-drawer__top"><h2>' + esc(c.label) + '</h2>' + OD.tonePill(cs.label, cs.tone) + '</div><p class="od-drawer__who">' + TIER[c.tier] + ' tier &middot; ' + (c.tax_exempt_on_file === true ? 'tax-exempt on file' : c.tax_exempt_on_file === false ? 'no tax-exempt form' : 'tax-exempt status not read yet') + '</p>' +
+      '<p class="od-drawer__facts"><span>Last order ' + esc(ago(c.days_since_last_order)) + '</span><span>' + (c.typical_gap_days ? 'Usually every ' + c.typical_gap_days + ' days' : 'Not enough orders to see a pattern') + '</span><span>' + OD.money(c.spend_90d_cents, { cents: false }) + ' in 90 days</span></p>' +
       '<h3 class="od-h3">Orders per week</h3><div data-acct-chart></div>' +
       '<h3 class="od-h3">Nudge text</h3><textarea class="od-textarea" rows="3">' + esc(draft) + '</textarea>' +
       '<div class="od-drawer__actions"><button class="od-btn" type="button" data-drawer-nudge="' + c.id + '">Send text</button><span class="od-quiet">' + (c.sms_opt_in === true ? 'Opted in to texts' : c.sms_opt_in === false ? 'Opted out, this will not send' : 'Opt-in unknown') + '</span></div>';
@@ -116,14 +116,14 @@
       quotes: D.messages.quotes.filter(function (q) { return q.state === 'new' && !S.replied[q.id]; }).length,
       texts: '', reviews: ''
     };
-    var segs = [['resellers', 'Resellers'], ['applications', 'Applications'], ['quotes', 'Quotes'], ['texts', 'Texts'], ['reviews', 'Reviews']];
+    var segs = [['resellers', OD.isLive() ? 'Top accounts' : 'Resellers'], ['applications', 'Applications'], ['quotes', 'Quotes'], ['texts', 'Texts'], ['reviews', 'Reviews']];
     var seg = OD.ui.customersSeg;
     ST.page = 0;
     var tabs = '<div class="od-seg" role="group" aria-label="Customers">' + segs.map(function (s) {
       var n = s[0] === 'resellers' ? '' : counts[s[0]];
       return '<button type="button" class="od-seg__b' + (seg === s[0] ? ' is-on' : '') + '" data-cseg="' + s[0] + '">' + s[1] + (n !== '' ? ' <em data-ccount="' + s[0] + '">' + n + '</em>' : '') + '</button>';
     }).join('') + '</div>';
-    var subs = { resellers: 'Slipping accounts come first. About 90% of customers resell, from the Oct 26 call.', applications: 'Approving unlocks their tier prices on the site.', quotes: 'Team and business requests, with a reminder after 24 hours.', texts: 'Every automated text is logged.', reviews: 'Reviews and your Google listing.' };
+    var subs = { resellers: 'Slipping accounts come first.' + (OD.isLive() ? '' : ' About 90% of customers resell, from the Oct 26 call.') + '', applications: 'Approving unlocks their tier prices on the site.', quotes: 'Team and business requests, with a reminder after 24 hours.', texts: 'Every automated text is logged.', reviews: 'Reviews and your Google listing.' };
     return {
       title: 'Customers',
       html: OD.card('', tabs + '<p class="od-note" data-csub>' + subs[seg] + '</p><div data-cbody class="od-swap-in">' + body(seg) + '</div>', {}),

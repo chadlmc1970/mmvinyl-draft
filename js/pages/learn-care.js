@@ -12,7 +12,7 @@
     var name = biz.value.trim() || 'Your business name';
     MM.$$('[data-care-biz-out]').forEach(function (el) {
       el.textContent = name;
-      el.classList.toggle('is-placeholder', !biz.value.trim());
+      el.classList.toggle('is-blank', !biz.value.trim());
     });
     MM.$$('[data-care-contact-out]').forEach(function (el) {
       el.textContent = contact.value.trim();

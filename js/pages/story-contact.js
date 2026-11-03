@@ -3,29 +3,7 @@
   var MM = window.MM;
   if (!MM) return;
 
-  var KEY = 'mm.contact.v1';
   var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-  function saved() {
-    var list = MM.store.get(KEY, []);
-    return Array.isArray(list) ? list : [];
-  }
-
-  function mailto(rec, to) {
-    var subject = 'Website message from ' + rec.name + ' (' + rec.topic + ')';
-    var lines = [
-      rec.message,
-      '',
-      '---',
-      'Name: ' + rec.name,
-      'Email: ' + rec.email
-    ];
-    if (rec.phone) lines.push('Phone: ' + rec.phone);
-    if (rec.order) lines.push('Order number: ' + rec.order);
-    lines.push('I am a: ' + rec.who);
-    lines.push('Sent from the M&M Vinyl website prototype');
-    return 'mailto:' + to + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(lines.join('\n'));
-  }
 
   function setError(field, bad) {
     var wrap = field.closest('.field');
@@ -37,18 +15,6 @@
   MM.ready(function () {
     var form = MM.$('[data-contact-form]');
     if (!form) return;
-    var wrap = MM.$('[data-form-wrap]');
-    var sent = MM.$('[data-form-sent]');
-    var nameEl = MM.$('[data-sent-name]', sent);
-    var countEl = MM.$('[data-sent-count]', sent);
-    var clearBtn = MM.$('[data-form-clear]', sent);
-    var mailBtn = MM.$('[data-sent-mailto]', sent);
-
-    function updateCount() {
-      var n = saved().length;
-      countEl.textContent = n ? n + (n === 1 ? ' message is' : ' messages are') + ' saved in this browser.' : '';
-      clearBtn.hidden = !n;
-    }
 
     function validate() {
       var f = form.elements;
@@ -79,42 +45,11 @@
         return;
       }
       var f = form.elements;
-      var rec = {
-        at: new Date().toISOString(),
-        name: f.name.value.trim(),
-        email: f.email.value.trim(),
-        phone: f.phone.value.trim(),
-        order: f.order.value.trim(),
-        who: f.who.value,
-        topic: f.topic.value,
-        message: f.message.value.trim()
-      };
-      var list = saved();
-      list.push(rec);
-      var ok = MM.store.set(KEY, list);
-      nameEl.textContent = rec.name.split(/\s+/)[0];
-      mailBtn.href = mailto(rec, form.getAttribute('action').replace(/^mailto:/, ''));
-      updateCount();
-      if (!ok) countEl.textContent = 'This browser would not let us save it, so use the email button to keep a copy.';
-      wrap.hidden = true;
-      sent.hidden = false;
-      sent.focus();
-    });
-
-    MM.$('[data-form-reset]', sent).addEventListener('click', function () {
-      form.reset();
-      MM.$$('.field.has-error', form).forEach(function (el) {
-        el.classList.remove('has-error');
-      });
-      sent.hidden = true;
-      wrap.hidden = false;
-      form.elements.name.focus();
-    });
-
-    clearBtn.addEventListener('click', function () {
-      MM.store.remove(KEY);
-      updateCount();
-      MM.toast('Saved messages cleared');
+      var lines = [f.message.value.trim(), '', '---', 'Name: ' + f.name.value.trim(), 'Email: ' + f.email.value.trim()];
+      if (f.phone.value.trim()) lines.push('Phone: ' + f.phone.value.trim());
+      if (f.order.value.trim()) lines.push('Order number: ' + f.order.value.trim());
+      lines.push('I am a: ' + f.who.value);
+      window.location.href = MM.mailto(f.topic.value + ' (' + f.name.value.trim() + ')', lines);
     });
   });
 })();

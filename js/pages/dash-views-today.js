@@ -99,6 +99,7 @@
     if (e.status !== 'ready' && e.status !== 'picked_up' && e.status !== 'shipped') {
       if (q.risk === 'late') return OD.tonePill('Late', 'bad');
       if (q.risk === 'blocked') return OD.tonePill('Payment failed', 'bad');
+      if (q.risk === 'art') return OD.tonePill('Art flagged', 'warn');
       if (q.risk === 'due_soon') return OD.tonePill('Due soon', 'warn');
     }
     return OD.pill(e.status);
@@ -134,8 +135,8 @@
     queueItems().forEach(function (x) {
       var e = OD.eff(x);
       if (e.status === 'ready') return;
-      if (x.risk === 'late' && !S.done['late:' + x.order_id]) {
-        out.push({ key: 'late:' + x.order_id, orderId: x.order_id, title: x.number + ' for ' + x.customer_label + ' is late', sub: x.risk_reason, label: 'Text about art', run: function (btn, fin) {
+      if ((x.risk === 'late' || x.risk === 'art') && !S.done['late:' + x.order_id]) {
+        out.push({ key: 'late:' + x.order_id, orderId: x.order_id, title: x.risk === 'art' ? x.number + ' for ' + x.customer_label + ' has an art problem' : x.number + ' for ' + x.customer_label + ' is late', sub: x.risk_reason, label: x.risk === 'art' ? 'Text about art' : 'Text customer', run: function (btn, fin) {
           OD.sendText(x.order_id, btn, 'art');
           setTimeout(fin, OD.reduce ? 0 : 750);
         } });
@@ -277,9 +278,9 @@
     };
     var html =
       '<section class="od-card od-card--strip"><div class="od-cells">' +
-      stripCell('Gang sheets, ' + OD.months().curLabel, '<span data-od-count="' + OD.months().cur + '">' + OD.months().cur + '</span>', OD.months().priorLabel + ': ' + OD.months().prior, sheets, (isLive() ? 'Last 3 weeks' : 'Sample trend'), true) +
-      stripCell('Orders today', '<span data-od-count="' + D.kpis.today.orders_today + '">' + D.kpis.today.orders_today + '</span>', 'so far today', orders, (isLive() ? 'Last 3 weeks' : 'Sample trend')) +
-      stripCell('Sales, last 6 open days', '<span data-od-count="' + cur + '" data-money="1">' + OD.money(cur, { cents: false }) + '</span>', '<span class="od-delta od-delta--' + (d >= 0 ? 'good' : 'bad') + '">' + (d >= 0 ? 'Up ' : 'Down ') + Math.abs(d).toFixed(1) + '%</span> vs prior 6', sales, (isLive() ? 'Last 3 weeks' : 'Sample trend')) +
+      stripCell('Gang sheets, ' + OD.months().curLabel, '<span data-od-count="' + OD.months().cur + '">' + OD.months().cur + '</span>', OD.months().priorLabel + ': ' + OD.months().prior, sheets, (isLive() ? 'Last 21 open days' : 'Sample trend'), true) +
+      stripCell('Orders today', '<span data-od-count="' + D.kpis.today.orders_today + '">' + D.kpis.today.orders_today + '</span>', 'so far today', orders, (isLive() ? 'Last 21 open days' : 'Sample trend')) +
+      stripCell('Sales, last 6 open days', '<span data-od-count="' + cur + '" data-money="1">' + OD.money(cur, { cents: false }) + '</span>', (d == null ? 'no prior week to compare' : '<span class="od-delta od-delta--' + (d >= 0 ? 'good' : 'bad') + '">' + (d >= 0 ? 'Up ' : 'Down ') + Math.abs(d).toFixed(1) + '%</span> vs prior 6'), sales, (isLive() ? 'Last 21 open days' : 'Sample trend')) +
       socialCell() +
       '</div></section>' +
       '<div class="od-today">' +

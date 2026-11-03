@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-26",
+ "generated": "2026-11-03",
  "source": "https://mandmvinyl.com/wp-json/wc/store/v1/products (+ variations)",
- "count": 106,
+ "count": 122,
  "products": [
   {
    "id": 60967,
@@ -2345,6 +2345,1310 @@
    ],
    "featured": true,
    "featured_rank": 12,
+   "is_gang_sheet_builder": false
+  },
+  {
+   "id": 68848,
+   "slug": "christmas-tree-bows-patch",
+   "name": "Christmas Tree Bows Patch",
+   "display_name": "Christmas Tree Bows Patch",
+   "page_slug": "christmas-tree-bows-patch",
+   "type": "simple",
+   "permalink": "https://mandmvinyl.com/product/christmas-tree-bows-patch/",
+   "add_to_cart_url": "https://mandmvinyl.com/?add-to-cart=68848",
+   "sku": null,
+   "price": 8,
+   "price_max": 8,
+   "price_is_from": false,
+   "regular_price": null,
+   "price_display": "$8.00",
+   "price_note": null,
+   "on_sale": false,
+   "categories": [
+    "patches",
+    "patches-sequin"
+   ],
+   "primary_category": "patches",
+   "live_categories": [
+    {
+     "id": 140,
+     "name": "Christmas",
+     "slug": "christmas"
+    },
+    {
+     "id": 131,
+     "name": "Patches",
+     "slug": "patches"
+    }
+   ],
+   "brand": null,
+   "short_description": null,
+   "short_description_source": null,
+   "description": null,
+   "attributes": [],
+   "sizes": [],
+   "colors": [],
+   "variants": [],
+   "images": [
+    {
+     "n": 1,
+     "alt": "Sequin Christmas tree made of colorful bows with \"merry Christmas\" script, held in a hand",
+     "kind": "owner_photo",
+     "width": 800,
+     "height": 800,
+     "original_width": 2560,
+     "original_height": 2560,
+     "src": "assets/img/products/christmas-tree-bows-patch-1-800.jpg",
+     "webp": {
+      "400": "assets/img/products/christmas-tree-bows-patch-1-400.webp",
+      "800": "assets/img/products/christmas-tree-bows-patch-1-800.webp",
+      "1200": "assets/img/products/christmas-tree-bows-patch-1-1200.webp"
+     },
+     "srcset_webp": "assets/img/products/christmas-tree-bows-patch-1-400.webp 400w, assets/img/products/christmas-tree-bows-patch-1-800.webp 800w, assets/img/products/christmas-tree-bows-patch-1-1200.webp 1200w",
+     "sizes_hint": "(max-width: 600px) 100vw, 600px",
+     "quality_score": 100,
+     "hero_ok": true,
+     "hero_tier": "best",
+     "flags": [],
+     "source_url": "https://mandmvinyl.com/wp-content/uploads/2026/11/img_1523-scaled.jpeg"
+    }
+   ],
+   "card_image": 1,
+   "stock_status": "instock",
+   "preorder": false,
+   "tags": [],
+   "audience": null,
+   "featured": false,
+   "featured_rank": null,
+   "is_gang_sheet_builder": false
+  },
+  {
+   "id": 68845,
+   "slug": "feelin-grinchy-sequin-patch",
+   "name": "Feelin’ Grinchy Sequin Patch",
+   "display_name": "Feelin’ Grinchy Sequin Patch",
+   "page_slug": "feelin-grinchy-sequin-patch",
+   "type": "simple",
+   "permalink": "https://mandmvinyl.com/product/feelin-grinchy-sequin-patch/",
+   "add_to_cart_url": "https://mandmvinyl.com/?add-to-cart=68845",
+   "sku": null,
+   "price": 8,
+   "price_max": 8,
+   "price_is_from": false,
+   "regular_price": null,
+   "price_display": "$8.00",
+   "price_note": null,
+   "on_sale": false,
+   "categories": [
+    "patches",
+    "patches-sequin"
+   ],
+   "primary_category": "patches",
+   "live_categories": [
+    {
+     "id": 140,
+     "name": "Christmas",
+     "slug": "christmas"
+    },
+    {
+     "id": 131,
+     "name": "Patches",
+     "slug": "patches"
+    }
+   ],
+   "brand": null,
+   "short_description": null,
+   "short_description_source": null,
+   "description": null,
+   "attributes": [],
+   "sizes": [],
+   "colors": [],
+   "variants": [],
+   "images": [
+    {
+     "n": 1,
+     "alt": "Green and pink sequin \"Feelin' Grinchy\" patch held in a hand",
+     "kind": "owner_photo",
+     "width": 800,
+     "height": 800,
+     "original_width": 2560,
+     "original_height": 2560,
+     "src": "assets/img/products/feelin-grinchy-sequin-patch-1-800.jpg",
+     "webp": {
+      "400": "assets/img/products/feelin-grinchy-sequin-patch-1-400.webp",
+      "800": "assets/img/products/feelin-grinchy-sequin-patch-1-800.webp",
+      "1200": "assets/img/products/feelin-grinchy-sequin-patch-1-1200.webp"
+     },
+     "srcset_webp": "assets/img/products/feelin-grinchy-sequin-patch-1-400.webp 400w, assets/img/products/feelin-grinchy-sequin-patch-1-800.webp 800w, assets/img/products/feelin-grinchy-sequin-patch-1-1200.webp 1200w",
+     "sizes_hint": "(max-width: 600px) 100vw, 600px",
+     "quality_score": 100,
+     "hero_ok": true,
+     "hero_tier": "best",
+     "flags": [],
+     "source_url": "https://mandmvinyl.com/wp-content/uploads/2026/11/img_1511-scaled.jpeg"
+    }
+   ],
+   "card_image": 1,
+   "stock_status": "instock",
+   "preorder": false,
+   "tags": [],
+   "audience": null,
+   "featured": false,
+   "featured_rank": null,
+   "is_gang_sheet_builder": false
+  },
+  {
+   "id": 68843,
+   "slug": "hot-pink-santa-sequin-patch",
+   "name": "Hot Pink Santa Patch",
+   "display_name": "Hot Pink Santa Patch",
+   "page_slug": "hot-pink-santa-patch",
+   "type": "simple",
+   "permalink": "https://mandmvinyl.com/product/hot-pink-santa-sequin-patch/",
+   "add_to_cart_url": "https://mandmvinyl.com/?add-to-cart=68843",
+   "sku": null,
+   "price": 8,
+   "price_max": 8,
+   "price_is_from": false,
+   "regular_price": null,
+   "price_display": "$8.00",
+   "price_note": null,
+   "on_sale": false,
+   "categories": [
+    "patches",
+    "patches-sequin"
+   ],
+   "primary_category": "patches",
+   "live_categories": [
+    {
+     "id": 140,
+     "name": "Christmas",
+     "slug": "christmas"
+    },
+    {
+     "id": 131,
+     "name": "Patches",
+     "slug": "patches"
+    }
+   ],
+   "brand": null,
+   "short_description": null,
+   "short_description_source": null,
+   "description": null,
+   "attributes": [],
+   "sizes": [],
+   "colors": [],
+   "variants": [],
+   "images": [
+    {
+     "n": 1,
+     "alt": "Sequin Santa patch with a hot pink hat, held in a hand",
+     "kind": "owner_photo",
+     "width": 800,
+     "height": 800,
+     "original_width": 2560,
+     "original_height": 2560,
+     "src": "assets/img/products/hot-pink-santa-sequin-patch-1-800.jpg",
+     "webp": {
+      "400": "assets/img/products/hot-pink-santa-sequin-patch-1-400.webp",
+      "800": "assets/img/products/hot-pink-santa-sequin-patch-1-800.webp",
+      "1200": "assets/img/products/hot-pink-santa-sequin-patch-1-1200.webp"
+     },
+     "srcset_webp": "assets/img/products/hot-pink-santa-sequin-patch-1-400.webp 400w, assets/img/products/hot-pink-santa-sequin-patch-1-800.webp 800w, assets/img/products/hot-pink-santa-sequin-patch-1-1200.webp 1200w",
+     "sizes_hint": "(max-width: 600px) 100vw, 600px",
+     "quality_score": 100,
+     "hero_ok": true,
+     "hero_tier": "best",
+     "flags": [],
+     "source_url": "https://mandmvinyl.com/wp-content/uploads/2026/11/img_1512-scaled.jpeg"
+    }
+   ],
+   "card_image": 1,
+   "stock_status": "instock",
+   "preorder": false,
+   "tags": [],
+   "audience": null,
+   "featured": false,
+   "featured_rank": null,
+   "is_gang_sheet_builder": false
+  },
+  {
+   "id": 68841,
+   "slug": "merry-bright-neon-patch",
+   "name": "Merry & Bright Neon Patch",
+   "display_name": "Merry & Bright Neon Patch",
+   "page_slug": "merry-and-bright-neon-patch",
+   "type": "simple",
+   "permalink": "https://mandmvinyl.com/product/merry-bright-neon-patch/",
+   "add_to_cart_url": "https://mandmvinyl.com/?add-to-cart=68841",
+   "sku": null,
+   "price": 8,
+   "price_max": 8,
+   "price_is_from": false,
+   "regular_price": null,
+   "price_display": "$8.00",
+   "price_note": null,
+   "on_sale": false,
+   "categories": [
+    "patches",
+    "patches-sequin"
+   ],
+   "primary_category": "patches",
+   "live_categories": [
+    {
+     "id": 140,
+     "name": "Christmas",
+     "slug": "christmas"
+    },
+    {
+     "id": 131,
+     "name": "Patches",
+     "slug": "patches"
+    }
+   ],
+   "brand": null,
+   "short_description": null,
+   "short_description_source": null,
+   "description": null,
+   "attributes": [],
+   "sizes": [],
+   "colors": [],
+   "variants": [],
+   "images": [
+    {
+     "n": 1,
+     "alt": "Pink, teal and purple sequin \"Merry & Bright\" patch held in a hand",
+     "kind": "owner_photo",
+     "width": 800,
+     "height": 800,
+     "original_width": 2560,
+     "original_height": 2560,
+     "src": "assets/img/products/merry-bright-neon-patch-1-800.jpg",
+     "webp": {
+      "400": "assets/img/products/merry-bright-neon-patch-1-400.webp",
+      "800": "assets/img/products/merry-bright-neon-patch-1-800.webp",
+      "1200": "assets/img/products/merry-bright-neon-patch-1-1200.webp"
+     },
+     "srcset_webp": "assets/img/products/merry-bright-neon-patch-1-400.webp 400w, assets/img/products/merry-bright-neon-patch-1-800.webp 800w, assets/img/products/merry-bright-neon-patch-1-1200.webp 1200w",
+     "sizes_hint": "(max-width: 600px) 100vw, 600px",
+     "quality_score": 100,
+     "hero_ok": true,
+     "hero_tier": "best",
+     "flags": [],
+     "source_url": "https://mandmvinyl.com/wp-content/uploads/2026/11/img_1513-scaled.jpeg"
+    }
+   ],
+   "card_image": 1,
+   "stock_status": "instock",
+   "preorder": false,
+   "tags": [],
+   "audience": null,
+   "featured": false,
+   "featured_rank": null,
+   "is_gang_sheet_builder": false
+  },
+  {
+   "id": 68839,
+   "slug": "merry-christmas-patch",
+   "name": "Merry Christmas Patch",
+   "display_name": "Merry Christmas Patch",
+   "page_slug": "merry-christmas-patch",
+   "type": "simple",
+   "permalink": "https://mandmvinyl.com/product/merry-christmas-patch/",
+   "add_to_cart_url": "https://mandmvinyl.com/?add-to-cart=68839",
+   "sku": null,
+   "price": 8,
+   "price_max": 8,
+   "price_is_from": false,
+   "regular_price": null,
+   "price_display": "$8.00",
+   "price_note": null,
+   "on_sale": false,
+   "categories": [
+    "patches",
+    "patches-sequin"
+   ],
+   "primary_category": "patches",
+   "live_categories": [
+    {
+     "id": 140,
+     "name": "Christmas",
+     "slug": "christmas"
+    },
+    {
+     "id": 131,
+     "name": "Patches",
+     "slug": "patches"
+    }
+   ],
+   "brand": null,
+   "short_description": null,
+   "short_description_source": null,
+   "description": null,
+   "attributes": [],
+   "sizes": [],
+   "colors": [],
+   "variants": [],
+   "images": [
+    {
+     "n": 1,
+     "alt": "Burgundy plaid \"Merry Christmas\" patch with white script held in a hand",
+     "kind": "owner_photo",
+     "width": 800,
+     "height": 800,
+     "original_width": 2560,
+     "original_height": 2560,
+     "src": "assets/img/products/merry-christmas-patch-1-800.jpg",
+     "webp": {
+      "400": "assets/img/products/merry-christmas-patch-1-400.webp",
+      "800": "assets/img/products/merry-christmas-patch-1-800.webp",
+      "1200": "assets/img/products/merry-christmas-patch-1-1200.webp"
+     },
+     "srcset_webp": "assets/img/products/merry-christmas-patch-1-400.webp 400w, assets/img/products/merry-christmas-patch-1-800.webp 800w, assets/img/products/merry-christmas-patch-1-1200.webp 1200w",
+     "sizes_hint": "(max-width: 600px) 100vw, 600px",
+     "quality_score": 100,
+     "hero_ok": true,
+     "hero_tier": "best",
+     "flags": [],
+     "source_url": "https://mandmvinyl.com/wp-content/uploads/2026/11/img_1515-scaled.jpeg"
+    }
+   ],
+   "card_image": 1,
+   "stock_status": "instock",
+   "preorder": false,
+   "tags": [],
+   "audience": null,
+   "featured": false,
+   "featured_rank": null,
+   "is_gang_sheet_builder": false
+  },
+  {
+   "id": 68835,
+   "slug": "merry-patch",
+   "name": "‘Merry’ Patch",
+   "display_name": "‘Merry’ Patch",
+   "page_slug": "merry-patch",
+   "type": "variable",
+   "permalink": "https://mandmvinyl.com/product/merry-patch/",
+   "add_to_cart_url": null,
+   "sku": null,
+   "price": 8,
+   "price_max": 8,
+   "price_is_from": false,
+   "regular_price": null,
+   "price_display": "$8.00",
+   "price_note": null,
+   "on_sale": false,
+   "categories": [
+    "patches",
+    "patches-sequin"
+   ],
+   "primary_category": "patches",
+   "live_categories": [
+    {
+     "id": 140,
+     "name": "Christmas",
+     "slug": "christmas"
+    },
+    {
+     "id": 131,
+     "name": "Patches",
+     "slug": "patches"
+    }
+   ],
+   "brand": null,
+   "short_description": null,
+   "short_description_source": null,
+   "description": null,
+   "attributes": [
+    {
+     "name": "Color",
+     "key": "color",
+     "options": [
+      "Green",
+      "Red"
+     ],
+     "used_for_variations": true
+    }
+   ],
+   "sizes": [],
+   "colors": [
+    {
+     "name": "Green",
+     "variation_ids": [
+      68836
+     ],
+     "image": 1
+    },
+    {
+     "name": "Red",
+     "variation_ids": [
+      68837
+     ],
+     "image": 1
+    }
+   ],
+   "variants": [
+    {
+     "id": 68837,
+     "attributes": {
+      "Color": "Red"
+     },
+     "price": 8,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/merry-patch/?attribute_color=Red",
+     "image": 1
+    },
+    {
+     "id": 68836,
+     "attributes": {
+      "Color": "Green"
+     },
+     "price": 8,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/merry-patch/?attribute_color=Green",
+     "image": 1
+    }
+   ],
+   "images": [
+    {
+     "n": 1,
+     "alt": "Red gingham \"Merry\" patch and light green gingham \"Merry\" patch held in hands",
+     "kind": "owner_photo",
+     "width": 800,
+     "height": 800,
+     "original_width": 2048,
+     "original_height": 2048,
+     "src": "assets/img/products/merry-patch-1-800.jpg",
+     "webp": {
+      "400": "assets/img/products/merry-patch-1-400.webp",
+      "800": "assets/img/products/merry-patch-1-800.webp",
+      "1200": "assets/img/products/merry-patch-1-1200.webp"
+     },
+     "srcset_webp": "assets/img/products/merry-patch-1-400.webp 400w, assets/img/products/merry-patch-1-800.webp 800w, assets/img/products/merry-patch-1-1200.webp 1200w",
+     "sizes_hint": "(max-width: 600px) 100vw, 600px",
+     "quality_score": 92,
+     "hero_ok": true,
+     "hero_tier": "best",
+     "flags": [],
+     "source_url": "https://mandmvinyl.com/wp-content/uploads/2026/11/8909f51a-6eea-405a-a85e-573fb43c7651.jpeg"
+    }
+   ],
+   "card_image": 1,
+   "stock_status": "instock",
+   "preorder": false,
+   "tags": [],
+   "audience": null,
+   "featured": false,
+   "featured_rank": null,
+   "is_gang_sheet_builder": false
+  },
+  {
+   "id": 68833,
+   "slug": "oh-snap-sequin-patch",
+   "name": "‘Oh Snap’ Sequin Patch",
+   "display_name": "‘Oh Snap’ Sequin Patch",
+   "page_slug": "oh-snap-sequin-patch",
+   "type": "simple",
+   "permalink": "https://mandmvinyl.com/product/oh-snap-sequin-patch/",
+   "add_to_cart_url": "https://mandmvinyl.com/?add-to-cart=68833",
+   "sku": null,
+   "price": 8,
+   "price_max": 8,
+   "price_is_from": false,
+   "regular_price": null,
+   "price_display": "$8.00",
+   "price_note": null,
+   "on_sale": false,
+   "categories": [
+    "patches",
+    "patches-sequin"
+   ],
+   "primary_category": "patches",
+   "live_categories": [
+    {
+     "id": 140,
+     "name": "Christmas",
+     "slug": "christmas"
+    },
+    {
+     "id": 131,
+     "name": "Patches",
+     "slug": "patches"
+    }
+   ],
+   "brand": null,
+   "short_description": null,
+   "short_description_source": null,
+   "description": null,
+   "attributes": [],
+   "sizes": [],
+   "colors": [],
+   "variants": [],
+   "images": [
+    {
+     "n": 1,
+     "alt": "Red sequin \"Oh Snap\" patch with a gingerbread man held in a hand",
+     "kind": "owner_photo",
+     "width": 800,
+     "height": 800,
+     "original_width": 2560,
+     "original_height": 2560,
+     "src": "assets/img/products/oh-snap-sequin-patch-1-800.jpg",
+     "webp": {
+      "400": "assets/img/products/oh-snap-sequin-patch-1-400.webp",
+      "800": "assets/img/products/oh-snap-sequin-patch-1-800.webp",
+      "1200": "assets/img/products/oh-snap-sequin-patch-1-1200.webp"
+     },
+     "srcset_webp": "assets/img/products/oh-snap-sequin-patch-1-400.webp 400w, assets/img/products/oh-snap-sequin-patch-1-800.webp 800w, assets/img/products/oh-snap-sequin-patch-1-1200.webp 1200w",
+     "sizes_hint": "(max-width: 600px) 100vw, 600px",
+     "quality_score": 100,
+     "hero_ok": true,
+     "hero_tier": "best",
+     "flags": [],
+     "source_url": "https://mandmvinyl.com/wp-content/uploads/2026/11/img_1520-scaled.jpeg"
+    }
+   ],
+   "card_image": 1,
+   "stock_status": "instock",
+   "preorder": false,
+   "tags": [],
+   "audience": null,
+   "featured": false,
+   "featured_rank": null,
+   "is_gang_sheet_builder": false
+  },
+  {
+   "id": 68831,
+   "slug": "merry-christmas-chenille-patch",
+   "name": "Merry Christmas Chenille/Sequin Patch",
+   "display_name": "Merry Christmas Chenille/Sequin Patch",
+   "page_slug": "merry-christmas-chenille-sequin-patch",
+   "type": "simple",
+   "permalink": "https://mandmvinyl.com/product/merry-christmas-chenille-patch/",
+   "add_to_cart_url": "https://mandmvinyl.com/?add-to-cart=68831",
+   "sku": null,
+   "price": 8,
+   "price_max": 8,
+   "price_is_from": false,
+   "regular_price": null,
+   "price_display": "$8.00",
+   "price_note": null,
+   "on_sale": false,
+   "categories": [
+    "patches",
+    "patches-chenille"
+   ],
+   "primary_category": "patches",
+   "live_categories": [
+    {
+     "id": 140,
+     "name": "Christmas",
+     "slug": "christmas"
+    },
+    {
+     "id": 131,
+     "name": "Patches",
+     "slug": "patches"
+    }
+   ],
+   "brand": null,
+   "short_description": null,
+   "short_description_source": null,
+   "description": null,
+   "attributes": [],
+   "sizes": [],
+   "colors": [],
+   "variants": [],
+   "images": [
+    {
+     "n": 1,
+     "alt": "Gold leopard chenille \"Merry Christmas\" patch with a Santa hat and red sequin script held in a hand",
+     "kind": "owner_photo",
+     "width": 800,
+     "height": 800,
+     "original_width": 2560,
+     "original_height": 2560,
+     "src": "assets/img/products/merry-christmas-chenille-patch-1-800.jpg",
+     "webp": {
+      "400": "assets/img/products/merry-christmas-chenille-patch-1-400.webp",
+      "800": "assets/img/products/merry-christmas-chenille-patch-1-800.webp",
+      "1200": "assets/img/products/merry-christmas-chenille-patch-1-1200.webp"
+     },
+     "srcset_webp": "assets/img/products/merry-christmas-chenille-patch-1-400.webp 400w, assets/img/products/merry-christmas-chenille-patch-1-800.webp 800w, assets/img/products/merry-christmas-chenille-patch-1-1200.webp 1200w",
+     "sizes_hint": "(max-width: 600px) 100vw, 600px",
+     "quality_score": 100,
+     "hero_ok": true,
+     "hero_tier": "best",
+     "flags": [],
+     "source_url": "https://mandmvinyl.com/wp-content/uploads/2026/11/img_1522-scaled.jpeg"
+    }
+   ],
+   "card_image": 1,
+   "stock_status": "instock",
+   "preorder": false,
+   "tags": [],
+   "audience": null,
+   "featured": false,
+   "featured_rank": null,
+   "is_gang_sheet_builder": false
+  },
+  {
+   "id": 68829,
+   "slug": "merry-bright-sequin-patch",
+   "name": "Merry & Bright Sequin Patch",
+   "display_name": "Merry & Bright Sequin Patch",
+   "page_slug": "merry-and-bright-sequin-patch",
+   "type": "simple",
+   "permalink": "https://mandmvinyl.com/product/merry-bright-sequin-patch/",
+   "add_to_cart_url": "https://mandmvinyl.com/?add-to-cart=68829",
+   "sku": null,
+   "price": 8,
+   "price_max": 8,
+   "price_is_from": false,
+   "regular_price": null,
+   "price_display": "$8.00",
+   "price_note": null,
+   "on_sale": false,
+   "categories": [
+    "patches",
+    "patches-sequin"
+   ],
+   "primary_category": "patches",
+   "live_categories": [
+    {
+     "id": 140,
+     "name": "Christmas",
+     "slug": "christmas"
+    },
+    {
+     "id": 131,
+     "name": "Patches",
+     "slug": "patches"
+    }
+   ],
+   "brand": null,
+   "short_description": null,
+   "short_description_source": null,
+   "description": null,
+   "attributes": [],
+   "sizes": [],
+   "colors": [],
+   "variants": [],
+   "images": [
+    {
+     "n": 1,
+     "alt": "Rainbow sequin \"Merry and Bright\" patch with a silver border",
+     "kind": "owner_photo",
+     "width": 800,
+     "height": 800,
+     "original_width": 2560,
+     "original_height": 2560,
+     "src": "assets/img/products/merry-bright-sequin-patch-1-800.jpg",
+     "webp": {
+      "400": "assets/img/products/merry-bright-sequin-patch-1-400.webp",
+      "800": "assets/img/products/merry-bright-sequin-patch-1-800.webp",
+      "1200": "assets/img/products/merry-bright-sequin-patch-1-1200.webp"
+     },
+     "srcset_webp": "assets/img/products/merry-bright-sequin-patch-1-400.webp 400w, assets/img/products/merry-bright-sequin-patch-1-800.webp 800w, assets/img/products/merry-bright-sequin-patch-1-1200.webp 1200w",
+     "sizes_hint": "(max-width: 600px) 100vw, 600px",
+     "quality_score": 100,
+     "hero_ok": true,
+     "hero_tier": "best",
+     "flags": [],
+     "source_url": "https://mandmvinyl.com/wp-content/uploads/2026/11/img_1524-scaled.jpeg"
+    }
+   ],
+   "card_image": 1,
+   "stock_status": "instock",
+   "preorder": false,
+   "tags": [],
+   "audience": null,
+   "featured": false,
+   "featured_rank": null,
+   "is_gang_sheet_builder": false
+  },
+  {
+   "id": 68827,
+   "slug": "merry-grinchmas-sequin-patch",
+   "name": "Merry Grinchmas Sequin Patch",
+   "display_name": "Merry Grinchmas Sequin Patch",
+   "page_slug": "merry-grinchmas-sequin-patch",
+   "type": "simple",
+   "permalink": "https://mandmvinyl.com/product/merry-grinchmas-sequin-patch/",
+   "add_to_cart_url": "https://mandmvinyl.com/?add-to-cart=68827",
+   "sku": null,
+   "price": 8,
+   "price_max": 8,
+   "price_is_from": false,
+   "regular_price": null,
+   "price_display": "$8.00",
+   "price_note": null,
+   "on_sale": false,
+   "categories": [
+    "patches",
+    "patches-sequin"
+   ],
+   "primary_category": "patches",
+   "live_categories": [
+    {
+     "id": 140,
+     "name": "Christmas",
+     "slug": "christmas"
+    },
+    {
+     "id": 131,
+     "name": "Patches",
+     "slug": "patches"
+    }
+   ],
+   "brand": null,
+   "short_description": null,
+   "short_description_source": null,
+   "description": null,
+   "attributes": [],
+   "sizes": [],
+   "colors": [],
+   "variants": [],
+   "images": [
+    {
+     "n": 1,
+     "alt": "Green and red sequin \"Merry Grinchmas\" patch held in a hand",
+     "kind": "owner_photo",
+     "width": 800,
+     "height": 800,
+     "original_width": 2560,
+     "original_height": 2560,
+     "src": "assets/img/products/merry-grinchmas-sequin-patch-1-800.jpg",
+     "webp": {
+      "400": "assets/img/products/merry-grinchmas-sequin-patch-1-400.webp",
+      "800": "assets/img/products/merry-grinchmas-sequin-patch-1-800.webp",
+      "1200": "assets/img/products/merry-grinchmas-sequin-patch-1-1200.webp"
+     },
+     "srcset_webp": "assets/img/products/merry-grinchmas-sequin-patch-1-400.webp 400w, assets/img/products/merry-grinchmas-sequin-patch-1-800.webp 800w, assets/img/products/merry-grinchmas-sequin-patch-1-1200.webp 1200w",
+     "sizes_hint": "(max-width: 600px) 100vw, 600px",
+     "quality_score": 100,
+     "hero_ok": true,
+     "hero_tier": "best",
+     "flags": [],
+     "source_url": "https://mandmvinyl.com/wp-content/uploads/2026/11/img_1509-scaled.jpeg"
+    }
+   ],
+   "card_image": 1,
+   "stock_status": "instock",
+   "preorder": false,
+   "tags": [],
+   "audience": null,
+   "featured": false,
+   "featured_rank": null,
+   "is_gang_sheet_builder": false
+  },
+  {
+   "id": 68825,
+   "slug": "ho-ho-ho-grinch-sequin-patch",
+   "name": "‘HO HO HO’ Grinch Sequin Patch",
+   "display_name": "‘HO HO HO’ Grinch Sequin Patch",
+   "page_slug": "ho-ho-ho-grinch-sequin-patch",
+   "type": "simple",
+   "permalink": "https://mandmvinyl.com/product/ho-ho-ho-grinch-sequin-patch/",
+   "add_to_cart_url": "https://mandmvinyl.com/?add-to-cart=68825",
+   "sku": null,
+   "price": 8,
+   "price_max": 8,
+   "price_is_from": false,
+   "regular_price": null,
+   "price_display": "$8.00",
+   "price_note": null,
+   "on_sale": false,
+   "categories": [
+    "patches",
+    "patches-sequin"
+   ],
+   "primary_category": "patches",
+   "live_categories": [
+    {
+     "id": 140,
+     "name": "Christmas",
+     "slug": "christmas"
+    },
+    {
+     "id": 131,
+     "name": "Patches",
+     "slug": "patches"
+    }
+   ],
+   "brand": null,
+   "short_description": null,
+   "short_description_source": null,
+   "description": null,
+   "attributes": [],
+   "sizes": [],
+   "colors": [],
+   "variants": [],
+   "images": [
+    {
+     "n": 1,
+     "alt": "Sequin \"HO HO HO\" patch with a Grinch in a Santa hat held in a hand",
+     "kind": "owner_photo",
+     "width": 800,
+     "height": 800,
+     "original_width": 2560,
+     "original_height": 2560,
+     "src": "assets/img/products/ho-ho-ho-grinch-sequin-patch-1-800.jpg",
+     "webp": {
+      "400": "assets/img/products/ho-ho-ho-grinch-sequin-patch-1-400.webp",
+      "800": "assets/img/products/ho-ho-ho-grinch-sequin-patch-1-800.webp",
+      "1200": "assets/img/products/ho-ho-ho-grinch-sequin-patch-1-1200.webp"
+     },
+     "srcset_webp": "assets/img/products/ho-ho-ho-grinch-sequin-patch-1-400.webp 400w, assets/img/products/ho-ho-ho-grinch-sequin-patch-1-800.webp 800w, assets/img/products/ho-ho-ho-grinch-sequin-patch-1-1200.webp 1200w",
+     "sizes_hint": "(max-width: 600px) 100vw, 600px",
+     "quality_score": 100,
+     "hero_ok": true,
+     "hero_tier": "best",
+     "flags": [],
+     "source_url": "https://mandmvinyl.com/wp-content/uploads/2026/11/img_1505-scaled.jpeg"
+    }
+   ],
+   "card_image": 1,
+   "stock_status": "instock",
+   "preorder": false,
+   "tags": [],
+   "audience": null,
+   "featured": false,
+   "featured_rank": null,
+   "is_gang_sheet_builder": false
+  },
+  {
+   "id": 68823,
+   "slug": "merry-christmas-sequin-patch",
+   "name": "Merry Christmas Sequin Patch",
+   "display_name": "Merry Christmas Sequin Patch",
+   "page_slug": "merry-christmas-sequin-patch",
+   "type": "simple",
+   "permalink": "https://mandmvinyl.com/product/merry-christmas-sequin-patch/",
+   "add_to_cart_url": "https://mandmvinyl.com/?add-to-cart=68823",
+   "sku": null,
+   "price": 8,
+   "price_max": 8,
+   "price_is_from": false,
+   "regular_price": null,
+   "price_display": "$8.00",
+   "price_note": null,
+   "on_sale": false,
+   "categories": [
+    "patches",
+    "patches-sequin"
+   ],
+   "primary_category": "patches",
+   "live_categories": [
+    {
+     "id": 140,
+     "name": "Christmas",
+     "slug": "christmas"
+    },
+    {
+     "id": 131,
+     "name": "Patches",
+     "slug": "patches"
+    }
+   ],
+   "brand": null,
+   "short_description": null,
+   "short_description_source": null,
+   "description": null,
+   "attributes": [],
+   "sizes": [],
+   "colors": [],
+   "variants": [],
+   "images": [
+    {
+     "n": 1,
+     "alt": "Red and green sequin \"Merry Christmas\" script patch held in a hand",
+     "kind": "owner_photo",
+     "width": 800,
+     "height": 800,
+     "original_width": 2560,
+     "original_height": 2560,
+     "src": "assets/img/products/merry-christmas-sequin-patch-1-800.jpg",
+     "webp": {
+      "400": "assets/img/products/merry-christmas-sequin-patch-1-400.webp",
+      "800": "assets/img/products/merry-christmas-sequin-patch-1-800.webp",
+      "1200": "assets/img/products/merry-christmas-sequin-patch-1-1200.webp"
+     },
+     "srcset_webp": "assets/img/products/merry-christmas-sequin-patch-1-400.webp 400w, assets/img/products/merry-christmas-sequin-patch-1-800.webp 800w, assets/img/products/merry-christmas-sequin-patch-1-1200.webp 1200w",
+     "sizes_hint": "(max-width: 600px) 100vw, 600px",
+     "quality_score": 100,
+     "hero_ok": true,
+     "hero_tier": "best",
+     "flags": [],
+     "source_url": "https://mandmvinyl.com/wp-content/uploads/2026/11/img_1508-scaled.jpeg"
+    }
+   ],
+   "card_image": 1,
+   "stock_status": "instock",
+   "preorder": false,
+   "tags": [],
+   "audience": null,
+   "featured": false,
+   "featured_rank": null,
+   "is_gang_sheet_builder": false
+  },
+  {
+   "id": 68819,
+   "slug": "grinchy-sequin-patch",
+   "name": "‘Grinchy’ Sequin Patch",
+   "display_name": "‘Grinchy’ Sequin Patch",
+   "page_slug": "grinchy-sequin-patch",
+   "type": "variable",
+   "permalink": "https://mandmvinyl.com/product/grinchy-sequin-patch/",
+   "add_to_cart_url": null,
+   "sku": null,
+   "price": 8,
+   "price_max": 8,
+   "price_is_from": false,
+   "regular_price": null,
+   "price_display": "$8.00",
+   "price_note": null,
+   "on_sale": false,
+   "categories": [
+    "patches",
+    "patches-sequin"
+   ],
+   "primary_category": "patches",
+   "live_categories": [
+    {
+     "id": 140,
+     "name": "Christmas",
+     "slug": "christmas"
+    },
+    {
+     "id": 131,
+     "name": "Patches",
+     "slug": "patches"
+    }
+   ],
+   "brand": null,
+   "short_description": null,
+   "short_description_source": null,
+   "description": null,
+   "attributes": [
+    {
+     "name": "Color",
+     "key": "color",
+     "options": [
+      "Pink",
+      "Green"
+     ],
+     "used_for_variations": true
+    }
+   ],
+   "sizes": [],
+   "colors": [
+    {
+     "name": "Pink",
+     "variation_ids": [
+      68820
+     ],
+     "image": 1
+    },
+    {
+     "name": "Green",
+     "variation_ids": [
+      68821
+     ],
+     "image": 1
+    }
+   ],
+   "variants": [
+    {
+     "id": 68821,
+     "attributes": {
+      "Color": "Green"
+     },
+     "price": 8,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/grinchy-sequin-patch/?attribute_color=Green",
+     "image": 1
+    },
+    {
+     "id": 68820,
+     "attributes": {
+      "Color": "Pink"
+     },
+     "price": 8,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/grinchy-sequin-patch/?attribute_color=Pink",
+     "image": 1
+    }
+   ],
+   "images": [
+    {
+     "n": 1,
+     "alt": "Hot pink sequin \"Grinchy\" patch and a lime green sequin \"Grinchy\" patch held in hands",
+     "kind": "owner_photo",
+     "width": 800,
+     "height": 800,
+     "original_width": 2048,
+     "original_height": 2048,
+     "src": "assets/img/products/grinchy-sequin-patch-1-800.jpg",
+     "webp": {
+      "400": "assets/img/products/grinchy-sequin-patch-1-400.webp",
+      "800": "assets/img/products/grinchy-sequin-patch-1-800.webp",
+      "1200": "assets/img/products/grinchy-sequin-patch-1-1200.webp"
+     },
+     "srcset_webp": "assets/img/products/grinchy-sequin-patch-1-400.webp 400w, assets/img/products/grinchy-sequin-patch-1-800.webp 800w, assets/img/products/grinchy-sequin-patch-1-1200.webp 1200w",
+     "sizes_hint": "(max-width: 600px) 100vw, 600px",
+     "quality_score": 100,
+     "hero_ok": true,
+     "hero_tier": "best",
+     "flags": [],
+     "source_url": "https://mandmvinyl.com/wp-content/uploads/2026/11/44c4ec2f-1049-471a-9440-d188df7b8863.jpeg"
+    }
+   ],
+   "card_image": 1,
+   "stock_status": "instock",
+   "preorder": false,
+   "tags": [],
+   "audience": null,
+   "featured": false,
+   "featured_rank": null,
+   "is_gang_sheet_builder": false
+  },
+  {
+   "id": 68817,
+   "slug": "sequin-santa-patch",
+   "name": "Sequin Santa Patch",
+   "display_name": "Sequin Santa Patch",
+   "page_slug": "sequin-santa-patch",
+   "type": "simple",
+   "permalink": "https://mandmvinyl.com/product/sequin-santa-patch/",
+   "add_to_cart_url": "https://mandmvinyl.com/?add-to-cart=68817",
+   "sku": null,
+   "price": 8,
+   "price_max": 8,
+   "price_is_from": false,
+   "regular_price": null,
+   "price_display": "$8.00",
+   "price_note": null,
+   "on_sale": false,
+   "categories": [
+    "patches",
+    "patches-sequin"
+   ],
+   "primary_category": "patches",
+   "live_categories": [
+    {
+     "id": 140,
+     "name": "Christmas",
+     "slug": "christmas"
+    },
+    {
+     "id": 131,
+     "name": "Patches",
+     "slug": "patches"
+    }
+   ],
+   "brand": null,
+   "short_description": null,
+   "short_description_source": null,
+   "description": null,
+   "attributes": [],
+   "sizes": [],
+   "colors": [],
+   "variants": [],
+   "images": [
+    {
+     "n": 1,
+     "alt": "Sequin Santa patch with a red hat and white beard held in a hand",
+     "kind": "owner_photo",
+     "width": 800,
+     "height": 800,
+     "original_width": 2560,
+     "original_height": 2560,
+     "src": "assets/img/products/sequin-santa-patch-1-800.jpg",
+     "webp": {
+      "400": "assets/img/products/sequin-santa-patch-1-400.webp",
+      "800": "assets/img/products/sequin-santa-patch-1-800.webp",
+      "1200": "assets/img/products/sequin-santa-patch-1-1200.webp"
+     },
+     "srcset_webp": "assets/img/products/sequin-santa-patch-1-400.webp 400w, assets/img/products/sequin-santa-patch-1-800.webp 800w, assets/img/products/sequin-santa-patch-1-1200.webp 1200w",
+     "sizes_hint": "(max-width: 600px) 100vw, 600px",
+     "quality_score": 100,
+     "hero_ok": true,
+     "hero_tier": "best",
+     "flags": [],
+     "source_url": "https://mandmvinyl.com/wp-content/uploads/2026/11/img_1510-scaled.jpeg"
+    }
+   ],
+   "card_image": 1,
+   "stock_status": "instock",
+   "preorder": false,
+   "tags": [],
+   "audience": null,
+   "featured": false,
+   "featured_rank": null,
+   "is_gang_sheet_builder": false
+  },
+  {
+   "id": 68814,
+   "slug": "sequin-grinch-patch",
+   "name": "Sequin Grinch Patch",
+   "display_name": "Sequin Grinch Patch",
+   "page_slug": "sequin-grinch-patch",
+   "type": "simple",
+   "permalink": "https://mandmvinyl.com/product/sequin-grinch-patch/",
+   "add_to_cart_url": "https://mandmvinyl.com/?add-to-cart=68814",
+   "sku": null,
+   "price": 8,
+   "price_max": 8,
+   "price_is_from": false,
+   "regular_price": null,
+   "price_display": "$8.00",
+   "price_note": null,
+   "on_sale": false,
+   "categories": [
+    "patches",
+    "patches-sequin"
+   ],
+   "primary_category": "patches",
+   "live_categories": [
+    {
+     "id": 140,
+     "name": "Christmas",
+     "slug": "christmas"
+    },
+    {
+     "id": 131,
+     "name": "Patches",
+     "slug": "patches"
+    }
+   ],
+   "brand": null,
+   "short_description": null,
+   "short_description_source": null,
+   "description": null,
+   "attributes": [],
+   "sizes": [],
+   "colors": [],
+   "variants": [],
+   "images": [
+    {
+     "n": 1,
+     "alt": "Sequin Grinch patch with a red Santa hat held in a hand",
+     "kind": "owner_photo",
+     "width": 800,
+     "height": 800,
+     "original_width": 2560,
+     "original_height": 2560,
+     "src": "assets/img/products/sequin-grinch-patch-1-800.jpg",
+     "webp": {
+      "400": "assets/img/products/sequin-grinch-patch-1-400.webp",
+      "800": "assets/img/products/sequin-grinch-patch-1-800.webp",
+      "1200": "assets/img/products/sequin-grinch-patch-1-1200.webp"
+     },
+     "srcset_webp": "assets/img/products/sequin-grinch-patch-1-400.webp 400w, assets/img/products/sequin-grinch-patch-1-800.webp 800w, assets/img/products/sequin-grinch-patch-1-1200.webp 1200w",
+     "sizes_hint": "(max-width: 600px) 100vw, 600px",
+     "quality_score": 100,
+     "hero_ok": true,
+     "hero_tier": "best",
+     "flags": [],
+     "source_url": "https://mandmvinyl.com/wp-content/uploads/2026/11/img_1504-scaled.jpeg"
+    }
+   ],
+   "card_image": 1,
+   "stock_status": "instock",
+   "preorder": false,
+   "tags": [],
+   "audience": null,
+   "featured": false,
+   "featured_rank": null,
+   "is_gang_sheet_builder": false
+  },
+  {
+   "id": 68813,
+   "slug": "sequin-pink-santa-patch",
+   "name": "Sequin Pink Santa Patch",
+   "display_name": "Sequin Pink Santa Patch",
+   "page_slug": "sequin-pink-santa-patch",
+   "type": "simple",
+   "permalink": "https://mandmvinyl.com/product/sequin-pink-santa-patch/",
+   "add_to_cart_url": "https://mandmvinyl.com/?add-to-cart=68813",
+   "sku": null,
+   "price": 8,
+   "price_max": 8,
+   "price_is_from": false,
+   "regular_price": null,
+   "price_display": "$8.00",
+   "price_note": null,
+   "on_sale": false,
+   "categories": [
+    "patches",
+    "patches-sequin"
+   ],
+   "primary_category": "patches",
+   "live_categories": [
+    {
+     "id": 140,
+     "name": "Christmas",
+     "slug": "christmas"
+    },
+    {
+     "id": 131,
+     "name": "Patches",
+     "slug": "patches"
+    }
+   ],
+   "brand": null,
+   "short_description": null,
+   "short_description_source": null,
+   "description": null,
+   "attributes": [],
+   "sizes": [],
+   "colors": [],
+   "variants": [],
+   "images": [
+    {
+     "n": 1,
+     "alt": "Sequin Santa patch with a pink leopard hat and pink outlined beard held in a hand",
+     "kind": "owner_photo",
+     "width": 800,
+     "height": 800,
+     "original_width": 2560,
+     "original_height": 2560,
+     "src": "assets/img/products/sequin-pink-santa-patch-1-800.jpg",
+     "webp": {
+      "400": "assets/img/products/sequin-pink-santa-patch-1-400.webp",
+      "800": "assets/img/products/sequin-pink-santa-patch-1-800.webp",
+      "1200": "assets/img/products/sequin-pink-santa-patch-1-1200.webp"
+     },
+     "srcset_webp": "assets/img/products/sequin-pink-santa-patch-1-400.webp 400w, assets/img/products/sequin-pink-santa-patch-1-800.webp 800w, assets/img/products/sequin-pink-santa-patch-1-1200.webp 1200w",
+     "sizes_hint": "(max-width: 600px) 100vw, 600px",
+     "quality_score": 100,
+     "hero_ok": true,
+     "hero_tier": "best",
+     "flags": [],
+     "source_url": "https://mandmvinyl.com/wp-content/uploads/2026/11/img_1503-scaled.jpeg"
+    }
+   ],
+   "card_image": 1,
+   "stock_status": "instock",
+   "preorder": false,
+   "tags": [],
+   "audience": null,
+   "featured": false,
+   "featured_rank": null,
    "is_gang_sheet_builder": false
   },
   {
@@ -9903,7 +11207,9 @@
       "Espresso",
       "Burnt Orange",
       "Grape",
-      "Citrus"
+      "Citrus",
+      "Light Green",
+      "Red"
      ],
      "used_for_variations": true
     }
@@ -10048,6 +11354,16 @@
     },
     {
      "name": "Citrus",
+     "variation_ids": null,
+     "image": null
+    },
+    {
+     "name": "Light Green",
+     "variation_ids": null,
+     "image": null
+    },
+    {
+     "name": "Red",
      "variation_ids": null,
      "image": null
     }
@@ -18871,14 +20187,14 @@
       "Daisy",
       "Heather Berry",
       "Tropical Blue",
-      "Pink",
       "Natural",
       "Military Green",
       "Chocolate",
       "Irish",
       "Mint",
       "Charcoal",
-      "Sand"
+      "Sand",
+      "Light Pink"
      ],
      "used_for_variations": true
     },
@@ -19066,11 +20382,6 @@
      "image": null
     },
     {
-     "name": "Pink",
-     "variation_ids": null,
-     "image": null
-    },
-    {
      "name": "Natural",
      "variation_ids": null,
      "image": null
@@ -19102,6 +20413,11 @@
     },
     {
      "name": "Sand",
+     "variation_ids": null,
+     "image": null
+    },
+    {
+     "name": "Light Pink",
      "variation_ids": null,
      "image": null
     }
