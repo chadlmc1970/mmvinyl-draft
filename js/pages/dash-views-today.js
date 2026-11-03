@@ -250,6 +250,18 @@
     return '<div class="od-cell"><div class="od-cell__top"><span class="od-cell__label">' + esc(label) + (real ? OD.realTag() : '') + '</span></div><b class="od-cell__value">' + valueHtml + '</b><span class="od-cell__note">' + note + '</span><div class="od-cell__spark">' + OD.charts.spark(series, { w: 200, h: 44, fluid: true, label: caption }) + '<span class="od-cell__cap">' + esc(caption) + '</span></div></div>';
   }
 
+  function socialCell() {
+    var S = OD.data.social;
+    if (!S || !S.meta || !S.meta.connected || S.followers == null) {
+      return '';
+    }
+    var reach = S.posts.filter(function (p) { return p.reach != null; }).map(function (p) { return p.reach; }).reverse();
+    var last = S.posts[0];
+    var note = last && last.reach != null ? 'Latest post reached ' + last.reach.toLocaleString() : S.meta.snapshot && S.as_of ? 'Snapshot, ' + esc(S.as_of) : S.username ? '@' + esc(S.username) : 'Instagram';
+    var spark = reach.length > 1 ? '<div class="od-cell__spark">' + OD.charts.spark(reach, { w: 200, h: 44, fluid: true, label: 'Reach, last posts' }) + '<span class="od-cell__cap">Reach, last ' + reach.length + ' posts</span></div>' : '';
+    return '<div class="od-cell"><div class="od-cell__top"><span class="od-cell__label">Instagram followers' + OD.realTag() + '</span></div><b class="od-cell__value">' + S.followers.toLocaleString() + '</b><span class="od-cell__note">' + note + '</span>' + spark + '</div>';
+  }
+
   OD.views.today = function () {
     var D = OD.data;
     var c = boardCounts();
@@ -268,6 +280,7 @@
       stripCell('Gang sheets, ' + OD.months().curLabel, '<span data-od-count="' + OD.months().cur + '">' + OD.months().cur + '</span>', OD.months().priorLabel + ': ' + OD.months().prior, sheets, (isLive() ? 'Last 3 weeks' : 'Sample trend'), true) +
       stripCell('Orders today', '<span data-od-count="' + D.kpis.today.orders_today + '">' + D.kpis.today.orders_today + '</span>', 'so far today', orders, (isLive() ? 'Last 3 weeks' : 'Sample trend')) +
       stripCell('Sales, last 6 open days', '<span data-od-count="' + cur + '" data-money="1">' + OD.money(cur, { cents: false }) + '</span>', '<span class="od-delta od-delta--' + (d >= 0 ? 'good' : 'bad') + '">' + (d >= 0 ? 'Up ' : 'Down ') + Math.abs(d).toFixed(1) + '%</span> vs prior 6', sales, (isLive() ? 'Last 3 weeks' : 'Sample trend')) +
+      socialCell() +
       '</div></section>' +
       '<div class="od-today">' +
       OD.card('What needs you now', '<div data-needs>' + needsHtml() + '</div>', { cls: 'od-card--lead' }) +

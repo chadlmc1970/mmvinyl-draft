@@ -23,6 +23,7 @@
     "reviews.json",
     "inventory.json",
     "integrations.json",
+    "social.json",
     "settings.json",
     "report.json"
   ]

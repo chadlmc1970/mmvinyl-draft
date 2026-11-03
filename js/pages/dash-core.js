@@ -250,10 +250,78 @@
     }, o.ms || 3200);
   };
 
-  var FILES = ['kpis', 'queue', 'orders', 'customers', 'gangsheets', 'sales', 'payments', 'shipments', 'messages', 'reviews', 'inventory', 'integrations', 'settings', 'report'];
+  var FILES = ['kpis', 'queue', 'orders', 'customers', 'gangsheets', 'sales', 'payments', 'shipments', 'messages', 'reviews', 'inventory', 'integrations', 'social', 'settings', 'report'];
   OD.data = {};
+  var LIVE_NOTE = '<b>Live store data.</b> Orders, sales, payments, customers, gang sheets, stock, shipments, and the weekly report come straight from the WooCommerce store. Not connected yet and left blank: texts and messages, review ratings, store (Shopkeep) sales, printer split, and reprints.';
+  var bundlePromise = null;
+
+  function b64(s) { var bin = atob(s), out = new Uint8Array(bin.length); for (var i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i); return out; }
+
+  function decryptBundle(enc, phrase) {
+    var te = new TextEncoder();
+    return crypto.subtle.importKey('raw', te.encode(phrase), 'PBKDF2', false, ['deriveKey'])
+      .then(function (base) {
+        return crypto.subtle.deriveKey({ name: 'PBKDF2', salt: b64(enc.salt), iterations: enc.iter, hash: 'SHA-256' }, base, { name: 'AES-GCM', length: 256 }, false, ['decrypt']);
+      })
+      .then(function (key) { return crypto.subtle.decrypt({ name: 'AES-GCM', iv: b64(enc.iv) }, key, b64(enc.ct)); })
+      .then(function (buf) { return JSON.parse(new TextDecoder().decode(buf)); });
+  }
+
+  function askPassphrase(enc) {
+    return new Promise(function (resolve) {
+      var saved = null;
+      try { saved = sessionStorage.getItem('mm.od.pass'); } catch (e) { saved = null; }
+      function attempt(phrase, onFail) {
+        decryptBundle(enc, phrase).then(function (data) {
+          try { sessionStorage.setItem('mm.od.pass', phrase); } catch (e) { /* private window */ }
+          resolve(data);
+        }).catch(onFail);
+      }
+      function show(msg) {
+        var wrap = document.createElement('div');
+        wrap.className = 'od-lock';
+        wrap.innerHTML = '<form class="od-lock__card"><h2>Owner Dashboard</h2><p>Enter the dashboard passphrase to see the live store data.</p><input class="od-lock__in" type="password" autocomplete="current-password" aria-label="Passphrase" required><button class="od-btn" type="submit">Unlock</button><p class="od-lock__err" role="alert">' + (msg || '') + '</p></form>';
+        document.body.appendChild(wrap);
+        var input = wrap.querySelector('input');
+        input.focus();
+        wrap.querySelector('form').addEventListener('submit', function (e) {
+          e.preventDefault();
+          attempt(input.value, function () { wrap.querySelector('.od-lock__err').textContent = 'That passphrase did not work.'; });
+        });
+        var done = resolve;
+        resolve = function (d) { wrap.remove(); done(d); };
+      }
+      if (saved) attempt(saved, function () { show(''); }); else show('');
+    });
+  }
+
+  function loadBundle() {
+    if (!bundlePromise) {
+      bundlePromise = fetch(MM.url('data/dashboard.enc.json')).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; })
+        .then(function (enc) { return enc ? askPassphrase(enc) : null; })
+        .then(function (data) {
+          if (!data) return null;
+          var note = document.querySelector('.od-top__note');
+          if (note) note.innerHTML = LIVE_NOTE;
+          var clock = document.querySelector('[data-clock-toggle]');
+          if (clock) clock.hidden = true;
+          return data;
+        });
+    }
+    return bundlePromise;
+  }
+
   OD.load = function (names) {
     names = names || FILES;
+    return loadBundle().then(function (bundle) {
+      if (bundle) {
+        names.forEach(function (n) { if (bundle[n]) OD.data[n] = bundle[n]; });
+      }
+      return loadFiles(names);
+    });
+  };
+
+  function loadFiles(names) {
     return Promise.all(
       names.map(function (n) {
         if (OD.data[n]) return Promise.resolve(OD.data[n]);
@@ -270,7 +338,7 @@
     ).then(function () {
       return OD.data;
     });
-  };
+  }
 
   OD.session = {
     texted: {},
