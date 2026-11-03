@@ -9,7 +9,8 @@
     { key: 'orders', label: 'Orders', icon: 'orders' },
     { key: 'customers', label: 'Customers', icon: 'users' },
     { key: 'money', label: 'Money', icon: 'money' },
-    { key: 'settings', label: 'Settings', icon: 'gear' }
+    { key: 'settings', label: 'Settings', icon: 'gear' },
+    { key: 'guide', label: 'Guide', icon: 'help' }
   ];
   var ALIAS = { resellers: 'customers', messages: 'customers', reviews: 'customers', sales: 'money', payments: 'money', shipping: 'orders', sheets: 'orders', inventory: 'orders', integrations: 'settings' };
 
