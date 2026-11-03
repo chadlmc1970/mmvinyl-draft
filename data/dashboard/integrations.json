@@ -1,14 +1,16 @@
 {
   "meta": {
     "schema_version": "1.1",
-    "sample": true,
-    "sample_note": "Sample data. Figures are illustrative except where a field is marked real.",
-    "generated_at": "2026-10-26T12:00:00-05:00",
-    "as_of": "2026-10-26T11:42:00-05:00",
+    "sample": false,
+    "sample_note": null,
+    "generated_at": "2026-11-03T12:24:55-06:00",
+    "as_of": "2026-11-03T12:24:55-06:00",
     "timezone": "America/Chicago",
     "currency": "USD",
     "money_unit": "cents",
-    "source": "Call assessment 2026-10-26 and vendor docs; sources checked 2026-10-26"
+    "source": "Statuses derived from the live store orders.",
+    "store_connected": false,
+    "store_note": "Shopkeep is not connected yet. Store figures are not included."
   },
   "status_legend": {
     "live": "Live today",
@@ -27,9 +29,9 @@
         "Product stock"
       ],
       "method": "REST API plus webhooks (order.created, order.updated)",
-      "status": "ready",
-      "status_label": "Ready to connect",
-      "need": "A read-only API key from WooCommerce > Settings > Advanced > REST API, stored in her own account.",
+      "status": "live",
+      "status_label": "Live today",
+      "need": "WooCommerce store, read-only key connected",
       "cost": "Free (built in)",
       "sources": [
         {
@@ -51,9 +53,9 @@
         "Art flags"
       ],
       "method": "Unknown. Orders reach WooCommerce; Kixxl-side data may need an export or a support request.",
-      "status": "unknown",
-      "status_label": "Unknown, to confirm",
-      "need": "Ask Kixxl support whether an export, API, or webhook exists. Until then, gang sheet counts come from WooCommerce order lines.",
+      "status": "live",
+      "status_label": "Live today",
+      "need": "Kixxl gang sheet orders are arriving in the store",
       "cost": "$399 a month today (existing)",
       "sources": [
         {
@@ -91,9 +93,9 @@
         "Balance and payouts"
       ],
       "method": "PayPal Reporting API (Transaction Search, balances)",
-      "status": "needs_access",
-      "status_label": "Needs access",
-      "need": "A PayPal business login to create read-only REST credentials, and a look at why Venmo and PayPal fail (plugin settings, domain verification, account limits).",
+      "status": "live",
+      "status_label": "Live today",
+      "need": "PayPal orders seen in the last 28 days",
       "cost": "Existing fees only",
       "sources": [
         {
@@ -109,9 +111,9 @@
         "Wallet payments through the card processor"
       ],
       "method": "Through the card processor, shown with WooCommerce orders",
-      "status": "needs_access",
-      "status_label": "Needs access",
-      "need": "Pick the processor and turn the wallets on. Not live yet.",
+      "status": "live",
+      "status_label": "Live today",
+      "need": "Apple Pay or Google Pay orders seen in the last 28 days",
       "cost": "Processor fees (estimate: standard card rate; confirm on the processor's page)",
       "sources": [
         {

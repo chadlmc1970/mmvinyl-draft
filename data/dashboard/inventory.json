@@ -1,16 +1,28 @@
 {
   "meta": {
     "schema_version": "1.1",
-    "sample": true,
-    "sample_note": "Sample data. Figures are illustrative except where a field is marked real.",
-    "generated_at": "2026-10-26T12:00:00-05:00",
-    "as_of": "2026-10-26T11:42:00-05:00",
+    "sample": false,
+    "sample_note": null,
+    "generated_at": "2026-11-03T12:24:55-06:00",
+    "as_of": "2026-11-03T12:24:55-06:00",
     "timezone": "America/Chicago",
     "currency": "USD",
     "money_unit": "cents",
-    "source": "WooCommerce stock + Shopkeep inventory (sample). Counts are sample; out-of-stock flags are real."
+    "source": "WooCommerce product stock (live).",
+    "store_connected": false,
+    "store_note": "Shopkeep is not connected yet. Store figures are not included."
   },
   "items": [
+    {
+      "product_id": 67270,
+      "name": "Jaguars Puff Embroidered Patch",
+      "category": "Patches",
+      "state": "low",
+      "qty": 0,
+      "real_flag": true,
+      "note": "Five or fewer left",
+      "reorder": null
+    },
     {
       "product_id": 65987,
       "name": "GEAUX Tigers Patch",
@@ -18,18 +30,18 @@
       "state": "out_of_stock",
       "qty": 0,
       "real_flag": true,
-      "note": "Marked out of stock in the catalog today (real)",
-      "reorder": "Company Casuals special order"
+      "note": "Marked out of stock in the catalog",
+      "reorder": null
     },
     {
       "product_id": 62288,
       "name": "Transfer Tape (10 YRDS)",
-      "category": "Accessories",
+      "category": "651 Vinyl",
       "state": "out_of_stock",
       "qty": 0,
       "real_flag": true,
-      "note": "Marked out of stock in the catalog today (real)",
-      "reorder": "Company Casuals special order"
+      "note": "Marked out of stock in the catalog",
+      "reorder": null
     },
     {
       "product_id": 62120,
@@ -38,94 +50,38 @@
       "state": "out_of_stock",
       "qty": 0,
       "real_flag": true,
-      "note": "Marked out of stock in the catalog today (real)",
-      "reorder": "Company Casuals special order"
+      "note": "Marked out of stock in the catalog",
+      "reorder": null
     },
     {
       "product_id": 59639,
-      "name": "Sport-Tek Women’s Replica Jersey",
-      "category": "Blanks and Apparel",
+      "name": "Sport Tek Women’s Replica Jersey",
+      "category": "Adults",
       "state": "out_of_stock",
       "qty": 0,
       "real_flag": true,
-      "note": "Marked out of stock in the catalog today (real)",
-      "reorder": "Company Casuals special order"
+      "note": "Marked out of stock in the catalog",
+      "reorder": null
     },
     {
       "product_id": 48223,
-      "name": "Baby Beanie Hat: 100% Polyester",
-      "category": "Sublimation",
+      "name": "Baby Beanie Hat - 100% Polyester",
+      "category": "Accessories",
       "state": "out_of_stock",
       "qty": 0,
       "real_flag": true,
-      "note": "Marked out of stock in the catalog today (real)",
-      "reorder": "Company Casuals special order"
+      "note": "Marked out of stock in the catalog",
+      "reorder": null
     },
     {
-      "product_id": 62058,
-      "name": "Siser EasyWeed HTV",
-      "category": "HTV Vinyl",
-      "state": "low",
-      "qty": 6,
-      "reorder_point": 12,
-      "real_flag": false,
-      "note": "Sample count",
-      "reorder": "Company Casuals special order"
-    },
-    {
-      "product_id": 50579,
-      "name": "Gildan Softstyle Unisex 64000",
-      "category": "Blanks and Apparel",
-      "state": "low",
-      "qty": 9,
-      "reorder_point": 15,
-      "real_flag": false,
-      "note": "Sample count",
-      "reorder": "Stahl's"
-    },
-    {
-      "product_id": 14113,
-      "name": "HTV UltraWeed™",
-      "category": "HTV Vinyl",
-      "state": "low",
-      "qty": 4,
-      "reorder_point": 10,
-      "real_flag": false,
-      "note": "Sample count",
-      "reorder": "Company Casuals special order"
-    },
-    {
-      "product_id": 9074,
-      "name": "Bella+Canvas 3001 Unisex Jersey Tee",
-      "category": "Blanks and Apparel",
-      "state": "low",
-      "qty": 12,
-      "reorder_point": 20,
-      "real_flag": false,
-      "note": "Sample count",
-      "reorder": "Stahl's"
-    },
-    {
-      "product_id": 56713,
-      "name": "Adhesive Transfer Tape",
+      "product_id": 18842,
+      "name": "Heat Transfer Application Tape",
       "category": "Accessories",
       "state": "low",
-      "qty": 7,
-      "reorder_point": 12,
-      "real_flag": false,
-      "note": "Sample count",
-      "reorder": "Company Casuals special order"
-    },
-    {
-      "product_id": 62288,
-      "name": "Transfer Tape (10 YRDS)",
-      "category": "Accessories",
-      "state": "low",
-      "qty": 3,
-      "reorder_point": 6,
-      "real_flag": false,
-      "note": "Sample count",
-      "reorder": "Stahl's"
+      "qty": 1,
+      "real_flag": true,
+      "note": "Five or fewer left",
+      "reorder": null
     }
   ]
 }
