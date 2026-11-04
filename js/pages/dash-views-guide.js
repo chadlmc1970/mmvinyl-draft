@@ -6,7 +6,7 @@
   var GUIDE = [
     {
       key: 'start', label: 'Start here', go: null,
-      what: 'The dashboard is the one place you run M&M Vinyl. Six screens in the left menu: Today, Orders, Gang Sheets, Customers, Money, and Settings. Web and in-store orders show together.',
+      what: 'The dashboard is the one place you run M&M Vinyl. Seven screens in the left menu: Today, Orders, Gang Sheets, Social, Customers, Money, and Settings. Web and in-store orders show together.',
       why: 'Nothing slips by without you seeing it: a late order, a failed payment, a reseller who stopped ordering. You stop checking five different systems.',
       when: [
         ['Morning', 'Open Today. Clear What needs you now.'],
@@ -51,6 +51,21 @@
         'Use Filters to show only web or only store, or one payment type.',
         'Click an order to see its items, payment, and pickup or shipping.',
         'When it is printed, press Mark ready, then send the pickup text.'
+      ]
+    },
+    {
+      key: 'social', label: 'Social', go: 'social',
+      what: 'Every Instagram and Facebook post, how many times it was seen, and how many orders came from social. What we are learning shows which kinds of posts work best and what the next batch will do.',
+      why: 'Posts should bring in orders, not just likes. Each batch is shaped by what the last one proved, so the page gets smarter every week.',
+      when: [
+        ['Monday', 'Open Results. Are orders from social beating the number to beat?'],
+        ['Once a month', 'Open What we are learning and read the next batch plan.']
+      ],
+      how: [
+        'Click a post to see its picture, results, and link.',
+        'Scores lock in at 48 hours and 7 days after a post goes out.',
+        'Rules start after 12 scored posts and 21 days. Before that, topics stay evenly mixed.',
+        'The score is reactions, comments, shares, and clicks for every 100 times seen.'
       ]
     },
     {

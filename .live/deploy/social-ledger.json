@@ -1,0 +1,55 @@
+{
+  "launched_at": "2026-11-04T20:55:00Z",
+  "posts": [
+    {
+      "key": "2026-11-04-cutoff",
+      "title": "2 PM cutoff",
+      "image": "social/1-cutoff.png",
+      "topic": "Same-day",
+      "format": "Text graphic",
+      "hook": "Deadline",
+      "is_test": false,
+      "buffer": { "instagram": "6aeb9bbef0e1705c28e69aec", "facebook": "6aeb9bc7b080155a2dc34020" }
+    },
+    {
+      "key": "2026-11-05-how-same-day-works",
+      "title": "How same-day works",
+      "image": "social/2-how-same-day-works.png",
+      "topic": "Same-day",
+      "format": "Text graphic",
+      "hook": "Step by step",
+      "is_test": false,
+      "buffer": { "instagram": "6aeb9bd81c31d2bdeba1f85b", "facebook": "6aeb9bd966cdd5eb285651ff" }
+    },
+    {
+      "key": "2026-11-06-one-sheet",
+      "title": "One sheet, as many designs as fit",
+      "image": "social/3-one-sheet.png",
+      "topic": "Gang sheets",
+      "format": "Text graphic",
+      "hook": "Value",
+      "is_test": false,
+      "buffer": { "instagram": "6aeb9bd91c31d2bdeba1f8c4", "facebook": "6aeb9bda66cdd5eb2856522e" }
+    },
+    {
+      "key": "2026-11-09-three-mistakes",
+      "title": "3 gang sheet mistakes",
+      "image": "social/4-three-mistakes.png",
+      "topic": "How-to",
+      "format": "Text graphic",
+      "hook": "Mistakes to avoid",
+      "is_test": false,
+      "buffer": { "instagram": "6aeb9bda400b189b316e0e4b", "facebook": "6aeb9bdb400b189b316e0e92" }
+    },
+    {
+      "key": "2026-11-10-mardi-gras",
+      "title": "Mardi Gras is Feb 9",
+      "image": "social/5-mardi-gras.png",
+      "topic": "Seasonal",
+      "format": "Text graphic",
+      "hook": "Deadline",
+      "is_test": false,
+      "buffer": { "instagram": "6aeb9bdc0bb7d41592a5a0cc", "facebook": "6aeb9bddb080155a2dc3483b" }
+    }
+  ]
+}

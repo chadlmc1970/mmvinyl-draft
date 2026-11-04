@@ -1,0 +1,290 @@
+{
+  "meta": {
+    "sample": false,
+    "source": "Buffer post results and WooCommerce order sources (live, read-only).",
+    "generated_at": "2026-11-04T21:28:35.541Z",
+    "timezone": "America/Chicago",
+    "connected": true,
+    "orders_connected": true
+  },
+  "launched_at": "2026-11-04T20:55:00Z",
+  "phase": {
+    "name": "baseline",
+    "settled": 0,
+    "need_posts": 12,
+    "days": 0,
+    "need_days": 21
+  },
+  "summary": {
+    "sent": 1,
+    "scheduled": 4,
+    "failed": 0,
+    "seen": 0,
+    "actions": 0,
+    "score": null,
+    "orders": 0,
+    "sales_cents": 0
+  },
+  "before": {
+    "posts": {
+      "facebook": {
+        "posts": 50,
+        "avg_seen": 2550,
+        "avg_score": 2.7
+      },
+      "instagram": {
+        "posts": 53,
+        "avg_seen": 212,
+        "avg_score": 3.2
+      }
+    },
+    "order_days": 30,
+    "orders": 24,
+    "sales_cents": 68183
+  },
+  "orders_by_channel": {
+    "instagram": {
+      "orders": 0,
+      "sales_cents": 0
+    },
+    "facebook": {
+      "orders": 0,
+      "sales_cents": 0
+    }
+  },
+  "posts": [
+    {
+      "key": "2026-11-04-cutoff",
+      "title": "2 PM cutoff",
+      "image": "https://chadlmc1970.github.io/mmvinyl-draft/social/1-cutoff.png",
+      "topic": "Same-day",
+      "format": "Text graphic",
+      "hook": "Deadline",
+      "is_test": false,
+      "at": "2026-11-04T20:55:34.308Z",
+      "status": "sent",
+      "channels": {
+        "instagram": {
+          "status": "sent",
+          "link": "https://www.instagram.com/p/DfVXSgrCca4/",
+          "seen": 0,
+          "actions": 0,
+          "reactions": 0,
+          "comments": 0,
+          "shares": 0,
+          "saves": 0,
+          "clicks": 0
+        },
+        "facebook": {
+          "status": "sent",
+          "link": "https://www.facebook.com/1732566895066954/posts/1732639645059679",
+          "seen": 0,
+          "actions": 0,
+          "reactions": 0,
+          "comments": 0,
+          "shares": 0,
+          "saves": 0,
+          "clicks": 0
+        }
+      },
+      "seen": 0,
+      "actions": 0,
+      "score": null,
+      "live_score": null,
+      "orders": 0,
+      "sales_cents": 0
+    },
+    {
+      "key": "2026-11-05-how-same-day-works",
+      "title": "How same-day works",
+      "image": "https://chadlmc1970.github.io/mmvinyl-draft/social/2-how-same-day-works.png",
+      "topic": "Same-day",
+      "format": "Text graphic",
+      "hook": "Step by step",
+      "is_test": false,
+      "at": "2026-11-05T16:00:00.000Z",
+      "status": "scheduled",
+      "channels": {
+        "instagram": {
+          "status": "scheduled",
+          "link": null,
+          "seen": 0,
+          "actions": 0,
+          "reactions": 0,
+          "comments": 0,
+          "shares": 0,
+          "saves": 0,
+          "clicks": 0
+        },
+        "facebook": {
+          "status": "scheduled",
+          "link": null,
+          "seen": 0,
+          "actions": 0,
+          "reactions": 0,
+          "comments": 0,
+          "shares": 0,
+          "saves": 0,
+          "clicks": 0
+        }
+      },
+      "seen": 0,
+      "actions": 0,
+      "score": null,
+      "live_score": null,
+      "orders": 0,
+      "sales_cents": 0
+    },
+    {
+      "key": "2026-11-06-one-sheet",
+      "title": "One sheet, as many designs as fit",
+      "image": "https://chadlmc1970.github.io/mmvinyl-draft/social/3-one-sheet.png",
+      "topic": "Gang sheets",
+      "format": "Text graphic",
+      "hook": "Value",
+      "is_test": false,
+      "at": "2026-11-06T16:00:00.000Z",
+      "status": "scheduled",
+      "channels": {
+        "instagram": {
+          "status": "scheduled",
+          "link": null,
+          "seen": 0,
+          "actions": 0,
+          "reactions": 0,
+          "comments": 0,
+          "shares": 0,
+          "saves": 0,
+          "clicks": 0
+        },
+        "facebook": {
+          "status": "scheduled",
+          "link": null,
+          "seen": 0,
+          "actions": 0,
+          "reactions": 0,
+          "comments": 0,
+          "shares": 0,
+          "saves": 0,
+          "clicks": 0
+        }
+      },
+      "seen": 0,
+      "actions": 0,
+      "score": null,
+      "live_score": null,
+      "orders": 0,
+      "sales_cents": 0
+    },
+    {
+      "key": "2026-11-09-three-mistakes",
+      "title": "3 gang sheet mistakes",
+      "image": "https://chadlmc1970.github.io/mmvinyl-draft/social/4-three-mistakes.png",
+      "topic": "How-to",
+      "format": "Text graphic",
+      "hook": "Mistakes to avoid",
+      "is_test": false,
+      "at": "2026-11-09T16:00:00.000Z",
+      "status": "scheduled",
+      "channels": {
+        "instagram": {
+          "status": "scheduled",
+          "link": null,
+          "seen": 0,
+          "actions": 0,
+          "reactions": 0,
+          "comments": 0,
+          "shares": 0,
+          "saves": 0,
+          "clicks": 0
+        },
+        "facebook": {
+          "status": "scheduled",
+          "link": null,
+          "seen": 0,
+          "actions": 0,
+          "reactions": 0,
+          "comments": 0,
+          "shares": 0,
+          "saves": 0,
+          "clicks": 0
+        }
+      },
+      "seen": 0,
+      "actions": 0,
+      "score": null,
+      "live_score": null,
+      "orders": 0,
+      "sales_cents": 0
+    },
+    {
+      "key": "2026-11-10-mardi-gras",
+      "title": "Mardi Gras is Feb 9",
+      "image": "https://chadlmc1970.github.io/mmvinyl-draft/social/5-mardi-gras.png",
+      "topic": "Seasonal",
+      "format": "Text graphic",
+      "hook": "Deadline",
+      "is_test": false,
+      "at": "2026-11-10T16:00:00.000Z",
+      "status": "scheduled",
+      "channels": {
+        "instagram": {
+          "status": "scheduled",
+          "link": null,
+          "seen": 0,
+          "actions": 0,
+          "reactions": 0,
+          "comments": 0,
+          "shares": 0,
+          "saves": 0,
+          "clicks": 0
+        },
+        "facebook": {
+          "status": "scheduled",
+          "link": null,
+          "seen": 0,
+          "actions": 0,
+          "reactions": 0,
+          "comments": 0,
+          "shares": 0,
+          "saves": 0,
+          "clicks": 0
+        }
+      },
+      "seen": 0,
+      "actions": 0,
+      "score": null,
+      "live_score": null,
+      "orders": 0,
+      "sales_cents": 0
+    }
+  ],
+  "overall_score": null,
+  "kinds": {
+    "topic": [],
+    "format": [],
+    "hook": [],
+    "day": [],
+    "time": []
+  },
+  "rules": [],
+  "next_batch": {
+    "size": 5,
+    "mode": "Even mix",
+    "tests": [
+      "Customer reviews"
+    ],
+    "more": [],
+    "less": []
+  },
+  "weekly": [
+    {
+      "week": "2026-11-02",
+      "sent": 1,
+      "orders": 0,
+      "sales_cents": 0,
+      "avg_score": null
+    }
+  ],
+  "rule_log": []
+}

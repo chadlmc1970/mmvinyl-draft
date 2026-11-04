@@ -25,6 +25,7 @@
     "integrations.json",
     "social.json",
     "settings.json",
-    "report.json"
+    "report.json",
+    "social-learning.json"
   ]
 }

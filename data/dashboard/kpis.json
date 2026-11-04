@@ -3,8 +3,8 @@
     "schema_version": "1.1",
     "sample": false,
     "sample_note": null,
-    "generated_at": "2026-11-04T11:28:52-06:00",
-    "as_of": "2026-11-04T11:28:52-06:00",
+    "generated_at": "2026-11-04T15:24:49-06:00",
+    "as_of": "2026-11-04T15:24:49-06:00",
     "timezone": "America/Chicago",
     "currency": "USD",
     "money_unit": "cents",
@@ -13,13 +13,13 @@
     "store_note": "Shopkeep is not connected yet. Store figures are not included."
   },
   "today": {
-    "orders_today": 13,
-    "open_in_queue": 4,
-    "done_today": 10,
+    "orders_today": 26,
+    "open_in_queue": 5,
+    "done_today": 21,
     "ready_waiting": null,
     "at_risk": null,
-    "sheets_so_far_today": 12,
-    "revenue_today_cents": 42193,
+    "sheets_so_far_today": 24,
+    "revenue_today_cents": 71816,
     "quotes_unanswered": null,
     "applications_pending": null,
     "texts_not_sent": null
@@ -32,7 +32,7 @@
   },
   "scorecard": {
     "gang_sheets_per_month": {
-      "value": 87,
+      "value": 99,
       "baseline": 1176,
       "real": true
     },

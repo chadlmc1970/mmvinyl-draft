@@ -116,6 +116,7 @@
     bolt: '<path d="m13 3-7.500 10H11l-1 8 7.500-10H12z"/>',
     chev: '<path d="m9 6 6 6-6 6"/>',
     down: '<path d="m6 9 6 6 6-6"/>',
+    social: '<path d="M4 10v4h3l8 4.500v-13L7 10z"/><path d="M18 9.500a3.500 3.500 0 0 1 0 5M8 14.500V19h2.500v-3"/>',
     help: '<circle cx="12" cy="12" r="8.5"/><path d="M9.600 9.500a2.500 2.500 0 1 1 3.600 2.200c-.800.400-1.200 1-1.200 1.800M12 16.800v.2"/>'
   };
   OD.icon = function (name, cls) {
@@ -251,7 +252,7 @@
     }, o.ms || 3200);
   };
 
-  var FILES = ['kpis', 'queue', 'orders', 'customers', 'gangsheets', 'sales', 'payments', 'shipments', 'messages', 'reviews', 'inventory', 'integrations', 'social', 'settings', 'report', 'gang-insights'];
+  var FILES = ['kpis', 'queue', 'orders', 'customers', 'gangsheets', 'sales', 'payments', 'shipments', 'messages', 'reviews', 'inventory', 'integrations', 'social', 'settings', 'report', 'gang-insights', 'social-learning'];
   OD.data = {};
   OD.isLive = function () { var s = OD.data.sales; return !!(s && s.meta && s.meta.sample === false); };
   var LIVE_NOTE = '<b>Live store data.</b> Orders, sales, payments, customers, gang sheets, stock, and the weekly report come straight from the WooCommerce store. Not connected yet and left blank: texts and messages, review ratings, store (Shopkeep) sales, shipping labels, printer split, and reprints.';

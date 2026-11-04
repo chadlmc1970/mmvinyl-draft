@@ -3,8 +3,8 @@
     "schema_version": "1.1",
     "sample": false,
     "sample_note": null,
-    "generated_at": "2026-11-04T11:28:52-06:00",
-    "as_of": "2026-11-04T11:28:52-06:00",
+    "generated_at": "2026-11-04T15:24:49-06:00",
+    "as_of": "2026-11-04T15:24:49-06:00",
     "timezone": "America/Chicago",
     "currency": "USD",
     "money_unit": "cents",
@@ -645,9 +645,9 @@
     },
     {
       "date": "2026-11-04",
-      "web_cents": 42193,
+      "web_cents": 71816,
       "store_cents": null,
-      "orders_web": 13,
+      "orders_web": 26,
       "orders_store": null
     }
   ],
@@ -758,10 +758,10 @@
     },
     {
       "week_start": "2026-11-02",
-      "web_cents": 225834,
+      "web_cents": 255457,
       "store_cents": null,
-      "orders": 74,
-      "total_cents": 225834,
+      "orders": 87,
+      "total_cents": 255457,
       "partial": true
     }
   ],
@@ -786,18 +786,18 @@
   },
   "current_week_to_date": {
     "week_start": "2026-11-02",
-    "total_cents": 225834
+    "total_cents": 255457
   },
   "by_category_28d": [
     {
       "category": "DTF [Direct to Film]",
-      "revenue_cents": 2316714,
+      "revenue_cents": 2340313,
       "prev_period_cents": 2426597,
       "share_pct": 76
     },
     {
       "category": "Adults",
-      "revenue_cents": 488169,
+      "revenue_cents": 492593,
       "prev_period_cents": 602315,
       "share_pct": 16
     },
@@ -838,6 +838,12 @@
       "share_pct": 0
     },
     {
+      "category": "651 Vinyl",
+      "revenue_cents": 4125,
+      "prev_period_cents": 2750,
+      "share_pct": 0
+    },
+    {
       "category": "Toddler | Infants",
       "revenue_cents": 3500,
       "prev_period_cents": 1950,
@@ -847,12 +853,6 @@
       "category": "Youth",
       "revenue_cents": 2550,
       "prev_period_cents": 0,
-      "share_pct": 0
-    },
-    {
-      "category": "651 Vinyl",
-      "revenue_cents": 2525,
-      "prev_period_cents": 2750,
       "share_pct": 0
     },
     {
@@ -903,10 +903,10 @@
       "product_id": 60967,
       "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P &amp; 10A SAT FOR SAME DAY",
       "category": "DTF [Direct to Film]",
-      "unit_price_cents": 1467,
+      "unit_price_cents": 1360,
       "price_note": null,
-      "units_30d": 1100,
-      "revenue_30d_cents": 2586583,
+      "units_30d": 1112,
+      "revenue_30d_cents": 2610182,
       "real_units": true
     },
     {
@@ -925,8 +925,8 @@
       "category": "Adults",
       "unit_price_cents": 475,
       "price_note": null,
-      "units_30d": 352,
-      "revenue_30d_cents": 183506,
+      "units_30d": 357,
+      "revenue_30d_cents": 185881,
       "real_units": true
     },
     {
@@ -935,8 +935,8 @@
       "category": "Adults",
       "unit_price_cents": 899,
       "price_note": null,
-      "units_30d": 52,
-      "revenue_30d_cents": 47501,
+      "units_30d": 54,
+      "revenue_30d_cents": 49550,
       "real_units": true
     },
     {
@@ -1001,9 +1001,9 @@
     }
   ],
   "averages": {
-    "avg_order_web_cents": 2956,
+    "avg_order_web_cents": 2948,
     "avg_order_store_cents": null,
-    "orders_per_open_day": 38,
+    "orders_per_open_day": 38.4,
     "reseller_share_of_revenue_pct": null,
     "repeat_order_rate_pct": null
   }

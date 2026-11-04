@@ -1,18 +1,18 @@
 {
   "meta": {
     "sample": false,
-    "generated_at": "2026-11-04T17:31:52.149Z",
-    "as_of": "2026-11-04T17:31:52.149Z",
+    "generated_at": "2026-11-04T21:27:38.610Z",
+    "as_of": "2026-11-04T21:27:38.610Z",
     "currency": "USD",
     "money_unit": "cents",
     "source": "WooCommerce orders and Kixxl sheet files. Paid orders only. Sales are sheet prices before tax and shipping."
   },
   "reorders": {
-    "paid_sheets": 5893,
-    "sheet_sales_cents": 14532017,
-    "customers": 1034,
-    "repeat_customers": 583,
-    "sheets_without_design_data": 210,
+    "paid_sheets": 5905,
+    "sheet_sales_cents": 14555616,
+    "customers": 1036,
+    "repeat_customers": 584,
+    "sheets_without_design_data": 212,
     "same_sheet": {
       "sheets": 69,
       "reorders": 88,
@@ -22,9 +22,9 @@
       "typical_days_between": 2.9
     },
     "reused_design": {
-      "sheets": 616,
+      "sheets": 617,
       "customers": 104,
-      "value_cents": 1990154,
+      "value_cents": 1992171,
       "share_of_sales_pct": 13.7
     },
     "top10": [
@@ -257,12 +257,12 @@
         "month": "2026-11",
         "label": "Nov",
         "partial": true,
-        "sheets": 87,
-        "sales_cents": 202491,
-        "avg_sheet_cents": 2327,
-        "avg_sqft": 7.15,
-        "customers": 67,
-        "new_customers": 9
+        "sheets": 99,
+        "sales_cents": 226090,
+        "avg_sheet_cents": 2284,
+        "avg_sqft": 6.97,
+        "customers": 73,
+        "new_customers": 11
       }
     ],
     "season": {

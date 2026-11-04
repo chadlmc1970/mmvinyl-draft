@@ -36,15 +36,25 @@ jobs:
             .live/data-live/sheet-designs.ndjson
           key: gang-${{ github.run_id }}
           restore-keys: gang-
+      - uses: actions/cache@v4
+        with:
+          path: |
+            .live/data-live/social-history.json
+            .live/data-live/dashboard/social-learning.json
+          key: social-${{ github.run_id }}
+          restore-keys: social-
       - name: Pull the store
         env:
           WC_KEY: ${{ secrets.WC_KEY }}
           WC_SECRET: ${{ secrets.WC_SECRET }}
+          BUFFER_KEY: ${{ secrets.BUFFER_KEY }}
+          SOCIAL_MAX_AGE_HOURS: '6'
           REFRESH_DAYS: ${{ github.event.schedule == '7 8 * * *' && '60' || '3' }}
         run: |
           printf 'WC_KEY=%s\nWC_SECRET=%s\n' "$WC_KEY" "$WC_SECRET" > .live/.env.woo
           node .live/scripts/pull-live.mjs
           node .live/scripts/pull-gang-insights.mjs
+          node .live/scripts/pull-social-learning.mjs
           rm -f .live/.env.woo .live/data-live/dashboard/social.json
           cp .live/data-live/dashboard/*.json data/dashboard/
       - name: Keep runner files out of the site
