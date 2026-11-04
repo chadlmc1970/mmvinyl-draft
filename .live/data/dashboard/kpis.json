@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "schema_version": "1.1",
+    "sample": true,
+    "sample_note": "Sample data. Figures are illustrative except where a field is marked real.",
+    "generated_at": "2026-10-26T12:00:00-05:00",
+    "as_of": "2026-10-26T11:42:00-05:00",
+    "timezone": "America/Chicago",
+    "currency": "USD",
+    "money_unit": "cents",
+    "source": "Derived from the other files"
+  },
+  "today": {
+    "orders_today": 30,
+    "open_in_queue": 25,
+    "done_today": 5,
+    "ready_waiting": 10,
+    "at_risk": 5,
+    "sheets_so_far_today": 40,
+    "revenue_today_cents": 53118,
+    "quotes_unanswered": 3,
+    "applications_pending": 3,
+    "texts_not_sent": 6
+  },
+  "real": {
+    "gang_sheets_2026_09": 886,
+    "gang_sheets_2026_10_to_date": 912,
+    "products": 106,
+    "printers": 2
+  },
+  "week": {
+    "revenue_vs_prior_pct": -1.7
+  },
+  "scorecard": {
+    "gang_sheets_per_month": {
+      "value": 912,
+      "baseline": 886,
+      "real": true
+    },
+    "reseller_share_of_orders_pct": {
+      "value": 84,
+      "sample": true
+    },
+    "repeat_order_rate_pct": {
+      "value": 71,
+      "sample": true
+    },
+    "reprints_per_month": {
+      "value": 21,
+      "prior": 24,
+      "sample": true
+    },
+    "status_calls_per_week": {
+      "value": null,
+      "note": "Desiree estimate needed"
+    },
+    "order_to_ready_minutes": {
+      "value": 138,
+      "sample": true
+    }
+  }
+}

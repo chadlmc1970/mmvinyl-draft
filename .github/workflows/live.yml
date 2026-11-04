@@ -1,0 +1,58 @@
+name: Live dashboard
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '*/15 * * * *'
+    - cron: '7 8 * * *'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: live-dashboard
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/cache@v4
+        with:
+          path: |
+            .live/data-live/gang-lines.ndjson
+            .live/data-live/sheet-designs.ndjson
+          key: gang-${{ github.run_id }}
+          restore-keys: gang-
+      - name: Pull the store
+        env:
+          WC_KEY: ${{ secrets.WC_KEY }}
+          WC_SECRET: ${{ secrets.WC_SECRET }}
+          REFRESH_DAYS: ${{ github.event.schedule == '7 8 * * *' && '60' || '3' }}
+        run: |
+          printf 'WC_KEY=%s\nWC_SECRET=%s\n' "$WC_KEY" "$WC_SECRET" > .live/.env.woo
+          node .live/scripts/pull-live.mjs
+          node .live/scripts/pull-gang-insights.mjs
+          rm -f .live/.env.woo .live/data-live/dashboard/social.json
+          cp .live/data-live/dashboard/*.json data/dashboard/
+      - name: Keep runner files out of the site
+        run: |
+          mkdir -p "$RUNNER_TEMP/site"
+          rsync -a --exclude .git --exclude .github --exclude .live ./ "$RUNNER_TEMP/site/"
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ runner.temp }}/site
+      - id: deploy
+        uses: actions/deploy-pages@v4

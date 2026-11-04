@@ -441,7 +441,7 @@
     return Promise.all(
       names.map(function (n) {
         if (OD.data[n]) return Promise.resolve(OD.data[n]);
-        return fetch(MM.url('data/dashboard/' + n + '.json'))
+        return fetch(MM.url('data/dashboard/' + n + '.json'), { cache: 'no-cache' })
           .then(function (r) {
             if (!r.ok) throw new Error(n + '.json ' + r.status);
             return r.json();

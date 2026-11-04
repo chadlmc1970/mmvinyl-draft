@@ -3,8 +3,8 @@
     "schema_version": "1.1",
     "sample": false,
     "sample_note": null,
-    "generated_at": "2026-11-03T16:48:54-06:00",
-    "as_of": "2026-11-03T16:48:54-06:00",
+    "generated_at": "2026-11-04T11:28:52-06:00",
+    "as_of": "2026-11-04T11:28:52-06:00",
     "timezone": "America/Chicago",
     "currency": "USD",
     "money_unit": "cents",
@@ -13,6 +13,42 @@
     "store_note": "Shopkeep is not connected yet. Store figures are not included."
   },
   "shipments": [
+    {
+      "id": "shp_68890",
+      "order_id": "ord_68890",
+      "order_number": "68890",
+      "customer_label": "Melondy S.",
+      "carrier": null,
+      "service": null,
+      "state": "shipped",
+      "tracking": null,
+      "created_at": "2026-11-04T08:16:18-06:00",
+      "weight_oz": null
+    },
+    {
+      "id": "shp_68883",
+      "order_id": "ord_68883",
+      "order_number": "68883",
+      "customer_label": "Anitra L.",
+      "carrier": null,
+      "service": null,
+      "state": "shipped",
+      "tracking": null,
+      "created_at": "2026-11-03T22:33:58-06:00",
+      "weight_oz": null
+    },
+    {
+      "id": "shp_68869",
+      "order_id": "ord_68869",
+      "order_number": "68869",
+      "customer_label": "Jennifer L.",
+      "carrier": null,
+      "service": null,
+      "state": "shipped",
+      "tracking": null,
+      "created_at": "2026-11-03T17:02:03-06:00",
+      "weight_oz": null
+    },
     {
       "id": "shp_68808",
       "order_id": "ord_68808",
@@ -575,42 +611,6 @@
       "state": "shipped",
       "tracking": null,
       "created_at": "2026-09-25T07:01:12-05:00",
-      "weight_oz": null
-    },
-    {
-      "id": "shp_67151",
-      "order_id": "ord_67151",
-      "order_number": "67151",
-      "customer_label": "Courtni K.",
-      "carrier": null,
-      "service": null,
-      "state": "shipped",
-      "tracking": null,
-      "created_at": "2026-09-24T13:26:47-05:00",
-      "weight_oz": null
-    },
-    {
-      "id": "shp_67149",
-      "order_id": "ord_67149",
-      "order_number": "67149",
-      "customer_label": "Lakedra H.",
-      "carrier": null,
-      "service": null,
-      "state": "shipped",
-      "tracking": null,
-      "created_at": "2026-09-24T13:06:23-05:00",
-      "weight_oz": null
-    },
-    {
-      "id": "shp_67141",
-      "order_id": "ord_67141",
-      "order_number": "67141",
-      "customer_label": "Asia P.",
-      "carrier": null,
-      "service": null,
-      "state": "shipped",
-      "tracking": null,
-      "created_at": "2026-09-24T10:55:44-05:00",
       "weight_oz": null
     }
   ],

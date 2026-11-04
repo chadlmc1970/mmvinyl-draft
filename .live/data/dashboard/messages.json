@@ -1,0 +1,332 @@
+{
+  "meta": {
+    "schema_version": "1.1",
+    "sample": true,
+    "sample_note": "Sample data. Figures are illustrative except where a field is marked real.",
+    "generated_at": "2026-10-26T12:00:00-05:00",
+    "as_of": "2026-10-26T11:42:00-05:00",
+    "timezone": "America/Chicago",
+    "currency": "USD",
+    "money_unit": "cents",
+    "source": "Texting service log and WooCommerce quote form (sample). Texting service not chosen yet."
+  },
+  "texts_30d": {
+    "sent": 612,
+    "delivered": 598,
+    "failed": 14,
+    "sample": true
+  },
+  "opt_in": {
+    "opted_in": 18,
+    "opted_out": 3,
+    "unknown": 3,
+    "consent_stored": true,
+    "note": "Consent is stored per customer with the source and date. Texts only go to customers who opted in."
+  },
+  "templates": [
+    {
+      "key": "received",
+      "label": "Order received",
+      "body": "M&M Vinyl: we got your order {order}. Same-day orders placed by {cutoff} are ready today. Reply STOP to opt out."
+    },
+    {
+      "key": "printing",
+      "label": "Printing now",
+      "body": "M&M Vinyl: order {order} is printing. We will text you the moment it is ready. Reply STOP to opt out."
+    },
+    {
+      "key": "ready",
+      "label": "Ready for pickup",
+      "body": "M&M Vinyl: order {order} is ready for pickup at 12232 Industriplex Blvd, Ste 19. Open until {close}. Reply STOP to opt out."
+    },
+    {
+      "key": "reminder",
+      "label": "Pickup reminder",
+      "body": "M&M Vinyl: order {order} is still waiting for you. We are open until {close} today. Reply STOP to opt out."
+    },
+    {
+      "key": "art",
+      "label": "Art needs a fix",
+      "body": "M&M Vinyl: order {order} needs one fix before we print: {issue}. Reply here or call (225) 478-9319. Reply STOP to opt out."
+    }
+  ],
+  "log": [
+    {
+      "id": "sms_r1",
+      "order_number": "S-1070",
+      "customer_label": "Reseller T",
+      "template": "printing",
+      "sent_at": "2026-10-26T11:34:00-05:00",
+      "state": "delivered",
+      "failure_reason": null,
+      "triggered_by": "Order status changed (automatic)"
+    },
+    {
+      "id": "sms_r2",
+      "order_number": "S-1069",
+      "customer_label": "Reseller J",
+      "template": "received",
+      "sent_at": "2026-10-26T11:27:00-05:00",
+      "state": "delivered",
+      "failure_reason": null,
+      "triggered_by": "Order status changed (automatic)"
+    },
+    {
+      "id": "sms_r3",
+      "order_number": "S-1068",
+      "customer_label": "Reseller F",
+      "template": "received",
+      "sent_at": "2026-10-26T11:18:00-05:00",
+      "state": "delivered",
+      "failure_reason": null,
+      "triggered_by": "Order status changed (automatic)"
+    },
+    {
+      "id": "sms_7",
+      "order_number": "S-1043",
+      "customer_label": "Walk-in (store)",
+      "template": "ready",
+      "sent_at": "2026-10-26T11:10:00-05:00",
+      "state": "failed",
+      "failure_reason": "Carrier rejected the number (sample)",
+      "triggered_by": "Order status changed to Ready (automatic)"
+    },
+    {
+      "id": "sms_r4",
+      "order_number": "S-1067",
+      "customer_label": "Reseller R",
+      "template": "printing",
+      "sent_at": "2026-10-26T11:09:00-05:00",
+      "state": "delivered",
+      "failure_reason": null,
+      "triggered_by": "Order status changed (automatic)"
+    },
+    {
+      "id": "sms_r5",
+      "order_number": "S-1066",
+      "customer_label": "Reseller B",
+      "template": "received",
+      "sent_at": "2026-10-26T11:00:00-05:00",
+      "state": "delivered",
+      "failure_reason": null,
+      "triggered_by": "Order status changed (automatic)"
+    },
+    {
+      "id": "sms_1",
+      "order_number": "S-1052",
+      "customer_label": "Team A (sample)",
+      "template": "ready",
+      "sent_at": "2026-10-26T10:55:00-05:00",
+      "state": "delivered",
+      "failure_reason": null,
+      "triggered_by": "Order status changed to Ready (automatic)"
+    },
+    {
+      "id": "sms_r6",
+      "order_number": "S-1065",
+      "customer_label": "Reseller J",
+      "template": "received",
+      "sent_at": "2026-10-26T10:54:00-05:00",
+      "state": "delivered",
+      "failure_reason": null,
+      "triggered_by": "Order status changed (automatic)"
+    },
+    {
+      "id": "sms_r7",
+      "order_number": "S-1064",
+      "customer_label": "Reseller A",
+      "template": "printing",
+      "sent_at": "2026-10-26T10:50:00-05:00",
+      "state": "delivered",
+      "failure_reason": null,
+      "triggered_by": "Order status changed (automatic)"
+    },
+    {
+      "id": "sms_r8",
+      "order_number": "S-1063",
+      "customer_label": "Reseller T",
+      "template": "received",
+      "sent_at": "2026-10-26T10:41:00-05:00",
+      "state": "delivered",
+      "failure_reason": null,
+      "triggered_by": "Order status changed (automatic)"
+    },
+    {
+      "id": "sms_4",
+      "order_number": "S-1047",
+      "customer_label": "Walk-in (store)",
+      "template": "ready",
+      "sent_at": "2026-10-26T10:40:00-05:00",
+      "state": "delivered",
+      "failure_reason": null,
+      "triggered_by": "Order status changed to Ready (automatic)"
+    },
+    {
+      "id": "sms_8",
+      "order_number": "S-1042",
+      "customer_label": "Reseller Q",
+      "template": "ready",
+      "sent_at": "2026-10-26T10:40:00-05:00",
+      "state": "delivered",
+      "failure_reason": null,
+      "triggered_by": "Order status changed to Ready (automatic)"
+    },
+    {
+      "id": "sms_r9",
+      "order_number": "S-1062",
+      "customer_label": "Reseller Q",
+      "template": "received",
+      "sent_at": "2026-10-26T10:33:00-05:00",
+      "state": "delivered",
+      "failure_reason": null,
+      "triggered_by": "Order status changed (automatic)"
+    },
+    {
+      "id": "sms_2",
+      "order_number": "S-1049",
+      "customer_label": "Reseller O",
+      "template": "ready",
+      "sent_at": "2026-10-26T10:25:00-05:00",
+      "state": "delivered",
+      "failure_reason": null,
+      "triggered_by": "Order status changed to Ready (automatic)"
+    },
+    {
+      "id": "sms_3",
+      "order_number": "S-1048",
+      "customer_label": "Reseller G",
+      "template": "ready",
+      "sent_at": "2026-10-26T10:25:00-05:00",
+      "state": "delivered",
+      "failure_reason": null,
+      "triggered_by": "Order status changed to Ready (automatic)"
+    },
+    {
+      "id": "sms_5",
+      "order_number": "S-1046",
+      "customer_label": "Reseller H",
+      "template": "reminder",
+      "sent_at": "2026-10-26T09:55:00-05:00",
+      "state": "delivered",
+      "failure_reason": null,
+      "triggered_by": "Order status changed to Ready (automatic)"
+    },
+    {
+      "id": "sms_6",
+      "order_number": "S-1045",
+      "customer_label": "Reseller O",
+      "template": "ready",
+      "sent_at": "2026-10-26T09:55:00-05:00",
+      "state": "delivered",
+      "failure_reason": null,
+      "triggered_by": "Order status changed to Ready (automatic)"
+    },
+    {
+      "id": "sms_9",
+      "order_number": "S-1041",
+      "customer_label": "Walk-in (store)",
+      "template": "ready",
+      "sent_at": "2026-10-26T09:55:00-05:00",
+      "state": "delivered",
+      "failure_reason": null,
+      "triggered_by": "Order status changed to Ready (automatic)"
+    },
+    {
+      "id": "sms_10",
+      "order_number": "S-1075",
+      "customer_label": "Reseller B",
+      "template": "reminder",
+      "sent_at": "2026-10-24T14:35:00-05:00",
+      "state": "delivered",
+      "failure_reason": null,
+      "triggered_by": "Order status changed to Ready (automatic)"
+    },
+    {
+      "id": "sms_11",
+      "order_number": "S-1074",
+      "customer_label": "Reseller M",
+      "template": "ready",
+      "sent_at": "2026-10-24T14:09:00-05:00",
+      "state": "delivered",
+      "failure_reason": null,
+      "triggered_by": "Order status changed to Ready (automatic)"
+    },
+    {
+      "id": "sms_12",
+      "order_number": "S-1073",
+      "customer_label": "Reseller R",
+      "template": "ready",
+      "sent_at": "2026-10-24T13:00:00-05:00",
+      "state": "delivered",
+      "failure_reason": null,
+      "triggered_by": "Order status changed to Ready (automatic)"
+    },
+    {
+      "id": "sms_13",
+      "order_number": "S-1071",
+      "customer_label": "Reseller R",
+      "template": "ready",
+      "sent_at": "2026-10-24T11:25:00-05:00",
+      "state": "delivered",
+      "failure_reason": null,
+      "triggered_by": "Order status changed to Ready (automatic)"
+    }
+  ],
+  "quotes": [
+    {
+      "id": "q_1",
+      "label": "Team A (sample)",
+      "type": "Team order",
+      "summary": "Jerseys with numbers, 24 pieces",
+      "needed_by": "2026-11-04",
+      "received_at": "2026-10-26T09:14:00-05:00",
+      "state": "new",
+      "hours_waiting": 2.5
+    },
+    {
+      "id": "q_2",
+      "label": "Business B (sample)",
+      "type": "Business",
+      "summary": "Staff shirts with a left chest logo, 40 pieces",
+      "needed_by": "2026-11-09",
+      "received_at": "2026-10-25T16:40:00-05:00",
+      "state": "new",
+      "hours_waiting": 19
+    },
+    {
+      "id": "q_3",
+      "label": "School group (sample)",
+      "type": "Team order",
+      "summary": "Spirit shirts and sequin patches, 60 pieces",
+      "needed_by": "2026-11-16",
+      "received_at": "2026-10-24T11:05:00-05:00",
+      "state": "replied",
+      "hours_waiting": 0
+    },
+    {
+      "id": "q_4",
+      "label": "Creator C (sample)",
+      "type": "Creator",
+      "summary": "Sticker and transfer samples",
+      "needed_by": null,
+      "received_at": "2026-10-23T14:22:00-05:00",
+      "state": "replied",
+      "hours_waiting": 0
+    },
+    {
+      "id": "q_5",
+      "label": "Business D (sample)",
+      "type": "Business",
+      "summary": "Mardi Gras group order, 36 pieces",
+      "needed_by": "2027-01-30",
+      "received_at": "2026-10-22T09:48:00-05:00",
+      "state": "new",
+      "hours_waiting": 74
+    }
+  ],
+  "review_requests": {
+    "sent_30d": 188,
+    "sample": true,
+    "note": "A review ask goes to every customer after pickup, never filtered by sentiment."
+  }
+}

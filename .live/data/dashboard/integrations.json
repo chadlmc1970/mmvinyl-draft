@@ -1,0 +1,246 @@
+{
+  "meta": {
+    "schema_version": "1.1",
+    "sample": true,
+    "sample_note": "Sample data. Figures are illustrative except where a field is marked real.",
+    "generated_at": "2026-10-26T12:00:00-05:00",
+    "as_of": "2026-10-26T11:42:00-05:00",
+    "timezone": "America/Chicago",
+    "currency": "USD",
+    "money_unit": "cents",
+    "source": "Call assessment 2026-10-26 and vendor docs; sources checked 2026-10-26"
+  },
+  "status_legend": {
+    "live": "Live today",
+    "ready": "Ready to connect",
+    "needs_access": "Needs access",
+    "unknown": "Unknown, to confirm"
+  },
+  "integrations": [
+    {
+      "key": "woocommerce",
+      "name": "WooCommerce (mandmvinyl.com)",
+      "flows_in": [
+        "Web orders",
+        "Customers and wholesale roles",
+        "Order status changes",
+        "Product stock"
+      ],
+      "method": "REST API plus webhooks (order.created, order.updated)",
+      "status": "ready",
+      "status_label": "Ready to connect",
+      "need": "A read-only API key from WooCommerce > Settings > Advanced > REST API, stored in her own account.",
+      "cost": "Free (built in)",
+      "sources": [
+        {
+          "label": "WooCommerce REST API",
+          "url": "https://developer.woocommerce.com/docs/apis/rest-api/"
+        },
+        {
+          "label": "Webhooks v3",
+          "url": "https://developer.woocommerce.com/docs/apis/rest-api/v3/webhooks/"
+        }
+      ]
+    },
+    {
+      "key": "kixxl",
+      "name": "Kixxl gang sheet builder",
+      "flows_in": [
+        "Gang sheet counts (886 Sept, 912 Oct)",
+        "Sheet files",
+        "Art flags"
+      ],
+      "method": "Unknown. Orders reach WooCommerce; Kixxl-side data may need an export or a support request.",
+      "status": "unknown",
+      "status_label": "Unknown, to confirm",
+      "need": "Ask Kixxl support whether an export, API, or webhook exists. Until then, gang sheet counts come from WooCommerce order lines.",
+      "cost": "$399 a month today (existing)",
+      "sources": [
+        {
+          "label": "Kixxl on Shopify App Store (no public API found)",
+          "url": "https://apps.shopify.com/kixxl"
+        }
+      ]
+    },
+    {
+      "key": "shopkeep",
+      "name": "Shopkeep point of sale",
+      "flows_in": [
+        "In-store sales",
+        "In-store payments",
+        "Store inventory"
+      ],
+      "method": "Daily CSV export or API, if available",
+      "status": "unknown",
+      "status_label": "Unknown, to confirm",
+      "need": "Check inside Shopkeep for a reports export. No public Shopkeep API docs were found. Until confirmed, store sales are a weekly manual upload.",
+      "cost": "Existing",
+      "sources": [
+        {
+          "label": "Lightspeed exports (related product, not Shopkeep)",
+          "url": "https://k-series-support.lightspeedhq.com/hc/articles/4403189397275"
+        }
+      ]
+    },
+    {
+      "key": "paypal",
+      "name": "PayPal and Venmo",
+      "flows_in": [
+        "PayPal and Venmo payments",
+        "Failures",
+        "Balance and payouts"
+      ],
+      "method": "PayPal Reporting API (Transaction Search, balances)",
+      "status": "needs_access",
+      "status_label": "Needs access",
+      "need": "A PayPal business login to create read-only REST credentials, and a look at why Venmo and PayPal fail (plugin settings, domain verification, account limits).",
+      "cost": "Existing fees only",
+      "sources": [
+        {
+          "label": "PayPal Transaction Search API",
+          "url": "https://developer.paypal.com/docs/api/transaction-search/v1/"
+        }
+      ]
+    },
+    {
+      "key": "wallets",
+      "name": "Apple Pay and Google Pay",
+      "flows_in": [
+        "Wallet payments through the card processor"
+      ],
+      "method": "Through the card processor, shown with WooCommerce orders",
+      "status": "needs_access",
+      "status_label": "Needs access",
+      "need": "Pick the processor and turn the wallets on. Not live yet.",
+      "cost": "Processor fees (estimate: standard card rate; confirm on the processor's page)",
+      "sources": [
+        {
+          "label": "WooPayments",
+          "url": "https://woocommerce.com/products/woopayments/"
+        }
+      ]
+    },
+    {
+      "key": "fedex",
+      "name": "FedEx",
+      "flows_in": [
+        "Live rates",
+        "Labels",
+        "Tracking"
+      ],
+      "method": "FedEx Ship, Rate and Track APIs on her account",
+      "status": "needs_access",
+      "status_label": "Needs access",
+      "need": "Her FedEx account number and a developer project linked to it. Opening an account has no fee.",
+      "cost": "No API fee listed for Ship and Rate",
+      "sources": [
+        {
+          "label": "FedEx Developer Portal",
+          "url": "https://developer.fedex.com/api/en-us/home.html"
+        }
+      ]
+    },
+    {
+      "key": "ups",
+      "name": "UPS",
+      "flows_in": [
+        "Rates",
+        "Labels",
+        "Tracking"
+      ],
+      "method": "UPS APIs with OAuth 2.0",
+      "status": "needs_access",
+      "status_label": "Needs access",
+      "need": "Her UPS account number linked to a UPS developer app.",
+      "cost": "Not confirmed",
+      "sources": [
+        {
+          "label": "UPS OAuth setup guide (third party)",
+          "url": "https://support.aftership.com/en/shipping/article/ups-developer-guide-api-credentials-1orsuot"
+        }
+      ]
+    },
+    {
+      "key": "google",
+      "name": "Google Business Profile",
+      "flows_in": [
+        "Rating",
+        "New reviews",
+        "Posts",
+        "Profile views and calls"
+      ],
+      "method": "Business Profile APIs, approval required",
+      "status": "needs_access",
+      "status_label": "Needs access",
+      "need": "Manager access on her profile and an API access request (Google reviews requests).",
+      "cost": "Free",
+      "sources": [
+        {
+          "label": "Business Profile APIs overview",
+          "url": "https://developers.google.com/my-business/content/overview"
+        }
+      ]
+    },
+    {
+      "key": "social",
+      "name": "Facebook and Instagram",
+      "flows_in": [
+        "Followers",
+        "Post reach",
+        "Messages"
+      ],
+      "method": "Meta Graph API, or manual weekly numbers",
+      "status": "unknown",
+      "status_label": "Unknown, to confirm",
+      "need": "Decide if social numbers belong here. Kept light until capacity catches up.",
+      "cost": "Free",
+      "sources": []
+    },
+    {
+      "key": "texting",
+      "name": "Texting service",
+      "flows_in": [
+        "Texts sent",
+        "Delivery status",
+        "Opt-in and opt-out replies"
+      ],
+      "method": "Twilio-style API called by the automation when an order turns Ready",
+      "status": "needs_access",
+      "status_label": "Needs access",
+      "need": "Desiree approves the service and per-message fees first. Business texting registration is required for US numbers.",
+      "cost": "About $0.012 a message to AT&T numbers at list price (base $0.0083 plus carrier fee), $1.15 a month per local number, plus a one-time registration (about $4.50) and a monthly campaign fee",
+      "sources": [
+        {
+          "label": "Twilio US SMS pricing",
+          "url": "https://www.twilio.com/en-us/sms/pricing/us"
+        },
+        {
+          "label": "Twilio A2P 10DLC fees",
+          "url": "https://support.twilio.com/hc/en-us/articles/1260803965530"
+        }
+      ]
+    },
+    {
+      "key": "email",
+      "name": "Email",
+      "flows_in": [
+        "Order emails (live today)",
+        "Quote inbox replies",
+        "Review asks"
+      ],
+      "method": "WooCommerce emails stay; sales@mandmvinyl.com for the quote inbox",
+      "status": "live",
+      "status_label": "Live today",
+      "need": "Nothing for the existing order emails.",
+      "cost": "Existing",
+      "sources": []
+    }
+  ],
+  "unconfirmed": [
+    "Shopkeep export or API",
+    "Kixxl data access and reseller pricing",
+    "Shipping volume (orders a week)",
+    "Why Venmo and PayPal fail",
+    "Printer capacity per day"
+  ]
+}

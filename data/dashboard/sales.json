@@ -3,8 +3,8 @@
     "schema_version": "1.1",
     "sample": false,
     "sample_note": null,
-    "generated_at": "2026-11-03T16:48:54-06:00",
-    "as_of": "2026-11-03T16:48:54-06:00",
+    "generated_at": "2026-11-04T11:28:52-06:00",
+    "as_of": "2026-11-04T11:28:52-06:00",
     "timezone": "America/Chicago",
     "currency": "USD",
     "money_unit": "cents",
@@ -13,13 +13,6 @@
     "store_note": "Shopkeep is not connected yet. Store figures are not included."
   },
   "daily": [
-    {
-      "date": "2026-08-05",
-      "web_cents": 43399,
-      "store_cents": null,
-      "orders_web": 24,
-      "orders_store": null
-    },
     {
       "date": "2026-08-06",
       "web_cents": 63394,
@@ -645,19 +638,26 @@
     },
     {
       "date": "2026-11-03",
-      "web_cents": 59156,
+      "web_cents": 105735,
       "store_cents": null,
-      "orders_web": 17,
+      "orders_web": 35,
+      "orders_store": null
+    },
+    {
+      "date": "2026-11-04",
+      "web_cents": 42193,
+      "store_cents": null,
+      "orders_web": 13,
       "orders_store": null
     }
   ],
   "weekly": [
     {
       "week_start": "2026-08-03",
-      "web_cents": 174751,
+      "web_cents": 131352,
       "store_cents": null,
-      "orders": 62,
-      "total_cents": 174751,
+      "orders": 38,
+      "total_cents": 131352,
       "partial": true
     },
     {
@@ -758,10 +758,10 @@
     },
     {
       "week_start": "2026-11-02",
-      "web_cents": 137062,
+      "web_cents": 225834,
       "store_cents": null,
-      "orders": 43,
-      "total_cents": 137062,
+      "orders": 74,
+      "total_cents": 225834,
       "partial": true
     }
   ],
@@ -786,67 +786,61 @@
   },
   "current_week_to_date": {
     "week_start": "2026-11-02",
-    "total_cents": 137062
+    "total_cents": 225834
   },
   "by_category_28d": [
     {
       "category": "DTF [Direct to Film]",
-      "revenue_cents": 2385169,
-      "prev_period_cents": 2370136,
+      "revenue_cents": 2316714,
+      "prev_period_cents": 2426597,
       "share_pct": 76
     },
     {
       "category": "Adults",
-      "revenue_cents": 500517,
-      "prev_period_cents": 590067,
+      "revenue_cents": 488169,
+      "prev_period_cents": 602315,
       "share_pct": 16
     },
     {
       "category": "Apparel",
-      "revenue_cents": 84768,
-      "prev_period_cents": 134900,
+      "revenue_cents": 85668,
+      "prev_period_cents": 137950,
       "share_pct": 3
     },
     {
       "category": "Glitter",
-      "revenue_cents": 39000,
-      "prev_period_cents": 56160,
+      "revenue_cents": 36200,
+      "prev_period_cents": 58960,
       "share_pct": 1
     },
     {
       "category": "Adults | Youth",
-      "revenue_cents": 34911,
-      "prev_period_cents": 26600,
+      "revenue_cents": 33961,
+      "prev_period_cents": 27550,
       "share_pct": 1
     },
     {
       "category": "HTV Solids",
-      "revenue_cents": 30090,
-      "prev_period_cents": 44422,
+      "revenue_cents": 30038,
+      "prev_period_cents": 43873,
       "share_pct": 1
     },
     {
       "category": "Patches",
-      "revenue_cents": 25300,
-      "prev_period_cents": 34600,
+      "revenue_cents": 22100,
+      "prev_period_cents": 37800,
       "share_pct": 1
     },
     {
       "category": "Sublimation",
       "revenue_cents": 5100,
-      "prev_period_cents": 4300,
+      "prev_period_cents": 4000,
       "share_pct": 0
     },
     {
       "category": "Toddler | Infants",
       "revenue_cents": 3500,
       "prev_period_cents": 1950,
-      "share_pct": 0
-    },
-    {
-      "category": "Accessories",
-      "revenue_cents": 2899,
-      "prev_period_cents": 21760,
       "share_pct": 0
     },
     {
@@ -862,6 +856,12 @@
       "share_pct": 0
     },
     {
+      "category": "Christmas",
+      "revenue_cents": 2400,
+      "prev_period_cents": 0,
+      "share_pct": 0
+    },
+    {
       "category": "3D Puff HTV",
       "revenue_cents": 2397,
       "prev_period_cents": 2397,
@@ -871,6 +871,12 @@
       "category": "Sport-Tek",
       "revenue_cents": 2250,
       "prev_period_cents": 5250,
+      "share_pct": 0
+    },
+    {
+      "category": "Accessories",
+      "revenue_cents": 2100,
+      "prev_period_cents": 21459,
       "share_pct": 0
     },
     {
@@ -888,7 +894,7 @@
     {
       "category": "Blanks",
       "revenue_cents": 200,
-      "prev_period_cents": 1750,
+      "prev_period_cents": 875,
       "share_pct": 0
     }
   ],
@@ -897,20 +903,20 @@
       "product_id": 60967,
       "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P &amp; 10A SAT FOR SAME DAY",
       "category": "DTF [Direct to Film]",
-      "unit_price_cents": 3938,
+      "unit_price_cents": 1467,
       "price_note": null,
-      "units_30d": 1106,
-      "revenue_30d_cents": 2604186,
+      "units_30d": 1100,
+      "revenue_30d_cents": 2586583,
       "real_units": true
     },
     {
       "product_id": 8439,
       "name": "JERZEES DRI-⁠POWER® 50/50 T-⁠Shirt",
       "category": "Adults",
-      "unit_price_cents": 950,
+      "unit_price_cents": 450,
       "price_note": null,
-      "units_30d": 368,
-      "revenue_30d_cents": 188785,
+      "units_30d": 379,
+      "revenue_30d_cents": 193085,
       "real_units": true
     },
     {
@@ -924,23 +930,13 @@
       "real_units": true
     },
     {
-      "product_id": 67283,
-      "name": "Port &amp; Co Camo Tee",
-      "category": "Apparel",
-      "unit_price_cents": 800,
-      "price_note": null,
-      "units_30d": 62,
-      "revenue_30d_cents": 51600,
-      "real_units": true
-    },
-    {
       "product_id": 59348,
       "name": "Adult Comfort Color Tee",
       "category": "Adults",
       "unit_price_cents": 899,
       "price_note": null,
-      "units_30d": 53,
-      "revenue_30d_cents": 48400,
+      "units_30d": 52,
+      "revenue_30d_cents": 47501,
       "real_units": true
     },
     {
@@ -979,8 +975,8 @@
       "category": "Adults",
       "unit_price_cents": 850,
       "price_note": null,
-      "units_30d": 31,
-      "revenue_30d_cents": 27400,
+      "units_30d": 32,
+      "revenue_30d_cents": 28250,
       "real_units": true
     },
     {
@@ -992,12 +988,22 @@
       "units_30d": 16,
       "revenue_30d_cents": 23200,
       "real_units": true
+    },
+    {
+      "product_id": 10181,
+      "name": "Rabbit Skins - Toddler Fine Jersey Tee",
+      "category": "Apparel",
+      "unit_price_cents": 500,
+      "price_note": null,
+      "units_30d": 44,
+      "revenue_30d_cents": 21643,
+      "real_units": true
     }
   ],
   "averages": {
-    "avg_order_web_cents": 2976,
+    "avg_order_web_cents": 2956,
     "avg_order_store_cents": null,
-    "orders_per_open_day": 38.3,
+    "orders_per_open_day": 38,
     "reseller_share_of_revenue_pct": null,
     "repeat_order_rate_pct": null
   }

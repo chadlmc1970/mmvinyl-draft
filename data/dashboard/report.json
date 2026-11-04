@@ -1,17 +1,17 @@
 {
   "summary": {
     "went_up": [
-      "Adults | Youth is up 31% on the 28 days before.",
-      "Sublimation is up 19% on the 28 days before."
+      "Adults | Youth is up 23% on the 28 days before.",
+      "Sublimation is up 28% on the 28 days before."
     ],
     "needs_attention": [
       "Web sales were $7,443, down 10.5% on the week before.",
-      "70 repeat customers have gone quiet past their usual gap."
+      "69 repeat customers have gone quiet past their usual gap."
     ],
-    "note": "Store (Shopkeep) sales are not included. November is at 58 gang sheets so far, October finished at 1176. Sales include shipping charges and exclude tax.",
+    "note": "Store (Shopkeep) sales are not included. November is at 87 gang sheets so far, October finished at 1176. Sales include shipping charges and exclude tax.",
     "next_week": [
-      "Call Lakedra H.. Usual order gap is 1 days and it has been 7.",
-      "Call Jeanna U.. Usual order gap is 2 days and it has been 8.",
+      "Call Lakedra H.. Usual order gap is 1 days and it has been 8.",
+      "Call Jeanna U.. Usual order gap is 2 days and it has been 9.",
       "Connect Shopkeep so store sales show here."
     ]
   },
@@ -28,7 +28,7 @@
   "gang_sheets": {
     "this_week": 245,
     "prior_week": 264,
-    "month_to_date": 58,
+    "month_to_date": 87,
     "september_baseline": 1176,
     "month_label": "November",
     "prior_label": "October",
@@ -38,62 +38,56 @@
   "by_category": [
     {
       "category": "DTF [Direct to Film]",
-      "revenue_cents": 2385169,
-      "prev_period_cents": 2370136,
+      "revenue_cents": 2316714,
+      "prev_period_cents": 2426597,
       "share_pct": 76
     },
     {
       "category": "Adults",
-      "revenue_cents": 500517,
-      "prev_period_cents": 590067,
+      "revenue_cents": 488169,
+      "prev_period_cents": 602315,
       "share_pct": 16
     },
     {
       "category": "Apparel",
-      "revenue_cents": 84768,
-      "prev_period_cents": 134900,
+      "revenue_cents": 85668,
+      "prev_period_cents": 137950,
       "share_pct": 3
     },
     {
       "category": "Glitter",
-      "revenue_cents": 39000,
-      "prev_period_cents": 56160,
+      "revenue_cents": 36200,
+      "prev_period_cents": 58960,
       "share_pct": 1
     },
     {
       "category": "Adults | Youth",
-      "revenue_cents": 34911,
-      "prev_period_cents": 26600,
+      "revenue_cents": 33961,
+      "prev_period_cents": 27550,
       "share_pct": 1
     },
     {
       "category": "HTV Solids",
-      "revenue_cents": 30090,
-      "prev_period_cents": 44422,
+      "revenue_cents": 30038,
+      "prev_period_cents": 43873,
       "share_pct": 1
     },
     {
       "category": "Patches",
-      "revenue_cents": 25300,
-      "prev_period_cents": 34600,
+      "revenue_cents": 22100,
+      "prev_period_cents": 37800,
       "share_pct": 1
     },
     {
       "category": "Sublimation",
       "revenue_cents": 5100,
-      "prev_period_cents": 4300,
+      "prev_period_cents": 4000,
       "share_pct": 0
     },
     {
       "category": "Toddler | Infants",
       "revenue_cents": 3500,
       "prev_period_cents": 1950,
-      "share_pct": 0
-    },
-    {
-      "category": "Accessories",
-      "revenue_cents": 2899,
-      "prev_period_cents": 21760,
       "share_pct": 0
     },
     {
@@ -109,6 +103,12 @@
       "share_pct": 0
     },
     {
+      "category": "Christmas",
+      "revenue_cents": 2400,
+      "prev_period_cents": 0,
+      "share_pct": 0
+    },
+    {
       "category": "3D Puff HTV",
       "revenue_cents": 2397,
       "prev_period_cents": 2397,
@@ -118,6 +118,12 @@
       "category": "Sport-Tek",
       "revenue_cents": 2250,
       "prev_period_cents": 5250,
+      "share_pct": 0
+    },
+    {
+      "category": "Accessories",
+      "revenue_cents": 2100,
+      "prev_period_cents": 21459,
       "share_pct": 0
     },
     {
@@ -135,7 +141,7 @@
     {
       "category": "Blanks",
       "revenue_cents": 200,
-      "prev_period_cents": 1750,
+      "prev_period_cents": 875,
       "share_pct": 0
     }
   ],
@@ -143,7 +149,7 @@
     {
       "label": "Lakedra H.",
       "tier": "standard",
-      "spend_90d_cents": 307211,
+      "spend_90d_cents": 306421,
       "last_order_at": "2026-10-27",
       "cadence_status": "lapsed"
     },
@@ -159,19 +165,19 @@
       "tier": "standard",
       "spend_90d_cents": 234507,
       "last_order_at": "2026-11-02",
-      "cadence_status": "on_track"
+      "cadence_status": "due"
     },
     {
       "label": "Amanda D.",
       "tier": "standard",
-      "spend_90d_cents": 232310,
-      "last_order_at": "2026-11-03",
+      "spend_90d_cents": 233668,
+      "last_order_at": "2026-11-04",
       "cadence_status": "on_track"
     },
     {
       "label": "Karam Jones",
       "tier": "standard",
-      "spend_90d_cents": 196094,
+      "spend_90d_cents": 191337,
       "last_order_at": "2026-11-03",
       "cadence_status": "on_track"
     }
@@ -179,31 +185,31 @@
   "reorders_due": [
     {
       "label": "Lakedra H.",
-      "days_since_last_order": 7,
+      "days_since_last_order": 8,
       "typical_gap_days": 1,
       "cadence_status": "lapsed"
     },
     {
       "label": "Jeanna U.",
-      "days_since_last_order": 8,
+      "days_since_last_order": 9,
       "typical_gap_days": 2,
       "cadence_status": "lapsed"
     },
     {
       "label": "Asia P.",
-      "days_since_last_order": 5,
+      "days_since_last_order": 6,
       "typical_gap_days": 2,
-      "cadence_status": "slipping"
+      "cadence_status": "lapsed"
     },
     {
-      "label": "Whitney C.",
-      "days_since_last_order": 7,
+      "label": "The Craft Guru",
+      "days_since_last_order": 6,
       "typical_gap_days": 4,
       "cadence_status": "slipping"
     },
     {
       "label": "Roshaundra B.",
-      "days_since_last_order": 5,
+      "days_since_last_order": 6,
       "typical_gap_days": 1,
       "cadence_status": "lapsed"
     }
@@ -221,8 +227,8 @@
     "schema_version": "1.1",
     "sample": false,
     "sample_note": null,
-    "generated_at": "2026-11-03T16:48:54-06:00",
-    "as_of": "2026-11-03T16:48:54-06:00",
+    "generated_at": "2026-11-04T11:28:52-06:00",
+    "as_of": "2026-11-04T11:28:52-06:00",
     "timezone": "America/Chicago",
     "currency": "USD",
     "money_unit": "cents",
