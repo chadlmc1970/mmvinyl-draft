@@ -69,6 +69,12 @@ jobs:
           path: ${{ runner.temp }}/site
       - id: deploy
         uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
+      - name: Tell the outside monitor this refresh worked
+        env:
+          HC_PING_URL: ${{ secrets.HC_PING_URL }}
+        run: |
+          if [ -z "$HC_PING_URL" ]; then echo '::warning::HC_PING_URL is not set'; exit 0; fi
+          curl -fsS -m 10 --retry 3 -o /dev/null "$HC_PING_URL" || echo '::warning::Could not reach the outside monitor'
 
   # GitHub's schedule skips most 15-minute slots, so each run starts the next one. The schedule only restarts the chain.
   next:
