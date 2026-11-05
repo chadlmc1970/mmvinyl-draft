@@ -1,17 +1,17 @@
 {
   "summary": {
     "went_up": [
-      "Adults | Youth is up 23% on the 28 days before.",
-      "Sublimation is up 28% on the 28 days before."
+      "Adults | Youth is up 14% on the 28 days before.",
+      "651 Vinyl is up 132% on the 28 days before."
     ],
     "needs_attention": [
       "Web sales were $7,443, down 10.5% on the week before.",
-      "68 repeat customers have gone quiet past their usual gap."
+      "67 repeat customers have gone quiet past their usual gap."
     ],
-    "note": "Store (Shopkeep) sales are not included. November is at 99 gang sheets so far, October finished at 1176. Sales include shipping charges and exclude tax.",
+    "note": "Store (Shopkeep) sales are not included. November is at 139 gang sheets so far, October finished at 1176. Sales include shipping charges and exclude tax.",
     "next_week": [
-      "Call Lakedra H.. Usual order gap is 1 days and it has been 8.",
-      "Call Jeanna U.. Usual order gap is 2 days and it has been 9.",
+      "Call Lakedra H.. Usual order gap is 1 days and it has been 9.",
+      "Call Drucilla W.. Usual order gap is 5 days and it has been 9.",
       "Connect Shopkeep so store sales show here."
     ]
   },
@@ -28,7 +28,7 @@
   "gang_sheets": {
     "this_week": 245,
     "prior_week": 264,
-    "month_to_date": 99,
+    "month_to_date": 139,
     "september_baseline": 1176,
     "month_label": "November",
     "prior_label": "October",
@@ -38,56 +38,62 @@
   "by_category": [
     {
       "category": "DTF [Direct to Film]",
-      "revenue_cents": 2340313,
-      "prev_period_cents": 2426597,
+      "revenue_cents": 2312684,
+      "prev_period_cents": 2432217,
       "share_pct": 76
     },
     {
       "category": "Adults",
-      "revenue_cents": 492593,
-      "prev_period_cents": 602315,
+      "revenue_cents": 493966,
+      "prev_period_cents": 598690,
       "share_pct": 16
     },
     {
       "category": "Apparel",
-      "revenue_cents": 85668,
-      "prev_period_cents": 137950,
-      "share_pct": 3
+      "revenue_cents": 73918,
+      "prev_period_cents": 147650,
+      "share_pct": 2
     },
     {
       "category": "Glitter",
-      "revenue_cents": 36200,
-      "prev_period_cents": 58960,
+      "revenue_cents": 39200,
+      "prev_period_cents": 53360,
       "share_pct": 1
     },
     {
       "category": "Adults | Youth",
-      "revenue_cents": 33961,
-      "prev_period_cents": 27550,
+      "revenue_cents": 33486,
+      "prev_period_cents": 29450,
       "share_pct": 1
     },
     {
       "category": "HTV Solids",
-      "revenue_cents": 30038,
-      "prev_period_cents": 43873,
+      "revenue_cents": 29736,
+      "prev_period_cents": 45623,
       "share_pct": 1
     },
     {
       "category": "Patches",
-      "revenue_cents": 22100,
-      "prev_period_cents": 37800,
+      "revenue_cents": 24700,
+      "prev_period_cents": 33000,
       "share_pct": 1
+    },
+    {
+      "category": "Christmas",
+      "revenue_cents": 13600,
+      "prev_period_cents": 0,
+      "share_pct": 0
+    },
+    {
+      "category": "651 Vinyl",
+      "revenue_cents": 5325,
+      "prev_period_cents": 2300,
+      "share_pct": 0
     },
     {
       "category": "Sublimation",
       "revenue_cents": 5100,
       "prev_period_cents": 4000,
-      "share_pct": 0
-    },
-    {
-      "category": "651 Vinyl",
-      "revenue_cents": 4125,
-      "prev_period_cents": 2750,
       "share_pct": 0
     },
     {
@@ -99,12 +105,6 @@
     {
       "category": "Youth",
       "revenue_cents": 2550,
-      "prev_period_cents": 0,
-      "share_pct": 0
-    },
-    {
-      "category": "Christmas",
-      "revenue_cents": 2400,
       "prev_period_cents": 0,
       "share_pct": 0
     },
@@ -128,8 +128,8 @@
     },
     {
       "category": "HTV Vinyl",
-      "revenue_cents": 1397,
-      "prev_period_cents": 2396,
+      "revenue_cents": 998,
+      "prev_period_cents": 2795,
       "share_pct": 0
     },
     {
@@ -149,16 +149,16 @@
     {
       "label": "Lakedra H.",
       "tier": "standard",
-      "spend_90d_cents": 306421,
+      "spend_90d_cents": 302831,
       "last_order_at": "2026-10-27",
       "cadence_status": "lapsed"
     },
     {
       "label": "Amber J.",
       "tier": "standard",
-      "spend_90d_cents": 290000,
+      "spend_90d_cents": 285542,
       "last_order_at": "2026-11-03",
-      "cadence_status": "on_track"
+      "cadence_status": "due"
     },
     {
       "label": "INK ON LLC",
@@ -170,14 +170,14 @@
     {
       "label": "Amanda D.",
       "tier": "standard",
-      "spend_90d_cents": 233668,
+      "spend_90d_cents": 235100,
       "last_order_at": "2026-11-04",
       "cadence_status": "on_track"
     },
     {
       "label": "Karam Jones",
       "tier": "standard",
-      "spend_90d_cents": 195463,
+      "spend_90d_cents": 194105,
       "last_order_at": "2026-11-04",
       "cadence_status": "on_track"
     }
@@ -185,31 +185,31 @@
   "reorders_due": [
     {
       "label": "Lakedra H.",
-      "days_since_last_order": 8,
+      "days_since_last_order": 9,
       "typical_gap_days": 1,
       "cadence_status": "lapsed"
     },
     {
-      "label": "Jeanna U.",
+      "label": "Drucilla W.",
       "days_since_last_order": 9,
-      "typical_gap_days": 2,
-      "cadence_status": "lapsed"
+      "typical_gap_days": 5,
+      "cadence_status": "slipping"
     },
     {
       "label": "Asia P.",
-      "days_since_last_order": 6,
+      "days_since_last_order": 7,
       "typical_gap_days": 2,
       "cadence_status": "lapsed"
     },
     {
       "label": "The Craft Guru",
-      "days_since_last_order": 6,
+      "days_since_last_order": 7,
       "typical_gap_days": 4,
       "cadence_status": "slipping"
     },
     {
       "label": "Teaishonda S.",
-      "days_since_last_order": 13,
+      "days_since_last_order": 14,
       "typical_gap_days": 5,
       "cadence_status": "slipping"
     }
@@ -227,8 +227,8 @@
     "schema_version": "1.1",
     "sample": false,
     "sample_note": null,
-    "generated_at": "2026-11-04T15:24:49-06:00",
-    "as_of": "2026-11-04T15:24:49-06:00",
+    "generated_at": "2026-11-05T13:06:55-06:00",
+    "as_of": "2026-11-05T13:06:55-06:00",
     "timezone": "America/Chicago",
     "currency": "USD",
     "money_unit": "cents",

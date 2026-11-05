@@ -3,8 +3,8 @@
     "schema_version": "1.1",
     "sample": false,
     "sample_note": null,
-    "generated_at": "2026-11-04T15:24:49-06:00",
-    "as_of": "2026-11-04T15:24:49-06:00",
+    "generated_at": "2026-11-05T13:06:55-06:00",
+    "as_of": "2026-11-05T13:06:55-06:00",
     "timezone": "America/Chicago",
     "currency": "USD",
     "money_unit": "cents",
@@ -13,13 +13,6 @@
     "store_note": "Shopkeep is not connected yet. Store figures are not included."
   },
   "daily": [
-    {
-      "date": "2026-08-06",
-      "web_cents": 63394,
-      "store_cents": null,
-      "orders_web": 20,
-      "orders_store": null
-    },
     {
       "date": "2026-08-07",
       "web_cents": 19241,
@@ -645,19 +638,26 @@
     },
     {
       "date": "2026-11-04",
-      "web_cents": 71816,
+      "web_cents": 102072,
       "store_cents": null,
-      "orders_web": 26,
+      "orders_web": 38,
+      "orders_store": null
+    },
+    {
+      "date": "2026-11-05",
+      "web_cents": 144342,
+      "store_cents": null,
+      "orders_web": 30,
       "orders_store": null
     }
   ],
   "weekly": [
     {
       "week_start": "2026-08-03",
-      "web_cents": 131352,
+      "web_cents": 67958,
       "store_cents": null,
-      "orders": 38,
-      "total_cents": 131352,
+      "orders": 18,
+      "total_cents": 67958,
       "partial": true
     },
     {
@@ -758,10 +758,10 @@
     },
     {
       "week_start": "2026-11-02",
-      "web_cents": 255457,
+      "web_cents": 430055,
       "store_cents": null,
-      "orders": 87,
-      "total_cents": 255457,
+      "orders": 129,
+      "total_cents": 430055,
       "partial": true
     }
   ],
@@ -786,61 +786,67 @@
   },
   "current_week_to_date": {
     "week_start": "2026-11-02",
-    "total_cents": 255457
+    "total_cents": 430055
   },
   "by_category_28d": [
     {
       "category": "DTF [Direct to Film]",
-      "revenue_cents": 2340313,
-      "prev_period_cents": 2426597,
+      "revenue_cents": 2312684,
+      "prev_period_cents": 2432217,
       "share_pct": 76
     },
     {
       "category": "Adults",
-      "revenue_cents": 492593,
-      "prev_period_cents": 602315,
+      "revenue_cents": 493966,
+      "prev_period_cents": 598690,
       "share_pct": 16
     },
     {
       "category": "Apparel",
-      "revenue_cents": 85668,
-      "prev_period_cents": 137950,
-      "share_pct": 3
+      "revenue_cents": 73918,
+      "prev_period_cents": 147650,
+      "share_pct": 2
     },
     {
       "category": "Glitter",
-      "revenue_cents": 36200,
-      "prev_period_cents": 58960,
+      "revenue_cents": 39200,
+      "prev_period_cents": 53360,
       "share_pct": 1
     },
     {
       "category": "Adults | Youth",
-      "revenue_cents": 33961,
-      "prev_period_cents": 27550,
+      "revenue_cents": 33486,
+      "prev_period_cents": 29450,
       "share_pct": 1
     },
     {
       "category": "HTV Solids",
-      "revenue_cents": 30038,
-      "prev_period_cents": 43873,
+      "revenue_cents": 29736,
+      "prev_period_cents": 45623,
       "share_pct": 1
     },
     {
       "category": "Patches",
-      "revenue_cents": 22100,
-      "prev_period_cents": 37800,
+      "revenue_cents": 24700,
+      "prev_period_cents": 33000,
       "share_pct": 1
+    },
+    {
+      "category": "Christmas",
+      "revenue_cents": 13600,
+      "prev_period_cents": 0,
+      "share_pct": 0
+    },
+    {
+      "category": "651 Vinyl",
+      "revenue_cents": 5325,
+      "prev_period_cents": 2300,
+      "share_pct": 0
     },
     {
       "category": "Sublimation",
       "revenue_cents": 5100,
       "prev_period_cents": 4000,
-      "share_pct": 0
-    },
-    {
-      "category": "651 Vinyl",
-      "revenue_cents": 4125,
-      "prev_period_cents": 2750,
       "share_pct": 0
     },
     {
@@ -852,12 +858,6 @@
     {
       "category": "Youth",
       "revenue_cents": 2550,
-      "prev_period_cents": 0,
-      "share_pct": 0
-    },
-    {
-      "category": "Christmas",
-      "revenue_cents": 2400,
       "prev_period_cents": 0,
       "share_pct": 0
     },
@@ -881,8 +881,8 @@
     },
     {
       "category": "HTV Vinyl",
-      "revenue_cents": 1397,
-      "prev_period_cents": 2396,
+      "revenue_cents": 998,
+      "prev_period_cents": 2795,
       "share_pct": 0
     },
     {
@@ -903,20 +903,10 @@
       "product_id": 60967,
       "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P &amp; 10A SAT FOR SAME DAY",
       "category": "DTF [Direct to Film]",
-      "unit_price_cents": 1360,
+      "unit_price_cents": 700,
       "price_note": null,
-      "units_30d": 1112,
-      "revenue_30d_cents": 2610182,
-      "real_units": true
-    },
-    {
-      "product_id": 8439,
-      "name": "JERZEES DRI-⁠POWER® 50/50 T-⁠Shirt",
-      "category": "Adults",
-      "unit_price_cents": 450,
-      "price_note": null,
-      "units_30d": 379,
-      "revenue_30d_cents": 193085,
+      "units_30d": 1114,
+      "revenue_30d_cents": 2612570,
       "real_units": true
     },
     {
@@ -926,7 +916,17 @@
       "unit_price_cents": 475,
       "price_note": null,
       "units_30d": 357,
-      "revenue_30d_cents": 185881,
+      "revenue_30d_cents": 186481,
+      "real_units": true
+    },
+    {
+      "product_id": 8439,
+      "name": "JERZEES DRI-⁠POWER® 50/50 T-⁠Shirt",
+      "category": "Adults",
+      "unit_price_cents": 750,
+      "price_note": null,
+      "units_30d": 351,
+      "revenue_30d_cents": 179810,
       "real_units": true
     },
     {
@@ -935,8 +935,8 @@
       "category": "Adults",
       "unit_price_cents": 899,
       "price_note": null,
-      "units_30d": 54,
-      "revenue_30d_cents": 49550,
+      "units_30d": 58,
+      "revenue_30d_cents": 53397,
       "real_units": true
     },
     {
@@ -945,8 +945,8 @@
       "category": "Adults",
       "unit_price_cents": 1100,
       "price_note": null,
-      "units_30d": 38,
-      "revenue_30d_cents": 43200,
+      "units_30d": 39,
+      "revenue_30d_cents": 44300,
       "real_units": true
     },
     {
@@ -955,8 +955,8 @@
       "category": "Glitter",
       "unit_price_cents": 600,
       "price_note": null,
-      "units_30d": 42,
-      "revenue_30d_cents": 41800,
+      "units_30d": 44,
+      "revenue_30d_cents": 43800,
       "real_units": true
     },
     {
@@ -965,8 +965,8 @@
       "category": "Adults | Youth",
       "unit_price_cents": 475,
       "price_note": null,
-      "units_30d": 80,
-      "revenue_30d_cents": 37286,
+      "units_30d": 79,
+      "revenue_30d_cents": 36811,
       "real_units": true
     },
     {
@@ -975,35 +975,35 @@
       "category": "Adults",
       "unit_price_cents": 850,
       "price_note": null,
-      "units_30d": 32,
-      "revenue_30d_cents": 28250,
+      "units_30d": 31,
+      "revenue_30d_cents": 27400,
       "real_units": true
     },
     {
-      "product_id": 67605,
-      "name": "Sport-Tek Replica Jersey",
-      "category": "Apparel",
-      "unit_price_cents": 1450,
+      "product_id": 14113,
+      "name": "HTV UltraWeed™",
+      "category": "HTV Solids",
+      "unit_price_cents": 899,
       "price_note": null,
-      "units_30d": 16,
-      "revenue_30d_cents": 23200,
+      "units_30d": 27,
+      "revenue_30d_cents": 21586,
       "real_units": true
     },
     {
-      "product_id": 10181,
-      "name": "Rabbit Skins - Toddler Fine Jersey Tee",
+      "product_id": 8353,
+      "name": "JERZEES DRI-⁠POWER® 50/50 Youth T-Shirt",
       "category": "Apparel",
-      "unit_price_cents": 500,
+      "unit_price_cents": 450,
       "price_note": null,
-      "units_30d": 44,
-      "revenue_30d_cents": 21643,
+      "units_30d": 48,
+      "revenue_30d_cents": 20700,
       "real_units": true
     }
   ],
   "averages": {
-    "avg_order_web_cents": 2948,
+    "avg_order_web_cents": 2947,
     "avg_order_store_cents": null,
-    "orders_per_open_day": 38.4,
+    "orders_per_open_day": 38.5,
     "reseller_share_of_revenue_pct": null,
     "repeat_order_rate_pct": null
   }

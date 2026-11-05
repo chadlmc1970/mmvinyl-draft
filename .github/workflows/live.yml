@@ -6,12 +6,8 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '*/15 * * * *'
-    - cron: '7 8 * * *'
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+permissions: {}
 
 concurrency:
   group: live-dashboard
@@ -20,23 +16,27 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: 22
-      - uses: actions/cache@v4
+      - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
         with:
           path: |
             .live/data-live/gang-lines.ndjson
             .live/data-live/sheet-designs.ndjson
           key: gang-${{ github.run_id }}
           restore-keys: gang-
-      - uses: actions/cache@v4
+      - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
         with:
           path: |
             .live/data-live/social-history.json
@@ -49,20 +49,46 @@ jobs:
           WC_SECRET: ${{ secrets.WC_SECRET }}
           BUFFER_KEY: ${{ secrets.BUFFER_KEY }}
           SOCIAL_MAX_AGE_HOURS: '6'
-          REFRESH_DAYS: ${{ github.event.schedule == '7 8 * * *' && '60' || '3' }}
         run: |
+          # Daily 60-day pass. The window is wider than the gap between chained runs.
+          REFRESH_DAYS=3
+          if [ "$(date -u +%H)" = 08 ] && [ "$(date -u +%-M)" -lt 30 ]; then REFRESH_DAYS=60; fi
+          export REFRESH_DAYS
           printf 'WC_KEY=%s\nWC_SECRET=%s\n' "$WC_KEY" "$WC_SECRET" > .live/.env.woo
           node .live/scripts/pull-live.mjs
           node .live/scripts/pull-gang-insights.mjs
-          node .live/scripts/pull-social-learning.mjs
+          node .live/scripts/pull-social-learning.mjs || echo '::warning::Social learning failed, keeping the last results'
           rm -f .live/.env.woo .live/data-live/dashboard/social.json
           cp .live/data-live/dashboard/*.json data/dashboard/
       - name: Keep runner files out of the site
         run: |
           mkdir -p "$RUNNER_TEMP/site"
           rsync -a --exclude .git --exclude .github --exclude .live ./ "$RUNNER_TEMP/site/"
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
         with:
           path: ${{ runner.temp }}/site
       - id: deploy
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
+
+  # GitHub's schedule skips most 15-minute slots, so each run starts the next one. The schedule only restarts the chain.
+  next:
+    needs: refresh
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      actions: write
+    steps:
+      - name: Wait, then start the next refresh
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          sleep 720
+          waiting=$(gh run list --workflow live.yml --limit 10 --json status --jq '[.[] | select(.status != "completed" and .status != "in_progress")] | length') || waiting=0
+          if [ "$waiting" != 0 ]; then echo "A refresh is already waiting"; exit 0; fi
+          for attempt in 1 2 3; do
+            gh workflow run live.yml --ref main && exit 0
+            sleep 20
+          done
+          exit 1

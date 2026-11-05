@@ -106,7 +106,7 @@ if (MAX_AGE_HOURS && previous?.meta?.connected && Date.now() - Date.parse(previo
 const key = bufferKey();
 if (!key) {
   write({ meta: meta('Buffer key not set.', { connected: false }) });
-  console.warn('Social learning skipped: no Buffer key');
+  console.warn('::warning::Social learning skipped: no Buffer key');
   process.exit(0);
 }
 
@@ -117,7 +117,7 @@ let nodes;
 try {
   nodes = await bufferPosts(key);
 } catch (e) {
-  console.warn('Social learning skipped: ' + e.message.slice(0, 120));
+  console.warn('::warning::Social learning skipped: ' + e.message.replace(/\s+/g, ' ').slice(0, 120));
   if (previous?.meta?.connected) process.exit(0);
   write({ meta: meta('Buffer could not be read.', { connected: false }) });
   process.exit(0);
@@ -138,7 +138,7 @@ const posts = ledger.posts.map((p) => {
     if (n.status === 'sent') sentAny = true;
     if (n.status === 'error') failed = true;
   }
-  return { ...p, buffer: undefined, image: IMAGE_BASE + p.image, at, status: failed ? 'error' : sentAny ? 'sent' : 'scheduled', channels, seen, actions, score: null };
+  return { ...p, buffer: undefined, image: IMAGE_BASE + p.image, at, status: failed ? 'error' : sentAny ? 'sent' : Object.values(channels).every((c) => c.status === 'missing') ? 'missing' : 'scheduled', channels, seen, actions, score: null };
 });
 
 const snapshots = freezeSnapshots(history, posts, now);
@@ -156,7 +156,7 @@ if (auth) {
   try {
     allOrders = await socialOrders(auth, since);
   } catch (e) {
-    console.warn('Social orders skipped: ' + e.message.slice(0, 120));
+    console.warn('::warning::Social orders skipped: ' + e.message.replace(/\s+/g, ' ').slice(0, 120));
     if (previous?.meta?.connected) process.exit(0);
     ordersRead = false;
   }

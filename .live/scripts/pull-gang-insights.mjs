@@ -84,6 +84,7 @@ const designWorker = async () => {
   while (idx < missing.length) {
     const u = missing[idx++];
     let entry = { u, err: 1 };
+    let gone = false;
     for (let t = 0; t < 3; t++) {
       try {
         const res = await fetch(u);
@@ -93,11 +94,11 @@ const designWorker = async () => {
           entry = { u, n: (p.objects || []).length, o };
           break;
         }
-        if (res.status === 403 || res.status === 404) break;
+        if (res.status === 403 || res.status === 404) { gone = true; break; }
       } catch { await wait(1500); }
     }
     designs.set(u, entry);
-    fs.appendFileSync(DESIGNS, JSON.stringify(entry) + '\n');
+    if (!entry.err || gone) fs.appendFileSync(DESIGNS, JSON.stringify(entry) + '\n');
   }
 };
 await Promise.all(Array.from({ length: 8 }, designWorker));

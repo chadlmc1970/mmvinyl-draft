@@ -9,7 +9,7 @@
     return new Date(iso).toLocaleString('en-US', { timeZone: 'America/Chicago', weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
   };
   var weekLabel = function (w) { return new Date(w + 'T12:00:00').toLocaleString('en-US', { month: 'short', day: 'numeric' }); };
-  var STATUS = { sent: 'Sent', scheduled: 'Scheduled', error: 'Failed' };
+  var STATUS = { sent: 'Sent', scheduled: 'Scheduled', error: 'Failed', missing: 'Not in Buffer' };
 
   function cell(label, valueHtml, note) {
     return '<div class="od-cell"><div class="od-cell__top"><span class="od-cell__label">' + esc(label) + '</span></div><b class="od-cell__value">' + valueHtml + '</b><span class="od-cell__note">' + note + '</span></div>';

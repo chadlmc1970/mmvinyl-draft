@@ -20,7 +20,7 @@
     var slipping = OD.data.customers.customers.filter(function (c) { return OD.isAccount(c) && (c.cadence_status === 'slipping' || c.cadence_status === 'lapsed'); }).length;
     var d = OD.delta(h.total_cents, h.prior_total_cents);
     host.innerHTML =
-      '<header class="od-sheet__head"><div><p class="od-sheet__eyebrow">Weekly report</p><h1>Week of ' + esc(OD.dateShort(R.week_start)) + ' to ' + esc(OD.dateShort(R.week_end)) + '</h1></div><p class="od-sheet__tag">' + (OD.isLive() ? 'Live store data' : 'Sample data. Real counts are marked.') + '</p></header>' +
+      '<header class="od-sheet__head"><div><p class="od-sheet__eyebrow">Weekly report</p><h1>Week of ' + esc(OD.dateShort(R.week_start)) + ' to ' + esc(OD.dateShort(R.week_end)) + '</h1></div><p class="od-sheet__tag">' + (OD.isLive() ? 'Live store data. ' + OD.dataAgeText(OD.data.sales.meta) : 'Sample data. Real counts are marked.') + '</p></header>' +
       '<section class="od-sheet__nums">' +
       num('Sales', OD.money(h.total_cents, { cents: false }), (d == null ? 'no prior week to compare' : (d >= 0 ? 'Up ' : 'Down ') + Math.abs(d).toFixed(1) + '% on the week before')) +
       num('Orders', OD.num(h.orders), 'web and store') +

@@ -1,18 +1,18 @@
 {
   "meta": {
     "sample": false,
-    "generated_at": "2026-11-04T21:27:38.610Z",
-    "as_of": "2026-11-04T21:27:38.610Z",
+    "generated_at": "2026-11-05T19:09:47.272Z",
+    "as_of": "2026-11-05T19:09:47.272Z",
     "currency": "USD",
     "money_unit": "cents",
     "source": "WooCommerce orders and Kixxl sheet files. Paid orders only. Sales are sheet prices before tax and shipping."
   },
   "reorders": {
-    "paid_sheets": 5905,
-    "sheet_sales_cents": 14555616,
-    "customers": 1036,
-    "repeat_customers": 584,
-    "sheets_without_design_data": 212,
+    "paid_sheets": 5944,
+    "sheet_sales_cents": 14691293,
+    "customers": 1044,
+    "repeat_customers": 585,
+    "sheets_without_design_data": 214,
     "same_sheet": {
       "sheets": 69,
       "reorders": 88,
@@ -22,10 +22,10 @@
       "typical_days_between": 2.9
     },
     "reused_design": {
-      "sheets": 617,
-      "customers": 104,
-      "value_cents": 1992171,
-      "share_of_sales_pct": 13.7
+      "sheets": 619,
+      "customers": 105,
+      "value_cents": 1995623,
+      "share_of_sales_pct": 13.6
     },
     "top10": [
       {
@@ -250,19 +250,19 @@
         "sales_cents": 2780635,
         "avg_sheet_cents": 2364,
         "avg_sqft": 6.77,
-        "customers": 401,
-        "new_customers": 174
+        "customers": 400,
+        "new_customers": 173
       },
       {
         "month": "2026-11",
         "label": "Nov",
         "partial": true,
-        "sheets": 99,
-        "sales_cents": 226090,
-        "avg_sheet_cents": 2284,
-        "avg_sqft": 6.97,
-        "customers": 73,
-        "new_customers": 11
+        "sheets": 138,
+        "sales_cents": 361767,
+        "avg_sheet_cents": 2622,
+        "avg_sqft": 7.81,
+        "customers": 96,
+        "new_customers": 20
       }
     ],
     "season": {
@@ -273,8 +273,8 @@
         "sales_cents": 5122179,
         "avg_sheet_cents": 2467,
         "avg_sqft": 7.1,
-        "customers": 542,
-        "new_customers": 289
+        "customers": 541,
+        "new_customers": 288
       },
       "prior": {
         "sheets": 1104,

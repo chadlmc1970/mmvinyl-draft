@@ -415,11 +415,9 @@
         .then(function (data) {
           if (!data) return null;
           var info = sampleNote(data._manifest);
-          var pulled = data.kpis && data.kpis.meta && data.kpis.meta.as_of;
-          var when = pulled ? new Date(pulled).toLocaleString('en-US', { timeZone: 'America/Chicago', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) : '';
           if (info.live) { OD.clockMode = 'live'; MM.store.remove('mm.od.clock'); }
           var note = document.querySelector('.od-top__note');
-          if (note) note.innerHTML = info.html + (when ? ' <span>Data pulled ' + when + ' Central.</span>' : '');
+          if (note) note.innerHTML = info.html;
           var clock = document.querySelector('[data-clock-toggle]');
           if (clock && info.live) clock.hidden = true;
           return data;
@@ -435,8 +433,25 @@
         names.forEach(function (n) { if (bundle[n]) OD.data[n] = bundle[n]; });
       }
       return loadFiles(names);
+    }).then(function (data) {
+      showDataAge();
+      return data;
     });
   };
+
+  OD.dataAgeText = function (meta) {
+    if (!meta || meta.sample !== false) return '';
+    var pulled = new Date(meta.as_of);
+    var age = Date.now() - pulled.getTime();
+    var when = isNaN(age) ? '' : 'Data pulled ' + pulled.toLocaleString('en-US', { timeZone: 'America/Chicago', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) + ' Central.';
+    return when + (age >= -300000 && age <= 3600000 ? '' : ' <b>Over an hour old or unreadable, the refresh may be stuck.</b>');
+  };
+
+  function showDataAge() {
+    var note = document.querySelector('.od-top__note');
+    var text = OD.dataAgeText(OD.data.kpis && OD.data.kpis.meta);
+    if (note && text && !note.querySelector('.od-data-age')) note.insertAdjacentHTML('beforeend', ' <span class="od-data-age">' + text + '</span>');
+  }
 
   function loadFiles(names) {
     return Promise.all(

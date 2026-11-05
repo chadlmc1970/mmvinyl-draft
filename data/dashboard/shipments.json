@@ -3,8 +3,8 @@
     "schema_version": "1.1",
     "sample": false,
     "sample_note": null,
-    "generated_at": "2026-11-04T15:24:49-06:00",
-    "as_of": "2026-11-04T15:24:49-06:00",
+    "generated_at": "2026-11-05T13:06:55-06:00",
+    "as_of": "2026-11-05T13:06:55-06:00",
     "timezone": "America/Chicago",
     "currency": "USD",
     "money_unit": "cents",
@@ -13,6 +13,18 @@
     "store_note": "Shopkeep is not connected yet. Store figures are not included."
   },
   "shipments": [
+    {
+      "id": "shp_68949",
+      "order_id": "ord_68949",
+      "order_number": "68949",
+      "customer_label": "Diaquire T.",
+      "carrier": null,
+      "service": null,
+      "state": "shipped",
+      "tracking": null,
+      "created_at": "2026-11-05T08:37:51-06:00",
+      "weight_oz": null
+    },
     {
       "id": "shp_68890",
       "order_id": "ord_68890",
@@ -599,18 +611,6 @@
       "state": "shipped",
       "tracking": null,
       "created_at": "2026-09-25T08:48:55-05:00",
-      "weight_oz": null
-    },
-    {
-      "id": "shp_67183",
-      "order_id": "ord_67183",
-      "order_number": "67183",
-      "customer_label": "Rebecca H.",
-      "carrier": null,
-      "service": null,
-      "state": "shipped",
-      "tracking": null,
-      "created_at": "2026-09-25T07:01:12-05:00",
       "weight_oz": null
     }
   ],

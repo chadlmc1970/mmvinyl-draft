@@ -10,7 +10,6 @@ export const MORE_AT = 1.25;
 export const LESS_AT = 0.75;
 export const TEST_QUEUE = ['Customer reviews', 'New and restocked products', 'Shop numbers', 'Customer work', 'Behind the scenes'];
 
-const ACTION_TYPES = new Set(['reactions', 'likes', 'comments', 'shares', 'saves', 'saved', 'clicks', 'replies']);
 const DAY_NAMES = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const TZ = 'America/Chicago';
 const HOUR = 3600000;
@@ -21,9 +20,11 @@ export function readMetrics(metrics) {
     const v = Number(m.value);
     if (m.type && Number.isFinite(v)) by[m.type] = v;
   }
-  const actions = Object.entries(by).reduce((n, [k, v]) => (ACTION_TYPES.has(k) ? n + v : n), 0);
+  const reactions = by.reactions ?? by.likes ?? 0;
+  const saves = by.saves ?? by.saved ?? 0;
+  const actions = reactions + saves + (by.comments ?? 0) + (by.shares ?? 0) + (by.clicks ?? 0) + (by.replies ?? 0);
   const seen = by.reach > 0 ? by.reach : by.impressions > 0 ? by.impressions : by.views > 0 ? by.views : 0;
-  return { seen, actions, reactions: by.reactions ?? by.likes ?? 0, comments: by.comments ?? 0, shares: by.shares ?? 0, saves: by.saves ?? by.saved ?? 0, clicks: by.clicks ?? 0 };
+  return { seen, actions, reactions, comments: by.comments ?? 0, shares: by.shares ?? 0, saves, clicks: by.clicks ?? 0 };
 }
 
 export const scoreOf = (seen, actions) => (seen > 0 ? Math.round((actions / seen) * 1000) / 10 : null);
