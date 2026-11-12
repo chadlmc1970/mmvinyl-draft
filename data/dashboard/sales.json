@@ -3,8 +3,8 @@
     "schema_version": "1.1",
     "sample": false,
     "sample_note": null,
-    "generated_at": "2026-11-05T13:06:55-06:00",
-    "as_of": "2026-11-05T13:06:55-06:00",
+    "generated_at": "2026-11-12T11:26:24-06:00",
+    "as_of": "2026-11-12T11:26:24-06:00",
     "timezone": "America/Chicago",
     "currency": "USD",
     "money_unit": "cents",
@@ -13,55 +13,6 @@
     "store_note": "Shopkeep is not connected yet. Store figures are not included."
   },
   "daily": [
-    {
-      "date": "2026-08-07",
-      "web_cents": 19241,
-      "store_cents": null,
-      "orders_web": 6,
-      "orders_store": null
-    },
-    {
-      "date": "2026-08-08",
-      "web_cents": 3549,
-      "store_cents": null,
-      "orders_web": 2,
-      "orders_store": null
-    },
-    {
-      "date": "2026-08-09",
-      "web_cents": 45168,
-      "store_cents": null,
-      "orders_web": 10,
-      "orders_store": null
-    },
-    {
-      "date": "2026-08-10",
-      "web_cents": 91878,
-      "store_cents": null,
-      "orders_web": 25,
-      "orders_store": null
-    },
-    {
-      "date": "2026-08-11",
-      "web_cents": 32468,
-      "store_cents": null,
-      "orders_web": 14,
-      "orders_store": null
-    },
-    {
-      "date": "2026-08-12",
-      "web_cents": 79757,
-      "store_cents": null,
-      "orders_web": 25,
-      "orders_store": null
-    },
-    {
-      "date": "2026-08-13",
-      "web_cents": 112281,
-      "store_cents": null,
-      "orders_web": 37,
-      "orders_store": null
-    },
     {
       "date": "2026-08-14",
       "web_cents": 69893,
@@ -645,28 +596,69 @@
     },
     {
       "date": "2026-11-05",
-      "web_cents": 144342,
+      "web_cents": 220337,
       "store_cents": null,
-      "orders_web": 30,
+      "orders_web": 64,
+      "orders_store": null
+    },
+    {
+      "date": "2026-11-06",
+      "web_cents": 167192,
+      "store_cents": null,
+      "orders_web": 61,
+      "orders_store": null
+    },
+    {
+      "date": "2026-11-07",
+      "web_cents": 22396,
+      "store_cents": null,
+      "orders_web": 17,
+      "orders_store": null
+    },
+    {
+      "date": "2026-11-08",
+      "web_cents": 14339,
+      "store_cents": null,
+      "orders_web": 4,
+      "orders_store": null
+    },
+    {
+      "date": "2026-11-09",
+      "web_cents": 100316,
+      "store_cents": null,
+      "orders_web": 29,
+      "orders_store": null
+    },
+    {
+      "date": "2026-11-10",
+      "web_cents": 78604,
+      "store_cents": null,
+      "orders_web": 32,
+      "orders_store": null
+    },
+    {
+      "date": "2026-11-11",
+      "web_cents": 101759,
+      "store_cents": null,
+      "orders_web": 42,
+      "orders_store": null
+    },
+    {
+      "date": "2026-11-12",
+      "web_cents": 38685,
+      "store_cents": null,
+      "orders_web": 19,
       "orders_store": null
     }
   ],
   "weekly": [
     {
-      "week_start": "2026-08-03",
-      "web_cents": 67958,
-      "store_cents": null,
-      "orders": 18,
-      "total_cents": 67958,
-      "partial": true
-    },
-    {
       "week_start": "2026-08-10",
-      "web_cents": 489488,
+      "web_cents": 173104,
       "store_cents": null,
-      "orders": 150,
-      "total_cents": 489488,
-      "partial": false
+      "orders": 49,
+      "total_cents": 173104,
+      "partial": true
     },
     {
       "week_start": "2026-08-17",
@@ -758,15 +750,31 @@
     },
     {
       "week_start": "2026-11-02",
-      "web_cents": 430055,
+      "web_cents": 709977,
       "store_cents": null,
-      "orders": 129,
-      "total_cents": 430055,
+      "orders": 245,
+      "total_cents": 709977,
+      "partial": false
+    },
+    {
+      "week_start": "2026-11-09",
+      "web_cents": 319364,
+      "store_cents": null,
+      "orders": 122,
+      "total_cents": 319364,
       "partial": true
     }
   ],
   "week_over_week": {
     "this_week": {
+      "week_start": "2026-11-02",
+      "web_cents": 709977,
+      "store_cents": null,
+      "orders": 245,
+      "total_cents": 709977,
+      "partial": false
+    },
+    "prior_week": {
       "week_start": "2026-10-26",
       "web_cents": 744311,
       "store_cents": null,
@@ -774,79 +782,71 @@
       "total_cents": 744311,
       "partial": false
     },
-    "prior_week": {
-      "week_start": "2026-10-19",
-      "web_cents": 831338,
-      "store_cents": null,
-      "orders": 289,
-      "total_cents": 831338,
-      "partial": false
-    },
     "note": "Last full week compared with the week before. Web orders only."
   },
   "current_week_to_date": {
-    "week_start": "2026-11-02",
-    "total_cents": 430055
+    "week_start": "2026-11-09",
+    "total_cents": 319364
   },
   "by_category_28d": [
     {
       "category": "DTF [Direct to Film]",
-      "revenue_cents": 2312684,
-      "prev_period_cents": 2432217,
+      "revenue_cents": 2153268,
+      "prev_period_cents": 2577872,
       "share_pct": 76
     },
     {
       "category": "Adults",
-      "revenue_cents": 493966,
-      "prev_period_cents": 598690,
-      "share_pct": 16
+      "revenue_cents": 471588,
+      "prev_period_cents": 583748,
+      "share_pct": 17
     },
     {
       "category": "Apparel",
-      "revenue_cents": 73918,
-      "prev_period_cents": 147650,
+      "revenue_cents": 63868,
+      "prev_period_cents": 85700,
       "share_pct": 2
     },
     {
       "category": "Glitter",
-      "revenue_cents": 39200,
-      "prev_period_cents": 53360,
+      "revenue_cents": 32000,
+      "prev_period_cents": 55760,
       "share_pct": 1
     },
     {
       "category": "Adults | Youth",
-      "revenue_cents": 33486,
-      "prev_period_cents": 29450,
+      "revenue_cents": 29686,
+      "prev_period_cents": 27550,
       "share_pct": 1
     },
     {
       "category": "HTV Solids",
-      "revenue_cents": 29736,
-      "prev_period_cents": 45623,
-      "share_pct": 1
-    },
-    {
-      "category": "Patches",
-      "revenue_cents": 24700,
-      "prev_period_cents": 33000,
+      "revenue_cents": 25486,
+      "prev_period_cents": 38477,
       "share_pct": 1
     },
     {
       "category": "Christmas",
-      "revenue_cents": 13600,
+      "revenue_cents": 15200,
       "prev_period_cents": 0,
+      "share_pct": 1
+    },
+    {
+      "category": "Patches",
+      "revenue_cents": 14400,
+      "prev_period_cents": 36200,
+      "share_pct": 1
+    },
+    {
+      "category": "Other",
+      "revenue_cents": 6800,
+      "prev_period_cents": 54800,
       "share_pct": 0
     },
     {
       "category": "651 Vinyl",
       "revenue_cents": 5325,
-      "prev_period_cents": 2300,
-      "share_pct": 0
-    },
-    {
-      "category": "Sublimation",
-      "revenue_cents": 5100,
-      "prev_period_cents": 4000,
+      "prev_period_cents": 1800,
       "share_pct": 0
     },
     {
@@ -856,15 +856,15 @@
       "share_pct": 0
     },
     {
-      "category": "Youth",
-      "revenue_cents": 2550,
-      "prev_period_cents": 0,
+      "category": "Sublimation",
+      "revenue_cents": 3350,
+      "prev_period_cents": 2200,
       "share_pct": 0
     },
     {
-      "category": "3D Puff HTV",
-      "revenue_cents": 2397,
-      "prev_period_cents": 2397,
+      "category": "Youth",
+      "revenue_cents": 2550,
+      "prev_period_cents": 0,
       "share_pct": 0
     },
     {
@@ -874,15 +874,15 @@
       "share_pct": 0
     },
     {
-      "category": "Accessories",
-      "revenue_cents": 2100,
-      "prev_period_cents": 21459,
+      "category": "Uncategorized",
+      "revenue_cents": 1600,
+      "prev_period_cents": 0,
       "share_pct": 0
     },
     {
-      "category": "HTV Vinyl",
-      "revenue_cents": 998,
-      "prev_period_cents": 2795,
+      "category": "Blanks",
+      "revenue_cents": 1075,
+      "prev_period_cents": 0,
       "share_pct": 0
     },
     {
@@ -892,9 +892,15 @@
       "share_pct": 0
     },
     {
-      "category": "Blanks",
-      "revenue_cents": 200,
-      "prev_period_cents": 875,
+      "category": "HTV Vinyl",
+      "revenue_cents": 499,
+      "prev_period_cents": 3294,
+      "share_pct": 0
+    },
+    {
+      "category": "3D Puff HTV",
+      "revenue_cents": 399,
+      "prev_period_cents": 4395,
       "share_pct": 0
     }
   ],
@@ -903,10 +909,20 @@
       "product_id": 60967,
       "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P &amp; 10A SAT FOR SAME DAY",
       "category": "DTF [Direct to Film]",
-      "unit_price_cents": 700,
+      "unit_price_cents": 0,
       "price_note": null,
-      "units_30d": 1114,
-      "revenue_30d_cents": 2612570,
+      "units_30d": 1042,
+      "revenue_30d_cents": 2446918,
+      "real_units": true
+    },
+    {
+      "product_id": 8439,
+      "name": "JERZEES DRI-⁠POWER® 50/50 T-⁠Shirt",
+      "category": "Adults",
+      "unit_price_cents": 450,
+      "price_note": null,
+      "units_30d": 340,
+      "revenue_30d_cents": 172460,
       "real_units": true
     },
     {
@@ -915,28 +931,8 @@
       "category": "Adults",
       "unit_price_cents": 475,
       "price_note": null,
-      "units_30d": 357,
-      "revenue_30d_cents": 186481,
-      "real_units": true
-    },
-    {
-      "product_id": 8439,
-      "name": "JERZEES DRI-⁠POWER® 50/50 T-⁠Shirt",
-      "category": "Adults",
-      "unit_price_cents": 750,
-      "price_note": null,
-      "units_30d": 351,
-      "revenue_30d_cents": 179810,
-      "real_units": true
-    },
-    {
-      "product_id": 59348,
-      "name": "Adult Comfort Color Tee",
-      "category": "Adults",
-      "unit_price_cents": 899,
-      "price_note": null,
-      "units_30d": 58,
-      "revenue_30d_cents": 53397,
+      "units_30d": 330,
+      "revenue_30d_cents": 171056,
       "real_units": true
     },
     {
@@ -945,28 +941,18 @@
       "category": "Adults",
       "unit_price_cents": 1100,
       "price_note": null,
-      "units_30d": 39,
-      "revenue_30d_cents": 44300,
+      "units_30d": 56,
+      "revenue_30d_cents": 63700,
       "real_units": true
     },
     {
-      "product_id": 8270,
-      "name": "HTV Glitter",
-      "category": "Glitter",
-      "unit_price_cents": 600,
+      "product_id": 59348,
+      "name": "Adult Comfort Color Tee",
+      "category": "Adults",
+      "unit_price_cents": 899,
       "price_note": null,
-      "units_30d": 44,
-      "revenue_30d_cents": 43800,
-      "real_units": true
-    },
-    {
-      "product_id": 61939,
-      "name": "YOUTH Gildan Softstyle",
-      "category": "Adults | Youth",
-      "unit_price_cents": 475,
-      "price_note": null,
-      "units_30d": 79,
-      "revenue_30d_cents": 36811,
+      "units_30d": 57,
+      "revenue_30d_cents": 52498,
       "real_units": true
     },
     {
@@ -975,35 +961,55 @@
       "category": "Adults",
       "unit_price_cents": 850,
       "price_note": null,
-      "units_30d": 31,
-      "revenue_30d_cents": 27400,
+      "units_30d": 43,
+      "revenue_30d_cents": 38550,
+      "real_units": true
+    },
+    {
+      "product_id": 8270,
+      "name": "HTV Glitter",
+      "category": "Glitter",
+      "unit_price_cents": 600,
+      "price_note": null,
+      "units_30d": 37,
+      "revenue_30d_cents": 32600,
+      "real_units": true
+    },
+    {
+      "product_id": 61939,
+      "name": "YOUTH Gildan Softstyle",
+      "category": "Adults | Youth",
+      "unit_price_cents": 475,
+      "price_note": null,
+      "units_30d": 70,
+      "revenue_30d_cents": 32536,
       "real_units": true
     },
     {
       "product_id": 14113,
       "name": "HTV UltraWeed™",
       "category": "HTV Solids",
-      "unit_price_cents": 899,
+      "unit_price_cents": 350,
       "price_note": null,
       "units_30d": 27,
-      "revenue_30d_cents": 21586,
+      "revenue_30d_cents": 22684,
       "real_units": true
     },
     {
-      "product_id": 8353,
-      "name": "JERZEES DRI-⁠POWER® 50/50 Youth T-Shirt",
+      "product_id": 10181,
+      "name": "Rabbit Skins - Toddler Fine Jersey Tee",
       "category": "Apparel",
-      "unit_price_cents": 450,
+      "unit_price_cents": 500,
       "price_note": null,
-      "units_30d": 48,
-      "revenue_30d_cents": 20700,
+      "units_30d": 46,
+      "revenue_30d_cents": 22643,
       "real_units": true
     }
   ],
   "averages": {
-    "avg_order_web_cents": 2947,
+    "avg_order_web_cents": 2839,
     "avg_order_store_cents": null,
-    "orders_per_open_day": 38.5,
+    "orders_per_open_day": 37.5,
     "reseller_share_of_revenue_pct": null,
     "repeat_order_rate_pct": null
   }

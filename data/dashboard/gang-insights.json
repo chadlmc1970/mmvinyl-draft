@@ -1,31 +1,31 @@
 {
   "meta": {
     "sample": false,
-    "generated_at": "2026-11-05T19:09:47.272Z",
-    "as_of": "2026-11-05T19:09:47.272Z",
+    "generated_at": "2026-11-12T17:29:46.324Z",
+    "as_of": "2026-11-12T17:29:46.324Z",
     "currency": "USD",
     "money_unit": "cents",
     "source": "WooCommerce orders and Kixxl sheet files. Paid orders only. Sales are sheet prices before tax and shipping."
   },
   "reorders": {
-    "paid_sheets": 5944,
-    "sheet_sales_cents": 14691293,
-    "customers": 1044,
-    "repeat_customers": 585,
-    "sheets_without_design_data": 214,
+    "paid_sheets": 6165,
+    "sheet_sales_cents": 15159738,
+    "customers": 1076,
+    "repeat_customers": 598,
+    "sheets_without_design_data": 223,
     "same_sheet": {
-      "sheets": 69,
-      "reorders": 88,
-      "customers": 48,
-      "value_cents": 301827,
-      "share_of_sales_pct": 2.1,
+      "sheets": 72,
+      "reorders": 92,
+      "customers": 50,
+      "value_cents": 306926,
+      "share_of_sales_pct": 2,
       "typical_days_between": 2.9
     },
     "reused_design": {
-      "sheets": 619,
-      "customers": 105,
-      "value_cents": 1995623,
-      "share_of_sales_pct": 13.6
+      "sheets": 646,
+      "customers": 111,
+      "value_cents": 2098252,
+      "share_of_sales_pct": 13.8
     },
     "top10": [
       {
@@ -251,18 +251,18 @@
         "avg_sheet_cents": 2364,
         "avg_sqft": 6.77,
         "customers": 400,
-        "new_customers": 173
+        "new_customers": 172
       },
       {
         "month": "2026-11",
         "label": "Nov",
         "partial": true,
-        "sheets": 138,
-        "sales_cents": 361767,
-        "avg_sheet_cents": 2622,
-        "avg_sqft": 7.81,
-        "customers": 96,
-        "new_customers": 20
+        "sheets": 359,
+        "sales_cents": 830212,
+        "avg_sheet_cents": 2313,
+        "avg_sqft": 6.71,
+        "customers": 184,
+        "new_customers": 53
       }
     ],
     "season": {
@@ -273,8 +273,8 @@
         "sales_cents": 5122179,
         "avg_sheet_cents": 2467,
         "avg_sqft": 7.1,
-        "customers": 541,
-        "new_customers": 288
+        "customers": 540,
+        "new_customers": 287
       },
       "prior": {
         "sheets": 1104,

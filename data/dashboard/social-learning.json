@@ -2,7 +2,7 @@
   "meta": {
     "sample": false,
     "source": "Buffer post results and WooCommerce order sources (live, read-only).",
-    "generated_at": "2026-11-05T19:10:38.665Z",
+    "generated_at": "2026-11-12T17:30:55.446Z",
     "timezone": "America/Chicago",
     "connected": true,
     "orders_connected": true
@@ -10,32 +10,32 @@
   "launched_at": "2026-11-04T20:55:00Z",
   "phase": {
     "name": "baseline",
-    "settled": 0,
+    "settled": 5,
     "need_posts": 12,
-    "days": 0,
+    "days": 7,
     "need_days": 21
   },
   "summary": {
-    "sent": 2,
-    "scheduled": 3,
+    "sent": 5,
+    "scheduled": 0,
     "failed": 0,
-    "seen": 1532,
-    "actions": 15,
-    "score": 1,
-    "orders": 1,
-    "sales_cents": 2391
+    "seen": 3224,
+    "actions": 34,
+    "score": 1.1,
+    "orders": 11,
+    "sales_cents": 20017
   },
   "before": {
     "posts": {
       "facebook": {
         "posts": 50,
-        "avg_seen": 2558,
-        "avg_score": 2.7
+        "avg_seen": 2448,
+        "avg_score": 3
       },
       "instagram": {
         "posts": 53,
-        "avg_seen": 213,
-        "avg_score": 3.2
+        "avg_seen": 217,
+        "avg_score": 3.1
       }
     },
     "order_days": 30,
@@ -44,12 +44,12 @@
   },
   "orders_by_channel": {
     "instagram": {
-      "orders": 1,
-      "sales_cents": 2391
+      "orders": 10,
+      "sales_cents": 18855
     },
     "facebook": {
-      "orders": 0,
-      "sales_cents": 0
+      "orders": 1,
+      "sales_cents": 1162
     }
   },
   "posts": [
@@ -67,9 +67,9 @@
         "instagram": {
           "status": "sent",
           "link": "https://www.instagram.com/p/DfVXSgrCca4/",
-          "seen": 63,
-          "actions": 4,
-          "reactions": 4,
+          "seen": 124,
+          "actions": 8,
+          "reactions": 8,
           "comments": 0,
           "shares": 0,
           "saves": 0,
@@ -78,19 +78,19 @@
         "facebook": {
           "status": "sent",
           "link": "https://www.facebook.com/1732566895066954/posts/1732639645059679",
-          "seen": 1335,
-          "actions": 9,
+          "seen": 1090,
+          "actions": 10,
           "reactions": 1,
           "comments": 0,
           "shares": 0,
           "saves": 0,
-          "clicks": 8
+          "clicks": 9
         }
       },
-      "seen": 1398,
-      "actions": 13,
-      "score": null,
-      "live_score": 0.9,
+      "seen": 1214,
+      "actions": 18,
+      "score": 1.5,
+      "live_score": 1.5,
       "orders": 0,
       "sales_cents": 0
     },
@@ -108,9 +108,9 @@
         "instagram": {
           "status": "sent",
           "link": "https://www.instagram.com/p/DfXamdIEamU/",
-          "seen": 23,
-          "actions": 0,
-          "reactions": 0,
+          "seen": 66,
+          "actions": 1,
+          "reactions": 1,
           "comments": 0,
           "shares": 0,
           "saves": 0,
@@ -119,19 +119,19 @@
         "facebook": {
           "status": "sent",
           "link": "https://www.facebook.com/1732566895066954/posts/1733527584970885",
-          "seen": 111,
-          "actions": 2,
+          "seen": 202,
+          "actions": 4,
           "reactions": 1,
           "comments": 0,
           "shares": 0,
           "saves": 0,
-          "clicks": 1
+          "clicks": 3
         }
       },
-      "seen": 134,
-      "actions": 2,
-      "score": null,
-      "live_score": 1.5,
+      "seen": 268,
+      "actions": 5,
+      "score": 1.9,
+      "live_score": 1.9,
       "orders": 0,
       "sales_cents": 0
     },
@@ -143,13 +143,13 @@
       "format": "Text graphic",
       "hook": "Value",
       "is_test": false,
-      "at": "2026-11-06T16:00:00.000Z",
-      "status": "scheduled",
+      "at": "2026-11-06T16:04:00.775Z",
+      "status": "sent",
       "channels": {
         "instagram": {
-          "status": "scheduled",
-          "link": null,
-          "seen": 0,
+          "status": "sent",
+          "link": "https://www.instagram.com/p/DfZ_fn8Fk4A/",
+          "seen": 108,
           "actions": 0,
           "reactions": 0,
           "comments": 0,
@@ -158,21 +158,21 @@
           "clicks": 0
         },
         "facebook": {
-          "status": "scheduled",
-          "link": null,
-          "seen": 0,
-          "actions": 0,
-          "reactions": 0,
+          "status": "sent",
+          "link": "https://www.facebook.com/1732566895066954/posts/1734688004854843",
+          "seen": 567,
+          "actions": 3,
+          "reactions": 1,
           "comments": 0,
           "shares": 0,
           "saves": 0,
-          "clicks": 0
+          "clicks": 2
         }
       },
-      "seen": 0,
-      "actions": 0,
-      "score": null,
-      "live_score": null,
+      "seen": 675,
+      "actions": 3,
+      "score": 0.4,
+      "live_score": 0.4,
       "orders": 0,
       "sales_cents": 0
     },
@@ -184,36 +184,36 @@
       "format": "Text graphic",
       "hook": "Mistakes to avoid",
       "is_test": false,
-      "at": "2026-11-09T16:00:00.000Z",
-      "status": "scheduled",
+      "at": "2026-11-09T16:06:41.248Z",
+      "status": "sent",
       "channels": {
         "instagram": {
-          "status": "scheduled",
-          "link": null,
-          "seen": 0,
-          "actions": 0,
-          "reactions": 0,
+          "status": "sent",
+          "link": "https://www.instagram.com/p/DfhuDl9EQEk/",
+          "seen": 82,
+          "actions": 1,
+          "reactions": 1,
           "comments": 0,
           "shares": 0,
           "saves": 0,
           "clicks": 0
         },
         "facebook": {
-          "status": "scheduled",
-          "link": null,
-          "seen": 0,
-          "actions": 0,
-          "reactions": 0,
+          "status": "sent",
+          "link": "https://www.facebook.com/1732566895066954/posts/1738067791183531",
+          "seen": 201,
+          "actions": 2,
+          "reactions": 2,
           "comments": 0,
           "shares": 0,
           "saves": 0,
           "clicks": 0
         }
       },
-      "seen": 0,
-      "actions": 0,
-      "score": null,
-      "live_score": null,
+      "seen": 283,
+      "actions": 3,
+      "score": 1.1,
+      "live_score": 1.1,
       "orders": 0,
       "sales_cents": 0
     },
@@ -225,47 +225,148 @@
       "format": "Text graphic",
       "hook": "Deadline",
       "is_test": false,
-      "at": "2026-11-10T16:00:00.000Z",
-      "status": "scheduled",
+      "at": "2026-11-10T16:06:41.701Z",
+      "status": "sent",
       "channels": {
         "instagram": {
-          "status": "scheduled",
-          "link": null,
-          "seen": 0,
-          "actions": 0,
-          "reactions": 0,
+          "status": "sent",
+          "link": "https://www.instagram.com/p/DfkS4fzEfRa/",
+          "seen": 99,
+          "actions": 2,
+          "reactions": 2,
           "comments": 0,
           "shares": 0,
           "saves": 0,
           "clicks": 0
         },
         "facebook": {
-          "status": "scheduled",
-          "link": null,
-          "seen": 0,
-          "actions": 0,
-          "reactions": 0,
+          "status": "sent",
+          "link": "https://www.facebook.com/1732566895066954/posts/1739290831061227",
+          "seen": 685,
+          "actions": 3,
+          "reactions": 1,
           "comments": 0,
           "shares": 0,
           "saves": 0,
-          "clicks": 0
+          "clicks": 2
         }
       },
-      "seen": 0,
-      "actions": 0,
-      "score": null,
-      "live_score": null,
+      "seen": 784,
+      "actions": 5,
+      "score": 0.6,
+      "live_score": 0.6,
       "orders": 0,
       "sales_cents": 0
     }
   ],
-  "overall_score": null,
+  "overall_score": 1.1,
   "kinds": {
-    "topic": [],
-    "format": [],
-    "hook": [],
-    "day": [],
-    "time": []
+    "topic": [
+      {
+        "value": "Same-day",
+        "posts": 2,
+        "avg_score": 1.7,
+        "vs_average": 1.55
+      },
+      {
+        "value": "How-to",
+        "posts": 1,
+        "avg_score": 1.1,
+        "vs_average": 1
+      },
+      {
+        "value": "Seasonal",
+        "posts": 1,
+        "avg_score": 0.6,
+        "vs_average": 0.55
+      },
+      {
+        "value": "Gang sheets",
+        "posts": 1,
+        "avg_score": 0.4,
+        "vs_average": 0.36
+      }
+    ],
+    "format": [
+      {
+        "value": "Text graphic",
+        "posts": 5,
+        "avg_score": 1.1,
+        "vs_average": 1
+      }
+    ],
+    "hook": [
+      {
+        "value": "Step by step",
+        "posts": 1,
+        "avg_score": 1.9,
+        "vs_average": 1.73
+      },
+      {
+        "value": "Deadline",
+        "posts": 2,
+        "avg_score": 1.1,
+        "vs_average": 0.95
+      },
+      {
+        "value": "Mistakes to avoid",
+        "posts": 1,
+        "avg_score": 1.1,
+        "vs_average": 1
+      },
+      {
+        "value": "Value",
+        "posts": 1,
+        "avg_score": 0.4,
+        "vs_average": 0.36
+      }
+    ],
+    "day": [
+      {
+        "value": "Thursday",
+        "posts": 1,
+        "avg_score": 1.9,
+        "vs_average": 1.73
+      },
+      {
+        "value": "Wednesday",
+        "posts": 1,
+        "avg_score": 1.5,
+        "vs_average": 1.36
+      },
+      {
+        "value": "Monday",
+        "posts": 1,
+        "avg_score": 1.1,
+        "vs_average": 1
+      },
+      {
+        "value": "Tuesday",
+        "posts": 1,
+        "avg_score": 0.6,
+        "vs_average": 0.55
+      },
+      {
+        "value": "Friday",
+        "posts": 1,
+        "avg_score": 0.4,
+        "vs_average": 0.36
+      }
+    ],
+    "time": [
+      {
+        "value": "Afternoon",
+        "posts": 1,
+        "avg_score": 1.5,
+        "vs_average": 1.36
+      },
+      {
+        "value": "Morning",
+        "posts": 4,
+        "avg_score": 1,
+        "vs_average": 0.91
+      }
+    ]
   },
   "rules": [],
   "next_batch": {
@@ -280,10 +381,17 @@
   "weekly": [
     {
       "week": "2026-11-02",
+      "sent": 3,
+      "orders": 9,
+      "sales_cents": 11505,
+      "avg_score": 1.3
+    },
+    {
+      "week": "2026-11-09",
       "sent": 2,
-      "orders": 1,
-      "sales_cents": 2391,
-      "avg_score": null
+      "orders": 2,
+      "sales_cents": 8512,
+      "avg_score": 0.9
     }
   ],
   "rule_log": []

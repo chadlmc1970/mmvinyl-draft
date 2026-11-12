@@ -3,8 +3,8 @@
     "schema_version": "1.1",
     "sample": false,
     "sample_note": null,
-    "generated_at": "2026-11-05T13:06:55-06:00",
-    "as_of": "2026-11-05T13:06:55-06:00",
+    "generated_at": "2026-11-12T11:26:24-06:00",
+    "as_of": "2026-11-12T11:26:24-06:00",
     "timezone": "America/Chicago",
     "currency": "USD",
     "money_unit": "cents",
@@ -17,18 +17,18 @@
     {
       "key": "card",
       "label": "Cards",
-      "amount_cents": 2329993,
-      "count": 823,
-      "failed_count": 17,
-      "fail_rate_pct": 2,
+      "amount_cents": 2179017,
+      "count": 810,
+      "failed_count": 14,
+      "fail_rate_pct": 1.7,
       "live_status": "live",
       "share_pct": 77
     },
     {
       "key": "paypal",
       "label": "PayPal",
-      "amount_cents": 641377,
-      "count": 191,
+      "amount_cents": 596946,
+      "count": 176,
       "failed_count": 0,
       "fail_rate_pct": 0,
       "live_status": "live",
@@ -37,8 +37,8 @@
     {
       "key": "google_pay",
       "label": "Google Pay",
-      "amount_cents": 18837,
-      "count": 8,
+      "amount_cents": 18203,
+      "count": 5,
       "failed_count": 0,
       "fail_rate_pct": 0,
       "live_status": "live",
@@ -47,8 +47,8 @@
     {
       "key": "other",
       "label": "Klarna, Affirm and other",
-      "amount_cents": 44785,
-      "count": 10,
+      "amount_cents": 30930,
+      "count": 11,
       "failed_count": 0,
       "fail_rate_pct": 0,
       "live_status": "live",
@@ -56,6 +56,22 @@
     }
   ],
   "failures": [
+    {
+      "id": "fail_ord_69240",
+      "date": "2026-11-12",
+      "method": "card",
+      "reason": null,
+      "order_number": "69240",
+      "recovered": false
+    },
+    {
+      "id": "fail_ord_69035",
+      "date": "2026-11-05",
+      "method": "card",
+      "reason": null,
+      "order_number": "69035",
+      "recovered": true
+    },
     {
       "id": "fail_ord_68972",
       "date": "2026-11-05",
@@ -151,51 +167,11 @@
       "reason": null,
       "order_number": "68151",
       "recovered": true
-    },
-    {
-      "id": "fail_ord_68099",
-      "date": "2026-10-15",
-      "method": "card",
-      "reason": null,
-      "order_number": "68099",
-      "recovered": true
-    },
-    {
-      "id": "fail_ord_67997",
-      "date": "2026-10-14",
-      "method": "card",
-      "reason": null,
-      "order_number": "67997",
-      "recovered": true
-    },
-    {
-      "id": "fail_ord_67930",
-      "date": "2026-10-13",
-      "method": "card",
-      "reason": null,
-      "order_number": "67930",
-      "recovered": true
-    },
-    {
-      "id": "fail_ord_67918",
-      "date": "2026-10-12",
-      "method": "card",
-      "reason": null,
-      "order_number": "67918",
-      "recovered": true
-    },
-    {
-      "id": "fail_ord_67885",
-      "date": "2026-10-12",
-      "method": "card",
-      "reason": null,
-      "order_number": "67885",
-      "recovered": true
     }
   ],
   "payouts": [],
   "web_vs_store": {
-    "web_cents": 3034992,
+    "web_cents": 2825096,
     "store_cents": null
   },
   "note": "Payouts and store payments are not connected yet."

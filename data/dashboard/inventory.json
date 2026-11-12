@@ -3,8 +3,8 @@
     "schema_version": "1.1",
     "sample": false,
     "sample_note": null,
-    "generated_at": "2026-11-05T13:06:55-06:00",
-    "as_of": "2026-11-05T13:06:55-06:00",
+    "generated_at": "2026-11-12T11:26:24-06:00",
+    "as_of": "2026-11-12T11:26:24-06:00",
     "timezone": "America/Chicago",
     "currency": "USD",
     "money_unit": "cents",
@@ -17,10 +17,10 @@
       "product_id": 67270,
       "name": "Jaguars Puff Embroidered Patch",
       "category": "Patches",
-      "state": "low",
+      "state": "out_of_stock",
       "qty": 0,
       "real_flag": true,
-      "note": "Five or fewer left",
+      "note": "Marked out of stock in the catalog",
       "reorder": null
     },
     {
