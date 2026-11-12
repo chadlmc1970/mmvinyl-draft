@@ -3,8 +3,8 @@
     "schema_version": "1.1",
     "sample": false,
     "sample_note": null,
-    "generated_at": "2026-11-12T11:26:24-06:00",
-    "as_of": "2026-11-12T11:26:24-06:00",
+    "generated_at": "2026-11-12T11:53:07-06:00",
+    "as_of": "2026-11-12T11:53:07-06:00",
     "timezone": "America/Chicago",
     "currency": "USD",
     "money_unit": "cents",
@@ -24,13 +24,13 @@
   },
   "orders": [
     {
-      "id": "ord_69259",
-      "number": "69259",
+      "id": "ord_69261",
+      "number": "69261",
       "channel": "web",
       "source_system": "WooCommerce",
-      "customer_id": "cust_58830",
-      "customer_label": "Shrynal’sCrafted &Creations",
-      "created_at": "2026-11-12T11:26:20-06:00",
+      "customer_id": "cust_926",
+      "customer_label": "Casey D.",
+      "created_at": "2026-11-12T11:43:36-06:00",
       "promised_at": "2026-11-12T17:00:00-06:00",
       "status": "printing",
       "risk": null,
@@ -41,19 +41,58 @@
           "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P &amp; 10A SAT FOR SAME DAY",
           "category": "DTF [Direct to Film]",
           "qty": 1,
-          "unit_price_cents": 0,
+          "unit_price_cents": 700,
           "price_source": "woocommerce_order"
         }
       ],
       "gang_sheets": 1,
       "printer": null,
-      "subtotal_cents": 0,
-      "total_cents": 0,
+      "subtotal_cents": 700,
+      "total_cents": 700,
       "total_note": "Excludes tax",
       "payment": {
-        "method": "other",
+        "method": "paypal",
         "state": "paid",
-        "gateway": ""
+        "gateway": "ppcp-gateway"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_69260",
+      "number": "69260",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_gdee645bbde",
+      "customer_label": "Kimverly c.",
+      "created_at": "2026-11-12T11:41:51-06:00",
+      "promised_at": "2026-11-12T17:00:00-06:00",
+      "status": "printing",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P &amp; 10A SAT FOR SAME DAY",
+          "category": "DTF [Direct to Film]",
+          "qty": 1,
+          "unit_price_cents": 700,
+          "price_source": "woocommerce_order"
+        }
+      ],
+      "gang_sheets": 1,
+      "printer": null,
+      "subtotal_cents": 700,
+      "total_cents": 700,
+      "total_note": "Excludes tax",
+      "payment": {
+        "method": "card",
+        "state": "paid",
+        "gateway": "stripe"
       },
       "fulfillment": {
         "type": "pickup"
@@ -132,45 +171,6 @@
         "method": "card",
         "state": "paid",
         "gateway": "stripe"
-      },
-      "fulfillment": {
-        "type": "pickup"
-      },
-      "art_check": "passed",
-      "pickup_text": null,
-      "notes": null
-    },
-    {
-      "id": "ord_69256",
-      "number": "69256",
-      "channel": "web",
-      "source_system": "WooCommerce",
-      "customer_id": "cust_58830",
-      "customer_label": "Shrynal’sCrafted &Creations",
-      "created_at": "2026-11-12T11:19:44-06:00",
-      "promised_at": "2026-11-12T17:00:00-06:00",
-      "status": "printing",
-      "risk": null,
-      "risk_reason": null,
-      "lines": [
-        {
-          "product_id": 60967,
-          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P &amp; 10A SAT FOR SAME DAY",
-          "category": "DTF [Direct to Film]",
-          "qty": 1,
-          "unit_price_cents": 0,
-          "price_source": "woocommerce_order"
-        }
-      ],
-      "gang_sheets": 1,
-      "printer": null,
-      "subtotal_cents": 0,
-      "total_cents": 0,
-      "total_note": "Excludes tax",
-      "payment": {
-        "method": "other",
-        "state": "paid",
-        "gateway": ""
       },
       "fulfillment": {
         "type": "pickup"
@@ -368,7 +368,7 @@
       "customer_label": "INK ON LLC",
       "created_at": "2026-11-12T09:42:45-06:00",
       "promised_at": "2026-11-12T17:00:00-06:00",
-      "status": "printing",
+      "status": "picked_up",
       "risk": null,
       "risk_reason": null,
       "lines": [
@@ -485,7 +485,7 @@
       "customer_label": "Amanda D.",
       "created_at": "2026-11-12T08:48:43-06:00",
       "promised_at": "2026-11-12T17:00:00-06:00",
-      "status": "printing",
+      "status": "picked_up",
       "risk": null,
       "risk_reason": null,
       "lines": [
@@ -540,7 +540,7 @@
       "customer_label": "Carrie S.",
       "created_at": "2026-11-12T08:30:35-06:00",
       "promised_at": "2026-11-12T17:00:00-06:00",
-      "status": "printing",
+      "status": "picked_up",
       "risk": null,
       "risk_reason": null,
       "lines": [
@@ -752,9 +752,9 @@
       "customer_label": "Tasha E.",
       "created_at": "2026-11-12T05:52:18-06:00",
       "promised_at": "2026-11-12T17:00:00-06:00",
-      "status": "printing",
-      "risk": "art",
-      "risk_reason": "Art check flagged low resolution or overlapping images",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
       "lines": [
         {
           "product_id": 60967,
@@ -1104,7 +1104,7 @@
       "customer_label": "Misty N.",
       "created_at": "2026-11-11T18:35:07-06:00",
       "promised_at": "2026-11-12T17:00:00-06:00",
-      "status": "printing",
+      "status": "picked_up",
       "risk": null,
       "risk_reason": null,
       "lines": [
@@ -1184,7 +1184,7 @@
       "customer_label": "Jasmine C.",
       "created_at": "2026-11-11T17:14:34-06:00",
       "promised_at": "2026-11-12T17:00:00-06:00",
-      "status": "printing",
+      "status": "picked_up",
       "risk": null,
       "risk_reason": null,
       "lines": [
@@ -1255,7 +1255,7 @@
       "customer_label": "Amanda D.",
       "created_at": "2026-11-11T16:54:05-06:00",
       "promised_at": "2026-11-12T17:00:00-06:00",
-      "status": "printing",
+      "status": "picked_up",
       "risk": null,
       "risk_reason": null,
       "lines": [

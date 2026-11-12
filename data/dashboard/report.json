@@ -38,7 +38,7 @@
   "by_category": [
     {
       "category": "DTF [Direct to Film]",
-      "revenue_cents": 2153268,
+      "revenue_cents": 2154668,
       "prev_period_cents": 2577872,
       "share_pct": 76
     },
@@ -233,8 +233,8 @@
     "schema_version": "1.1",
     "sample": false,
     "sample_note": null,
-    "generated_at": "2026-11-12T11:26:24-06:00",
-    "as_of": "2026-11-12T11:26:24-06:00",
+    "generated_at": "2026-11-12T11:53:07-06:00",
+    "as_of": "2026-11-12T11:53:07-06:00",
     "timezone": "America/Chicago",
     "currency": "USD",
     "money_unit": "cents",

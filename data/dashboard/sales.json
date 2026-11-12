@@ -3,8 +3,8 @@
     "schema_version": "1.1",
     "sample": false,
     "sample_note": null,
-    "generated_at": "2026-11-12T11:26:24-06:00",
-    "as_of": "2026-11-12T11:26:24-06:00",
+    "generated_at": "2026-11-12T11:53:07-06:00",
+    "as_of": "2026-11-12T11:53:07-06:00",
     "timezone": "America/Chicago",
     "currency": "USD",
     "money_unit": "cents",
@@ -645,7 +645,7 @@
     },
     {
       "date": "2026-11-12",
-      "web_cents": 38685,
+      "web_cents": 40085,
       "store_cents": null,
       "orders_web": 19,
       "orders_store": null
@@ -758,10 +758,10 @@
     },
     {
       "week_start": "2026-11-09",
-      "web_cents": 319364,
+      "web_cents": 320764,
       "store_cents": null,
       "orders": 122,
-      "total_cents": 319364,
+      "total_cents": 320764,
       "partial": true
     }
   ],
@@ -786,12 +786,12 @@
   },
   "current_week_to_date": {
     "week_start": "2026-11-09",
-    "total_cents": 319364
+    "total_cents": 320764
   },
   "by_category_28d": [
     {
       "category": "DTF [Direct to Film]",
-      "revenue_cents": 2153268,
+      "revenue_cents": 2154668,
       "prev_period_cents": 2577872,
       "share_pct": 76
     },
@@ -909,10 +909,10 @@
       "product_id": 60967,
       "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P &amp; 10A SAT FOR SAME DAY",
       "category": "DTF [Direct to Film]",
-      "unit_price_cents": 0,
+      "unit_price_cents": 700,
       "price_note": null,
       "units_30d": 1042,
-      "revenue_30d_cents": 2446918,
+      "revenue_30d_cents": 2448318,
       "real_units": true
     },
     {
@@ -1007,7 +1007,7 @@
     }
   ],
   "averages": {
-    "avg_order_web_cents": 2839,
+    "avg_order_web_cents": 2840,
     "avg_order_store_cents": null,
     "orders_per_open_day": 37.5,
     "reseller_share_of_revenue_pct": null,
