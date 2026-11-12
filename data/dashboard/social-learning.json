@@ -2,7 +2,7 @@
   "meta": {
     "sample": false,
     "source": "Buffer post results and WooCommerce order sources (live, read-only).",
-    "generated_at": "2026-11-12T17:57:26.450Z",
+    "generated_at": "2026-11-12T18:23:56.012Z",
     "timezone": "America/Chicago",
     "connected": true,
     "orders_connected": true
