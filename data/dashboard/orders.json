@@ -3,8 +3,8 @@
     "schema_version": "1.1",
     "sample": false,
     "sample_note": null,
-    "generated_at": "2026-11-12T12:19:32-06:00",
-    "as_of": "2026-11-12T12:19:32-06:00",
+    "generated_at": "2026-11-12T12:39:20-06:00",
+    "as_of": "2026-11-12T12:39:20-06:00",
     "timezone": "America/Chicago",
     "currency": "USD",
     "money_unit": "cents",
@@ -23,6 +23,132 @@
     ]
   },
   "orders": [
+    {
+      "id": "ord_69265",
+      "number": "69265",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_12299",
+      "customer_label": "All that jas",
+      "created_at": "2026-11-12T12:39:17-06:00",
+      "promised_at": "2026-11-12T17:00:00-06:00",
+      "status": "payment_failed",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P &amp; 10A SAT FOR SAME DAY",
+          "category": "DTF [Direct to Film]",
+          "qty": 1,
+          "unit_price_cents": 1551,
+          "price_source": "woocommerce_order"
+        },
+        {
+          "product_id": 51938,
+          "name": "Gildan Heavy Blend Crewneck Sweatshirt",
+          "category": "Adults",
+          "qty": 1,
+          "unit_price_cents": 1100,
+          "price_source": "woocommerce_order"
+        }
+      ],
+      "gang_sheets": 1,
+      "printer": null,
+      "subtotal_cents": 2651,
+      "total_cents": 2651,
+      "total_note": "Excludes tax",
+      "payment": {
+        "method": "card",
+        "state": "failed",
+        "gateway": "stripe",
+        "failure_reason": null
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_69264",
+      "number": "69264",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_13189",
+      "customer_label": "Tempest L.",
+      "created_at": "2026-11-12T12:33:09-06:00",
+      "promised_at": "2026-11-12T17:00:00-06:00",
+      "status": "printing",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P &amp; 10A SAT FOR SAME DAY",
+          "category": "DTF [Direct to Film]",
+          "qty": 1,
+          "unit_price_cents": 7672,
+          "price_source": "woocommerce_order"
+        }
+      ],
+      "gang_sheets": 1,
+      "printer": null,
+      "subtotal_cents": 7672,
+      "total_cents": 7672,
+      "total_note": "Excludes tax",
+      "payment": {
+        "method": "paypal",
+        "state": "paid",
+        "gateway": "ppcp-gateway"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_69263",
+      "number": "69263",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_58812",
+      "customer_label": "07/10/1984",
+      "created_at": "2026-11-12T12:29:27-06:00",
+      "promised_at": "2026-11-12T17:00:00-06:00",
+      "status": "printing",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P &amp; 10A SAT FOR SAME DAY",
+          "category": "DTF [Direct to Film]",
+          "qty": 1,
+          "unit_price_cents": 1236,
+          "price_source": "woocommerce_order"
+        }
+      ],
+      "gang_sheets": 1,
+      "printer": null,
+      "subtotal_cents": 1236,
+      "total_cents": 1236,
+      "total_note": "Excludes tax",
+      "payment": {
+        "method": "card",
+        "state": "paid",
+        "gateway": "stripe"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": null,
+      "notes": null
+    },
     {
       "id": "ord_69261",
       "number": "69261",
@@ -12948,187 +13074,6 @@
         "type": "pickup"
       },
       "art_check": "passed",
-      "pickup_text": null,
-      "notes": null
-    },
-    {
-      "id": "ord_68913",
-      "number": "68913",
-      "channel": "web",
-      "source_system": "WooCommerce",
-      "customer_id": "cust_gf7d8841cae",
-      "customer_label": "Kirsten C.",
-      "created_at": "2026-11-04T10:34:56-06:00",
-      "promised_at": "2026-11-04T17:00:00-06:00",
-      "status": "picked_up",
-      "risk": null,
-      "risk_reason": null,
-      "lines": [
-        {
-          "product_id": 10181,
-          "name": "Rabbit Skins - Toddler Fine Jersey Tee",
-          "category": "Apparel",
-          "qty": 1,
-          "unit_price_cents": 500,
-          "price_source": "woocommerce_order"
-        }
-      ],
-      "gang_sheets": 0,
-      "printer": null,
-      "subtotal_cents": 500,
-      "total_cents": 500,
-      "total_note": "Excludes tax",
-      "payment": {
-        "method": "card",
-        "state": "paid",
-        "gateway": "stripe"
-      },
-      "fulfillment": {
-        "type": "pickup"
-      },
-      "art_check": null,
-      "pickup_text": null,
-      "notes": null
-    },
-    {
-      "id": "ord_68912",
-      "number": "68912",
-      "channel": "web",
-      "source_system": "WooCommerce",
-      "customer_id": "cust_g934decc8c9",
-      "customer_label": "Brittny B.",
-      "created_at": "2026-11-04T10:31:52-06:00",
-      "promised_at": "2026-11-04T17:00:00-06:00",
-      "status": "picked_up",
-      "risk": null,
-      "risk_reason": null,
-      "lines": [
-        {
-          "product_id": 8353,
-          "name": "JERZEES DRI-⁠POWER® 50/50 Youth T-Shirt",
-          "category": "Apparel",
-          "qty": 1,
-          "unit_price_cents": 450,
-          "price_source": "woocommerce_order"
-        },
-        {
-          "product_id": 8353,
-          "name": "JERZEES DRI-⁠POWER® 50/50 Youth T-Shirt",
-          "category": "Apparel",
-          "qty": 1,
-          "unit_price_cents": 450,
-          "price_source": "woocommerce_order"
-        },
-        {
-          "product_id": 8439,
-          "name": "JERZEES DRI-⁠POWER® 50/50 T-⁠Shirt",
-          "category": "Adults",
-          "qty": 2,
-          "unit_price_cents": 450,
-          "price_source": "woocommerce_order"
-        },
-        {
-          "product_id": 8439,
-          "name": "JERZEES DRI-⁠POWER® 50/50 T-⁠Shirt",
-          "category": "Adults",
-          "qty": 1,
-          "unit_price_cents": 450,
-          "price_source": "woocommerce_order"
-        },
-        {
-          "product_id": 8439,
-          "name": "JERZEES DRI-⁠POWER® 50/50 T-⁠Shirt",
-          "category": "Adults",
-          "qty": 6,
-          "unit_price_cents": 450,
-          "price_source": "woocommerce_order"
-        },
-        {
-          "product_id": 8439,
-          "name": "JERZEES DRI-⁠POWER® 50/50 T-⁠Shirt",
-          "category": "Adults",
-          "qty": 1,
-          "unit_price_cents": 950,
-          "price_source": "woocommerce_order"
-        },
-        {
-          "product_id": 8439,
-          "name": "JERZEES DRI-⁠POWER® 50/50 T-⁠Shirt",
-          "category": "Adults",
-          "qty": 2,
-          "unit_price_cents": 450,
-          "price_source": "woocommerce_order"
-        },
-        {
-          "product_id": 8439,
-          "name": "JERZEES DRI-⁠POWER® 50/50 T-⁠Shirt",
-          "category": "Adults",
-          "qty": 1,
-          "unit_price_cents": 750,
-          "price_source": "woocommerce_order"
-        }
-      ],
-      "gang_sheets": 0,
-      "printer": null,
-      "subtotal_cents": 7550,
-      "total_cents": 7550,
-      "total_note": "Excludes tax",
-      "payment": {
-        "method": "other",
-        "state": "paid",
-        "gateway": "stripe_klarna"
-      },
-      "fulfillment": {
-        "type": "pickup"
-      },
-      "art_check": null,
-      "pickup_text": null,
-      "notes": null
-    },
-    {
-      "id": "ord_68894",
-      "number": "68894",
-      "channel": "web",
-      "source_system": "WooCommerce",
-      "customer_id": "cust_gb5a27961a2",
-      "customer_label": "Ashley R.",
-      "created_at": "2026-11-04T09:54:17-06:00",
-      "promised_at": "2026-11-04T17:00:00-06:00",
-      "status": "picked_up",
-      "risk": null,
-      "risk_reason": null,
-      "lines": [
-        {
-          "product_id": 8439,
-          "name": "JERZEES DRI-⁠POWER® 50/50 T-⁠Shirt",
-          "category": "Adults",
-          "qty": 1,
-          "unit_price_cents": 450,
-          "price_source": "woocommerce_order"
-        },
-        {
-          "product_id": 8439,
-          "name": "JERZEES DRI-⁠POWER® 50/50 T-⁠Shirt",
-          "category": "Adults",
-          "qty": 1,
-          "unit_price_cents": 450,
-          "price_source": "woocommerce_order"
-        }
-      ],
-      "gang_sheets": 0,
-      "printer": null,
-      "subtotal_cents": 900,
-      "total_cents": 900,
-      "total_note": "Excludes tax",
-      "payment": {
-        "method": "card",
-        "state": "paid",
-        "gateway": "stripe"
-      },
-      "fulfillment": {
-        "type": "pickup"
-      },
-      "art_check": null,
       "pickup_text": null,
       "notes": null
     }

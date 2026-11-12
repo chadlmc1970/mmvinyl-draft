@@ -3,8 +3,8 @@
     "schema_version": "1.1",
     "sample": false,
     "sample_note": null,
-    "generated_at": "2026-11-12T12:19:32-06:00",
-    "as_of": "2026-11-12T12:19:32-06:00",
+    "generated_at": "2026-11-12T12:39:20-06:00",
+    "as_of": "2026-11-12T12:39:20-06:00",
     "timezone": "America/Chicago",
     "currency": "USD",
     "money_unit": "cents",
@@ -72,10 +72,40 @@
       "channel": "web",
       "fulfillment": "pickup",
       "pickup_text": null
+    },
+    {
+      "order_id": "ord_69263",
+      "number": "69263",
+      "promised_at": "2026-11-12T17:00:00-06:00",
+      "status": "printing",
+      "risk": null,
+      "risk_reason": null,
+      "customer_label": "07/10/1984",
+      "summary": "1 x Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-F",
+      "gang_sheets": 1,
+      "printer": null,
+      "channel": "web",
+      "fulfillment": "pickup",
+      "pickup_text": null
+    },
+    {
+      "order_id": "ord_69264",
+      "number": "69264",
+      "promised_at": "2026-11-12T17:00:00-06:00",
+      "status": "printing",
+      "risk": null,
+      "risk_reason": null,
+      "customer_label": "Tempest L.",
+      "summary": "1 x Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-F",
+      "gang_sheets": 1,
+      "printer": null,
+      "channel": "web",
+      "fulfillment": "pickup",
+      "pickup_text": null
     }
   ],
   "counts": {
-    "open": 4,
+    "open": 6,
     "done_today": 15,
     "ready_waiting": null,
     "at_risk": null

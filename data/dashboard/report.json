@@ -8,7 +8,7 @@
       "Web sales were $7,100, down 4.6% on the week before.",
       "68 repeat customers have gone quiet past their usual gap."
     ],
-    "note": "Store (Shopkeep) sales are not included. November is at 360 gang sheets so far, October finished at 1176. Sales include shipping charges and exclude tax.",
+    "note": "Store (Shopkeep) sales are not included. November is at 362 gang sheets so far, October finished at 1176. Sales include shipping charges and exclude tax.",
     "next_week": [
       "Call Lakedra H.. Usual order gap is 1 days and it has been 5.",
       "Call Drucilla W.. Usual order gap is 5 days and it has been 16.",
@@ -28,7 +28,7 @@
   "gang_sheets": {
     "this_week": 233,
     "prior_week": 245,
-    "month_to_date": 360,
+    "month_to_date": 362,
     "september_baseline": 1176,
     "month_label": "November",
     "prior_label": "October",
@@ -38,7 +38,7 @@
   "by_category": [
     {
       "category": "DTF [Direct to Film]",
-      "revenue_cents": 2154668,
+      "revenue_cents": 2163576,
       "prev_period_cents": 2577872,
       "share_pct": 76
     },
@@ -233,8 +233,8 @@
     "schema_version": "1.1",
     "sample": false,
     "sample_note": null,
-    "generated_at": "2026-11-12T12:19:32-06:00",
-    "as_of": "2026-11-12T12:19:32-06:00",
+    "generated_at": "2026-11-12T12:39:20-06:00",
+    "as_of": "2026-11-12T12:39:20-06:00",
     "timezone": "America/Chicago",
     "currency": "USD",
     "money_unit": "cents",

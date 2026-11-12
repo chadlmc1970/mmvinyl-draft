@@ -3,8 +3,8 @@
     "schema_version": "1.1",
     "sample": false,
     "sample_note": null,
-    "generated_at": "2026-11-12T12:19:32-06:00",
-    "as_of": "2026-11-12T12:19:32-06:00",
+    "generated_at": "2026-11-12T12:39:20-06:00",
+    "as_of": "2026-11-12T12:39:20-06:00",
     "timezone": "America/Chicago",
     "currency": "USD",
     "money_unit": "cents",
@@ -253,9 +253,9 @@
     },
     {
       "date": "2026-09-17",
-      "web_cents": 155835,
+      "web_cents": 157794,
       "store_cents": null,
-      "orders_web": 70,
+      "orders_web": 71,
       "orders_store": null
     },
     {
@@ -645,9 +645,9 @@
     },
     {
       "date": "2026-11-12",
-      "web_cents": 40085,
+      "web_cents": 48993,
       "store_cents": null,
-      "orders_web": 19,
+      "orders_web": 21,
       "orders_store": null
     }
   ],
@@ -694,10 +694,10 @@
     },
     {
       "week_start": "2026-09-14",
-      "web_cents": 660287,
+      "web_cents": 662246,
       "store_cents": null,
-      "orders": 229,
-      "total_cents": 660287,
+      "orders": 230,
+      "total_cents": 662246,
       "partial": false
     },
     {
@@ -758,10 +758,10 @@
     },
     {
       "week_start": "2026-11-09",
-      "web_cents": 320764,
+      "web_cents": 329672,
       "store_cents": null,
-      "orders": 122,
-      "total_cents": 320764,
+      "orders": 124,
+      "total_cents": 329672,
       "partial": true
     }
   ],
@@ -786,12 +786,12 @@
   },
   "current_week_to_date": {
     "week_start": "2026-11-09",
-    "total_cents": 320764
+    "total_cents": 329672
   },
   "by_category_28d": [
     {
       "category": "DTF [Direct to Film]",
-      "revenue_cents": 2154668,
+      "revenue_cents": 2163576,
       "prev_period_cents": 2577872,
       "share_pct": 76
     },
@@ -909,10 +909,10 @@
       "product_id": 60967,
       "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P &amp; 10A SAT FOR SAME DAY",
       "category": "DTF [Direct to Film]",
-      "unit_price_cents": 700,
+      "unit_price_cents": 7672,
       "price_note": null,
-      "units_30d": 1042,
-      "revenue_30d_cents": 2448318,
+      "units_30d": 1044,
+      "revenue_30d_cents": 2457226,
       "real_units": true
     },
     {
@@ -1007,9 +1007,9 @@
     }
   ],
   "averages": {
-    "avg_order_web_cents": 2840,
+    "avg_order_web_cents": 2843,
     "avg_order_store_cents": null,
-    "orders_per_open_day": 37.5,
+    "orders_per_open_day": 37.6,
     "reseller_share_of_revenue_pct": null,
     "repeat_order_rate_pct": null
   }

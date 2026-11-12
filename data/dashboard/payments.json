@@ -3,8 +3,8 @@
     "schema_version": "1.1",
     "sample": false,
     "sample_note": null,
-    "generated_at": "2026-11-12T12:19:32-06:00",
-    "as_of": "2026-11-12T12:19:32-06:00",
+    "generated_at": "2026-11-12T12:39:20-06:00",
+    "as_of": "2026-11-12T12:39:20-06:00",
     "timezone": "America/Chicago",
     "currency": "USD",
     "money_unit": "cents",
@@ -17,18 +17,18 @@
     {
       "key": "card",
       "label": "Cards",
-      "amount_cents": 2179717,
-      "count": 811,
-      "failed_count": 14,
-      "fail_rate_pct": 1.7,
+      "amount_cents": 2180953,
+      "count": 812,
+      "failed_count": 15,
+      "fail_rate_pct": 1.8,
       "live_status": "live",
       "share_pct": 77
     },
     {
       "key": "paypal",
       "label": "PayPal",
-      "amount_cents": 597646,
-      "count": 177,
+      "amount_cents": 605318,
+      "count": 178,
       "failed_count": 0,
       "fail_rate_pct": 0,
       "live_status": "live",
@@ -56,6 +56,14 @@
     }
   ],
   "failures": [
+    {
+      "id": "fail_ord_69265",
+      "date": "2026-11-12",
+      "method": "card",
+      "reason": null,
+      "order_number": "69265",
+      "recovered": false
+    },
     {
       "id": "fail_ord_69240",
       "date": "2026-11-12",
@@ -171,7 +179,7 @@
   ],
   "payouts": [],
   "web_vs_store": {
-    "web_cents": 2826496,
+    "web_cents": 2835404,
     "store_cents": null
   },
   "note": "Payouts and store payments are not connected yet."
