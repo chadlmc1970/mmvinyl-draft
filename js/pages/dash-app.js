@@ -9,12 +9,14 @@
     { key: 'orders', label: 'Orders', icon: 'orders' },
     { key: 'gangs', label: 'Gang Sheets', icon: 'sheet' },
     { key: 'social', label: 'Social', icon: 'social' },
+    { key: 'marketing', label: 'Marketing', icon: 'trend' },
     { key: 'customers', label: 'Customers', icon: 'users' },
     { key: 'money', label: 'Money', icon: 'money' },
+    { key: 'daysoff', label: 'Days Off', icon: 'calendar' },
     { key: 'settings', label: 'Settings', icon: 'gear' },
     { key: 'guide', label: 'Guide', icon: 'help' }
   ];
-  var ALIAS = { resellers: 'customers', messages: 'customers', reviews: 'customers', sales: 'money', payments: 'money', shipping: 'orders', sheets: 'orders', inventory: 'orders', integrations: 'settings' };
+  var ALIAS = { 'days-off': 'daysoff', trends: 'marketing', market: 'marketing', resellers: 'customers', messages: 'customers', reviews: 'customers', sales: 'money', payments: 'money', shipping: 'orders', sheets: 'orders', inventory: 'orders', integrations: 'settings' };
 
   var current = null;
   var tickers = [];

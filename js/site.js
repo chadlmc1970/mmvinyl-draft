@@ -121,6 +121,46 @@
     if (document.readyState !== 'loading') fn();
     else document.addEventListener('DOMContentLoaded', fn);
   };
+
+  // Lazy images that were never scrolled into view print as blank boxes.
+  // Switch every lazy image to eager, wait for them all (max 8s), then print.
+  function eagerImages() {
+    var imgs = Array.prototype.slice.call(document.querySelectorAll('img'));
+    imgs.forEach(function (img) {
+      if (img.loading === 'lazy' || img.getAttribute('loading') === 'lazy') img.loading = 'eager';
+    });
+    return imgs;
+  }
+
+  MM.printPage = function () {
+    var pending = eagerImages().filter(function (img) {
+      return !img.complete;
+    });
+    var done = false;
+    function go() {
+      if (done) return;
+      done = true;
+      window.print();
+    }
+    if (!pending.length) return go();
+    var left = pending.length;
+    pending.forEach(function (img) {
+      function one() {
+        left -= 1;
+        if (left <= 0) go();
+      }
+      img.addEventListener('load', one, { once: true });
+      img.addEventListener('error', one, { once: true });
+    });
+    setTimeout(go, 8000);
+  };
+
+  // Cmd+P / browser menu printing: load everything as early as we can.
+  window.addEventListener('beforeprint', eagerImages);
+  if (window.matchMedia) {
+    var mq = window.matchMedia('print');
+    if (mq.addEventListener) mq.addEventListener('change', function (e) { if (e.matches) eagerImages(); });
+  }
 })();
 
 ;
@@ -233,6 +273,7 @@
   }
 
   function scheduleFor(day, cfg) {
+    if (cfg.noPrintDates && cfg.noPrintDates.indexOf(dateKey(day)) !== -1) return null;
     var h = hoursFor(day, cfg);
     return h && h.cutoff ? h : null;
   }
@@ -347,6 +388,246 @@
   MM.ready(function () {
     render();
     setInterval(render, 15000);
+  });
+})();
+
+;
+/* 12-days-off-logic.js */
+(function (root, factory) {
+  var api = factory(function () {
+    return (root.MM && root.MM.cutoff) || (typeof require === 'function' ? require('./10-cutoff-logic.js') : null);
+  });
+  if (typeof module !== 'undefined' && module.exports) {
+    module.exports = api;
+  } else {
+    root.MM = root.MM || {};
+    root.MM.daysOff = api;
+  }
+})(typeof window !== 'undefined' ? window : globalThis, function (getCutoff) {
+  'use strict';
+
+  // Days off: days the owner is not printing. Orders stay open; anything placed then prints on the next printing day.
+  var WEEKDAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  var MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  var KEY_RE = /^(\d{4})-(\d{2})-(\d{2})$/;
+  var LOOKAHEAD = 60;
+
+  function pad(n) {
+    return n < 10 ? '0' + n : String(n);
+  }
+
+  function parseKey(key) {
+    var m = KEY_RE.exec(String(key || ''));
+    if (!m) return null;
+    var t = new Date(Date.UTC(+m[1], +m[2] - 1, +m[3]));
+    if (t.getUTCFullYear() !== +m[1] || t.getUTCMonth() !== +m[2] - 1 || t.getUTCDate() !== +m[3]) return null;
+    return { y: +m[1], m: +m[2], d: +m[3], wd: t.getUTCDay() };
+  }
+
+  function keyOf(day) {
+    return day.y + '-' + pad(day.m) + '-' + pad(day.d);
+  }
+
+  function addDays(day, n) {
+    var t = new Date(Date.UTC(day.y, day.m - 1, day.d + n));
+    return { y: t.getUTCFullYear(), m: t.getUTCMonth() + 1, d: t.getUTCDate(), wd: t.getUTCDay() };
+  }
+
+  function label(day) {
+    return WEEKDAYS[day.wd] + ', ' + MONTHS[day.m - 1] + ' ' + day.d;
+  }
+
+  // Accepts ["2026-11-21"] or [{date: "2026-11-21", note: "..."}]; returns sorted, unique, valid date keys.
+  function normalize(list) {
+    var seen = {};
+    (Array.isArray(list) ? list : []).forEach(function (item) {
+      var k = typeof item === 'string' ? item : item && item.date;
+      if (parseKey(k)) seen[k] = true;
+    });
+    return Object.keys(seen).sort();
+  }
+
+  function isOff(day, offs) {
+    return offs.indexOf(keyOf(day)) !== -1;
+  }
+
+  // A printing day is any day the shop has hours (her regular hours plus holiday closures and special days) that is not a day off.
+  function isPrintDay(day, cfg, offs) {
+    return !!getCutoff().hoursFor(day, cfg) && !isOff(day, offs || []);
+  }
+
+  function nextPrintDay(fromKey, cfg, list) {
+    var from = parseKey(fromKey);
+    if (!from) return null;
+    var offs = normalize(list);
+    for (var i = 1; i <= LOOKAHEAD; i++) {
+      var d = addDays(from, i);
+      if (isPrintDay(d, cfg, offs)) return keyOf(d);
+    }
+    return null;
+  }
+
+  // The day an order placed at `now` gets printed: today if it is a printing day and the cutoff (or closing time) has not passed, otherwise the next printing day.
+  function printDayFor(now, cfg, list) {
+    var cut = getCutoff();
+    var offs = normalize(list);
+    var p = cut.zoneParts(now instanceof Date ? now : new Date(now), cfg.timeZone);
+    var today = { y: p.y, m: p.m, d: p.d, wd: p.wd };
+    var h = cut.hoursFor(today, cfg);
+    if (h && !isOff(today, offs)) {
+      var last = (h.cutoff || h.close).split(':');
+      if (p.h * 60 + p.mi < +last[0] * 60 + +last[1]) return keyOf(today);
+    }
+    return nextPrintDay(keyOf(today), cfg, offs);
+  }
+
+  // Banner shows from `windowDays` days before a day off through the day off itself (Chicago calendar days).
+  function banner(now, cfg, list, opts) {
+    var cut = getCutoff();
+    var windowDays = opts && opts.windowDays != null ? opts.windowDays : 3;
+    var offs = normalize(list);
+    if (!offs.length) return null;
+    var date = now instanceof Date ? now : new Date(now);
+    var p = cut.zoneParts(date, cfg.timeZone);
+    var today = { y: p.y, m: p.m, d: p.d, wd: p.wd };
+    for (var i = 0; i <= windowDays; i++) {
+      var day = addDays(today, i);
+      if (!isOff(day, offs)) continue;
+      var nextKey = nextPrintDay(keyOf(day), cfg, offs);
+      var next = parseKey(nextKey);
+      var printsOn = printDayFor(date, cfg, offs);
+      var normally = printDayFor(date, cfg, []);
+      var placedNow = i === 0 || (normally && offs.indexOf(normally) !== -1 && printsOn === nextKey);
+      var when = i === 0 ? 'today, ' + label(day) : label(day);
+      var after = next
+        ? (placedNow ? 'Orders placed now still go through and print ' : 'Orders placed that day still go through and print ') + label(next) + '.'
+        : 'Orders still go through and print on our next open day.';
+      return {
+        date: keyOf(day),
+        dateLabel: label(day),
+        isToday: i === 0,
+        nextPrint: nextKey,
+        nextPrintLabel: next ? label(next) : null,
+        message: 'Heads up: we\'re not printing ' + when + '. ' + after
+      };
+    }
+    return null;
+  }
+
+  return {
+    normalize: normalize,
+    parseKey: parseKey,
+    keyOf: keyOf,
+    addDays: addDays,
+    label: label,
+    isPrintDay: isPrintDay,
+    nextPrintDay: nextPrintDay,
+    printDayFor: printDayFor,
+    banner: banner
+  };
+});
+
+;
+/* 13-days-off.js */
+(function () {
+  'use strict';
+  var MM = window.MM;
+  if (!MM || !MM.cutoff || !MM.daysOff) return;
+  var root = document.documentElement;
+  if (root.hasAttribute('data-days-off-on')) return;
+  root.setAttribute('data-days-off-on', '');
+
+  var cfg = MM.config || {};
+  var schedule = cfg.schedule || MM.cutoff.DEFAULT_CONFIG;
+  var src = cfg.daysOff || (/(^|\.)mandmvinyl\.com$/.test(location.hostname) ? { url: '/wp-json/mm/v1/days-off' } : {});
+  var now = function () {
+    return MM.cutoff.now ? MM.cutoff.now() : new Date();
+  };
+
+  function ready(fn) {
+    if (MM.ready) return MM.ready(fn);
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fn);
+    else fn();
+  }
+
+  // Example dates for non-store builds: ?dayoff=YYYY-MM-DD, otherwise the next Saturday.
+  function exampleDates() {
+    var q = null;
+    try {
+      q = new URLSearchParams(location.search).get('dayoff');
+    } catch (e) {}
+    if (q) return q.split(',');
+    var p = MM.cutoff.zoneParts(now(), schedule.timeZone);
+    var today = { y: p.y, m: p.m, d: p.d, wd: p.wd };
+    return [MM.daysOff.keyOf(MM.daysOff.addDays(today, (6 - today.wd + 7) % 7))];
+  }
+
+  function load() {
+    if (src.url && window.fetch) {
+      return fetch(src.url, { credentials: 'omit', headers: { Accept: 'application/json' } })
+        .then(function (r) {
+          return r.ok ? r.json() : null;
+        })
+        .then(function (j) {
+          return (j && j.dates) || [];
+        })
+        .catch(function () {
+          return [];
+        });
+    }
+    return Promise.resolve(src.sample ? exampleDates() : []);
+  }
+
+  function slot() {
+    var el = document.querySelector('[data-days-off]');
+    if (el || document.querySelector('[data-od]')) return el;
+    var bar = document.querySelector('.announce');
+    el = document.createElement('p');
+    el.className = 'dayoff' + (bar ? '' : ' dayoff--top');
+    el.setAttribute('data-days-off', '');
+    if (!document.querySelector('link[href*="css/site.css"]')) {
+      el.style.cssText = 'margin:0;padding:.6rem 1rem;background:#92D1A9;color:#060606;border-bottom:1px solid #000;font:600 15px/1.4 Inter,system-ui,-apple-system,sans-serif;text-align:center;';
+    }
+    if (bar) bar.insertBefore(el, bar.firstChild);
+    else document.body.insertBefore(el, document.body.firstChild);
+    return el;
+  }
+
+  function render(dates) {
+    schedule.noPrintDates = dates;
+    if (MM.cutoff.refresh) MM.cutoff.refresh();
+    var b = MM.daysOff.banner(now(), schedule, dates, { windowDays: src.sample ? 6 : 3 });
+    var el = document.querySelector('[data-days-off]');
+    if (!b) {
+      if (el) el.hidden = true;
+      root.removeAttribute('data-day-off');
+      return;
+    }
+    el = el || slot();
+    if (!el) return;
+    el.textContent = '';
+    if (src.label) {
+      var tag = document.createElement('span');
+      tag.className = 'dayoff__tag';
+      tag.textContent = src.label;
+      el.appendChild(tag);
+    }
+    var msg = document.createElement('span');
+    msg.className = 'dayoff__msg';
+    msg.textContent = b.message;
+    el.appendChild(msg);
+    el.hidden = false;
+    root.setAttribute('data-day-off', b.isToday ? 'today' : 'soon');
+  }
+
+  ready(function () {
+    load().then(function (list) {
+      var dates = MM.daysOff.normalize(list);
+      render(dates);
+      setInterval(function () {
+        render(dates);
+      }, 60000);
+    });
   });
 })();
 

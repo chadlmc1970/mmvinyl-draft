@@ -13,7 +13,7 @@
   function initPrint() {
     MM.$$('[data-print]').forEach(function (b) {
       b.addEventListener('click', function () {
-        window.print();
+        MM.printPage();
       });
     });
   }

@@ -75,7 +75,7 @@
     var sizes = OD.charts.rank(T.season.sizes.map(function (s) {
       return { label: s.label, sub: 'was ' + Math.round(s.prior_share_pct) + '%', value: s.share_pct, display: Math.round(s.share_pct) + '%' };
     }));
-    var side = OD.card('What people are buying', '<div class="od-gang-take"><b>' + OD.num(peak.sheets) + '</b><span>sheets in ' + esc(peak.label) + ', the biggest month so far, from ' + OD.num(peak.customers) + ' customers.</span></div>' + sizes,
+    var side = OD.card('What people are buying', '<div class="od-gang-take"><b>' + OD.num(peak.sheets) + '</b><span>sheets in ' + esc(peak.label) + ', the biggest month so far, from ' + OD.num(peak.customers) + ' customers.</span></div>' + sizes + '<div data-gang-mkt></div>',
       { sub: 'Sheet lengths, share of sheets this season.', cls: 'od-gang-card' });
     return strip + '<div class="od-gang-main">' + chart + side + '</div>';
   }
@@ -83,6 +83,16 @@
   function drawChart(root, T) {
     var el = root.querySelector('[data-gang-chart]');
     if (!el) return;
+    var note = root.querySelector('[data-gang-mkt]');
+    if (note && OD.market) {
+      OD.market().then(function (M) {
+        if (!M || !M.terms || !note.isConnected) return;
+        var hot = M.terms.map(function (t) { return { t: t, s: OD.marketSignal(t) }; }).filter(function (x) { return x.s.tone === 'ok'; })
+          .sort(function (a, b) { return (b.t.next6_last_year || b.t.now) - (a.t.next6_last_year || a.t.now); })[0];
+        if (!hot) return;
+        note.innerHTML = '<p class="od-mkt-note"><b>Market check:</b> ' + esc(hot.t.label) + ' searches in Louisiana are ' + esc(hot.s.tag.toLowerCase()) + '. ' + esc(hot.s.text) + ' <a href="#/marketing">See Marketing</a></p>';
+      });
+    }
     var vals = T.monthly.map(function (m) { return m.sheets; });
     var fullVals = T.monthly.filter(function (m) { return !m.partial; }).map(function (m) { return m.sheets; });
     OD.charts.bars(el, {

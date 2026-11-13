@@ -43,6 +43,11 @@ jobs:
             .live/data-live/dashboard/social-learning.json
           key: social-${{ github.run_id }}
           restore-keys: social-
+      - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: .live/data-live/dashboard/market.json
+          key: market-${{ github.run_id }}
+          restore-keys: market-
       - name: Pull the store
         env:
           WC_KEY: ${{ secrets.WC_KEY }}
@@ -58,11 +63,12 @@ jobs:
           node .live/scripts/pull-live.mjs
           node .live/scripts/pull-gang-insights.mjs
           node .live/scripts/pull-social-learning.mjs || echo '::warning::Social learning failed, keeping the last results'
+          # Market trends (Google Trends, free): once a day in the 08 UTC pass, or when no saved copy exists yet.
+          if [ ! -f .live/data-live/dashboard/market.json ] || { [ "$(date -u +%H)" = 08 ] && [ "$(date -u +%-M)" -lt 30 ]; }; then
+            node .live/scripts/pull-market.mjs || echo '::warning::Market trends failed, keeping the last results'
+          fi
           rm -f .live/.env.woo .live/data-live/dashboard/social.json
-      - name: Send the fresh numbers to the owner dashboard on mandmvinyl.com
-        env:
-          MM_OWNER_DROP_KEY: ${{ secrets.MM_OWNER_DROP_KEY }}
-        run: node .live/scripts/push-owner.mjs .live/data-live/dashboard
+          cp .live/data-live/dashboard/*.json data/dashboard/
       - name: Keep runner files out of the site
         run: |
           mkdir -p "$RUNNER_TEMP/site"

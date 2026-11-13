@@ -9,7 +9,10 @@
       "format": "Text graphic",
       "hook": "Deadline",
       "is_test": false,
-      "buffer": { "instagram": "6aeb9bbef0e1705c28e69aec", "facebook": "6aeb9bc7b080155a2dc34020" }
+      "buffer": {
+        "instagram": "6aeb9bbef0e1705c28e69aec",
+        "facebook": "6aeb9bc7b080155a2dc34020"
+      }
     },
     {
       "key": "2026-11-05-how-same-day-works",
@@ -19,7 +22,10 @@
       "format": "Text graphic",
       "hook": "Step by step",
       "is_test": false,
-      "buffer": { "instagram": "6aeb9bd81c31d2bdeba1f85b", "facebook": "6aeb9bd966cdd5eb285651ff" }
+      "buffer": {
+        "instagram": "6aeb9bd81c31d2bdeba1f85b",
+        "facebook": "6aeb9bd966cdd5eb285651ff"
+      }
     },
     {
       "key": "2026-11-06-one-sheet",
@@ -29,7 +35,10 @@
       "format": "Text graphic",
       "hook": "Value",
       "is_test": false,
-      "buffer": { "instagram": "6aeb9bd91c31d2bdeba1f8c4", "facebook": "6aeb9bda66cdd5eb2856522e" }
+      "buffer": {
+        "instagram": "6aeb9bd91c31d2bdeba1f8c4",
+        "facebook": "6aeb9bda66cdd5eb2856522e"
+      }
     },
     {
       "key": "2026-11-09-three-mistakes",
@@ -39,7 +48,10 @@
       "format": "Text graphic",
       "hook": "Mistakes to avoid",
       "is_test": false,
-      "buffer": { "instagram": "6aeb9bda400b189b316e0e4b", "facebook": "6aeb9bdb400b189b316e0e92" }
+      "buffer": {
+        "instagram": "6aeb9bda400b189b316e0e4b",
+        "facebook": "6aeb9bdb400b189b316e0e92"
+      }
     },
     {
       "key": "2026-11-10-mardi-gras",
@@ -49,7 +61,125 @@
       "format": "Text graphic",
       "hook": "Deadline",
       "is_test": false,
-      "buffer": { "instagram": "6aeb9bdc0bb7d41592a5a0cc", "facebook": "6aeb9bddb080155a2dc3483b" }
+      "buffer": {
+        "instagram": "6aeb9bdc0bb7d41592a5a0cc",
+        "facebook": "6aeb9bddb080155a2dc3483b"
+      }
+    },
+    {
+      "key": "2026-11-13-new-website-reel",
+      "title": "NEW WEBSITE launch reel",
+      "image": "social/launch/S1-reel-new-website-cover.jpg",
+      "topic": "New website",
+      "format": "Reel",
+      "hook": "Launch",
+      "is_test": false,
+      "buffer": {
+        "instagram": "6af708b2d414da1f7da70d71",
+        "facebook": "6af708b110ced6793b37884f"
+      }
+    },
+    {
+      "key": "2026-11-13-new-website-carousel",
+      "title": "Ordering just got easier",
+      "image": "social/launch/S1-carousel-1.jpg",
+      "topic": "New website",
+      "format": "Carousel",
+      "hook": "What changed",
+      "is_test": false,
+      "buffer": {
+        "instagram": "6af708bc66ff9797d882e1dd",
+        "facebook": "6af708b3d414da1f7da70e24"
+      }
+    },
+    {
+      "key": "2026-11-13-learning-center-reel",
+      "title": "NEW LEARNING CENTER reel",
+      "image": "social/launch/L1-reel-learning-center-cover.jpg",
+      "topic": "How-to",
+      "format": "Reel",
+      "hook": "By popular demand",
+      "is_test": false,
+      "buffer": {
+        "instagram": "6af708bed414da1f7da71351",
+        "facebook": "6af708bdbd1182b0d3f437a7"
+      }
+    },
+    {
+      "key": "2026-11-14-saturday-cutoff",
+      "title": "Saturday 10 AM cutoff",
+      "image": "social/launch/S1-saturday-cutoff.jpg",
+      "topic": "Same-day",
+      "format": "Photo graphic",
+      "hook": "Deadline",
+      "is_test": false,
+      "buffer": {
+        "instagram": "6af708bfbd1182b0d3f43845",
+        "facebook": "6af708be66ff9797d882e23d"
+      }
+    },
+    {
+      "key": "2026-11-14-learning-center-carousel",
+      "title": "How to build a gang sheet",
+      "image": "social/launch/L1-carousel-1.jpg",
+      "topic": "How-to",
+      "format": "Carousel",
+      "hook": "Save this",
+      "is_test": false,
+      "buffer": {
+        "instagram": "6af708c09a21933ffad72b3c",
+        "facebook": "6af708bf10ced6793b378bcc"
+      }
+    },
+    {
+      "key": "2026-11-14-gifts-reel",
+      "title": "Personalized Christmas gifts",
+      "image": "social/launch/L2-reel-gifts-cover.jpg",
+      "topic": "Seasonal",
+      "format": "Reel",
+      "hook": "Gift ideas",
+      "is_test": false,
+      "buffer": {
+        "instagram": "6af708c166ff9797d882e31e",
+        "facebook": "6af708c010ced6793b378c27"
+      }
+    },
+    {
+      "key": "2026-11-15-resellers-reel",
+      "title": "You press. We print.",
+      "image": "social/launch/S1-reel-resellers-cover.jpg",
+      "topic": "Same-day",
+      "format": "Reel",
+      "hook": "Resellers",
+      "is_test": false,
+      "buffer": {
+        "instagram": "6af708c2d414da1f7da714b7",
+        "facebook": "6af708c210ced6793b378cbb"
+      }
+    },
+    {
+      "key": "2026-11-15-gifts-carousel",
+      "title": "5 personalized gift ideas",
+      "image": "social/launch/L2-gifts-1.jpg",
+      "topic": "Seasonal",
+      "format": "Carousel",
+      "hook": "Gift ideas",
+      "is_test": false,
+      "buffer": {
+        "instagram": "6af708d89a21933ffad73255"
+      }
+    },
+    {
+      "key": "2026-11-15-sunday-teaser",
+      "title": "Build it tonight, order Monday",
+      "image": "social/launch/L3-sunday-teaser.jpg",
+      "topic": "How-to",
+      "format": "Photo graphic",
+      "hook": "Deadline",
+      "is_test": false,
+      "buffer": {
+        "instagram": "6af708d8bd1182b0d3f43dd6"
+      }
     }
   ]
 }

@@ -102,6 +102,8 @@
     arrow: '<path d="M5 12h14m-5-5 5 5-5 5"/>',
     send: '<path d="M4 12 20 4l-4 16-4.5-6.5zM11.5 13.5 20 4"/>',
     clock: '<circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/>',
+    trend: '<path d="M4 17l5-5 4 4 7-8"/><path d="M15 8h5v5"/>',
+    calendar: '<rect x="4" y="5" width="16" height="15.5" rx="2"/><path d="M4 9.5h16M8.5 3v4M15.5 3v4"/>',
     warn: '<path d="M12 4 3 19.5h18zM12 10v4.5M12 17.3v.2"/>',
     search: '<circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/>',
     phone: '<path d="M6.6 3.5h3l1.3 4-2 1.4a11 11 0 0 0 5.2 5.2l1.4-2 4 1.3v3a2 2 0 0 1-2.2 2A15.5 15.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z"/>',
