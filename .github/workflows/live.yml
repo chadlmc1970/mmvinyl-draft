@@ -59,7 +59,10 @@ jobs:
           node .live/scripts/pull-gang-insights.mjs
           node .live/scripts/pull-social-learning.mjs || echo '::warning::Social learning failed, keeping the last results'
           rm -f .live/.env.woo .live/data-live/dashboard/social.json
-          cp .live/data-live/dashboard/*.json data/dashboard/
+      - name: Send the fresh numbers to the owner dashboard on mandmvinyl.com
+        env:
+          MM_OWNER_DROP_KEY: ${{ secrets.MM_OWNER_DROP_KEY }}
+        run: node .live/scripts/push-owner.mjs .live/data-live/dashboard
       - name: Keep runner files out of the site
         run: |
           mkdir -p "$RUNNER_TEMP/site"

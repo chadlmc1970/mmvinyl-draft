@@ -1,61 +1,62 @@
 {
   "meta": {
     "schema_version": "1.1",
-    "sample": false,
-    "sample_note": null,
-    "generated_at": "2026-11-12T19:53:44-06:00",
-    "as_of": "2026-11-12T19:53:44-06:00",
+    "sample": true,
+    "sample_note": "Sample data. Figures are illustrative except where a field is marked real.",
+    "generated_at": "2026-10-26T12:00:00-05:00",
+    "as_of": "2026-10-26T11:42:00-05:00",
     "timezone": "America/Chicago",
     "currency": "USD",
     "money_unit": "cents",
-    "source": "Derived from live WooCommerce orders. Fields marked null are not connected yet.",
-    "store_connected": false,
-    "store_note": "Shopkeep is not connected yet. Store figures are not included."
+    "source": "Derived from the other files"
   },
   "today": {
-    "orders_today": 40,
-    "open_in_queue": 4,
-    "done_today": 36,
-    "ready_waiting": null,
-    "at_risk": null,
-    "sheets_so_far_today": 55,
-    "revenue_today_cents": 92286,
-    "quotes_unanswered": null,
-    "applications_pending": null,
-    "texts_not_sent": null
+    "orders_today": 30,
+    "open_in_queue": 25,
+    "done_today": 5,
+    "ready_waiting": 10,
+    "at_risk": 5,
+    "sheets_so_far_today": 40,
+    "revenue_today_cents": 53118,
+    "quotes_unanswered": 3,
+    "applications_pending": 3,
+    "texts_not_sent": 6
   },
   "real": {
-    "products": 126
+    "gang_sheets_2026_09": 886,
+    "gang_sheets_2026_10_to_date": 912,
+    "products": 106,
+    "printers": 2
   },
   "week": {
-    "revenue_vs_prior_pct": -4.6
+    "revenue_vs_prior_pct": -1.7
   },
   "scorecard": {
     "gang_sheets_per_month": {
-      "value": 381,
-      "baseline": 1176,
+      "value": 912,
+      "baseline": 886,
       "real": true
     },
     "reseller_share_of_orders_pct": {
-      "value": null,
-      "note": "Reseller tier is not read from the store yet"
+      "value": 84,
+      "sample": true
     },
     "repeat_order_rate_pct": {
-      "value": 52,
-      "real": true,
-      "note": "Share of customers with more than one order in 90 days"
+      "value": 71,
+      "sample": true
     },
     "reprints_per_month": {
-      "value": null,
-      "note": "No reprint log yet"
+      "value": 21,
+      "prior": 24,
+      "sample": true
     },
     "status_calls_per_week": {
       "value": null,
       "note": "Desiree estimate needed"
     },
     "order_to_ready_minutes": {
-      "value": null,
-      "note": "Ready time is not recorded yet"
+      "value": 138,
+      "sample": true
     }
   }
 }
