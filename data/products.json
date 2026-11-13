@@ -1,8 +1,1233 @@
 {
- "generated": "2026-11-03",
+ "generated": "2026-11-12",
  "source": "https://mandmvinyl.com/wp-json/wc/store/v1/products (+ variations)",
- "count": 122,
+ "count": 126,
  "products": [
+  {
+   "id": 69168,
+   "slug": "fluffy-leopard-santa-iron-on",
+   "name": "Fluffy Leopard Santa Iron-on",
+   "display_name": "Fluffy Leopard Santa Iron-On",
+   "page_slug": "fluffy-leopard-santa-iron-on",
+   "type": "simple",
+   "permalink": "https://mandmvinyl.com/product/fluffy-leopard-santa-iron-on/",
+   "add_to_cart_url": "https://mandmvinyl.com/?add-to-cart=69168",
+   "sku": null,
+   "price": 8,
+   "price_max": 8,
+   "price_is_from": false,
+   "regular_price": null,
+   "price_display": "$8.00",
+   "price_note": null,
+   "on_sale": false,
+   "categories": [
+    "accessories"
+   ],
+   "primary_category": "accessories",
+   "live_categories": [],
+   "brand": null,
+   "short_description": null,
+   "short_description_source": null,
+   "description": null,
+   "attributes": [],
+   "sizes": [],
+   "colors": [],
+   "variants": [],
+   "images": [
+    {
+     "n": 1,
+     "alt": "Leopard print fluffy Santa face iron-on transfer on its clear carrier sheet, held up in the shop",
+     "kind": "owner_photo",
+     "width": 800,
+     "height": 800,
+     "original_width": 2560,
+     "original_height": 2560,
+     "src": "assets/img/products/fluffy-leopard-santa-iron-on-1-800.jpg",
+     "webp": {
+      "400": "assets/img/products/fluffy-leopard-santa-iron-on-1-400.webp",
+      "800": "assets/img/products/fluffy-leopard-santa-iron-on-1-800.webp",
+      "1200": "assets/img/products/fluffy-leopard-santa-iron-on-1-1200.webp"
+     },
+     "srcset_webp": "assets/img/products/fluffy-leopard-santa-iron-on-1-400.webp 400w, assets/img/products/fluffy-leopard-santa-iron-on-1-800.webp 800w, assets/img/products/fluffy-leopard-santa-iron-on-1-1200.webp 1200w",
+     "sizes_hint": "(max-width: 600px) 100vw, 600px",
+     "quality_score": 75,
+     "hero_ok": true,
+     "hero_tier": "good",
+     "flags": [],
+     "source_url": "https://mandmvinyl.com/wp-content/uploads/2026/11/img_1642-scaled.jpeg"
+    }
+   ],
+   "card_image": 1,
+   "stock_status": "instock",
+   "preorder": false,
+   "tags": [],
+   "audience": null,
+   "featured": false,
+   "featured_rank": null,
+   "is_gang_sheet_builder": false
+  },
+  {
+   "id": 68933,
+   "slug": "youth-comfort-color",
+   "name": "YOUTH Comfort Color",
+   "display_name": "Youth Comfort Colors Tee",
+   "page_slug": "youth-comfort-colors-tee",
+   "type": "variable",
+   "permalink": "https://mandmvinyl.com/product/youth-comfort-color/",
+   "add_to_cart_url": null,
+   "sku": null,
+   "price": 8.99,
+   "price_max": 8.99,
+   "price_is_from": false,
+   "regular_price": null,
+   "price_display": "$8.99",
+   "price_note": null,
+   "on_sale": false,
+   "categories": [
+    "blanks-apparel",
+    "apparel-youth"
+   ],
+   "primary_category": "blanks-apparel",
+   "live_categories": [
+    {
+     "id": 64,
+     "name": "Adults | Youth",
+     "slug": "adults-youth"
+    },
+    {
+     "id": 36,
+     "name": "Apparel",
+     "slug": "apparel"
+    },
+    {
+     "id": 40,
+     "name": "Youth",
+     "slug": "youth"
+    }
+   ],
+   "brand": "Comfort Colors",
+   "short_description": null,
+   "short_description_source": null,
+   "description": null,
+   "attributes": [
+    {
+     "name": "Color",
+     "key": "color",
+     "options": [
+      "Blossom",
+      "Chambray",
+      "White",
+      "Black",
+      "Orchid",
+      "Butter",
+      "True Navy"
+     ],
+     "used_for_variations": true
+    },
+    {
+     "name": "Size",
+     "key": "size",
+     "options": [
+      "YSM",
+      "YMD",
+      "YLG",
+      "YXL"
+     ],
+     "used_for_variations": true
+    }
+   ],
+   "sizes": [
+    {
+     "name": "YSM",
+     "variation_ids": [
+      69001,
+      68997,
+      68993,
+      68989,
+      68985,
+      68981,
+      68977
+     ]
+    },
+    {
+     "name": "YMD",
+     "variation_ids": [
+      69002,
+      68998,
+      68994,
+      68990,
+      68986,
+      68982,
+      68978
+     ]
+    },
+    {
+     "name": "YLG",
+     "variation_ids": [
+      69003,
+      68999,
+      68995,
+      68991,
+      68987,
+      68983,
+      68979
+     ]
+    },
+    {
+     "name": "YXL",
+     "variation_ids": [
+      69004,
+      69000,
+      68996,
+      68992,
+      68988,
+      68984,
+      68980
+     ]
+    }
+   ],
+   "colors": [
+    {
+     "name": "Blossom",
+     "variation_ids": [
+      68980,
+      68979,
+      68978,
+      68977
+     ],
+     "image": 1
+    },
+    {
+     "name": "Chambray",
+     "variation_ids": [
+      68984,
+      68983,
+      68982,
+      68981
+     ],
+     "image": 1
+    },
+    {
+     "name": "White",
+     "variation_ids": [
+      68988,
+      68987,
+      68986,
+      68985
+     ],
+     "image": 1
+    },
+    {
+     "name": "Black",
+     "variation_ids": [
+      68992,
+      68991,
+      68990,
+      68989
+     ],
+     "image": 1
+    },
+    {
+     "name": "Orchid",
+     "variation_ids": [
+      68996,
+      68995,
+      68994,
+      68993
+     ],
+     "image": 1
+    },
+    {
+     "name": "Butter",
+     "variation_ids": [
+      69000,
+      68999,
+      68998,
+      68997
+     ],
+     "image": 1
+    },
+    {
+     "name": "True Navy",
+     "variation_ids": [
+      69004,
+      69003,
+      69002,
+      69001
+     ],
+     "image": 1
+    }
+   ],
+   "variants": [
+    {
+     "id": 69004,
+     "attributes": {
+      "Color": "True Navy",
+      "Size": "YXL"
+     },
+     "price": 8.99,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/youth-comfort-color/?attribute_color=True+Navy&attribute_size=YXL",
+     "image": 1
+    },
+    {
+     "id": 69003,
+     "attributes": {
+      "Color": "True Navy",
+      "Size": "YLG"
+     },
+     "price": 8.99,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/youth-comfort-color/?attribute_color=True+Navy&attribute_size=YLG",
+     "image": 1
+    },
+    {
+     "id": 69002,
+     "attributes": {
+      "Color": "True Navy",
+      "Size": "YMD"
+     },
+     "price": 8.99,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/youth-comfort-color/?attribute_color=True+Navy&attribute_size=YMD",
+     "image": 1
+    },
+    {
+     "id": 69001,
+     "attributes": {
+      "Color": "True Navy",
+      "Size": "YSM"
+     },
+     "price": 8.99,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/youth-comfort-color/?attribute_color=True+Navy&attribute_size=YSM",
+     "image": 1
+    },
+    {
+     "id": 69000,
+     "attributes": {
+      "Color": "Butter",
+      "Size": "YXL"
+     },
+     "price": 8.99,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/youth-comfort-color/?attribute_color=Butter&attribute_size=YXL",
+     "image": 1
+    },
+    {
+     "id": 68999,
+     "attributes": {
+      "Color": "Butter",
+      "Size": "YLG"
+     },
+     "price": 8.99,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/youth-comfort-color/?attribute_color=Butter&attribute_size=YLG",
+     "image": 1
+    },
+    {
+     "id": 68998,
+     "attributes": {
+      "Color": "Butter",
+      "Size": "YMD"
+     },
+     "price": 8.99,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/youth-comfort-color/?attribute_color=Butter&attribute_size=YMD",
+     "image": 1
+    },
+    {
+     "id": 68997,
+     "attributes": {
+      "Color": "Butter",
+      "Size": "YSM"
+     },
+     "price": 8.99,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/youth-comfort-color/?attribute_color=Butter&attribute_size=YSM",
+     "image": 1
+    },
+    {
+     "id": 68996,
+     "attributes": {
+      "Color": "Orchid",
+      "Size": "YXL"
+     },
+     "price": 8.99,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/youth-comfort-color/?attribute_color=Orchid&attribute_size=YXL",
+     "image": 1
+    },
+    {
+     "id": 68995,
+     "attributes": {
+      "Color": "Orchid",
+      "Size": "YLG"
+     },
+     "price": 8.99,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/youth-comfort-color/?attribute_color=Orchid&attribute_size=YLG",
+     "image": 1
+    },
+    {
+     "id": 68994,
+     "attributes": {
+      "Color": "Orchid",
+      "Size": "YMD"
+     },
+     "price": 8.99,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/youth-comfort-color/?attribute_color=Orchid&attribute_size=YMD",
+     "image": 1
+    },
+    {
+     "id": 68993,
+     "attributes": {
+      "Color": "Orchid",
+      "Size": "YSM"
+     },
+     "price": 8.99,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/youth-comfort-color/?attribute_color=Orchid&attribute_size=YSM",
+     "image": 1
+    },
+    {
+     "id": 68992,
+     "attributes": {
+      "Color": "Black",
+      "Size": "YXL"
+     },
+     "price": 8.99,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/youth-comfort-color/?attribute_color=Black&attribute_size=YXL",
+     "image": 1
+    },
+    {
+     "id": 68991,
+     "attributes": {
+      "Color": "Black",
+      "Size": "YLG"
+     },
+     "price": 8.99,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/youth-comfort-color/?attribute_color=Black&attribute_size=YLG",
+     "image": 1
+    },
+    {
+     "id": 68990,
+     "attributes": {
+      "Color": "Black",
+      "Size": "YMD"
+     },
+     "price": 8.99,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/youth-comfort-color/?attribute_color=Black&attribute_size=YMD",
+     "image": 1
+    },
+    {
+     "id": 68989,
+     "attributes": {
+      "Color": "Black",
+      "Size": "YSM"
+     },
+     "price": 8.99,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/youth-comfort-color/?attribute_color=Black&attribute_size=YSM",
+     "image": 1
+    },
+    {
+     "id": 68988,
+     "attributes": {
+      "Color": "White",
+      "Size": "YXL"
+     },
+     "price": 8.99,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/youth-comfort-color/?attribute_color=White&attribute_size=YXL",
+     "image": 1
+    },
+    {
+     "id": 68987,
+     "attributes": {
+      "Color": "White",
+      "Size": "YLG"
+     },
+     "price": 8.99,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/youth-comfort-color/?attribute_color=White&attribute_size=YLG",
+     "image": 1
+    },
+    {
+     "id": 68986,
+     "attributes": {
+      "Color": "White",
+      "Size": "YMD"
+     },
+     "price": 8.99,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/youth-comfort-color/?attribute_color=White&attribute_size=YMD",
+     "image": 1
+    },
+    {
+     "id": 68985,
+     "attributes": {
+      "Color": "White",
+      "Size": "YSM"
+     },
+     "price": 8.99,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/youth-comfort-color/?attribute_color=White&attribute_size=YSM",
+     "image": 1
+    },
+    {
+     "id": 68984,
+     "attributes": {
+      "Color": "Chambray",
+      "Size": "YXL"
+     },
+     "price": 8.99,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/youth-comfort-color/?attribute_color=Chambray&attribute_size=YXL",
+     "image": 1
+    },
+    {
+     "id": 68983,
+     "attributes": {
+      "Color": "Chambray",
+      "Size": "YLG"
+     },
+     "price": 8.99,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/youth-comfort-color/?attribute_color=Chambray&attribute_size=YLG",
+     "image": 1
+    },
+    {
+     "id": 68982,
+     "attributes": {
+      "Color": "Chambray",
+      "Size": "YMD"
+     },
+     "price": 8.99,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/youth-comfort-color/?attribute_color=Chambray&attribute_size=YMD",
+     "image": 1
+    },
+    {
+     "id": 68981,
+     "attributes": {
+      "Color": "Chambray",
+      "Size": "YSM"
+     },
+     "price": 8.99,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/youth-comfort-color/?attribute_color=Chambray&attribute_size=YSM",
+     "image": 1
+    },
+    {
+     "id": 68980,
+     "attributes": {
+      "Color": "Blossom",
+      "Size": "YXL"
+     },
+     "price": 8.99,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/youth-comfort-color/?attribute_color=Blossom&attribute_size=YXL",
+     "image": 1
+    },
+    {
+     "id": 68979,
+     "attributes": {
+      "Color": "Blossom",
+      "Size": "YLG"
+     },
+     "price": 8.99,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/youth-comfort-color/?attribute_color=Blossom&attribute_size=YLG",
+     "image": 1
+    },
+    {
+     "id": 68978,
+     "attributes": {
+      "Color": "Blossom",
+      "Size": "YMD"
+     },
+     "price": 8.99,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/youth-comfort-color/?attribute_color=Blossom&attribute_size=YMD",
+     "image": 1
+    },
+    {
+     "id": 68977,
+     "attributes": {
+      "Color": "Blossom",
+      "Size": "YSM"
+     },
+     "price": 8.99,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/youth-comfort-color/?attribute_color=Blossom&attribute_size=YSM",
+     "image": 1
+    }
+   ],
+   "images": [
+    {
+     "n": 1,
+     "alt": "Child wearing a light pink Comfort Colors youth tee on a white background",
+     "kind": "stock_photo",
+     "width": 800,
+     "height": 729,
+     "original_width": 1188,
+     "original_height": 1082,
+     "src": "assets/img/products/youth-comfort-color-1-800.jpg",
+     "webp": {
+      "400": "assets/img/products/youth-comfort-color-1-400.webp",
+      "800": "assets/img/products/youth-comfort-color-1-800.webp"
+     },
+     "srcset_webp": "assets/img/products/youth-comfort-color-1-400.webp 400w, assets/img/products/youth-comfort-color-1-800.webp 800w",
+     "sizes_hint": "(max-width: 600px) 100vw, 600px",
+     "quality_score": 75,
+     "hero_ok": true,
+     "hero_tier": "good",
+     "flags": [],
+     "source_url": "https://mandmvinyl.com/wp-content/uploads/2026/11/img_1235.jpeg"
+    }
+   ],
+   "card_image": 1,
+   "stock_status": "instock",
+   "preorder": false,
+   "tags": [],
+   "audience": [
+    "reseller"
+   ],
+   "featured": false,
+   "featured_rank": null,
+   "is_gang_sheet_builder": false
+  },
+  {
+   "id": 68896,
+   "slug": "district-fleece-cropped-crew",
+   "name": "District Fleece Cropped Crew",
+   "display_name": "District Fleece Cropped Crew",
+   "page_slug": "district-fleece-cropped-crew",
+   "type": "variable",
+   "permalink": "https://mandmvinyl.com/product/district-fleece-cropped-crew/",
+   "add_to_cart_url": null,
+   "sku": null,
+   "price": 21,
+   "price_max": 23.5,
+   "price_is_from": true,
+   "regular_price": null,
+   "price_display": "From $21.00",
+   "price_note": null,
+   "on_sale": false,
+   "categories": [
+    "blanks-apparel",
+    "apparel-ladies"
+   ],
+   "primary_category": "blanks-apparel",
+   "live_categories": [
+    {
+     "id": 36,
+     "name": "Apparel",
+     "slug": "apparel"
+    },
+    {
+     "id": 53,
+     "name": "District",
+     "slug": "district"
+    },
+    {
+     "id": 43,
+     "name": "Ladies",
+     "slug": "ladies"
+    }
+   ],
+   "brand": "District",
+   "short_description": null,
+   "short_description_source": null,
+   "description": null,
+   "attributes": [
+    {
+     "name": "Color",
+     "key": "color",
+     "options": [
+      "Heathered Charcoal",
+      "Jet Black",
+      "Heathered Steel"
+     ],
+     "used_for_variations": true
+    },
+    {
+     "name": "size",
+     "key": "size",
+     "options": [
+      "2X",
+      "LG",
+      "MD",
+      "SM",
+      "XL"
+     ],
+     "used_for_variations": true
+    }
+   ],
+   "sizes": [
+    {
+     "name": "2X",
+     "variation_ids": [
+      68907,
+      68902,
+      68897
+     ]
+    },
+    {
+     "name": "LG",
+     "variation_ids": [
+      68908,
+      68903,
+      68898
+     ]
+    },
+    {
+     "name": "MD",
+     "variation_ids": [
+      68909,
+      68904,
+      68899
+     ]
+    },
+    {
+     "name": "SM",
+     "variation_ids": [
+      68910,
+      68905,
+      68900
+     ]
+    },
+    {
+     "name": "XL",
+     "variation_ids": [
+      68911,
+      68906,
+      68901
+     ]
+    }
+   ],
+   "colors": [
+    {
+     "name": "Heathered Charcoal",
+     "variation_ids": [
+      68901,
+      68900,
+      68899,
+      68898,
+      68897
+     ],
+     "image": 1
+    },
+    {
+     "name": "Jet Black",
+     "variation_ids": [
+      68906,
+      68905,
+      68904,
+      68903,
+      68902
+     ],
+     "image": 1
+    },
+    {
+     "name": "Heathered Steel",
+     "variation_ids": [
+      68911,
+      68910,
+      68909,
+      68908,
+      68907
+     ],
+     "image": 1
+    }
+   ],
+   "variants": [
+    {
+     "id": 68911,
+     "attributes": {
+      "Color": "Heathered Steel",
+      "size": "XL"
+     },
+     "price": 21,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/district-fleece-cropped-crew/?attribute_color=Heathered+Steel&attribute_pa_size=xl",
+     "image": 1
+    },
+    {
+     "id": 68910,
+     "attributes": {
+      "Color": "Heathered Steel",
+      "size": "SM"
+     },
+     "price": 21,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/district-fleece-cropped-crew/?attribute_color=Heathered+Steel&attribute_pa_size=sm",
+     "image": 1
+    },
+    {
+     "id": 68909,
+     "attributes": {
+      "Color": "Heathered Steel",
+      "size": "MD"
+     },
+     "price": 21,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/district-fleece-cropped-crew/?attribute_color=Heathered+Steel&attribute_pa_size=md",
+     "image": 1
+    },
+    {
+     "id": 68908,
+     "attributes": {
+      "Color": "Heathered Steel",
+      "size": "LG"
+     },
+     "price": 21,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/district-fleece-cropped-crew/?attribute_color=Heathered+Steel&attribute_pa_size=lg",
+     "image": 1
+    },
+    {
+     "id": 68907,
+     "attributes": {
+      "Color": "Heathered Steel",
+      "size": "2X"
+     },
+     "price": 23.5,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/district-fleece-cropped-crew/?attribute_color=Heathered+Steel&attribute_pa_size=2x",
+     "image": 1
+    },
+    {
+     "id": 68906,
+     "attributes": {
+      "Color": "Jet Black",
+      "size": "XL"
+     },
+     "price": 21,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/district-fleece-cropped-crew/?attribute_color=Jet+Black&attribute_pa_size=xl",
+     "image": 1
+    },
+    {
+     "id": 68905,
+     "attributes": {
+      "Color": "Jet Black",
+      "size": "SM"
+     },
+     "price": 21,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/district-fleece-cropped-crew/?attribute_color=Jet+Black&attribute_pa_size=sm",
+     "image": 1
+    },
+    {
+     "id": 68904,
+     "attributes": {
+      "Color": "Jet Black",
+      "size": "MD"
+     },
+     "price": 21,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/district-fleece-cropped-crew/?attribute_color=Jet+Black&attribute_pa_size=md",
+     "image": 1
+    },
+    {
+     "id": 68903,
+     "attributes": {
+      "Color": "Jet Black",
+      "size": "LG"
+     },
+     "price": 21,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/district-fleece-cropped-crew/?attribute_color=Jet+Black&attribute_pa_size=lg",
+     "image": 1
+    },
+    {
+     "id": 68902,
+     "attributes": {
+      "Color": "Jet Black",
+      "size": "2X"
+     },
+     "price": 23.5,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/district-fleece-cropped-crew/?attribute_color=Jet+Black&attribute_pa_size=2x",
+     "image": 1
+    },
+    {
+     "id": 68901,
+     "attributes": {
+      "Color": "Heathered Charcoal",
+      "size": "XL"
+     },
+     "price": 21,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/district-fleece-cropped-crew/?attribute_color=Heathered+Charcoal&attribute_pa_size=xl",
+     "image": 1
+    },
+    {
+     "id": 68900,
+     "attributes": {
+      "Color": "Heathered Charcoal",
+      "size": "SM"
+     },
+     "price": 21,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/district-fleece-cropped-crew/?attribute_color=Heathered+Charcoal&attribute_pa_size=sm",
+     "image": 1
+    },
+    {
+     "id": 68899,
+     "attributes": {
+      "Color": "Heathered Charcoal",
+      "size": "MD"
+     },
+     "price": 21,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/district-fleece-cropped-crew/?attribute_color=Heathered+Charcoal&attribute_pa_size=md",
+     "image": 1
+    },
+    {
+     "id": 68898,
+     "attributes": {
+      "Color": "Heathered Charcoal",
+      "size": "LG"
+     },
+     "price": 21,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/district-fleece-cropped-crew/?attribute_color=Heathered+Charcoal&attribute_pa_size=lg",
+     "image": 1
+    },
+    {
+     "id": 68897,
+     "attributes": {
+      "Color": "Heathered Charcoal",
+      "size": "2X"
+     },
+     "price": 23.5,
+     "regular_price": null,
+     "on_sale": false,
+     "in_stock": true,
+     "sku": null,
+     "permalink": "https://mandmvinyl.com/product/district-fleece-cropped-crew/?attribute_color=Heathered+Charcoal&attribute_pa_size=2x",
+     "image": 1
+    }
+   ],
+   "images": [
+    {
+     "n": 1,
+     "alt": "Woman wearing a heathered charcoal District cropped fleece crewneck sweatshirt",
+     "kind": "stock_photo",
+     "width": 800,
+     "height": 706,
+     "original_width": 843,
+     "original_height": 744,
+     "src": "assets/img/products/district-fleece-cropped-crew-1-800.jpg",
+     "webp": {
+      "400": "assets/img/products/district-fleece-cropped-crew-1-400.webp",
+      "800": "assets/img/products/district-fleece-cropped-crew-1-800.webp"
+     },
+     "srcset_webp": "assets/img/products/district-fleece-cropped-crew-1-400.webp 400w, assets/img/products/district-fleece-cropped-crew-1-800.webp 800w",
+     "sizes_hint": "(max-width: 600px) 100vw, 600px",
+     "quality_score": 55,
+     "hero_ok": false,
+     "hero_tier": "avoid",
+     "flags": [
+      "modest_resolution"
+     ],
+     "source_url": "https://mandmvinyl.com/wp-content/uploads/2026/11/img_1233-1.jpeg"
+    }
+   ],
+   "card_image": 1,
+   "stock_status": "instock",
+   "preorder": false,
+   "tags": [],
+   "audience": [
+    "reseller"
+   ],
+   "featured": false,
+   "featured_rank": null,
+   "is_gang_sheet_builder": false
+  },
+  {
+   "id": 68852,
+   "slug": "sequin-santa-patch-2",
+   "name": "Sequin Santa Patch",
+   "display_name": "Sequin Santa Patch",
+   "page_slug": "sequin-santa-patch-68852",
+   "type": "simple",
+   "permalink": "https://mandmvinyl.com/product/sequin-santa-patch-2/",
+   "add_to_cart_url": "https://mandmvinyl.com/?add-to-cart=68852",
+   "sku": null,
+   "price": 8,
+   "price_max": 8,
+   "price_is_from": false,
+   "regular_price": null,
+   "price_display": "$8.00",
+   "price_note": null,
+   "on_sale": false,
+   "categories": [
+    "patches",
+    "patches-sequin"
+   ],
+   "primary_category": "patches",
+   "live_categories": [
+    {
+     "id": 140,
+     "name": "Christmas",
+     "slug": "christmas"
+    },
+    {
+     "id": 131,
+     "name": "Patches",
+     "slug": "patches"
+    }
+   ],
+   "brand": null,
+   "short_description": null,
+   "short_description_source": null,
+   "description": null,
+   "attributes": [],
+   "sizes": [],
+   "colors": [],
+   "variants": [],
+   "images": [
+    {
+     "n": 1,
+     "alt": "Sequin Santa Claus face patch with a white beard and red hat held up in the shop",
+     "kind": "owner_photo",
+     "width": 800,
+     "height": 1067,
+     "original_width": 1920,
+     "original_height": 2560,
+     "src": "assets/img/products/sequin-santa-patch-2-1-800.jpg",
+     "webp": {
+      "400": "assets/img/products/sequin-santa-patch-2-1-400.webp",
+      "800": "assets/img/products/sequin-santa-patch-2-1-800.webp",
+      "1200": "assets/img/products/sequin-santa-patch-2-1-1200.webp"
+     },
+     "srcset_webp": "assets/img/products/sequin-santa-patch-2-1-400.webp 400w, assets/img/products/sequin-santa-patch-2-1-800.webp 800w, assets/img/products/sequin-santa-patch-2-1-1200.webp 1200w",
+     "sizes_hint": "(max-width: 600px) 100vw, 600px",
+     "quality_score": 75,
+     "hero_ok": true,
+     "hero_tier": "good",
+     "flags": [],
+     "source_url": "https://mandmvinyl.com/wp-content/uploads/2026/11/img_1526-scaled.jpeg"
+    }
+   ],
+   "card_image": 1,
+   "stock_status": "instock",
+   "preorder": false,
+   "tags": [],
+   "audience": null,
+   "featured": false,
+   "featured_rank": null,
+   "is_gang_sheet_builder": false
+  },
+  {
+   "id": 68850,
+   "slug": "reindeer-sequin-patch",
+   "name": "Reindeer Sequin Patch",
+   "display_name": "Reindeer Sequin Patch",
+   "page_slug": "reindeer-sequin-patch",
+   "type": "simple",
+   "permalink": "https://mandmvinyl.com/product/reindeer-sequin-patch/",
+   "add_to_cart_url": "https://mandmvinyl.com/?add-to-cart=68850",
+   "sku": null,
+   "price": 8,
+   "price_max": 8,
+   "price_is_from": false,
+   "regular_price": null,
+   "price_display": "$8.00",
+   "price_note": null,
+   "on_sale": false,
+   "categories": [
+    "patches",
+    "patches-sequin"
+   ],
+   "primary_category": "patches",
+   "live_categories": [
+    {
+     "id": 140,
+     "name": "Christmas",
+     "slug": "christmas"
+    },
+    {
+     "id": 131,
+     "name": "Patches",
+     "slug": "patches"
+    }
+   ],
+   "brand": null,
+   "short_description": null,
+   "short_description_source": null,
+   "description": null,
+   "attributes": [],
+   "sizes": [],
+   "colors": [],
+   "variants": [],
+   "images": [
+    {
+     "n": 1,
+     "alt": "Sequin reindeer face patch with gold antlers and a red Santa hat held in front of a table of patches",
+     "kind": "owner_photo",
+     "width": 800,
+     "height": 800,
+     "original_width": 2560,
+     "original_height": 2560,
+     "src": "assets/img/products/reindeer-sequin-patch-1-800.jpg",
+     "webp": {
+      "400": "assets/img/products/reindeer-sequin-patch-1-400.webp",
+      "800": "assets/img/products/reindeer-sequin-patch-1-800.webp",
+      "1200": "assets/img/products/reindeer-sequin-patch-1-1200.webp"
+     },
+     "srcset_webp": "assets/img/products/reindeer-sequin-patch-1-400.webp 400w, assets/img/products/reindeer-sequin-patch-1-800.webp 800w, assets/img/products/reindeer-sequin-patch-1-1200.webp 1200w",
+     "sizes_hint": "(max-width: 600px) 100vw, 600px",
+     "quality_score": 75,
+     "hero_ok": true,
+     "hero_tier": "good",
+     "flags": [],
+     "source_url": "https://mandmvinyl.com/wp-content/uploads/2026/11/img_1521-scaled.jpeg"
+    }
+   ],
+   "card_image": 1,
+   "stock_status": "instock",
+   "preorder": false,
+   "tags": [],
+   "audience": null,
+   "featured": false,
+   "featured_rank": null,
+   "is_gang_sheet_builder": false
+  },
   {
    "id": 60967,
    "slug": "build-a-gang-sheet-rolling-canvas",
@@ -2126,228 +3351,6 @@
    "is_gang_sheet_builder": false
   },
   {
-   "id": 67283,
-   "slug": "port-co-camo-tee",
-   "name": "Port & Co Camo Tee",
-   "display_name": "Port & Co Camo Tee",
-   "page_slug": "port-and-co-camo-tee",
-   "type": "variable",
-   "permalink": "https://mandmvinyl.com/product/port-co-camo-tee/",
-   "add_to_cart_url": null,
-   "sku": null,
-   "price": 8,
-   "price_max": 12.5,
-   "price_is_from": true,
-   "regular_price": null,
-   "price_display": "From $8.00",
-   "price_note": null,
-   "on_sale": false,
-   "categories": [
-    "blanks-apparel",
-    "apparel-adults"
-   ],
-   "primary_category": "blanks-apparel",
-   "live_categories": [
-    {
-     "id": 36,
-     "name": "Apparel",
-     "slug": "apparel"
-    }
-   ],
-   "brand": "Port & Company",
-   "short_description": null,
-   "short_description_source": null,
-   "description": null,
-   "attributes": [
-    {
-     "name": "Size",
-     "key": "size",
-     "options": [
-      "Small",
-      "Medium",
-      "Large",
-      "XL",
-      "2X",
-      "3X",
-      "4X"
-     ],
-     "used_for_variations": true
-    }
-   ],
-   "sizes": [
-    {
-     "name": "Small",
-     "variation_ids": [
-      67284
-     ]
-    },
-    {
-     "name": "Medium",
-     "variation_ids": [
-      67285
-     ]
-    },
-    {
-     "name": "Large",
-     "variation_ids": [
-      67286
-     ]
-    },
-    {
-     "name": "XL",
-     "variation_ids": [
-      67287
-     ]
-    },
-    {
-     "name": "2X",
-     "variation_ids": [
-      67288
-     ]
-    },
-    {
-     "name": "3X",
-     "variation_ids": [
-      67588
-     ]
-    },
-    {
-     "name": "4X",
-     "variation_ids": [
-      67589
-     ]
-    }
-   ],
-   "colors": [],
-   "variants": [
-    {
-     "id": 67589,
-     "attributes": {
-      "Size": "4X"
-     },
-     "price": 12.5,
-     "regular_price": null,
-     "on_sale": false,
-     "in_stock": true,
-     "sku": null,
-     "permalink": "https://mandmvinyl.com/product/port-co-camo-tee/?attribute_size=4X",
-     "image": 1
-    },
-    {
-     "id": 67588,
-     "attributes": {
-      "Size": "3X"
-     },
-     "price": 11,
-     "regular_price": null,
-     "on_sale": false,
-     "in_stock": true,
-     "sku": null,
-     "permalink": "https://mandmvinyl.com/product/port-co-camo-tee/?attribute_size=3X",
-     "image": 1
-    },
-    {
-     "id": 67288,
-     "attributes": {
-      "Size": "2X"
-     },
-     "price": 10,
-     "regular_price": null,
-     "on_sale": false,
-     "in_stock": true,
-     "sku": null,
-     "permalink": "https://mandmvinyl.com/product/port-co-camo-tee/?attribute_size=2X",
-     "image": 1
-    },
-    {
-     "id": 67287,
-     "attributes": {
-      "Size": "XL"
-     },
-     "price": 8,
-     "regular_price": null,
-     "on_sale": false,
-     "in_stock": true,
-     "sku": null,
-     "permalink": "https://mandmvinyl.com/product/port-co-camo-tee/?attribute_size=XL",
-     "image": 1
-    },
-    {
-     "id": 67286,
-     "attributes": {
-      "Size": "Large"
-     },
-     "price": 8,
-     "regular_price": null,
-     "on_sale": false,
-     "in_stock": true,
-     "sku": null,
-     "permalink": "https://mandmvinyl.com/product/port-co-camo-tee/?attribute_size=Large",
-     "image": 1
-    },
-    {
-     "id": 67285,
-     "attributes": {
-      "Size": "Medium"
-     },
-     "price": 8,
-     "regular_price": null,
-     "on_sale": false,
-     "in_stock": true,
-     "sku": null,
-     "permalink": "https://mandmvinyl.com/product/port-co-camo-tee/?attribute_size=Medium",
-     "image": 1
-    },
-    {
-     "id": 67284,
-     "attributes": {
-      "Size": "Small"
-     },
-     "price": 8,
-     "regular_price": null,
-     "on_sale": false,
-     "in_stock": true,
-     "sku": null,
-     "permalink": "https://mandmvinyl.com/product/port-co-camo-tee/?attribute_size=Small",
-     "image": 1
-    }
-   ],
-   "images": [
-    {
-     "n": 1,
-     "alt": "Green camouflage crew neck t-shirt on a white background",
-     "kind": "stock_photo",
-     "width": 800,
-     "height": 855,
-     "original_width": 1230,
-     "original_height": 1314,
-     "src": "assets/img/products/port-co-camo-tee-1-800.jpg",
-     "webp": {
-      "400": "assets/img/products/port-co-camo-tee-1-400.webp",
-      "800": "assets/img/products/port-co-camo-tee-1-800.webp",
-      "1200": "assets/img/products/port-co-camo-tee-1-1200.webp"
-     },
-     "srcset_webp": "assets/img/products/port-co-camo-tee-1-400.webp 400w, assets/img/products/port-co-camo-tee-1-800.webp 800w, assets/img/products/port-co-camo-tee-1-1200.webp 1200w",
-     "sizes_hint": "(max-width: 600px) 100vw, 600px",
-     "quality_score": 84,
-     "hero_ok": true,
-     "hero_tier": "good",
-     "flags": [],
-     "source_url": "https://mandmvinyl.com/wp-content/uploads/2026/09/img_1173.jpeg"
-    }
-   ],
-   "card_image": 1,
-   "stock_status": "instock",
-   "preorder": false,
-   "tags": [],
-   "audience": [
-    "reseller"
-   ],
-   "featured": true,
-   "featured_rank": 12,
-   "is_gang_sheet_builder": false
-  },
-  {
    "id": 68848,
    "slug": "christmas-tree-bows-patch",
    "name": "Christmas Tree Bows Patch",
@@ -3785,7 +4788,7 @@
     }
    ],
    "card_image": 1,
-   "stock_status": "instock",
+   "stock_status": "outofstock",
    "preorder": false,
    "tags": [],
    "audience": [

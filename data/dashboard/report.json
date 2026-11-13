@@ -6,12 +6,12 @@
     ],
     "needs_attention": [
       "Web sales were $7,100, down 4.6% on the week before.",
-      "68 repeat customers have gone quiet past their usual gap."
+      "64 repeat customers have gone quiet past their usual gap."
     ],
-    "note": "Store (Shopkeep) sales are not included. November is at 362 gang sheets so far, October finished at 1176. Sales include shipping charges and exclude tax.",
+    "note": "Store (Shopkeep) sales are not included. November is at 381 gang sheets so far, October finished at 1176. Sales include shipping charges and exclude tax.",
     "next_week": [
-      "Call Lakedra H.. Usual order gap is 1 days and it has been 5.",
       "Call Drucilla W.. Usual order gap is 5 days and it has been 16.",
+      "Call Whitney C.. Usual order gap is 4 days and it has been 9.",
       "Connect Shopkeep so store sales show here."
     ]
   },
@@ -28,7 +28,7 @@
   "gang_sheets": {
     "this_week": 233,
     "prior_week": 245,
-    "month_to_date": 362,
+    "month_to_date": 381,
     "september_baseline": 1176,
     "month_label": "November",
     "prior_label": "October",
@@ -38,25 +38,25 @@
   "by_category": [
     {
       "category": "DTF [Direct to Film]",
-      "revenue_cents": 2163576,
+      "revenue_cents": 2191921,
       "prev_period_cents": 2577872,
       "share_pct": 76
     },
     {
       "category": "Adults",
-      "revenue_cents": 471588,
+      "revenue_cents": 477636,
       "prev_period_cents": 583748,
       "share_pct": 17
     },
     {
       "category": "Apparel",
-      "revenue_cents": 63868,
+      "revenue_cents": 65168,
       "prev_period_cents": 85700,
       "share_pct": 2
     },
     {
       "category": "Glitter",
-      "revenue_cents": 32000,
+      "revenue_cents": 39600,
       "prev_period_cents": 55760,
       "share_pct": 1
     },
@@ -82,7 +82,7 @@
       "category": "Patches",
       "revenue_cents": 14400,
       "prev_period_cents": 36200,
-      "share_pct": 1
+      "share_pct": 0
     },
     {
       "category": "Other",
@@ -155,9 +155,9 @@
     {
       "label": "Lakedra H.",
       "tier": "standard",
-      "spend_90d_cents": 305537,
-      "last_order_at": "2026-11-07",
-      "cadence_status": "lapsed"
+      "spend_90d_cents": 316746,
+      "last_order_at": "2026-11-12",
+      "cadence_status": "on_track"
     },
     {
       "label": "Amber J.",
@@ -176,35 +176,23 @@
     {
       "label": "Amanda D.",
       "tier": "standard",
-      "spend_90d_cents": 229538,
+      "spend_90d_cents": 230238,
       "last_order_at": "2026-11-12",
       "cadence_status": "on_track"
     },
     {
       "label": "Karam Jones",
       "tier": "standard",
-      "spend_90d_cents": 188192,
-      "last_order_at": "2026-11-11",
+      "spend_90d_cents": 196622,
+      "last_order_at": "2026-11-12",
       "cadence_status": "on_track"
     }
   ],
   "reorders_due": [
     {
-      "label": "Lakedra H.",
-      "days_since_last_order": 5,
-      "typical_gap_days": 1,
-      "cadence_status": "lapsed"
-    },
-    {
       "label": "Drucilla W.",
       "days_since_last_order": 16,
       "typical_gap_days": 5,
-      "cadence_status": "lapsed"
-    },
-    {
-      "label": "Roshaundra B.",
-      "days_since_last_order": 6,
-      "typical_gap_days": 1,
       "cadence_status": "lapsed"
     },
     {
@@ -215,6 +203,18 @@
     },
     {
       "label": "Ashley R.",
+      "days_since_last_order": 7,
+      "typical_gap_days": 4,
+      "cadence_status": "slipping"
+    },
+    {
+      "label": "Anitra L.",
+      "days_since_last_order": 3,
+      "typical_gap_days": 2,
+      "cadence_status": "slipping"
+    },
+    {
+      "label": "Diaquire T.",
       "days_since_last_order": 7,
       "typical_gap_days": 4,
       "cadence_status": "slipping"
@@ -233,8 +233,8 @@
     "schema_version": "1.1",
     "sample": false,
     "sample_note": null,
-    "generated_at": "2026-11-12T12:39:20-06:00",
-    "as_of": "2026-11-12T12:39:20-06:00",
+    "generated_at": "2026-11-12T19:53:44-06:00",
+    "as_of": "2026-11-12T19:53:44-06:00",
     "timezone": "America/Chicago",
     "currency": "USD",
     "money_unit": "cents",

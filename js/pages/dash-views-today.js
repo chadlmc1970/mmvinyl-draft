@@ -384,7 +384,7 @@
         }
         var nc = root.querySelector('[data-next-cutoff]');
         if (nc && st) {
-          nc.textContent = st.state === 'open' ? 'Today at ' + (function () { var sc = MM.config.schedule.days[String(MM.cutoff.zoneParts(OD.now(), MM.config.schedule.timeZone).wd)]; return MM.cutoff.formatTime(sc.cutoff); })() + ', in ' + MM.cutoff.formatRemaining(st.msRemaining) : st.message.replace('Next same-day window opens ', 'Opens ');
+          nc.textContent = st.state === 'open' ? 'Today at ' + (function () { var sc = MM.cutoff.scheduleFor(MM.cutoff.zoneParts(OD.now(), MM.config.schedule.timeZone), MM.config.schedule); return MM.cutoff.formatTime(sc.cutoff); })() + ', in ' + MM.cutoff.formatRemaining(st.msRemaining) : st.message.replace('Next same-day window opens ', 'Opens ');
         }
       }
     };

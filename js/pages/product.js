@@ -97,15 +97,6 @@
       });
     }
 
-    function label() {
-      return attrs
-        .map(function (a) {
-          return sel[a.name];
-        })
-        .filter(Boolean)
-        .join(' / ');
-    }
-
     function setMsg(t) {
       msgEl.textContent = t || '';
     }
@@ -175,12 +166,8 @@
       if (chosen) {
         priceEl.textContent = fmt(chosen.p);
         stockEl.innerHTML = chosen.s ? '<span class="status status--ok">In stock</span>' : '<span class="status status--late">Out of stock</span>';
-        addBtn.dataset.priceCents = String(chosen.p);
-        addBtn.dataset.variant = label();
         addBtn.dataset.liveId = String(chosen.id);
         addBtn.dataset.liveUrl = MM.shopUrl(chosen.u || data.liveUrl);
-        var thumb = data.imgs && data.imgs[chosen.i];
-        if (thumb) addBtn.dataset.image = thumb;
         setAdd(chosen.s ? 'Add to cart' : 'Out of stock', !chosen.s);
         setMsg(chosen.s ? '' : 'This option is out of stock. Call us to order.');
       } else if (complete) {
@@ -240,7 +227,6 @@
     });
     if (variants.length === 1 && !attrs.length) {
       var v = variants[0];
-      addBtn.dataset.priceCents = String(v.p);
       addBtn.dataset.liveId = String(v.id);
       addBtn.dataset.liveUrl = MM.shopUrl(v.u || data.liveUrl);
     }

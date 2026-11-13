@@ -3,8 +3,8 @@
     "schema_version": "1.1",
     "sample": false,
     "sample_note": null,
-    "generated_at": "2026-11-12T12:39:20-06:00",
-    "as_of": "2026-11-12T12:39:20-06:00",
+    "generated_at": "2026-11-12T19:53:44-06:00",
+    "as_of": "2026-11-12T19:53:44-06:00",
     "timezone": "America/Chicago",
     "currency": "USD",
     "money_unit": "cents",
@@ -253,9 +253,9 @@
     },
     {
       "date": "2026-09-17",
-      "web_cents": 157794,
+      "web_cents": 155835,
       "store_cents": null,
-      "orders_web": 71,
+      "orders_web": 70,
       "orders_store": null
     },
     {
@@ -645,9 +645,9 @@
     },
     {
       "date": "2026-11-12",
-      "web_cents": 48993,
+      "web_cents": 92286,
       "store_cents": null,
-      "orders_web": 21,
+      "orders_web": 40,
       "orders_store": null
     }
   ],
@@ -694,10 +694,10 @@
     },
     {
       "week_start": "2026-09-14",
-      "web_cents": 662246,
+      "web_cents": 660287,
       "store_cents": null,
-      "orders": 230,
-      "total_cents": 662246,
+      "orders": 229,
+      "total_cents": 660287,
       "partial": false
     },
     {
@@ -758,10 +758,10 @@
     },
     {
       "week_start": "2026-11-09",
-      "web_cents": 329672,
+      "web_cents": 372965,
       "store_cents": null,
-      "orders": 124,
-      "total_cents": 329672,
+      "orders": 143,
+      "total_cents": 372965,
       "partial": true
     }
   ],
@@ -786,30 +786,30 @@
   },
   "current_week_to_date": {
     "week_start": "2026-11-09",
-    "total_cents": 329672
+    "total_cents": 372965
   },
   "by_category_28d": [
     {
       "category": "DTF [Direct to Film]",
-      "revenue_cents": 2163576,
+      "revenue_cents": 2191921,
       "prev_period_cents": 2577872,
       "share_pct": 76
     },
     {
       "category": "Adults",
-      "revenue_cents": 471588,
+      "revenue_cents": 477636,
       "prev_period_cents": 583748,
       "share_pct": 17
     },
     {
       "category": "Apparel",
-      "revenue_cents": 63868,
+      "revenue_cents": 65168,
       "prev_period_cents": 85700,
       "share_pct": 2
     },
     {
       "category": "Glitter",
-      "revenue_cents": 32000,
+      "revenue_cents": 39600,
       "prev_period_cents": 55760,
       "share_pct": 1
     },
@@ -835,7 +835,7 @@
       "category": "Patches",
       "revenue_cents": 14400,
       "prev_period_cents": 36200,
-      "share_pct": 1
+      "share_pct": 0
     },
     {
       "category": "Other",
@@ -909,20 +909,20 @@
       "product_id": 60967,
       "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P &amp; 10A SAT FOR SAME DAY",
       "category": "DTF [Direct to Film]",
-      "unit_price_cents": 7672,
+      "unit_price_cents": 700,
       "price_note": null,
-      "units_30d": 1044,
-      "revenue_30d_cents": 2457226,
+      "units_30d": 1063,
+      "revenue_30d_cents": 2485571,
       "real_units": true
     },
     {
       "product_id": 8439,
       "name": "JERZEES DRI-⁠POWER® 50/50 T-⁠Shirt",
       "category": "Adults",
-      "unit_price_cents": 450,
+      "unit_price_cents": 950,
       "price_note": null,
-      "units_30d": 340,
-      "revenue_30d_cents": 172460,
+      "units_30d": 341,
+      "revenue_30d_cents": 173410,
       "real_units": true
     },
     {
@@ -941,8 +941,8 @@
       "category": "Adults",
       "unit_price_cents": 1100,
       "price_note": null,
-      "units_30d": 56,
-      "revenue_30d_cents": 63700,
+      "units_30d": 59,
+      "revenue_30d_cents": 67000,
       "real_units": true
     },
     {
@@ -951,8 +951,18 @@
       "category": "Adults",
       "unit_price_cents": 899,
       "price_note": null,
-      "units_30d": 57,
-      "revenue_30d_cents": 52498,
+      "units_30d": 59,
+      "revenue_30d_cents": 54296,
+      "real_units": true
+    },
+    {
+      "product_id": 8270,
+      "name": "HTV Glitter",
+      "category": "Glitter",
+      "unit_price_cents": 1400,
+      "price_note": null,
+      "units_30d": 43,
+      "revenue_30d_cents": 40200,
       "real_units": true
     },
     {
@@ -963,16 +973,6 @@
       "price_note": null,
       "units_30d": 43,
       "revenue_30d_cents": 38550,
-      "real_units": true
-    },
-    {
-      "product_id": 8270,
-      "name": "HTV Glitter",
-      "category": "Glitter",
-      "unit_price_cents": 600,
-      "price_note": null,
-      "units_30d": 37,
-      "revenue_30d_cents": 32600,
       "real_units": true
     },
     {
@@ -1007,9 +1007,9 @@
     }
   ],
   "averages": {
-    "avg_order_web_cents": 2843,
+    "avg_order_web_cents": 2834,
     "avg_order_store_cents": null,
-    "orders_per_open_day": 37.6,
+    "orders_per_open_day": 38.2,
     "reseller_share_of_revenue_pct": null,
     "repeat_order_rate_pct": null
   }

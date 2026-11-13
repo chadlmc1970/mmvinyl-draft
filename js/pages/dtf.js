@@ -17,7 +17,7 @@
 
     function windowMs(now, cfg) {
       var p = MM.cutoff.zoneParts(now, cfg.timeZone);
-      var day = cfg.days[String(p.wd)];
+      var day = MM.cutoff.scheduleFor(p, cfg);
       if (!day) return 0;
       var o = day.open.split(':');
       var c = day.cutoff.split(':');

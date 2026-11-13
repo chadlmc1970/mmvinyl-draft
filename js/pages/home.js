@@ -56,8 +56,7 @@
       var d = t.getUTCDate();
       var wd = t.getUTCDay();
       var key = y + '-' + pad(m) + '-' + pad(d);
-      if (cfg.closedDates && cfg.closedDates.indexOf(key) !== -1) continue;
-      var s = cfg.days[String(wd)];
+      var s = MM.cutoff.scheduleFor({ y: y, m: m, d: d, wd: wd }, cfg);
       if (!s) continue;
       var c = hm(s.cutoff);
       var o = hm(s.open);
@@ -92,8 +91,7 @@
         var m = t.getUTCMonth() + 1;
         var d = t.getUTCDate();
         var wd = t.getUTCDay();
-        if (cfg.closedDates && cfg.closedDates.indexOf(y + '-' + pad(m) + '-' + pad(d)) !== -1) continue;
-        var s = cfg.days[String(wd)];
+        var s = MM.cutoff.scheduleFor({ y: y, m: m, d: d, wd: wd }, cfg);
         if (!s) continue;
         var c = hm(s.cutoff);
         var cutoffAt = MM.cutoff.zonedToUtc(y, m, d, c.h, c.mi, tz);

@@ -2,7 +2,7 @@
   "meta": {
     "sample": false,
     "source": "Buffer post results and WooCommerce order sources (live, read-only).",
-    "generated_at": "2026-11-12T18:44:11.531Z",
+    "generated_at": "2026-11-13T01:58:07.238Z",
     "timezone": "America/Chicago",
     "connected": true,
     "orders_connected": true
@@ -12,14 +12,14 @@
     "name": "baseline",
     "settled": 5,
     "need_posts": 12,
-    "days": 7,
+    "days": 8,
     "need_days": 21
   },
   "summary": {
     "sent": 5,
     "scheduled": 0,
     "failed": 0,
-    "seen": 3224,
+    "seen": 3226,
     "actions": 34,
     "score": 1.1,
     "orders": 11,
@@ -190,7 +190,7 @@
         "instagram": {
           "status": "sent",
           "link": "https://www.instagram.com/p/DfhuDl9EQEk/",
-          "seen": 82,
+          "seen": 84,
           "actions": 1,
           "reactions": 1,
           "comments": 0,
@@ -210,7 +210,7 @@
           "clicks": 0
         }
       },
-      "seen": 283,
+      "seen": 285,
       "actions": 3,
       "score": 1.1,
       "live_score": 1.1,

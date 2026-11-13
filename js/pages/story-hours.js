@@ -22,15 +22,14 @@
   }
 
   function todaySchedule(p) {
-    var key = p.y + '-' + pad(p.m) + '-' + pad(p.d);
-    if (cfg.closedDates && cfg.closedDates.indexOf(key) !== -1) return null;
-    return cfg.days[String(p.wd)] || null;
+    return MM.cutoff.hoursFor(p, cfg);
   }
 
   function nextOpen(p) {
-    for (var i = 1; i <= 7; i++) {
-      var wd = (p.wd + i) % 7;
-      var s = cfg.days[String(wd)];
+    for (var i = 1; i <= 14; i++) {
+      var t = new Date(Date.UTC(p.y, p.m - 1, p.d + i));
+      var wd = t.getUTCDay();
+      var s = MM.cutoff.hoursFor({ y: t.getUTCFullYear(), m: t.getUTCMonth() + 1, d: t.getUTCDate(), wd: wd }, cfg);
       if (s) return { label: (i === 1 ? 'tomorrow' : DAY_NAMES[wd]) + ' at ' + short(s.open) };
     }
     return null;

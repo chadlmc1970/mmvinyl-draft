@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-03",
+ "generated": "2026-11-12",
  "note": "Counts include products that appear in more than one category. Parent counts are unique products across the parent and its children.",
  "categories": [
   {
@@ -155,8 +155,8 @@
    "slug": "blanks-apparel",
    "name": "Blanks and Apparel",
    "parent": null,
-   "count": 43,
-   "direct_count": 43,
+   "count": 44,
+   "direct_count": 44,
    "representative_image": {
     "product_id": 59311,
     "product_slug": "rabbit-skins-toddler-sweatshirt",
@@ -176,8 +176,9 @@
    },
    "needs_photo": false,
    "product_ids": [
+    68933,
+    68896,
     67605,
-    67283,
     67047,
     65397,
     65365,
@@ -225,8 +226,8 @@
      "slug": "apparel-adults",
      "name": "Adults",
      "parent": "blanks-apparel",
-     "count": 21,
-     "direct_count": 21,
+     "count": 20,
+     "direct_count": 20,
      "representative_image": {
       "product_id": 62743,
       "product_slug": "comfort-color-heavyweight-tank",
@@ -247,7 +248,6 @@
      "needs_photo": false,
      "product_ids": [
       67605,
-      67283,
       67047,
       65397,
       65365,
@@ -273,8 +273,8 @@
      "slug": "apparel-youth",
      "name": "Youth",
      "parent": "blanks-apparel",
-     "count": 11,
-     "direct_count": 11,
+     "count": 12,
+     "direct_count": 12,
      "representative_image": {
       "product_id": 61939,
       "product_slug": "youth-gildan-softstyle",
@@ -293,6 +293,7 @@
      },
      "needs_photo": false,
      "product_ids": [
+      68933,
       61939,
       61572,
       59348,
@@ -350,8 +351,8 @@
      "slug": "apparel-ladies",
      "name": "Ladies",
      "parent": "blanks-apparel",
-     "count": 6,
-     "direct_count": 6,
+     "count": 7,
+     "direct_count": 7,
      "representative_image": {
       "product_id": 59570,
       "product_slug": "bella-flowy-crop-tee",
@@ -370,6 +371,7 @@
      },
      "needs_photo": false,
      "product_ids": [
+      68896,
       65365,
       59639,
       59570,
@@ -384,8 +386,8 @@
    "slug": "patches",
    "name": "Patches",
    "parent": null,
-   "count": 36,
-   "direct_count": 36,
+   "count": 38,
+   "direct_count": 38,
    "representative_image": {
     "product_id": 66239,
     "product_slug": "sequin-game-day-patch",
@@ -405,6 +407,8 @@
    },
    "needs_photo": false,
    "product_ids": [
+    68852,
+    68850,
     67661,
     65886,
     66239,
@@ -447,8 +451,8 @@
      "slug": "patches-sequin",
      "name": "Sequin Patches",
      "parent": "patches",
-     "count": 25,
-     "direct_count": 25,
+     "count": 27,
+     "direct_count": 27,
      "representative_image": {
       "product_id": 67661,
       "product_slug": "saints-sequin-patches",
@@ -468,6 +472,8 @@
      },
      "needs_photo": false,
      "product_ids": [
+      68852,
+      68850,
       67661,
       66239,
       61202,
@@ -783,8 +789,8 @@
    "slug": "accessories",
    "name": "Accessories",
    "parent": null,
-   "count": 11,
-   "direct_count": 11,
+   "count": 12,
+   "direct_count": 12,
    "representative_image": {
     "product_id": 56227,
     "product_slug": "weeding-pen",
@@ -804,6 +810,7 @@
    },
    "needs_photo": false,
    "product_ids": [
+    69168,
     64626,
     62288,
     56713,
