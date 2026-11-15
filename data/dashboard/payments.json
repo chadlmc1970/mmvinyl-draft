@@ -3,8 +3,8 @@
     "schema_version": "1.1",
     "sample": false,
     "sample_note": null,
-    "generated_at": "2026-11-13T12:55:11-06:00",
-    "as_of": "2026-11-13T12:55:11-06:00",
+    "generated_at": "2026-11-15T06:57:33-06:00",
+    "as_of": "2026-11-15T06:57:33-06:00",
     "timezone": "America/Chicago",
     "currency": "USD",
     "money_unit": "cents",
@@ -17,8 +17,8 @@
     {
       "key": "card",
       "label": "Cards",
-      "amount_cents": 2167777,
-      "count": 802,
+      "amount_cents": 2179177,
+      "count": 803,
       "failed_count": 14,
       "fail_rate_pct": 1.7,
       "live_status": "live",
@@ -27,7 +27,7 @@
     {
       "key": "paypal",
       "label": "PayPal",
-      "amount_cents": 618444,
+      "amount_cents": 623823,
       "count": 182,
       "failed_count": 0,
       "fail_rate_pct": 0,
@@ -37,8 +37,8 @@
     {
       "key": "google_pay",
       "label": "Google Pay",
-      "amount_cents": 18203,
-      "count": 5,
+      "amount_cents": 16553,
+      "count": 4,
       "failed_count": 0,
       "fail_rate_pct": 0,
       "live_status": "live",
@@ -48,7 +48,7 @@
       "key": "other",
       "label": "Klarna, Affirm and other",
       "amount_cents": 30930,
-      "count": 8,
+      "count": 7,
       "failed_count": 0,
       "fail_rate_pct": 0,
       "live_status": "live",
@@ -171,7 +171,7 @@
   ],
   "payouts": [],
   "web_vs_store": {
-    "web_cents": 2835354,
+    "web_cents": 2850483,
     "store_cents": null
   },
   "note": "Payouts and store payments are not connected yet."

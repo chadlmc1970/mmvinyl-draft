@@ -3,8 +3,8 @@
     "schema_version": "1.1",
     "sample": false,
     "sample_note": null,
-    "generated_at": "2026-11-13T12:55:11-06:00",
-    "as_of": "2026-11-13T12:55:11-06:00",
+    "generated_at": "2026-11-15T06:57:33-06:00",
+    "as_of": "2026-11-15T06:57:33-06:00",
     "timezone": "America/Chicago",
     "currency": "USD",
     "money_unit": "cents",
@@ -13,20 +13,6 @@
     "store_note": "Shopkeep is not connected yet. Store figures are not included."
   },
   "daily": [
-    {
-      "date": "2026-08-15",
-      "web_cents": 50635,
-      "store_cents": null,
-      "orders_web": 12,
-      "orders_store": null
-    },
-    {
-      "date": "2026-08-16",
-      "web_cents": 52576,
-      "store_cents": null,
-      "orders_web": 5,
-      "orders_store": null
-    },
     {
       "date": "2026-08-17",
       "web_cents": 55987,
@@ -645,21 +631,27 @@
     },
     {
       "date": "2026-11-13",
-      "web_cents": 88994,
+      "web_cents": 126932,
       "store_cents": null,
-      "orders_web": 28,
+      "orders_web": 42,
+      "orders_store": null
+    },
+    {
+      "date": "2026-11-14",
+      "web_cents": 43361,
+      "store_cents": null,
+      "orders_web": 9,
+      "orders_store": null
+    },
+    {
+      "date": "2026-11-15",
+      "web_cents": 0,
+      "store_cents": null,
+      "orders_web": 0,
       "orders_store": null
     }
   ],
   "weekly": [
-    {
-      "week_start": "2026-08-10",
-      "web_cents": 103211,
-      "store_cents": null,
-      "orders": 17,
-      "total_cents": 103211,
-      "partial": true
-    },
     {
       "week_start": "2026-08-17",
       "web_cents": 446167,
@@ -758,10 +750,10 @@
     },
     {
       "week_start": "2026-11-09",
-      "web_cents": 483558,
+      "web_cents": 564857,
       "store_cents": null,
-      "orders": 175,
-      "total_cents": 483558,
+      "orders": 198,
+      "total_cents": 564857,
       "partial": true
     }
   ],
@@ -786,42 +778,42 @@
   },
   "current_week_to_date": {
     "week_start": "2026-11-09",
-    "total_cents": 483558
+    "total_cents": 564857
   },
   "by_category_28d": [
     {
       "category": "DTF [Direct to Film]",
-      "revenue_cents": 2170778,
-      "prev_period_cents": 2620065,
-      "share_pct": 76
+      "revenue_cents": 2203883,
+      "prev_period_cents": 2625424,
+      "share_pct": 77
     },
     {
       "category": "Adults",
-      "revenue_cents": 468838,
-      "prev_period_cents": 590446,
+      "revenue_cents": 451092,
+      "prev_period_cents": 605167,
       "share_pct": 16
     },
     {
       "category": "Apparel",
-      "revenue_cents": 62918,
-      "prev_period_cents": 88250,
+      "revenue_cents": 60925,
+      "prev_period_cents": 86943,
       "share_pct": 2
     },
     {
       "category": "Glitter",
       "revenue_cents": 35800,
-      "prev_period_cents": 57360,
+      "prev_period_cents": 55560,
       "share_pct": 1
     },
     {
       "category": "Adults | Youth",
-      "revenue_cents": 29211,
-      "prev_period_cents": 28500,
+      "revenue_cents": 28975,
+      "prev_period_cents": 28736,
       "share_pct": 1
     },
     {
       "category": "HTV Solids",
-      "revenue_cents": 18088,
+      "revenue_cents": 18987,
       "prev_period_cents": 45875,
       "share_pct": 1
     },
@@ -851,7 +843,7 @@
     },
     {
       "category": "Toddler | Infants",
-      "revenue_cents": 3500,
+      "revenue_cents": 4600,
       "prev_period_cents": 1950,
       "share_pct": 0
     },
@@ -903,10 +895,10 @@
       "product_id": 60967,
       "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P — Printing closed 11/14",
       "category": "DTF [Direct to Film]",
-      "unit_price_cents": 7271,
+      "unit_price_cents": 700,
       "price_note": null,
-      "units_30d": 1038,
-      "revenue_30d_cents": 2437124,
+      "units_30d": 942,
+      "revenue_30d_cents": 2241178,
       "real_units": true
     },
     {
@@ -915,8 +907,8 @@
       "category": "Adults",
       "unit_price_cents": 475,
       "price_note": null,
-      "units_30d": 343,
-      "revenue_30d_cents": 177431,
+      "units_30d": 333,
+      "revenue_30d_cents": 171981,
       "real_units": true
     },
     {
@@ -925,8 +917,8 @@
       "category": "Adults",
       "unit_price_cents": 450,
       "price_note": null,
-      "units_30d": 298,
-      "revenue_30d_cents": 153950,
+      "units_30d": 269,
+      "revenue_30d_cents": 139300,
       "real_units": true
     },
     {
@@ -935,8 +927,8 @@
       "category": "Adults",
       "unit_price_cents": 1100,
       "price_note": null,
-      "units_30d": 55,
-      "revenue_30d_cents": 61900,
+      "units_30d": 53,
+      "revenue_30d_cents": 59700,
       "real_units": true
     },
     {
@@ -945,18 +937,8 @@
       "category": "Adults",
       "unit_price_cents": 899,
       "price_note": null,
-      "units_30d": 52,
-      "revenue_30d_cents": 47501,
-      "real_units": true
-    },
-    {
-      "product_id": 8270,
-      "name": "HTV Glitter",
-      "category": "Glitter",
-      "unit_price_cents": 600,
-      "price_note": null,
-      "units_30d": 45,
-      "revenue_30d_cents": 42200,
+      "units_30d": 46,
+      "revenue_30d_cents": 42107,
       "real_units": true
     },
     {
@@ -965,8 +947,18 @@
       "category": "Adults",
       "unit_price_cents": 850,
       "price_note": null,
-      "units_30d": 45,
-      "revenue_30d_cents": 40250,
+      "units_30d": 43,
+      "revenue_30d_cents": 38400,
+      "real_units": true
+    },
+    {
+      "product_id": 8270,
+      "name": "HTV Glitter",
+      "category": "Glitter",
+      "unit_price_cents": 600,
+      "price_note": null,
+      "units_30d": 37,
+      "revenue_30d_cents": 35800,
       "real_units": true
     },
     {
@@ -975,8 +967,8 @@
       "category": "Adults | Youth",
       "unit_price_cents": 475,
       "price_note": null,
-      "units_30d": 69,
-      "revenue_30d_cents": 32061,
+      "units_30d": 64,
+      "revenue_30d_cents": 29686,
       "real_units": true
     },
     {
@@ -985,25 +977,25 @@
       "category": "Apparel",
       "unit_price_cents": 500,
       "price_note": null,
-      "units_30d": 48,
-      "revenue_30d_cents": 23643,
+      "units_30d": 45,
+      "revenue_30d_cents": 22143,
       "real_units": true
     },
     {
       "product_id": 14113,
       "name": "HTV UltraWeed™",
       "category": "HTV Solids",
-      "unit_price_cents": 350,
+      "unit_price_cents": 899,
       "price_note": null,
-      "units_30d": 27,
-      "revenue_30d_cents": 22684,
+      "units_30d": 23,
+      "revenue_30d_cents": 14037,
       "real_units": true
     }
   ],
   "averages": {
-    "avg_order_web_cents": 2820,
+    "avg_order_web_cents": 2859,
     "avg_order_store_cents": null,
-    "orders_per_open_day": 37.5,
+    "orders_per_open_day": 35.2,
     "reseller_share_of_revenue_pct": null,
     "repeat_order_rate_pct": null
   }

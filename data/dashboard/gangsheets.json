@@ -3,8 +3,8 @@
     "schema_version": "1.1",
     "sample": false,
     "sample_note": null,
-    "generated_at": "2026-11-13T12:55:11-06:00",
-    "as_of": "2026-11-13T12:55:11-06:00",
+    "generated_at": "2026-11-15T06:57:33-06:00",
+    "as_of": "2026-11-15T06:57:33-06:00",
     "timezone": "America/Chicago",
     "currency": "USD",
     "money_unit": "cents",
@@ -19,10 +19,10 @@
       "source": "WooCommerce orders"
     },
     "2026-11_to_date": {
-      "total": 407,
+      "total": 427,
       "real": true,
       "source": "WooCommerce orders",
-      "through": "2026-11-13"
+      "through": "2026-11-15"
     }
   },
   "printers": [
@@ -50,11 +50,11 @@
     "printer_2": null
   },
   "today": {
-    "date": "2026-11-13",
-    "total_so_far": 22,
+    "date": "2026-11-15",
+    "total_so_far": 0,
     "printer_1": null,
     "printer_2": null,
-    "queued_open": 2
+    "queued_open": 9
   },
   "daily": [
     {
@@ -317,7 +317,19 @@
     },
     {
       "date": "2026-11-13",
-      "total": 22,
+      "total": 34,
+      "printer_1": null,
+      "printer_2": null
+    },
+    {
+      "date": "2026-11-14",
+      "total": 8,
+      "printer_1": null,
+      "printer_2": null
+    },
+    {
+      "date": "2026-11-15",
+      "total": 0,
       "printer_1": null,
       "printer_2": null
     }

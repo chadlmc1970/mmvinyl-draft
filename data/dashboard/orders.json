@@ -3,8 +3,8 @@
     "schema_version": "1.1",
     "sample": false,
     "sample_note": null,
-    "generated_at": "2026-11-13T12:55:11-06:00",
-    "as_of": "2026-11-13T12:55:11-06:00",
+    "generated_at": "2026-11-15T06:57:33-06:00",
+    "as_of": "2026-11-15T06:57:33-06:00",
     "timezone": "America/Chicago",
     "currency": "USD",
     "money_unit": "cents",
@@ -24,6 +24,999 @@
   },
   "orders": [
     {
+      "id": "ord_69380",
+      "number": "69380",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_39397",
+      "customer_label": "Katie C.",
+      "created_at": "2026-11-14T17:27:40-06:00",
+      "promised_at": "2026-11-16T17:00:00-06:00",
+      "status": "printing",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P — Printing closed 11/14",
+          "category": "DTF [Direct to Film]",
+          "qty": 1,
+          "unit_price_cents": 700,
+          "price_source": "woocommerce_order"
+        }
+      ],
+      "gang_sheets": 1,
+      "printer": null,
+      "subtotal_cents": 700,
+      "total_cents": 700,
+      "total_note": "Excludes tax",
+      "payment": {
+        "method": "card",
+        "state": "paid",
+        "gateway": "stripe"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_69379",
+      "number": "69379",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_330",
+      "customer_label": "Kierra R.",
+      "created_at": "2026-11-14T14:46:32-06:00",
+      "promised_at": "2026-11-16T17:00:00-06:00",
+      "status": "printing",
+      "risk": "art",
+      "risk_reason": "Art check flagged low resolution or overlapping images",
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P — Printing closed 11/14",
+          "category": "DTF [Direct to Film]",
+          "qty": 1,
+          "unit_price_cents": 17426,
+          "price_source": "woocommerce_order"
+        },
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P — Printing closed 11/14",
+          "category": "DTF [Direct to Film]",
+          "qty": 1,
+          "unit_price_cents": 3483,
+          "price_source": "woocommerce_order"
+        }
+      ],
+      "gang_sheets": 2,
+      "printer": null,
+      "subtotal_cents": 20909,
+      "total_cents": 20909,
+      "total_note": "Excludes tax",
+      "payment": {
+        "method": "card",
+        "state": "paid",
+        "gateway": "stripe"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "needs_review",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_69378",
+      "number": "69378",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_34634",
+      "customer_label": "Keishonna D.",
+      "created_at": "2026-11-14T13:58:40-06:00",
+      "promised_at": "2026-11-16T17:00:00-06:00",
+      "status": "printing",
+      "risk": "art",
+      "risk_reason": "Art check flagged low resolution or overlapping images",
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P — Printing closed 11/14",
+          "category": "DTF [Direct to Film]",
+          "qty": 1,
+          "unit_price_cents": 2383,
+          "price_source": "woocommerce_order"
+        }
+      ],
+      "gang_sheets": 1,
+      "printer": null,
+      "subtotal_cents": 2383,
+      "total_cents": 2383,
+      "total_note": "Excludes tax",
+      "payment": {
+        "method": "card",
+        "state": "paid",
+        "gateway": "stripe"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "needs_review",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_69375",
+      "number": "69375",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_gecb88d839a",
+      "customer_label": "Lacy S.",
+      "created_at": "2026-11-14T11:33:07-06:00",
+      "promised_at": "2026-11-16T17:00:00-06:00",
+      "status": "printing",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P — Printing closed 11/14",
+          "category": "DTF [Direct to Film]",
+          "qty": 1,
+          "unit_price_cents": 11826,
+          "price_source": "woocommerce_order"
+        }
+      ],
+      "gang_sheets": 1,
+      "printer": null,
+      "subtotal_cents": 11826,
+      "total_cents": 11826,
+      "total_note": "Excludes tax",
+      "payment": {
+        "method": "paypal",
+        "state": "paid",
+        "gateway": "ppcp-gateway"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_69373",
+      "number": "69373",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_g434389dc86",
+      "customer_label": "Ashley L.",
+      "created_at": "2026-11-14T11:20:36-06:00",
+      "promised_at": "2026-11-16T17:00:00-06:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 14113,
+          "name": "HTV UltraWeed™",
+          "category": "HTV Solids",
+          "qty": 1,
+          "unit_price_cents": 899,
+          "price_source": "woocommerce_order"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 899,
+      "total_cents": 899,
+      "total_note": "Excludes tax",
+      "payment": {
+        "method": "card",
+        "state": "paid",
+        "gateway": "stripe"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_69367",
+      "number": "69367",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_g7a4badfb31",
+      "customer_label": "Breland S.",
+      "created_at": "2026-11-14T09:54:26-06:00",
+      "promised_at": "2026-11-14T13:00:00-06:00",
+      "status": "printing",
+      "risk": "late",
+      "risk_reason": "Past the promised time and still open",
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P — Printing closed 11/14",
+          "category": "DTF [Direct to Film]",
+          "qty": 1,
+          "unit_price_cents": 700,
+          "price_source": "woocommerce_order"
+        },
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P — Printing closed 11/14",
+          "category": "DTF [Direct to Film]",
+          "qty": 1,
+          "unit_price_cents": 758,
+          "price_source": "woocommerce_order"
+        }
+      ],
+      "gang_sheets": 2,
+      "printer": null,
+      "subtotal_cents": 1458,
+      "total_cents": 1458,
+      "total_note": "Excludes tax",
+      "payment": {
+        "method": "card",
+        "state": "paid",
+        "gateway": "stripe"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_69366",
+      "number": "69366",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_ge9724775a6",
+      "customer_label": "joshua J.",
+      "created_at": "2026-11-14T09:52:58-06:00",
+      "promised_at": "2026-11-14T13:00:00-06:00",
+      "status": "printing",
+      "risk": "late",
+      "risk_reason": "Past the promised time and still open",
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P — Printing closed 11/14",
+          "category": "DTF [Direct to Film]",
+          "qty": 1,
+          "unit_price_cents": 1211,
+          "price_source": "woocommerce_order"
+        }
+      ],
+      "gang_sheets": 1,
+      "printer": null,
+      "subtotal_cents": 1211,
+      "total_cents": 1211,
+      "total_note": "Excludes tax",
+      "payment": {
+        "method": "card",
+        "state": "paid",
+        "gateway": "stripe"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_69364",
+      "number": "69364",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_46",
+      "customer_label": "Andrea W.",
+      "created_at": "2026-11-14T08:47:10-06:00",
+      "promised_at": "2026-11-14T13:00:00-06:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 59311,
+          "name": "Rabbit Skins Toddler Sweatshirt",
+          "category": "Toddler | Infants",
+          "qty": 1,
+          "unit_price_cents": 1100,
+          "price_source": "woocommerce_order"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 1100,
+      "total_cents": 1100,
+      "total_note": "Excludes tax",
+      "payment": {
+        "method": "card",
+        "state": "paid",
+        "gateway": "stripe"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_69363",
+      "number": "69363",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_12685",
+      "customer_label": "Whitney C.",
+      "created_at": "2026-11-14T07:40:42-06:00",
+      "promised_at": "2026-11-14T13:00:00-06:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 50579,
+          "name": "Gildan Softstyle Unisex 64000",
+          "category": "Adults",
+          "qty": 1,
+          "unit_price_cents": 475,
+          "price_source": "woocommerce_order"
+        },
+        {
+          "product_id": 50579,
+          "name": "Gildan Softstyle Unisex 64000",
+          "category": "Adults",
+          "qty": 1,
+          "unit_price_cents": 975,
+          "price_source": "woocommerce_order"
+        },
+        {
+          "product_id": 50579,
+          "name": "Gildan Softstyle Unisex 64000",
+          "category": "Adults",
+          "qty": 1,
+          "unit_price_cents": 475,
+          "price_source": "woocommerce_order"
+        },
+        {
+          "product_id": 50579,
+          "name": "Gildan Softstyle Unisex 64000",
+          "category": "Adults",
+          "qty": 1,
+          "unit_price_cents": 475,
+          "price_source": "woocommerce_order"
+        },
+        {
+          "product_id": 61939,
+          "name": "YOUTH Gildan Softstyle",
+          "category": "Adults | Youth",
+          "qty": 1,
+          "unit_price_cents": 475,
+          "price_source": "woocommerce_order"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 2875,
+      "total_cents": 2875,
+      "total_note": "Excludes tax",
+      "payment": {
+        "method": "card",
+        "state": "paid",
+        "gateway": "stripe"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_69358",
+      "number": "69358",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_919",
+      "customer_label": "Karam Jones",
+      "created_at": "2026-11-13T17:52:08-06:00",
+      "promised_at": "2026-11-14T13:00:00-06:00",
+      "status": "printing",
+      "risk": "late",
+      "risk_reason": "Past the promised time and still open",
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P — Printing closed 11/14",
+          "category": "DTF [Direct to Film]",
+          "qty": 1,
+          "unit_price_cents": 844,
+          "price_source": "woocommerce_order"
+        },
+        {
+          "product_id": 51938,
+          "name": "Gildan Heavy Blend Crewneck Sweatshirt",
+          "category": "Adults",
+          "qty": 1,
+          "unit_price_cents": 1100,
+          "price_source": "woocommerce_order"
+        },
+        {
+          "product_id": 50579,
+          "name": "Gildan Softstyle Unisex 64000",
+          "category": "Adults",
+          "qty": 1,
+          "unit_price_cents": 475,
+          "price_source": "woocommerce_order"
+        }
+      ],
+      "gang_sheets": 1,
+      "printer": null,
+      "subtotal_cents": 2419,
+      "total_cents": 2419,
+      "total_note": "Excludes tax",
+      "payment": {
+        "method": "paypal",
+        "state": "paid",
+        "gateway": "ppcp-gateway"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_69356",
+      "number": "69356",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_g285c38874a",
+      "customer_label": "Donice P.",
+      "created_at": "2026-11-13T16:38:05-06:00",
+      "promised_at": "2026-11-14T13:00:00-06:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 50579,
+          "name": "Gildan Softstyle Unisex 64000",
+          "category": "Adults",
+          "qty": 1,
+          "unit_price_cents": 475,
+          "price_source": "woocommerce_order"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 475,
+      "total_cents": 475,
+      "total_note": "Excludes tax",
+      "payment": {
+        "method": "card",
+        "state": "paid",
+        "gateway": "stripe"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_69355",
+      "number": "69355",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_g285c38874a",
+      "customer_label": "Donice P.",
+      "created_at": "2026-11-13T16:25:00-06:00",
+      "promised_at": "2026-11-14T13:00:00-06:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P — Printing closed 11/14",
+          "category": "DTF [Direct to Film]",
+          "qty": 1,
+          "unit_price_cents": 1028,
+          "price_source": "woocommerce_order"
+        }
+      ],
+      "gang_sheets": 1,
+      "printer": null,
+      "subtotal_cents": 1028,
+      "total_cents": 1028,
+      "total_note": "Excludes tax",
+      "payment": {
+        "method": "card",
+        "state": "paid",
+        "gateway": "stripe"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "needs_review",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_69354",
+      "number": "69354",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_12295",
+      "customer_label": "Brandi G.",
+      "created_at": "2026-11-13T15:59:21-06:00",
+      "promised_at": "2026-11-14T13:00:00-06:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P — Printing closed 11/14",
+          "category": "DTF [Direct to Film]",
+          "qty": 1,
+          "unit_price_cents": 7385,
+          "price_source": "woocommerce_order"
+        }
+      ],
+      "gang_sheets": 1,
+      "printer": null,
+      "subtotal_cents": 7385,
+      "total_cents": 7385,
+      "total_note": "Excludes tax",
+      "payment": {
+        "method": "paypal",
+        "state": "paid",
+        "gateway": "ppcp-gateway"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_69353",
+      "number": "69353",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_22301",
+      "customer_label": "Roshaundra B.",
+      "created_at": "2026-11-13T15:31:34-06:00",
+      "promised_at": "2026-11-14T13:00:00-06:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P — Printing closed 11/14",
+          "category": "DTF [Direct to Film]",
+          "qty": 1,
+          "unit_price_cents": 1388,
+          "price_source": "woocommerce_order"
+        }
+      ],
+      "gang_sheets": 1,
+      "printer": null,
+      "subtotal_cents": 1388,
+      "total_cents": 1388,
+      "total_note": "Excludes tax",
+      "payment": {
+        "method": "card",
+        "state": "paid",
+        "gateway": "ppcp-credit-card-gateway"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_69352",
+      "number": "69352",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_g1e0394d949",
+      "customer_label": "Nadina P.",
+      "created_at": "2026-11-13T15:30:11-06:00",
+      "promised_at": "2026-11-14T13:00:00-06:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P — Printing closed 11/14",
+          "category": "DTF [Direct to Film]",
+          "qty": 1,
+          "unit_price_cents": 750,
+          "price_source": "woocommerce_order"
+        }
+      ],
+      "gang_sheets": 1,
+      "printer": null,
+      "subtotal_cents": 750,
+      "total_cents": 750,
+      "total_note": "Excludes tax",
+      "payment": {
+        "method": "paypal",
+        "state": "paid",
+        "gateway": "ppcp-gateway"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "needs_review",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_69351",
+      "number": "69351",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_gfd02c5d55c",
+      "customer_label": "BRITTINI J.",
+      "created_at": "2026-11-13T14:31:22-06:00",
+      "promised_at": "2026-11-14T13:00:00-06:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P — Printing closed 11/14",
+          "category": "DTF [Direct to Film]",
+          "qty": 1,
+          "unit_price_cents": 12220,
+          "price_source": "woocommerce_order"
+        }
+      ],
+      "gang_sheets": 1,
+      "printer": null,
+      "subtotal_cents": 12220,
+      "total_cents": 12220,
+      "total_note": "Excludes tax",
+      "payment": {
+        "method": "card",
+        "state": "paid",
+        "gateway": "stripe"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "needs_review",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_69350",
+      "number": "69350",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_g719d55ad60",
+      "customer_label": "Tykira P.",
+      "created_at": "2026-11-13T13:45:40-06:00",
+      "promised_at": "2026-11-13T17:00:00-06:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P — Printing closed 11/14",
+          "category": "DTF [Direct to Film]",
+          "qty": 1,
+          "unit_price_cents": 700,
+          "price_source": "woocommerce_order"
+        }
+      ],
+      "gang_sheets": 1,
+      "printer": null,
+      "subtotal_cents": 700,
+      "total_cents": 700,
+      "total_note": "Excludes tax",
+      "payment": {
+        "method": "card",
+        "state": "paid",
+        "gateway": "stripe"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_69349",
+      "number": "69349",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_g85f063af0f",
+      "customer_label": "Tykasia H.",
+      "created_at": "2026-11-13T13:38:37-06:00",
+      "promised_at": "2026-11-13T17:00:00-06:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P — Printing closed 11/14",
+          "category": "DTF [Direct to Film]",
+          "qty": 1,
+          "unit_price_cents": 1423,
+          "price_source": "woocommerce_order"
+        }
+      ],
+      "gang_sheets": 1,
+      "printer": null,
+      "subtotal_cents": 1423,
+      "total_cents": 1423,
+      "total_note": "Excludes tax",
+      "payment": {
+        "method": "card",
+        "state": "paid",
+        "gateway": "stripe"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_69348",
+      "number": "69348",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_924",
+      "customer_label": "Genesis B.",
+      "created_at": "2026-11-13T13:37:58-06:00",
+      "promised_at": "2026-11-13T17:00:00-06:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P — Printing closed 11/14",
+          "category": "DTF [Direct to Film]",
+          "qty": 1,
+          "unit_price_cents": 2016,
+          "price_source": "woocommerce_order"
+        },
+        {
+          "product_id": 8439,
+          "name": "JERZEES DRI-⁠POWER® 50/50 T-⁠Shirt",
+          "category": "Adults",
+          "qty": 1,
+          "unit_price_cents": 450,
+          "price_source": "woocommerce_order"
+        },
+        {
+          "product_id": 8439,
+          "name": "JERZEES DRI-⁠POWER® 50/50 T-⁠Shirt",
+          "category": "Adults",
+          "qty": 1,
+          "unit_price_cents": 950,
+          "price_source": "woocommerce_order"
+        },
+        {
+          "product_id": 8439,
+          "name": "JERZEES DRI-⁠POWER® 50/50 T-⁠Shirt",
+          "category": "Adults",
+          "qty": 3,
+          "unit_price_cents": 450,
+          "price_source": "woocommerce_order"
+        },
+        {
+          "product_id": 8439,
+          "name": "JERZEES DRI-⁠POWER® 50/50 T-⁠Shirt",
+          "category": "Adults",
+          "qty": 1,
+          "unit_price_cents": 450,
+          "price_source": "woocommerce_order"
+        }
+      ],
+      "gang_sheets": 1,
+      "printer": null,
+      "subtotal_cents": 5216,
+      "total_cents": 5216,
+      "total_note": "Excludes tax",
+      "payment": {
+        "method": "card",
+        "state": "paid",
+        "gateway": "stripe"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "needs_review",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_69347",
+      "number": "69347",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_22301",
+      "customer_label": "Roshaundra B.",
+      "created_at": "2026-11-13T13:35:43-06:00",
+      "promised_at": "2026-11-13T17:00:00-06:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P — Printing closed 11/14",
+          "category": "DTF [Direct to Film]",
+          "qty": 1,
+          "unit_price_cents": 2647,
+          "price_source": "woocommerce_order"
+        }
+      ],
+      "gang_sheets": 1,
+      "printer": null,
+      "subtotal_cents": 2647,
+      "total_cents": 2647,
+      "total_note": "Excludes tax",
+      "payment": {
+        "method": "card",
+        "state": "paid",
+        "gateway": "ppcp-credit-card-gateway"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_69346",
+      "number": "69346",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_g3287442b61",
+      "customer_label": "Cormesha S.",
+      "created_at": "2026-11-13T13:35:25-06:00",
+      "promised_at": "2026-11-13T17:00:00-06:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P — Printing closed 11/14",
+          "category": "DTF [Direct to Film]",
+          "qty": 1,
+          "unit_price_cents": 700,
+          "price_source": "woocommerce_order"
+        }
+      ],
+      "gang_sheets": 1,
+      "printer": null,
+      "subtotal_cents": 700,
+      "total_cents": 700,
+      "total_note": "Excludes tax",
+      "payment": {
+        "method": "paypal",
+        "state": "paid",
+        "gateway": "ppcp-gateway"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_69344",
+      "number": "69344",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_g239e80a57d",
+      "customer_label": "Tanadj H.",
+      "created_at": "2026-11-13T13:24:07-06:00",
+      "promised_at": "2026-11-13T17:00:00-06:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 50579,
+          "name": "Gildan Softstyle Unisex 64000",
+          "category": "Adults",
+          "qty": 1,
+          "unit_price_cents": 775,
+          "price_source": "woocommerce_order"
+        }
+      ],
+      "gang_sheets": 0,
+      "printer": null,
+      "subtotal_cents": 775,
+      "total_cents": 775,
+      "total_note": "Excludes tax",
+      "payment": {
+        "method": "card",
+        "state": "paid",
+        "gateway": "stripe"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": null,
+      "pickup_text": null,
+      "notes": null
+    },
+    {
+      "id": "ord_69343",
+      "number": "69343",
+      "channel": "web",
+      "source_system": "WooCommerce",
+      "customer_id": "cust_g92248b7886",
+      "customer_label": "Sofia E.",
+      "created_at": "2026-11-13T13:13:38-06:00",
+      "promised_at": "2026-11-13T17:00:00-06:00",
+      "status": "picked_up",
+      "risk": null,
+      "risk_reason": null,
+      "lines": [
+        {
+          "product_id": 60967,
+          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P — Printing closed 11/14",
+          "category": "DTF [Direct to Film]",
+          "qty": 1,
+          "unit_price_cents": 812,
+          "price_source": "woocommerce_order"
+        }
+      ],
+      "gang_sheets": 1,
+      "printer": null,
+      "subtotal_cents": 812,
+      "total_cents": 812,
+      "total_note": "Excludes tax",
+      "payment": {
+        "method": "card",
+        "state": "paid",
+        "gateway": "stripe"
+      },
+      "fulfillment": {
+        "type": "pickup"
+      },
+      "art_check": "passed",
+      "pickup_text": null,
+      "notes": null
+    },
+    {
       "id": "ord_69342",
       "number": "69342",
       "channel": "web",
@@ -32,7 +1025,7 @@
       "customer_label": "John R.",
       "created_at": "2026-11-13T12:39:56-06:00",
       "promised_at": "2026-11-13T17:00:00-06:00",
-      "status": "printing",
+      "status": "picked_up",
       "risk": null,
       "risk_reason": null,
       "lines": [
@@ -118,7 +1111,7 @@
       "customer_label": "Karam Jones",
       "created_at": "2026-11-13T12:16:13-06:00",
       "promised_at": "2026-11-13T17:00:00-06:00",
-      "status": "printing",
+      "status": "picked_up",
       "risk": null,
       "risk_reason": null,
       "lines": [
@@ -235,7 +1228,7 @@
       "customer_label": "Karam Jones",
       "created_at": "2026-11-13T11:09:11-06:00",
       "promised_at": "2026-11-13T17:00:00-06:00",
-      "status": "on_hold",
+      "status": "picked_up",
       "risk": null,
       "risk_reason": null,
       "lines": [
@@ -1362,46 +2355,6 @@
         "method": "card",
         "state": "paid",
         "gateway": "stripe"
-      },
-      "fulfillment": {
-        "type": "pickup"
-      },
-      "art_check": "needs_review",
-      "pickup_text": null,
-      "notes": null
-    },
-    {
-      "id": "ord_69306",
-      "number": "69306",
-      "channel": "web",
-      "source_system": "WooCommerce",
-      "customer_id": "cust_12318",
-      "customer_label": "Diaquire T.",
-      "created_at": "2026-11-12T21:20:00-06:00",
-      "promised_at": "2026-11-13T17:00:00-06:00",
-      "status": "payment_failed",
-      "risk": null,
-      "risk_reason": null,
-      "lines": [
-        {
-          "product_id": 60967,
-          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P &amp; 10A SAT FOR SAME DAY",
-          "category": "DTF [Direct to Film]",
-          "qty": 1,
-          "unit_price_cents": 758,
-          "price_source": "woocommerce_order"
-        }
-      ],
-      "gang_sheets": 1,
-      "printer": null,
-      "subtotal_cents": 758,
-      "total_cents": 758,
-      "total_note": "Excludes tax",
-      "payment": {
-        "method": "card",
-        "state": "failed",
-        "gateway": "stripe",
-        "failure_reason": null
       },
       "fulfillment": {
         "type": "pickup"
@@ -3000,46 +3953,6 @@
       "notes": null
     },
     {
-      "id": "ord_69240",
-      "number": "69240",
-      "channel": "web",
-      "source_system": "WooCommerce",
-      "customer_id": "cust_g86f0c2fc1c",
-      "customer_label": "Amourruffles",
-      "created_at": "2026-11-12T06:55:56-06:00",
-      "promised_at": "2026-11-12T17:00:00-06:00",
-      "status": "payment_failed",
-      "risk": null,
-      "risk_reason": null,
-      "lines": [
-        {
-          "product_id": 8439,
-          "name": "JERZEES DRI-⁠POWER® 50/50 T-⁠Shirt",
-          "category": "Adults",
-          "qty": 1,
-          "unit_price_cents": 450,
-          "price_source": "woocommerce_order"
-        }
-      ],
-      "gang_sheets": 0,
-      "printer": null,
-      "subtotal_cents": 450,
-      "total_cents": 450,
-      "total_note": "Excludes tax",
-      "payment": {
-        "method": "card",
-        "state": "failed",
-        "gateway": "stripe",
-        "failure_reason": null
-      },
-      "fulfillment": {
-        "type": "pickup"
-      },
-      "art_check": null,
-      "pickup_text": null,
-      "notes": null
-    },
-    {
       "id": "ord_69239",
       "number": "69239",
       "channel": "web",
@@ -3909,7 +4822,7 @@
       "number": "69220",
       "channel": "web",
       "source_system": "WooCommerce",
-      "customer_id": "cust_g9b4d971fce",
+      "customer_id": "cust_12295",
       "customer_label": "Brandi G.",
       "created_at": "2026-11-11T13:01:29-06:00",
       "promised_at": "2026-11-11T17:00:00-06:00",
@@ -6594,7 +7507,7 @@
       "number": "69156",
       "channel": "web",
       "source_system": "WooCommerce",
-      "customer_id": "cust_g9b4d971fce",
+      "customer_id": "cust_12295",
       "customer_label": "Brandi G.",
       "created_at": "2026-11-09T21:31:32-06:00",
       "promised_at": "2026-11-10T17:00:00-06:00",
@@ -10307,7 +11220,7 @@
       "number": "69069",
       "channel": "web",
       "source_system": "WooCommerce",
-      "customer_id": "cust_g9b4d971fce",
+      "customer_id": "cust_12295",
       "customer_label": "Brandi G.",
       "created_at": "2026-11-06T10:41:30-06:00",
       "promised_at": "2026-11-06T17:00:00-06:00",
@@ -12111,953 +13024,6 @@
       "printer": null,
       "subtotal_cents": 2850,
       "total_cents": 2850,
-      "total_note": "Excludes tax",
-      "payment": {
-        "method": "card",
-        "state": "paid",
-        "gateway": "stripe"
-      },
-      "fulfillment": {
-        "type": "pickup"
-      },
-      "art_check": null,
-      "pickup_text": null,
-      "notes": null
-    },
-    {
-      "id": "ord_69021",
-      "number": "69021",
-      "channel": "web",
-      "source_system": "WooCommerce",
-      "customer_id": "cust_g5e5bf8b57d",
-      "customer_label": "Kayla J.",
-      "created_at": "2026-11-05T15:14:42-06:00",
-      "promised_at": "2026-11-06T17:00:00-06:00",
-      "status": "picked_up",
-      "risk": null,
-      "risk_reason": null,
-      "lines": [
-        {
-          "product_id": 51938,
-          "name": "Gildan Heavy Blend Crewneck Sweatshirt",
-          "category": "Adults",
-          "qty": 3,
-          "unit_price_cents": 1100,
-          "price_source": "woocommerce_order"
-        },
-        {
-          "product_id": 51938,
-          "name": "Gildan Heavy Blend Crewneck Sweatshirt",
-          "category": "Adults",
-          "qty": 1,
-          "unit_price_cents": 1100,
-          "price_source": "woocommerce_order"
-        },
-        {
-          "product_id": 51938,
-          "name": "Gildan Heavy Blend Crewneck Sweatshirt",
-          "category": "Adults",
-          "qty": 2,
-          "unit_price_cents": 1100,
-          "price_source": "woocommerce_order"
-        },
-        {
-          "product_id": 51938,
-          "name": "Gildan Heavy Blend Crewneck Sweatshirt",
-          "category": "Adults",
-          "qty": 1,
-          "unit_price_cents": 1100,
-          "price_source": "woocommerce_order"
-        }
-      ],
-      "gang_sheets": 0,
-      "printer": null,
-      "subtotal_cents": 7700,
-      "total_cents": 7700,
-      "total_note": "Excludes tax",
-      "payment": {
-        "method": "card",
-        "state": "paid",
-        "gateway": "stripe"
-      },
-      "fulfillment": {
-        "type": "pickup"
-      },
-      "art_check": null,
-      "pickup_text": null,
-      "notes": null
-    },
-    {
-      "id": "ord_69020",
-      "number": "69020",
-      "channel": "web",
-      "source_system": "WooCommerce",
-      "customer_id": "cust_g4e4c24f482",
-      "customer_label": "marlett m.",
-      "created_at": "2026-11-05T15:12:08-06:00",
-      "promised_at": "2026-11-06T17:00:00-06:00",
-      "status": "picked_up",
-      "risk": null,
-      "risk_reason": null,
-      "lines": [
-        {
-          "product_id": 60967,
-          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P &amp; 10A SAT FOR SAME DAY",
-          "category": "DTF [Direct to Film]",
-          "qty": 1,
-          "unit_price_cents": 2381,
-          "price_source": "woocommerce_order"
-        }
-      ],
-      "gang_sheets": 1,
-      "printer": null,
-      "subtotal_cents": 2381,
-      "total_cents": 2381,
-      "total_note": "Excludes tax",
-      "payment": {
-        "method": "card",
-        "state": "paid",
-        "gateway": "stripe"
-      },
-      "fulfillment": {
-        "type": "pickup"
-      },
-      "art_check": "needs_review",
-      "pickup_text": null,
-      "notes": null
-    },
-    {
-      "id": "ord_69019",
-      "number": "69019",
-      "channel": "web",
-      "source_system": "WooCommerce",
-      "customer_id": "cust_22301",
-      "customer_label": "Roshaundra B.",
-      "created_at": "2026-11-05T15:06:55-06:00",
-      "promised_at": "2026-11-06T17:00:00-06:00",
-      "status": "picked_up",
-      "risk": null,
-      "risk_reason": null,
-      "lines": [
-        {
-          "product_id": 60967,
-          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P &amp; 10A SAT FOR SAME DAY",
-          "category": "DTF [Direct to Film]",
-          "qty": 1,
-          "unit_price_cents": 3481,
-          "price_source": "woocommerce_order"
-        }
-      ],
-      "gang_sheets": 1,
-      "printer": null,
-      "subtotal_cents": 3481,
-      "total_cents": 3481,
-      "total_note": "Excludes tax",
-      "payment": {
-        "method": "card",
-        "state": "paid",
-        "gateway": "ppcp-credit-card-gateway"
-      },
-      "fulfillment": {
-        "type": "pickup"
-      },
-      "art_check": "needs_review",
-      "pickup_text": null,
-      "notes": null
-    },
-    {
-      "id": "ord_69018",
-      "number": "69018",
-      "channel": "web",
-      "source_system": "WooCommerce",
-      "customer_id": "cust_15287",
-      "customer_label": "Melondy S.",
-      "created_at": "2026-11-05T15:00:05-06:00",
-      "promised_at": "2026-11-06T17:00:00-06:00",
-      "status": "picked_up",
-      "risk": null,
-      "risk_reason": null,
-      "lines": [
-        {
-          "product_id": 60967,
-          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P &amp; 10A SAT FOR SAME DAY",
-          "category": "DTF [Direct to Film]",
-          "qty": 1,
-          "unit_price_cents": 2991,
-          "price_source": "woocommerce_order"
-        }
-      ],
-      "gang_sheets": 1,
-      "printer": null,
-      "subtotal_cents": 2991,
-      "total_cents": 2991,
-      "total_note": "Excludes tax",
-      "payment": {
-        "method": "card",
-        "state": "paid",
-        "gateway": "stripe"
-      },
-      "fulfillment": {
-        "type": "pickup"
-      },
-      "art_check": "passed",
-      "pickup_text": null,
-      "notes": null
-    },
-    {
-      "id": "ord_69017",
-      "number": "69017",
-      "channel": "web",
-      "source_system": "WooCommerce",
-      "customer_id": "cust_ga17d9d4d3f",
-      "customer_label": "Brittini \"C3\" J.",
-      "created_at": "2026-11-05T14:21:12-06:00",
-      "promised_at": "2026-11-06T17:00:00-06:00",
-      "status": "picked_up",
-      "risk": null,
-      "risk_reason": null,
-      "lines": [
-        {
-          "product_id": 60967,
-          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P &amp; 10A SAT FOR SAME DAY",
-          "category": "DTF [Direct to Film]",
-          "qty": 1,
-          "unit_price_cents": 700,
-          "price_source": "woocommerce_order"
-        }
-      ],
-      "gang_sheets": 1,
-      "printer": null,
-      "subtotal_cents": 700,
-      "total_cents": 700,
-      "total_note": "Excludes tax",
-      "payment": {
-        "method": "card",
-        "state": "paid",
-        "gateway": "stripe"
-      },
-      "fulfillment": {
-        "type": "pickup"
-      },
-      "art_check": "needs_review",
-      "pickup_text": null,
-      "notes": null
-    },
-    {
-      "id": "ord_69014",
-      "number": "69014",
-      "channel": "web",
-      "source_system": "WooCommerce",
-      "customer_id": "cust_g02d231a37e",
-      "customer_label": "Lakedra H.",
-      "created_at": "2026-11-05T14:06:04-06:00",
-      "promised_at": "2026-11-06T17:00:00-06:00",
-      "status": "picked_up",
-      "risk": null,
-      "risk_reason": null,
-      "lines": [
-        {
-          "product_id": 60967,
-          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P &amp; 10A SAT FOR SAME DAY",
-          "category": "DTF [Direct to Film]",
-          "qty": 1,
-          "unit_price_cents": 1530,
-          "price_source": "woocommerce_order"
-        }
-      ],
-      "gang_sheets": 1,
-      "printer": null,
-      "subtotal_cents": 1530,
-      "total_cents": 1530,
-      "total_note": "Excludes tax",
-      "payment": {
-        "method": "card",
-        "state": "paid",
-        "gateway": "stripe"
-      },
-      "fulfillment": {
-        "type": "pickup"
-      },
-      "art_check": "passed",
-      "pickup_text": null,
-      "notes": null
-    },
-    {
-      "id": "ord_69013",
-      "number": "69013",
-      "channel": "web",
-      "source_system": "WooCommerce",
-      "customer_id": "cust_g8436a105c9",
-      "customer_label": "Jeanna U.",
-      "created_at": "2026-11-05T14:04:07-06:00",
-      "promised_at": "2026-11-06T17:00:00-06:00",
-      "status": "picked_up",
-      "risk": null,
-      "risk_reason": null,
-      "lines": [
-        {
-          "product_id": 60967,
-          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P &amp; 10A SAT FOR SAME DAY",
-          "category": "DTF [Direct to Film]",
-          "qty": 1,
-          "unit_price_cents": 758,
-          "price_source": "woocommerce_order"
-        }
-      ],
-      "gang_sheets": 1,
-      "printer": null,
-      "subtotal_cents": 758,
-      "total_cents": 758,
-      "total_note": "Excludes tax",
-      "payment": {
-        "method": "card",
-        "state": "paid",
-        "gateway": "stripe"
-      },
-      "fulfillment": {
-        "type": "pickup"
-      },
-      "art_check": "needs_review",
-      "pickup_text": null,
-      "notes": null
-    },
-    {
-      "id": "ord_69012",
-      "number": "69012",
-      "channel": "web",
-      "source_system": "WooCommerce",
-      "customer_id": "cust_g1c1b167b33",
-      "customer_label": "Hate No One, LLC",
-      "created_at": "2026-11-05T13:59:34-06:00",
-      "promised_at": "2026-11-05T17:00:00-06:00",
-      "status": "picked_up",
-      "risk": null,
-      "risk_reason": null,
-      "lines": [
-        {
-          "product_id": 60967,
-          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P &amp; 10A SAT FOR SAME DAY",
-          "category": "DTF [Direct to Film]",
-          "qty": 1,
-          "unit_price_cents": 700,
-          "price_source": "woocommerce_order"
-        }
-      ],
-      "gang_sheets": 1,
-      "printer": null,
-      "subtotal_cents": 700,
-      "total_cents": 700,
-      "total_note": "Excludes tax",
-      "payment": {
-        "method": "card",
-        "state": "paid",
-        "gateway": "ppcp-credit-card-gateway"
-      },
-      "fulfillment": {
-        "type": "pickup"
-      },
-      "art_check": "passed",
-      "pickup_text": null,
-      "notes": null
-    },
-    {
-      "id": "ord_69011",
-      "number": "69011",
-      "channel": "web",
-      "source_system": "WooCommerce",
-      "customer_id": "cust_58759",
-      "customer_label": "TARA High School",
-      "created_at": "2026-11-05T13:58:17-06:00",
-      "promised_at": "2026-11-05T17:00:00-06:00",
-      "status": "picked_up",
-      "risk": null,
-      "risk_reason": null,
-      "lines": [
-        {
-          "product_id": 60967,
-          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P &amp; 10A SAT FOR SAME DAY",
-          "category": "DTF [Direct to Film]",
-          "qty": 1,
-          "unit_price_cents": 1454,
-          "price_source": "woocommerce_order"
-        }
-      ],
-      "gang_sheets": 1,
-      "printer": null,
-      "subtotal_cents": 1454,
-      "total_cents": 1454,
-      "total_note": "Excludes tax",
-      "payment": {
-        "method": "card",
-        "state": "paid",
-        "gateway": "stripe"
-      },
-      "fulfillment": {
-        "type": "pickup"
-      },
-      "art_check": "passed",
-      "pickup_text": null,
-      "notes": null
-    },
-    {
-      "id": "ord_69010",
-      "number": "69010",
-      "channel": "web",
-      "source_system": "WooCommerce",
-      "customer_id": "cust_gc2989cf042",
-      "customer_label": "Kelli C.",
-      "created_at": "2026-11-05T13:54:22-06:00",
-      "promised_at": "2026-11-05T17:00:00-06:00",
-      "status": "picked_up",
-      "risk": null,
-      "risk_reason": null,
-      "lines": [
-        {
-          "product_id": 60967,
-          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P &amp; 10A SAT FOR SAME DAY",
-          "category": "DTF [Direct to Film]",
-          "qty": 1,
-          "unit_price_cents": 3393,
-          "price_source": "woocommerce_order"
-        }
-      ],
-      "gang_sheets": 1,
-      "printer": null,
-      "subtotal_cents": 3393,
-      "total_cents": 3393,
-      "total_note": "Excludes tax",
-      "payment": {
-        "method": "card",
-        "state": "paid",
-        "gateway": "stripe"
-      },
-      "fulfillment": {
-        "type": "pickup"
-      },
-      "art_check": "needs_review",
-      "pickup_text": null,
-      "notes": null
-    },
-    {
-      "id": "ord_69009",
-      "number": "69009",
-      "channel": "web",
-      "source_system": "WooCommerce",
-      "customer_id": "cust_1345",
-      "customer_label": "McKenzie B.",
-      "created_at": "2026-11-05T13:44:21-06:00",
-      "promised_at": "2026-11-05T17:00:00-06:00",
-      "status": "picked_up",
-      "risk": null,
-      "risk_reason": null,
-      "lines": [
-        {
-          "product_id": 60967,
-          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P &amp; 10A SAT FOR SAME DAY",
-          "category": "DTF [Direct to Film]",
-          "qty": 1,
-          "unit_price_cents": 788,
-          "price_source": "woocommerce_order"
-        }
-      ],
-      "gang_sheets": 1,
-      "printer": null,
-      "subtotal_cents": 788,
-      "total_cents": 788,
-      "total_note": "Excludes tax",
-      "payment": {
-        "method": "card",
-        "state": "paid",
-        "gateway": "stripe"
-      },
-      "fulfillment": {
-        "type": "pickup"
-      },
-      "art_check": "needs_review",
-      "pickup_text": null,
-      "notes": null
-    },
-    {
-      "id": "ord_69008",
-      "number": "69008",
-      "channel": "web",
-      "source_system": "WooCommerce",
-      "customer_id": "cust_45996",
-      "customer_label": "Breland S.",
-      "created_at": "2026-11-05T13:41:00-06:00",
-      "promised_at": "2026-11-05T17:00:00-06:00",
-      "status": "picked_up",
-      "risk": null,
-      "risk_reason": null,
-      "lines": [
-        {
-          "product_id": 60967,
-          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P &amp; 10A SAT FOR SAME DAY",
-          "category": "DTF [Direct to Film]",
-          "qty": 1,
-          "unit_price_cents": 1592,
-          "price_source": "woocommerce_order"
-        },
-        {
-          "product_id": 60967,
-          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P &amp; 10A SAT FOR SAME DAY",
-          "category": "DTF [Direct to Film]",
-          "qty": 1,
-          "unit_price_cents": 0,
-          "price_source": "woocommerce_order"
-        },
-        {
-          "product_id": 50579,
-          "name": "Gildan Softstyle Unisex 64000",
-          "category": "Adults",
-          "qty": 2,
-          "unit_price_cents": 475,
-          "price_source": "woocommerce_order"
-        },
-        {
-          "product_id": 50579,
-          "name": "Gildan Softstyle Unisex 64000",
-          "category": "Adults",
-          "qty": 1,
-          "unit_price_cents": 475,
-          "price_source": "woocommerce_order"
-        },
-        {
-          "product_id": 50579,
-          "name": "Gildan Softstyle Unisex 64000",
-          "category": "Adults",
-          "qty": 1,
-          "unit_price_cents": 475,
-          "price_source": "woocommerce_order"
-        }
-      ],
-      "gang_sheets": 2,
-      "printer": null,
-      "subtotal_cents": 3492,
-      "total_cents": 3492,
-      "total_note": "Excludes tax",
-      "payment": {
-        "method": "card",
-        "state": "paid",
-        "gateway": "stripe"
-      },
-      "fulfillment": {
-        "type": "pickup"
-      },
-      "art_check": "needs_review",
-      "pickup_text": null,
-      "notes": null
-    },
-    {
-      "id": "ord_69007",
-      "number": "69007",
-      "channel": "web",
-      "source_system": "WooCommerce",
-      "customer_id": "cust_g7a4211369a",
-      "customer_label": "Natasha P.",
-      "created_at": "2026-11-05T13:32:09-06:00",
-      "promised_at": "2026-11-05T17:00:00-06:00",
-      "status": "picked_up",
-      "risk": null,
-      "risk_reason": null,
-      "lines": [
-        {
-          "product_id": 60967,
-          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P &amp; 10A SAT FOR SAME DAY",
-          "category": "DTF [Direct to Film]",
-          "qty": 6,
-          "unit_price_cents": 971,
-          "price_source": "woocommerce_order"
-        }
-      ],
-      "gang_sheets": 6,
-      "printer": null,
-      "subtotal_cents": 5824,
-      "total_cents": 5824,
-      "total_note": "Excludes tax",
-      "payment": {
-        "method": "paypal",
-        "state": "paid",
-        "gateway": "ppcp-gateway"
-      },
-      "fulfillment": {
-        "type": "pickup"
-      },
-      "art_check": "needs_review",
-      "pickup_text": null,
-      "notes": null
-    },
-    {
-      "id": "ord_69006",
-      "number": "69006",
-      "channel": "web",
-      "source_system": "WooCommerce",
-      "customer_id": "cust_58792",
-      "customer_label": "Tykasia H.",
-      "created_at": "2026-11-05T13:21:18-06:00",
-      "promised_at": "2026-11-05T17:00:00-06:00",
-      "status": "picked_up",
-      "risk": null,
-      "risk_reason": null,
-      "lines": [
-        {
-          "product_id": 60967,
-          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P &amp; 10A SAT FOR SAME DAY",
-          "category": "DTF [Direct to Film]",
-          "qty": 1,
-          "unit_price_cents": 700,
-          "price_source": "woocommerce_order"
-        }
-      ],
-      "gang_sheets": 1,
-      "printer": null,
-      "subtotal_cents": 700,
-      "total_cents": 700,
-      "total_note": "Excludes tax",
-      "payment": {
-        "method": "card",
-        "state": "paid",
-        "gateway": "stripe"
-      },
-      "fulfillment": {
-        "type": "pickup"
-      },
-      "art_check": "passed",
-      "pickup_text": null,
-      "notes": null
-    },
-    {
-      "id": "ord_68976",
-      "number": "68976",
-      "channel": "web",
-      "source_system": "WooCommerce",
-      "customer_id": "cust_gaff2dc400b",
-      "customer_label": "Ashley W.",
-      "created_at": "2026-11-05T12:57:44-06:00",
-      "promised_at": "2026-11-05T17:00:00-06:00",
-      "status": "picked_up",
-      "risk": null,
-      "risk_reason": null,
-      "lines": [
-        {
-          "product_id": 60967,
-          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P &amp; 10A SAT FOR SAME DAY",
-          "category": "DTF [Direct to Film]",
-          "qty": 1,
-          "unit_price_cents": 700,
-          "price_source": "woocommerce_order"
-        }
-      ],
-      "gang_sheets": 1,
-      "printer": null,
-      "subtotal_cents": 700,
-      "total_cents": 700,
-      "total_note": "Excludes tax",
-      "payment": {
-        "method": "card",
-        "state": "paid",
-        "gateway": "stripe"
-      },
-      "fulfillment": {
-        "type": "pickup"
-      },
-      "art_check": "needs_review",
-      "pickup_text": null,
-      "notes": null
-    },
-    {
-      "id": "ord_68975",
-      "number": "68975",
-      "channel": "web",
-      "source_system": "WooCommerce",
-      "customer_id": "cust_gd220d4dd9a",
-      "customer_label": "Jerretta M.",
-      "created_at": "2026-11-05T12:55:11-06:00",
-      "promised_at": "2026-11-05T17:00:00-06:00",
-      "status": "picked_up",
-      "risk": null,
-      "risk_reason": null,
-      "lines": [
-        {
-          "product_id": 60967,
-          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P &amp; 10A SAT FOR SAME DAY",
-          "category": "DTF [Direct to Film]",
-          "qty": 1,
-          "unit_price_cents": 2250,
-          "price_source": "woocommerce_order"
-        }
-      ],
-      "gang_sheets": 1,
-      "printer": null,
-      "subtotal_cents": 2250,
-      "total_cents": 2250,
-      "total_note": "Excludes tax",
-      "payment": {
-        "method": "paypal",
-        "state": "paid",
-        "gateway": "ppcp-gateway"
-      },
-      "fulfillment": {
-        "type": "pickup"
-      },
-      "art_check": "needs_review",
-      "pickup_text": null,
-      "notes": null
-    },
-    {
-      "id": "ord_68974",
-      "number": "68974",
-      "channel": "web",
-      "source_system": "WooCommerce",
-      "customer_id": "cust_gb2aef0de23",
-      "customer_label": "Angella B.",
-      "created_at": "2026-11-05T12:47:20-06:00",
-      "promised_at": "2026-11-05T17:00:00-06:00",
-      "status": "picked_up",
-      "risk": null,
-      "risk_reason": null,
-      "lines": [
-        {
-          "product_id": 60967,
-          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P &amp; 10A SAT FOR SAME DAY",
-          "category": "DTF [Direct to Film]",
-          "qty": 1,
-          "unit_price_cents": 700,
-          "price_source": "woocommerce_order"
-        }
-      ],
-      "gang_sheets": 1,
-      "printer": null,
-      "subtotal_cents": 700,
-      "total_cents": 700,
-      "total_note": "Excludes tax",
-      "payment": {
-        "method": "card",
-        "state": "paid",
-        "gateway": "stripe"
-      },
-      "fulfillment": {
-        "type": "pickup"
-      },
-      "art_check": "needs_review",
-      "pickup_text": null,
-      "notes": null
-    },
-    {
-      "id": "ord_68973",
-      "number": "68973",
-      "channel": "web",
-      "source_system": "WooCommerce",
-      "customer_id": "cust_42",
-      "customer_label": "Persistence Grace LLC",
-      "created_at": "2026-11-05T12:24:44-06:00",
-      "promised_at": "2026-11-05T17:00:00-06:00",
-      "status": "picked_up",
-      "risk": null,
-      "risk_reason": null,
-      "lines": [
-        {
-          "product_id": 8439,
-          "name": "JERZEES DRI-⁠POWER® 50/50 T-⁠Shirt",
-          "category": "Adults",
-          "qty": 1,
-          "unit_price_cents": 750,
-          "price_source": "woocommerce_order"
-        },
-        {
-          "product_id": 8439,
-          "name": "JERZEES DRI-⁠POWER® 50/50 T-⁠Shirt",
-          "category": "Adults",
-          "qty": 1,
-          "unit_price_cents": 450,
-          "price_source": "woocommerce_order"
-        }
-      ],
-      "gang_sheets": 0,
-      "printer": null,
-      "subtotal_cents": 1200,
-      "total_cents": 1200,
-      "total_note": "Excludes tax",
-      "payment": {
-        "method": "card",
-        "state": "paid",
-        "gateway": "stripe"
-      },
-      "fulfillment": {
-        "type": "pickup"
-      },
-      "art_check": null,
-      "pickup_text": null,
-      "notes": null
-    },
-    {
-      "id": "ord_68971",
-      "number": "68971",
-      "channel": "web",
-      "source_system": "WooCommerce",
-      "customer_id": "cust_g92248b7886",
-      "customer_label": "Sofia E.",
-      "created_at": "2026-11-05T12:14:06-06:00",
-      "promised_at": "2026-11-05T17:00:00-06:00",
-      "status": "picked_up",
-      "risk": null,
-      "risk_reason": null,
-      "lines": [
-        {
-          "product_id": 60967,
-          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P &amp; 10A SAT FOR SAME DAY",
-          "category": "DTF [Direct to Film]",
-          "qty": 1,
-          "unit_price_cents": 700,
-          "price_source": "woocommerce_order"
-        },
-        {
-          "product_id": 50579,
-          "name": "Gildan Softstyle Unisex 64000",
-          "category": "Adults",
-          "qty": 1,
-          "unit_price_cents": 475,
-          "price_source": "woocommerce_order"
-        },
-        {
-          "product_id": 50579,
-          "name": "Gildan Softstyle Unisex 64000",
-          "category": "Adults",
-          "qty": 1,
-          "unit_price_cents": 475,
-          "price_source": "woocommerce_order"
-        },
-        {
-          "product_id": 51938,
-          "name": "Gildan Heavy Blend Crewneck Sweatshirt",
-          "category": "Adults",
-          "qty": 1,
-          "unit_price_cents": 1100,
-          "price_source": "woocommerce_order"
-        }
-      ],
-      "gang_sheets": 1,
-      "printer": null,
-      "subtotal_cents": 2750,
-      "total_cents": 2750,
-      "total_note": "Excludes tax",
-      "payment": {
-        "method": "card",
-        "state": "paid",
-        "gateway": "stripe"
-      },
-      "fulfillment": {
-        "type": "pickup"
-      },
-      "art_check": "passed",
-      "pickup_text": null,
-      "notes": null
-    },
-    {
-      "id": "ord_68968",
-      "number": "68968",
-      "channel": "web",
-      "source_system": "WooCommerce",
-      "customer_id": "cust_g96af031428",
-      "customer_label": "Nickela W.",
-      "created_at": "2026-11-05T12:08:29-06:00",
-      "promised_at": "2026-11-05T17:00:00-06:00",
-      "status": "picked_up",
-      "risk": null,
-      "risk_reason": null,
-      "lines": [
-        {
-          "product_id": 60967,
-          "name": "Build a Gang Sheet (DTF Rolling Canvas) - You will receive an email when your order is ready for pickup. ***MONDAY-FRIDAY ORDER BY 2P &amp; 10A SAT FOR SAME DAY",
-          "category": "DTF [Direct to Film]",
-          "qty": 1,
-          "unit_price_cents": 700,
-          "price_source": "woocommerce_order"
-        }
-      ],
-      "gang_sheets": 1,
-      "printer": null,
-      "subtotal_cents": 700,
-      "total_cents": 700,
-      "total_note": "Excludes tax",
-      "payment": {
-        "method": "card",
-        "state": "paid",
-        "gateway": "stripe"
-      },
-      "fulfillment": {
-        "type": "pickup"
-      },
-      "art_check": "passed",
-      "pickup_text": null,
-      "notes": null
-    },
-    {
-      "id": "ord_68967",
-      "number": "68967",
-      "channel": "web",
-      "source_system": "WooCommerce",
-      "customer_id": "cust_42",
-      "customer_label": "Persistence Grace LLC",
-      "created_at": "2026-11-05T11:50:41-06:00",
-      "promised_at": "2026-11-05T17:00:00-06:00",
-      "status": "picked_up",
-      "risk": null,
-      "risk_reason": null,
-      "lines": [
-        {
-          "product_id": 8439,
-          "name": "JERZEES DRI-⁠POWER® 50/50 T-⁠Shirt",
-          "category": "Adults",
-          "qty": 1,
-          "unit_price_cents": 450,
-          "price_source": "woocommerce_order"
-        },
-        {
-          "product_id": 8439,
-          "name": "JERZEES DRI-⁠POWER® 50/50 T-⁠Shirt",
-          "category": "Adults",
-          "qty": 1,
-          "unit_price_cents": 950,
-          "price_source": "woocommerce_order"
-        },
-        {
-          "product_id": 8439,
-          "name": "JERZEES DRI-⁠POWER® 50/50 T-⁠Shirt",
-          "category": "Adults",
-          "qty": 1,
-          "unit_price_cents": 450,
-          "price_source": "woocommerce_order"
-        },
-        {
-          "product_id": 8439,
-          "name": "JERZEES DRI-⁠POWER® 50/50 T-⁠Shirt",
-          "category": "Adults",
-          "qty": 1,
-          "unit_price_cents": 750,
-          "price_source": "woocommerce_order"
-        },
-        {
-          "product_id": 8353,
-          "name": "JERZEES DRI-⁠POWER® 50/50 Youth T-Shirt",
-          "category": "Apparel",
-          "qty": 1,
-          "unit_price_cents": 450,
-          "price_source": "woocommerce_order"
-        },
-        {
-          "product_id": 51832,
-          "name": "Gildan Unisex Heavy Blend™ Hooded Sweatshirt",
-          "category": "Adults",
-          "qty": 1,
-          "unit_price_cents": 1500,
-          "price_source": "woocommerce_order"
-        }
-      ],
-      "gang_sheets": 0,
-      "printer": null,
-      "subtotal_cents": 4550,
-      "total_cents": 4550,
       "total_note": "Excludes tax",
       "payment": {
         "method": "card",

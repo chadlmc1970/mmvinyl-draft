@@ -447,6 +447,33 @@
     return Object.keys(seen).sort();
   }
 
+  var NOTE_MAX = 120;
+
+  // Short plain-text note for one day: no tags, no control characters, single spaces, at most 120 characters.
+  function cleanNote(v) {
+    if (typeof v !== 'string') return '';
+    var s = v.replace(/<[^>]*>/g, ' ').replace(/[\u0000-\u001f\u007f<>]/g, ' ').replace(/\s+/g, ' ').trim();
+    return s.length > NOTE_MAX ? s.slice(0, NOTE_MAX).trim() : s;
+  }
+
+  // Notes by date from {date: note} and/or [{date, note}] lists; empty notes are left out.
+  function notesOf(list, map) {
+    var out = {};
+    (Array.isArray(list) ? list : []).forEach(function (item) {
+      if (item && typeof item === 'object' && parseKey(item.date)) {
+        var n = cleanNote(item.note);
+        if (n) out[item.date] = n;
+      }
+    });
+    if (map && typeof map === 'object' && !Array.isArray(map)) {
+      Object.keys(map).forEach(function (k) {
+        var n = cleanNote(map[k]);
+        if (parseKey(k) && n) out[k] = n;
+      });
+    }
+    return out;
+  }
+
   function isOff(day, offs) {
     return offs.indexOf(keyOf(day)) !== -1;
   }
@@ -482,6 +509,7 @@
   }
 
   // Banner shows from `windowDays` days before a day off through the day off itself (Chicago calendar days).
+  // The owner's note for that day (opts.notes {date: note}, or note fields in the list) follows the standard sentence.
   function banner(now, cfg, list, opts) {
     var cut = getCutoff();
     var windowDays = opts && opts.windowDays != null ? opts.windowDays : 3;
@@ -502,13 +530,16 @@
       var after = next
         ? (placedNow ? 'Orders placed now still go through and print ' : 'Orders placed that day still go through and print ') + label(next) + '.'
         : 'Orders still go through and print on our next open day.';
+      var note = notesOf(list, opts && opts.notes)[keyOf(day)] || '';
+      var message = 'Heads up: we\'re not printing ' + when + '. ' + after;
       return {
         date: keyOf(day),
         dateLabel: label(day),
         isToday: i === 0,
         nextPrint: nextKey,
         nextPrintLabel: next ? label(next) : null,
-        message: 'Heads up: we\'re not printing ' + when + '. ' + after
+        note: note || null,
+        message: note ? message + ' ' + note : message
       };
     }
     return null;
@@ -516,6 +547,8 @@
 
   return {
     normalize: normalize,
+    cleanNote: cleanNote,
+    notesOf: notesOf,
     parseKey: parseKey,
     keyOf: keyOf,
     addDays: addDays,
@@ -569,13 +602,13 @@
           return r.ok ? r.json() : null;
         })
         .then(function (j) {
-          return (j && j.dates) || [];
+          return { dates: (j && j.dates) || [], notes: (j && j.notes) || {} };
         })
         .catch(function () {
-          return [];
+          return { dates: [], notes: {} };
         });
     }
-    return Promise.resolve(src.sample ? exampleDates() : []);
+    return Promise.resolve({ dates: src.sample ? exampleDates() : [], notes: {} });
   }
 
   function slot() {
@@ -593,10 +626,10 @@
     return el;
   }
 
-  function render(dates) {
+  function render(dates, notes) {
     schedule.noPrintDates = dates;
     if (MM.cutoff.refresh) MM.cutoff.refresh();
-    var b = MM.daysOff.banner(now(), schedule, dates, { windowDays: src.sample ? 6 : 3 });
+    var b = MM.daysOff.banner(now(), schedule, dates, { windowDays: src.sample ? 6 : 3, notes: notes });
     var el = document.querySelector('[data-days-off]');
     if (!b) {
       if (el) el.hidden = true;
@@ -621,11 +654,12 @@
   }
 
   ready(function () {
-    load().then(function (list) {
-      var dates = MM.daysOff.normalize(list);
-      render(dates);
+    load().then(function (res) {
+      var dates = MM.daysOff.normalize(res.dates);
+      var notes = MM.daysOff.notesOf(res.dates, res.notes);
+      render(dates, notes);
       setInterval(function () {
-        render(dates);
+        render(dates, notes);
       }, 60000);
     });
   });

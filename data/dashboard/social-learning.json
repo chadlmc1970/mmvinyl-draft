@@ -2,7 +2,7 @@
   "meta": {
     "sample": false,
     "source": "Buffer post results and WooCommerce order sources (live, read-only).",
-    "generated_at": "2026-11-13T18:59:53.963Z",
+    "generated_at": "2026-11-15T13:01:55.853Z",
     "timezone": "America/Chicago",
     "connected": true,
     "orders_connected": true
@@ -12,16 +12,16 @@
     "name": "baseline",
     "settled": 5,
     "need_posts": 12,
-    "days": 8,
+    "days": 10,
     "need_days": 21
   },
   "summary": {
-    "sent": 6,
-    "scheduled": 8,
+    "sent": 11,
+    "scheduled": 3,
     "failed": 0,
-    "seen": 3371,
-    "actions": 39,
-    "score": 1.2,
+    "seen": 4948,
+    "actions": 173,
+    "score": 3.5,
     "orders": 11,
     "sales_cents": 20017
   },
@@ -78,7 +78,7 @@
         "facebook": {
           "status": "sent",
           "link": "https://www.facebook.com/1732566895066954/posts/1732639645059679",
-          "seen": 1098,
+          "seen": 1105,
           "actions": 10,
           "reactions": 1,
           "comments": 0,
@@ -87,7 +87,7 @@
           "clicks": 9
         }
       },
-      "seen": 1224,
+      "seen": 1231,
       "actions": 18,
       "score": 1.5,
       "live_score": 1.5,
@@ -108,7 +108,7 @@
         "instagram": {
           "status": "sent",
           "link": "https://www.instagram.com/p/DfXamdIEamU/",
-          "seen": 68,
+          "seen": 71,
           "actions": 1,
           "reactions": 1,
           "comments": 0,
@@ -119,7 +119,7 @@
         "facebook": {
           "status": "sent",
           "link": "https://www.facebook.com/1732566895066954/posts/1733527584970885",
-          "seen": 210,
+          "seen": 217,
           "actions": 4,
           "reactions": 1,
           "comments": 0,
@@ -128,10 +128,10 @@
           "clicks": 3
         }
       },
-      "seen": 278,
+      "seen": 288,
       "actions": 5,
       "score": 1.9,
-      "live_score": 1.8,
+      "live_score": 1.7,
       "orders": 0,
       "sales_cents": 0
     },
@@ -149,7 +149,7 @@
         "instagram": {
           "status": "sent",
           "link": "https://www.instagram.com/p/DfZ_fn8Fk4A/",
-          "seen": 112,
+          "seen": 115,
           "actions": 0,
           "reactions": 0,
           "comments": 0,
@@ -160,7 +160,7 @@
         "facebook": {
           "status": "sent",
           "link": "https://www.facebook.com/1732566895066954/posts/1734688004854843",
-          "seen": 581,
+          "seen": 605,
           "actions": 3,
           "reactions": 1,
           "comments": 0,
@@ -169,7 +169,7 @@
           "clicks": 2
         }
       },
-      "seen": 693,
+      "seen": 720,
       "actions": 3,
       "score": 0.4,
       "live_score": 0.4,
@@ -190,7 +190,7 @@
         "instagram": {
           "status": "sent",
           "link": "https://www.instagram.com/p/DfhuDl9EQEk/",
-          "seen": 90,
+          "seen": 95,
           "actions": 1,
           "reactions": 1,
           "comments": 0,
@@ -201,7 +201,7 @@
         "facebook": {
           "status": "sent",
           "link": "https://www.facebook.com/1732566895066954/posts/1738067791183531",
-          "seen": 215,
+          "seen": 232,
           "actions": 2,
           "reactions": 2,
           "comments": 0,
@@ -210,10 +210,10 @@
           "clicks": 0
         }
       },
-      "seen": 305,
+      "seen": 327,
       "actions": 3,
       "score": 1.1,
-      "live_score": 1,
+      "live_score": 0.9,
       "orders": 0,
       "sales_cents": 0
     },
@@ -231,7 +231,7 @@
         "instagram": {
           "status": "sent",
           "link": "https://www.instagram.com/p/DfkS4fzEfRa/",
-          "seen": 105,
+          "seen": 109,
           "actions": 2,
           "reactions": 2,
           "comments": 0,
@@ -242,7 +242,7 @@
         "facebook": {
           "status": "sent",
           "link": "https://www.facebook.com/1732566895066954/posts/1739290831061227",
-          "seen": 713,
+          "seen": 760,
           "actions": 3,
           "reactions": 1,
           "comments": 0,
@@ -251,7 +251,7 @@
           "clicks": 2
         }
       },
-      "seen": 818,
+      "seen": 869,
       "actions": 5,
       "score": 0.6,
       "live_score": 0.6,
@@ -272,9 +272,9 @@
         "instagram": {
           "status": "sent",
           "link": "https://www.instagram.com/reel/DfsHvYDgYPX/",
-          "seen": 53,
-          "actions": 5,
-          "reactions": 3,
+          "seen": 148,
+          "actions": 7,
+          "reactions": 5,
           "comments": 1,
           "shares": 1,
           "saves": 0,
@@ -283,19 +283,19 @@
         "facebook": {
           "status": "sent",
           "link": "https://www.facebook.com/reel/1278887144435455/",
-          "seen": 0,
-          "actions": 0,
-          "reactions": 0,
+          "seen": 97,
+          "actions": 9,
+          "reactions": 3,
           "comments": 0,
           "shares": 0,
           "saves": 0,
-          "clicks": 0
+          "clicks": 6
         }
       },
-      "seen": 53,
-      "actions": 5,
+      "seen": 245,
+      "actions": 16,
       "score": null,
-      "live_score": 9.4,
+      "live_score": 6.5,
       "orders": 0,
       "sales_cents": 0
     },
@@ -307,36 +307,36 @@
       "format": "Carousel",
       "hook": "What changed",
       "is_test": false,
-      "at": "2026-11-13T21:00:00.000Z",
-      "status": "scheduled",
+      "at": "2026-11-13T21:03:27.934Z",
+      "status": "sent",
       "channels": {
         "instagram": {
-          "status": "scheduled",
-          "link": null,
-          "seen": 0,
-          "actions": 0,
-          "reactions": 0,
+          "status": "sent",
+          "link": "https://www.instagram.com/p/DfsjUWMmeDp/",
+          "seen": 48,
+          "actions": 2,
+          "reactions": 2,
           "comments": 0,
           "shares": 0,
           "saves": 0,
           "clicks": 0
         },
         "facebook": {
-          "status": "scheduled",
-          "link": null,
-          "seen": 0,
-          "actions": 0,
-          "reactions": 0,
-          "comments": 0,
+          "status": "sent",
+          "link": "https://www.facebook.com/1732566895066954/posts/1743356420654668",
+          "seen": 674,
+          "actions": 79,
+          "reactions": 5,
+          "comments": 1,
           "shares": 0,
           "saves": 0,
-          "clicks": 0
+          "clicks": 73
         }
       },
-      "seen": 0,
-      "actions": 0,
+      "seen": 722,
+      "actions": 81,
       "score": null,
-      "live_score": null,
+      "live_score": 11.2,
       "orders": 0,
       "sales_cents": 0
     },
@@ -348,36 +348,36 @@
       "format": "Reel",
       "hook": "By popular demand",
       "is_test": false,
-      "at": "2026-11-14T00:00:00.000Z",
-      "status": "scheduled",
+      "at": "2026-11-14T00:02:37.880Z",
+      "status": "sent",
       "channels": {
         "instagram": {
-          "status": "scheduled",
-          "link": null,
-          "seen": 0,
-          "actions": 0,
-          "reactions": 0,
+          "status": "sent",
+          "link": "https://www.instagram.com/reel/Dfs3usJDT8j/",
+          "seen": 93,
+          "actions": 3,
+          "reactions": 3,
           "comments": 0,
           "shares": 0,
           "saves": 0,
           "clicks": 0
         },
         "facebook": {
-          "status": "scheduled",
-          "link": null,
-          "seen": 0,
-          "actions": 0,
-          "reactions": 0,
+          "status": "sent",
+          "link": "https://www.facebook.com/reel/2678296652606495/",
+          "seen": 74,
+          "actions": 4,
+          "reactions": 1,
           "comments": 0,
           "shares": 0,
           "saves": 0,
-          "clicks": 0
+          "clicks": 3
         }
       },
-      "seen": 0,
-      "actions": 0,
+      "seen": 167,
+      "actions": 7,
       "score": null,
-      "live_score": null,
+      "live_score": 4.2,
       "orders": 0,
       "sales_cents": 0
     },
@@ -389,12 +389,12 @@
       "format": "Photo graphic",
       "hook": "Deadline",
       "is_test": false,
-      "at": "2026-11-14T14:00:00.000Z",
-      "status": "scheduled",
+      "at": "2026-11-14T14:02:08.782Z",
+      "status": "sent",
       "channels": {
         "instagram": {
-          "status": "scheduled",
-          "link": null,
+          "status": "sent",
+          "link": "https://www.instagram.com/p/DfuX2J8G0T6/",
           "seen": 0,
           "actions": 0,
           "reactions": 0,
@@ -404,8 +404,8 @@
           "clicks": 0
         },
         "facebook": {
-          "status": "scheduled",
-          "link": null,
+          "status": "sent",
+          "link": "https://www.facebook.com/1732566895066954/posts/1744161337240843",
           "seen": 0,
           "actions": 0,
           "reactions": 0,
@@ -430,36 +430,36 @@
       "format": "Carousel",
       "hook": "Save this",
       "is_test": false,
-      "at": "2026-11-14T17:00:00.000Z",
-      "status": "scheduled",
+      "at": "2026-11-14T17:04:39.029Z",
+      "status": "sent",
       "channels": {
         "instagram": {
-          "status": "scheduled",
-          "link": null,
-          "seen": 0,
-          "actions": 0,
-          "reactions": 0,
+          "status": "sent",
+          "link": "https://www.instagram.com/p/DfussyXFMOo/",
+          "seen": 28,
+          "actions": 3,
+          "reactions": 2,
           "comments": 0,
           "shares": 0,
-          "saves": 0,
+          "saves": 1,
           "clicks": 0
         },
         "facebook": {
-          "status": "scheduled",
-          "link": null,
-          "seen": 0,
-          "actions": 0,
-          "reactions": 0,
+          "status": "sent",
+          "link": "https://www.facebook.com/1732566895066954/posts/1744337240556586",
+          "seen": 291,
+          "actions": 29,
+          "reactions": 4,
           "comments": 0,
           "shares": 0,
           "saves": 0,
-          "clicks": 0
+          "clicks": 25
         }
       },
-      "seen": 0,
-      "actions": 0,
+      "seen": 319,
+      "actions": 32,
       "score": null,
-      "live_score": null,
+      "live_score": 10,
       "orders": 0,
       "sales_cents": 0
     },
@@ -471,13 +471,13 @@
       "format": "Reel",
       "hook": "Gift ideas",
       "is_test": false,
-      "at": "2026-11-14T22:00:00.000Z",
-      "status": "scheduled",
+      "at": "2026-11-14T22:01:57.377Z",
+      "status": "sent",
       "channels": {
         "instagram": {
-          "status": "scheduled",
-          "link": null,
-          "seen": 0,
+          "status": "sent",
+          "link": "https://www.instagram.com/reel/DfvOxVBDe0H/",
+          "seen": 25,
           "actions": 0,
           "reactions": 0,
           "comments": 0,
@@ -486,21 +486,21 @@
           "clicks": 0
         },
         "facebook": {
-          "status": "scheduled",
-          "link": null,
-          "seen": 0,
-          "actions": 0,
-          "reactions": 0,
+          "status": "sent",
+          "link": "https://www.facebook.com/reel/2352848142179622/",
+          "seen": 35,
+          "actions": 3,
+          "reactions": 1,
           "comments": 0,
           "shares": 0,
           "saves": 0,
-          "clicks": 0
+          "clicks": 2
         }
       },
-      "seen": 0,
-      "actions": 0,
+      "seen": 60,
+      "actions": 3,
       "score": null,
-      "live_score": null,
+      "live_score": 5,
       "orders": 0,
       "sales_cents": 0
     },
@@ -735,7 +735,7 @@
     },
     {
       "week": "2026-11-09",
-      "sent": 3,
+      "sent": 8,
       "orders": 2,
       "sales_cents": 8512,
       "avg_score": 0.9

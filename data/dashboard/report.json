@@ -2,16 +2,16 @@
   "summary": {
     "went_up": [
       "651 Vinyl is up 110% on the 28 days before.",
-      "Toddler | Infants is up 80% on the 28 days before."
+      "Toddler | Infants is up 136% on the 28 days before."
     ],
     "needs_attention": [
       "Web sales were $7,100, down 4.6% on the week before.",
-      "64 repeat customers have gone quiet past their usual gap."
+      "71 repeat customers have gone quiet past their usual gap."
     ],
-    "note": "Store (Shopkeep) sales are not included. November is at 407 gang sheets so far, October finished at 1176. Sales include shipping charges and exclude tax.",
+    "note": "Store (Shopkeep) sales are not included. November is at 427 gang sheets so far, October finished at 1176. Sales include shipping charges and exclude tax.",
     "next_week": [
-      "Call Amber J.. Usual order gap is 2 days and it has been 3.",
-      "Call Drucilla W.. Usual order gap is 5 days and it has been 17.",
+      "Call Lakedra H.. Usual order gap is 1 days and it has been 2.",
+      "Call Amber J.. Usual order gap is 2 days and it has been 5.",
       "Connect Shopkeep so store sales show here."
     ]
   },
@@ -28,7 +28,7 @@
   "gang_sheets": {
     "this_week": 233,
     "prior_week": 245,
-    "month_to_date": 407,
+    "month_to_date": 427,
     "september_baseline": 1176,
     "month_label": "November",
     "prior_label": "October",
@@ -38,37 +38,37 @@
   "by_category": [
     {
       "category": "DTF [Direct to Film]",
-      "revenue_cents": 2170778,
-      "prev_period_cents": 2620065,
-      "share_pct": 76
+      "revenue_cents": 2203883,
+      "prev_period_cents": 2625424,
+      "share_pct": 77
     },
     {
       "category": "Adults",
-      "revenue_cents": 468838,
-      "prev_period_cents": 590446,
+      "revenue_cents": 451092,
+      "prev_period_cents": 605167,
       "share_pct": 16
     },
     {
       "category": "Apparel",
-      "revenue_cents": 62918,
-      "prev_period_cents": 88250,
+      "revenue_cents": 60925,
+      "prev_period_cents": 86943,
       "share_pct": 2
     },
     {
       "category": "Glitter",
       "revenue_cents": 35800,
-      "prev_period_cents": 57360,
+      "prev_period_cents": 55560,
       "share_pct": 1
     },
     {
       "category": "Adults | Youth",
-      "revenue_cents": 29211,
-      "prev_period_cents": 28500,
+      "revenue_cents": 28975,
+      "prev_period_cents": 28736,
       "share_pct": 1
     },
     {
       "category": "HTV Solids",
-      "revenue_cents": 18088,
+      "revenue_cents": 18987,
       "prev_period_cents": 45875,
       "share_pct": 1
     },
@@ -98,7 +98,7 @@
     },
     {
       "category": "Toddler | Infants",
-      "revenue_cents": 3500,
+      "revenue_cents": 4600,
       "prev_period_cents": 1950,
       "share_pct": 0
     },
@@ -151,7 +151,7 @@
       "tier": "standard",
       "spend_90d_cents": 321152,
       "last_order_at": "2026-11-13",
-      "cadence_status": "on_track"
+      "cadence_status": "slipping"
     },
     {
       "label": "Amber J.",
@@ -165,53 +165,53 @@
       "tier": "standard",
       "spend_90d_cents": 236231,
       "last_order_at": "2026-11-12",
-      "cadence_status": "on_track"
+      "cadence_status": "slipping"
     },
     {
       "label": "Amanda D.",
       "tier": "standard",
       "spend_90d_cents": 229197,
       "last_order_at": "2026-11-13",
-      "cadence_status": "on_track"
+      "cadence_status": "due"
     },
     {
       "label": "Karam Jones",
       "tier": "standard",
-      "spend_90d_cents": 198862,
+      "spend_90d_cents": 201281,
       "last_order_at": "2026-11-13",
-      "cadence_status": "on_track"
+      "cadence_status": "due"
     }
   ],
   "reorders_due": [
     {
+      "label": "Lakedra H.",
+      "days_since_last_order": 2,
+      "typical_gap_days": 1,
+      "cadence_status": "slipping"
+    },
+    {
       "label": "Amber J.",
+      "days_since_last_order": 5,
+      "typical_gap_days": 2,
+      "cadence_status": "slipping"
+    },
+    {
+      "label": "INK ON LLC",
       "days_since_last_order": 3,
+      "typical_gap_days": 2,
+      "cadence_status": "slipping"
+    },
+    {
+      "label": "Asia P.",
+      "days_since_last_order": 5,
       "typical_gap_days": 2,
       "cadence_status": "slipping"
     },
     {
       "label": "Drucilla W.",
-      "days_since_last_order": 17,
-      "typical_gap_days": 5,
+      "days_since_last_order": 19,
+      "typical_gap_days": 6,
       "cadence_status": "lapsed"
-    },
-    {
-      "label": "Asia P.",
-      "days_since_last_order": 3,
-      "typical_gap_days": 2,
-      "cadence_status": "slipping"
-    },
-    {
-      "label": "Whitney C.",
-      "days_since_last_order": 10,
-      "typical_gap_days": 4,
-      "cadence_status": "slipping"
-    },
-    {
-      "label": "Anitra L.",
-      "days_since_last_order": 4,
-      "typical_gap_days": 2,
-      "cadence_status": "slipping"
     }
   ],
   "review_requests": {
@@ -227,8 +227,8 @@
     "schema_version": "1.1",
     "sample": false,
     "sample_note": null,
-    "generated_at": "2026-11-13T12:55:11-06:00",
-    "as_of": "2026-11-13T12:55:11-06:00",
+    "generated_at": "2026-11-15T06:57:33-06:00",
+    "as_of": "2026-11-15T06:57:33-06:00",
     "timezone": "America/Chicago",
     "currency": "USD",
     "money_unit": "cents",
