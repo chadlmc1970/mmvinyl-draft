@@ -1,8 +1,8 @@
 {
   "meta": {
     "sample": false,
-    "generated_at": "2026-11-15T13:13:45.054Z",
-    "as_of": "2026-11-15T13:13:45.054Z",
+    "generated_at": "2026-11-15T13:54:55.008Z",
+    "as_of": "2026-11-15T13:54:55.008Z",
     "currency": "USD",
     "money_unit": "cents",
     "source": "WooCommerce orders and Kixxl sheet files. Paid orders only. Sales are sheet prices before tax and shipping."
