@@ -180,6 +180,45 @@
       "buffer": {
         "instagram": "6af708d8bd1182b0d3f43dd6"
       }
+    },
+    {
+      "key": "2026-11-15-ten-guides",
+      "title": "10 new how-to guides from Desiree",
+      "image": "social/learn-guides/G1-ten-guides.jpg",
+      "topic": "How-to",
+      "format": "Photo graphic",
+      "hook": "New guides",
+      "is_test": false,
+      "buffer": {
+        "facebook": "6af9ba07918fe79d2ee84540",
+        "instagram": "6af9ba0776c23bf1c78319f5"
+      }
+    },
+    {
+      "key": "2026-11-16-fix-it",
+      "title": "Peeling? Find your fix",
+      "image": "social/learn-guides/G2-fix-it.jpg",
+      "topic": "How-to",
+      "format": "Photo graphic",
+      "hook": "Troubleshooting",
+      "is_test": false,
+      "buffer": {
+        "facebook": "6af9ba0876c23bf1c7831b0a",
+        "instagram": "6af9ba09c5b364e0625c7bcb"
+      }
+    },
+    {
+      "key": "2026-11-17-home-iron",
+      "title": "No heat press? No problem.",
+      "image": "social/learn-guides/G3-home-iron.jpg",
+      "topic": "Seasonal",
+      "format": "Photo graphic",
+      "hook": "Gift ideas",
+      "is_test": false,
+      "buffer": {
+        "facebook": "6af9ba0a918fe79d2ee84637",
+        "instagram": "6af9ba0bb9a106584cb08e3d"
+      }
     }
   ]
 }

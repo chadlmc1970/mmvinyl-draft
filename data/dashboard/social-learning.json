@@ -2,7 +2,7 @@
   "meta": {
     "sample": false,
     "source": "Buffer post results and WooCommerce order sources (live, read-only).",
-    "generated_at": "2026-11-15T13:56:02.636Z",
+    "generated_at": "2026-11-15T14:01:20.236Z",
     "timezone": "America/Chicago",
     "connected": true,
     "orders_connected": true
@@ -17,7 +17,7 @@
   },
   "summary": {
     "sent": 11,
-    "scheduled": 3,
+    "scheduled": 6,
     "failed": 0,
     "seen": 4948,
     "actions": 173,
@@ -576,6 +576,47 @@
       "sales_cents": 0
     },
     {
+      "key": "2026-11-15-ten-guides",
+      "title": "10 new how-to guides from Desiree",
+      "image": "https://chadlmc1970.github.io/mmvinyl-draft/social/learn-guides/G1-ten-guides.jpg",
+      "topic": "How-to",
+      "format": "Photo graphic",
+      "hook": "New guides",
+      "is_test": false,
+      "at": "2026-11-15T23:00:00.000Z",
+      "status": "scheduled",
+      "channels": {
+        "facebook": {
+          "status": "scheduled",
+          "link": null,
+          "seen": 0,
+          "actions": 0,
+          "reactions": 0,
+          "comments": 0,
+          "shares": 0,
+          "saves": 0,
+          "clicks": 0
+        },
+        "instagram": {
+          "status": "scheduled",
+          "link": null,
+          "seen": 0,
+          "actions": 0,
+          "reactions": 0,
+          "comments": 0,
+          "shares": 0,
+          "saves": 0,
+          "clicks": 0
+        }
+      },
+      "seen": 0,
+      "actions": 0,
+      "score": null,
+      "live_score": null,
+      "orders": 0,
+      "sales_cents": 0
+    },
+    {
       "key": "2026-11-15-sunday-teaser",
       "title": "Build it tonight, order Monday",
       "image": "https://chadlmc1970.github.io/mmvinyl-draft/social/launch/L3-sunday-teaser.jpg",
@@ -586,6 +627,88 @@
       "at": "2026-11-16T01:00:00.000Z",
       "status": "scheduled",
       "channels": {
+        "instagram": {
+          "status": "scheduled",
+          "link": null,
+          "seen": 0,
+          "actions": 0,
+          "reactions": 0,
+          "comments": 0,
+          "shares": 0,
+          "saves": 0,
+          "clicks": 0
+        }
+      },
+      "seen": 0,
+      "actions": 0,
+      "score": null,
+      "live_score": null,
+      "orders": 0,
+      "sales_cents": 0
+    },
+    {
+      "key": "2026-11-16-fix-it",
+      "title": "Peeling? Find your fix",
+      "image": "https://chadlmc1970.github.io/mmvinyl-draft/social/learn-guides/G2-fix-it.jpg",
+      "topic": "How-to",
+      "format": "Photo graphic",
+      "hook": "Troubleshooting",
+      "is_test": false,
+      "at": "2026-11-17T00:00:00.000Z",
+      "status": "scheduled",
+      "channels": {
+        "facebook": {
+          "status": "scheduled",
+          "link": null,
+          "seen": 0,
+          "actions": 0,
+          "reactions": 0,
+          "comments": 0,
+          "shares": 0,
+          "saves": 0,
+          "clicks": 0
+        },
+        "instagram": {
+          "status": "scheduled",
+          "link": null,
+          "seen": 0,
+          "actions": 0,
+          "reactions": 0,
+          "comments": 0,
+          "shares": 0,
+          "saves": 0,
+          "clicks": 0
+        }
+      },
+      "seen": 0,
+      "actions": 0,
+      "score": null,
+      "live_score": null,
+      "orders": 0,
+      "sales_cents": 0
+    },
+    {
+      "key": "2026-11-17-home-iron",
+      "title": "No heat press? No problem.",
+      "image": "https://chadlmc1970.github.io/mmvinyl-draft/social/learn-guides/G3-home-iron.jpg",
+      "topic": "Seasonal",
+      "format": "Photo graphic",
+      "hook": "Gift ideas",
+      "is_test": false,
+      "at": "2026-11-18T00:00:00.000Z",
+      "status": "scheduled",
+      "channels": {
+        "facebook": {
+          "status": "scheduled",
+          "link": null,
+          "seen": 0,
+          "actions": 0,
+          "reactions": 0,
+          "comments": 0,
+          "shares": 0,
+          "saves": 0,
+          "clicks": 0
+        },
         "instagram": {
           "status": "scheduled",
           "link": null,
