@@ -73,6 +73,12 @@ jobs:
         env:
           MM_OWNER_DROP_KEY: ${{ secrets.MM_OWNER_DROP_KEY }}
         run: node .live/scripts/push-owner.mjs .live/data-live/dashboard
+      - name: Keep history in the database for trends
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: |
+          if [ -z "$DATABASE_URL" ]; then echo '::notice::DATABASE_URL is not set, history not stored'; exit 0; fi
+          node .live/scripts/store-history.mjs .live/data-live/dashboard || echo '::warning::History store failed'
       - name: Keep runner files out of the site
         run: |
           mkdir -p "$RUNNER_TEMP/site"
